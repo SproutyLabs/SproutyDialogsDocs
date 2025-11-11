@@ -28,3 +28,41 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/*** Custom styles for class reference ***/
+
+/* Highlighting for parameters and default values */
+.parameters, .default_value {
+  color: gray
+}
+
+/* Highlighting for reference type prefix (var, func, enum, etc.) */
+.reference-type {
+  font-weight: bold;
+  color: palegreen
+}
+
+/* Highlighting for return types (-> void, -> String, etc.) */
+.return-type {
+  font-weight: bold;
+  color: white
+}
+
+/* Highlighting for alert texts */
+.alert-text {
+  color: tomato;
+}
+
+/* Highlighting for abstract class indication */
+.abstract-class-label {
+  font-style: italic;
+  font-weight: bold;
+  font-size: x-large;
+  color: lightcoral
+}
+
+/* Highlighting for abstract method indication */
+.abstract-method-label {
+  font-weight: bold;
+  color: lightcoral
+}
