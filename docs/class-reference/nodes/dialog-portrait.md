@@ -14,60 +14,69 @@ Abstract class for dialog portraits from Sprouty Dialogs plugin.
 
 It provides the basic methods to handle the portrait behavior during a dialog.
 
-You should inherit from this class to create your own dialog portraits.
+> You should inherit from this class to create your own dialog portraits.
 
 ## Methods
 
-| Return Type | Method                                                         |
-| ----------- | -------------------------------------------------------------- |
-| void        | [set_portrait](#set-portrait-method)()                         |
-| void        | [on_portrait_entry](#on-portrait-entry-method)()               |
-| void        | [on_portrait_exit](#on-portrait-exit-method)()                 |
-| void        | [on_portrait_talk](#on-portrait-talk-method)()                 |
-| void        | [on_portrait_stop_talking](#on-portrait-stop-talking-method)() |
-| void        | [highlight_portrait](#highlight-portrait-method)()             |
-| void        | [unhighlight_portrait](#unhighlight-portrait-method)()         |
+| Return Type | Method                                                                                                               |
+| ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| void        | [set_portrait](#set-portrait-method)()<span class="abstract-method-label"> (abstract)</span>                         |
+| void        | [on_portrait_entry](#on-portrait-entry-method)()<span class="abstract-method-label"> (abstract)</span>               |
+| void        | [on_portrait_exit](#on-portrait-exit-method)()<span class="abstract-method-label"> (abstract)</span>                 |
+| void        | [on_portrait_talk](#on-portrait-talk-method)()<span class="abstract-method-label"> (abstract)</span>                 |
+| void        | [on_portrait_stop_talking](#on-portrait-stop-talking-method)()<span class="abstract-method-label"> (abstract)</span> |
+| void        | [highlight_portrait](#highlight-portrait-method)()<span class="abstract-method-label"> (abstract)</span>             |
+| void        | [unhighlight_portrait](#unhighlight-portrait-method)()<span class="abstract-method-label"> (abstract)</span>         |
 
 ## Method Descriptions
 
 <h3 id="set-portrait-method">
-  <span class="reference-type">func </span><code>set_portrait</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_portrait</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to set up the portrait initially. This is called when the portrait is instantiated or changed.</p>
+<p>Called when the portrait is instantiated or changed.</p>
+> *Override this method to set up the portrait initially.*
 <hr/>
 
 <h3 id="on-portrait-entry-method">
-  <span class="reference-type">func </span><code>on_portrait_entry</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>on_portrait_entry</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to update the portrait when character enters the scene. This is called when the character is added to the scene.</p>
+<p>Called when the character is added to the scene.</p>
+> *Override this method to update the portrait when character enters the scene.*
 <hr/>
 
 <h3 id="on-portrait-exit-method">
-  <span class="reference-type">func </span><code>on_portrait_exit</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>on_portrait_exit</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to update the portrait when character exits the scene. This is called when the character is removed from the scene.</p>
+<p>Called when the character is removed from the scene.</p>
+> *Override this method to update the portrait when character exits the scene.*
 <hr/>
 
 <h3 id="on-portrait-talk-method">
-  <span class="reference-type">func </span><code>on_portrait_talk</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>on_portrait_talk</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to update the portrait when the character starts talking. This is called when the typing of the dialog starts.</p>
+<p>Called when the typing of the dialog starts.</p>
+
+> _Override this method to update the portrait when the character starts talking._
+
 <hr/>
 
 <h3 id="on-portrait-stop-talking-method">
-  <span class="reference-type">func </span><code>on_portrait_stop_talking</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>on_portrait_stop_talking</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to update the portrait when the character stops talking. This is called when the typing of the dialog is finished.</p>
+<p>Called when the typing of the dialog is finished.</p>
+> *Override this method to update the portrait when the character stops talking.*
 <hr/>
 
 <h3 id="highlight-portrait-method">
-  <span class="reference-type">func </span><code>highlight_portrait</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>highlight_portrait</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to update the portrait when the character is active in the dialog, but is not currently talking (e.g. waiting for user input, joins without dialog). This is called when the character is active but not currently talking.</p>
+<p>Called when the character is active in the dialog but not currently talking (e.g. waiting for user input, joins without dialog).</p> 
+> *Override this method to update the portrait when the character is active, but is not talking.*
 <hr/>
 
 <h3 id="unhighlight-portrait-method">
-  <span class="reference-type">func </span><code>unhighlight_portrait</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>unhighlight_portrait</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Override this method to update the portrait when the character becomes inactive in the dialog (e.g. when the speaker is changed to another character). This is called when the character becomes inactive in the dialog.</p>
+<p>Called when the character becomes inactive in the dialog (e.g. when the speaker is changed to another character).</p>
+> *Override this method to update the portrait when the character becomes inactive.*
 <hr/>

@@ -4,35 +4,35 @@ sidebar_position: 2
 
 # DialogBox
 
-<span class="abstract-class-label">Abstract Class</span>
-
 **Inherits**: [Panel](https://docs.godotengine.org/en/stable/classes/class_panel.html)
 
 ## Description
 
-Abstract class for dialog boxes from Sprouty Dialogs plugin.
+Node that displays dialogue text on screen. Provides basic functionality for displaying text with writing effects, character names, portraits, and options.
 
-This class is used by a [DialogPlayer](/docs/class-reference/nodes/dialog-player) to display a dialog. It provides the basic functionality to display dialog text, character names, portraits, and options.
+You can customize your own dialog boxes nodes and extend their functionality by inheriting from this class.
 
-You should inherit from this class to create your own dialog boxes.
+> _<span class="alert-text">You should not use this node directly to play a dialogue.</span> You should use a [DialogPlayer](/docs/class-reference/nodes/dialog-player) node to play dialogues, which will use a [DialogBox]() to display the dialog._
 
 ## Properties
 
-| Type                                                                                     | Name                                          | Default                            |
-| ---------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------- |
-| [float](https://docs.godotengine.org/en/stable/classes/class_float.html)                 | [typing_speed](#typing-speed-var)             | Default typing speed from settings |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                     | [max_characters](#max-characters-var)         | Max characters from settings       |
-| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [dialog_display](#dialog-display-var)         | null                               |
-| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [name_display](#name-display-var)             | null                               |
-| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [continue_indicator](#continue-indicator-var) | null                               |
-| [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)                   | [portrait_display](#portrait-display-var)     | null                               |
-| [Container](https://docs.godotengine.org/en/stable/classes/class_container.html)         | [options_container](#options-container-var)   | null                               |
-| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [option_template](#option-template-var)       | null                               |
+| Type                                                                                     | Name                                          | Default                              |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------ |
+| [float](https://docs.godotengine.org/en/stable/classes/class_float.html)                 | [typing_speed](#typing-speed-var)             | `default_typing_speed` from settings |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                     | [max_characters](#max-characters-var)         | `max_characters` from settings       |
+| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [dialog_display](#dialog-display-var)         | null                                 |
+| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [name_display](#name-display-var)             | null                                 |
+| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [continue_indicator](#continue-indicator-var) | null                                 |
+| [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)                   | [portrait_display](#portrait-display-var)     | null                                 |
+| [Container](https://docs.godotengine.org/en/stable/classes/class_container.html)         | [options_container](#options-container-var)   | null                                 |
+| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [option_template](#option-template-var)       | null                                 |
 
 ## Methods
 
 | Return Type                                                            | Method                                                                                                                                                                                                                                                                                                       |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| void                                                                   | [\_on_dialog_box_start](#on-dialog-box-start-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                                                                                  |
+| void                                                                   | [\_on_dialog_box_close](#on-dialog-box-close-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                                                                                  |
 | void                                                                   | [play_dialog](#play-dialog-method)(character_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), display_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), dialog: [String](https://docs.godotengine.org/en/stable/classes/class_string.html)) |
 | void                                                                   | [pause_dialog](#pause-dialog-method)()                                                                                                                                                                                                                                                                       |
 | void                                                                   | [resume_dialog](#resume-dialog-method)()                                                                                                                                                                                                                                                                     |
@@ -98,52 +98,72 @@ You should inherit from this class to create your own dialog boxes.
   <span class="reference-type">var </span><code>max_characters</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></span>
 </h3>
-<p>Maximum number of characters to be displayed in the dialog box. The dialogue will be split according to this limit and displayed in parts if the split_dialog_by_max_characters setting is active.</p>
+<p>Maximum number of characters to be displayed in the dialog box. The dialogue will be split according to this limit and displayed in parts if the `split_dialog_by_max_characters` setting is active.</p>
 <hr/>
 
 <h3 id="dialog-display-var">
   <span class="reference-type">var </span><code>dialog_display</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
 </h3>
-<p><span style={{color: 'red'}}>This component is required to display the text in it.</span> RichTextLabel where dialogue will be displayed.</p>
+<p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where dialogue will be displayed.</p>
+> <span class="alert-text">This component is required to display the dialogue text in it.</span>
 <hr/>
 
 <h3 id="name-display-var">
   <span class="reference-type">var </span><code>name_display</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
 </h3>
-<p><span style={{color: 'red'}}>If you want to display the character name in the dialog box, you need to set this property.</span> RichTextLabel where character name will be displayed.</p>
+<p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where character name will be displayed.</p>
+> <span class="alert-text">If you want to display the character name in the dialog box, you need to set this property.</span>
 <hr/>
 
 <h3 id="continue-indicator-var">
   <span class="reference-type">var </span><code>continue_indicator</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
 </h3>
-<p><span style={{color: 'red'}}>If you want to display a continue indicator in the dialog box, you need to set this property.</span> Visual indicator to indicate press for continue the dialogue (e.g. an arrow).</p>
+<p>Visual indicator to indicate press for continue the dialogue (e.g. an arrow).</p>
+> <span class="alert-text">If you want to display a continue indicator in the dialog box, you need to set this property.</span>
 <hr/>
 
 <h3 id="portrait-display-var">
   <span class="reference-type">var </span><code>portrait_display</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a></span>
 </h3>
-<p><span style={{color: 'red'}}>If you want to display the portrait in the dialog box, you need to set this property.</span> Node where the character portrait will be displayed (portrait parent).</p>
+<p>Node where the character portrait will be displayed (parent node).</p>
+> <span class="alert-text">If you want to display the portrait in the dialog box, you need to set this property.</span>
 <hr/>
 
 <h3 id="options-container-var">
   <span class="reference-type">var </span><code>options_container</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_container.html">Container</a></span>
 </h3>
-<p><span style={{color: 'red'}}>This component is required to display the dialog options in it.</span> Container where the options will be displayed in the dialog box. Recommended to use a VBoxContainer or GridContainer to display the options.</p>
+<p>Container where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/es/4.x/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/es/4.x/classes/class_gridcontainer.html) to display the options.</p>
+> <span class="alert-text">This component is required to display the dialog options in it.</span>
 <hr/>
 
 <h3 id="option-template-var">
   <span class="reference-type">var </span><code>option_template</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
 </h3>
-<p><span style={{color: 'red'}}>This component is required to display the dialog options.</span> Node that will be used as a template for the options in the dialog box. It should be a <a href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it.</p>
+<p>Node that will be used as a template for the options in the dialog box. It should be a <a href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it.</p>
+> <span class="alert-text">This component is required to display the dialog options.</span>
 <hr/>
 
 ## Method Descriptions
+
+<h3 id="on-dialog-box-start-method">
+  <span class="reference-type">func </span><code>_on_dialog_box_start</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
+</h3>
+<p>Called when the dialog box starts at the beginning of the dialog.</p>
+> *Override this method to customize the behavior of the dialog box when starts.*
+<hr/>
+
+<h3 id="on-dialog-box-close-method">
+  <span class="reference-type">func </span><code>_on_dialog_box_close</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
+</h3>
+<p> Called when the dialog box when is closed at the end of the dialog.</p>
+> *Override this method to customize the behavior of the dialog box when is closed.*
+<hr/>
 
 <h3 id="play-dialog-method">
   <span class="reference-type">func </span><code>play_dialog</code><span class="parameters">(character_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, display_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
@@ -166,7 +186,7 @@ You should inherit from this class to create your own dialog boxes.
 <h3 id="stop-dialog-method">
   <span class="reference-type">func </span><code>stop_dialog</code><span class="parameters">(close_dialog: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Stop the dialog. If close_dialog is true, the dialog box will be closed.</p>
+<p>Stop the dialog. If `close_dialog` is true, the dialog box will be closed.</p>
 <hr/>
 
 <h3 id="is-displaying-portrait-method">

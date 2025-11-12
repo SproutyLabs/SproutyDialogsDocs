@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #2e853e;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -63,6 +63,11 @@
 
 /* Highlighting for abstract method indication */
 .abstract-method-label {
-  font-weight: bold;
   color: lightcoral
+}
+
+/* Highlighting for virtual method indication */
+.virtual-method-label {
+  font-weight: bold;
+  color: gray
 }

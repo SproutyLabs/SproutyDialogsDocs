@@ -8,9 +8,9 @@ sidebar_position: 1
 
 ## Description
 
-Node that plays dialog trees from Sprouty Dialogs plugin.
+Node that plays dialog trees from Sprouty Dialogs plugin. It reads a dialog file and processes a dialog tree by ID to play the dialog.
 
-It reads a dialog file and processes a dialog tree by ID to play the dialog. The dialog tree is composed of nodes that represent dialogues and actions. The player processes the nodes and plays the dialogues in [DialogBox](/docs/class-reference/nodes/dialog-box) nodes.
+The dialog tree is composed of nodes that represent dialogues and actions. The player processes the nodes and plays the dialogues in [DialogBox](/docs/class-reference/nodes/dialog-box) nodes.
 
 ## Methods
 
