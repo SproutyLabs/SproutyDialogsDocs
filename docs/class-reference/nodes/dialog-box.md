@@ -12,7 +12,11 @@ Node that displays dialogue text on screen. Provides basic functionality for dis
 
 You can customize your own dialog boxes nodes and extend their functionality by inheriting from this class.
 
-> _<span class="alert-text">You should not use this node directly to play a dialogue.</span> You should use a [DialogPlayer](/docs/class-reference/nodes/dialog-player) node to play dialogues, which will use a [DialogBox]() to display the dialog._
+:::info[Important]
+
+**You should not use this node directly to play a dialogue.** You should use a [DialogPlayer](/docs/class-reference/nodes/dialog-player) node to play dialogues, which will process it and use a [DialogBox]() to display it.
+
+:::
 
 ## Properties
 
@@ -103,50 +107,49 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="dialog-display-var">
   <span class="reference-type">var </span><code>dialog_display</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
+  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span> <span class="alert-text"> *</span>
 </h3>
-<p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where dialogue will be displayed.</p>
-> <span class="alert-text">This component is required to display the dialogue text in it.</span>
+<p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where dialogue will be displayed. <b class="alert-text">This component is required to display the dialogue text in it.</b></p>
 <hr/>
 
 <h3 id="name-display-var">
   <span class="reference-type">var </span><code>name_display</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
 </h3>
-<p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where character name will be displayed.</p>
-> <span class="alert-text">If you want to display the character name in the dialog box, you need to set this property.</span>
+<p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where character name will be displayed. <b>If you want to display the character name in the dialog box, you need to set this property.</b></p>
+
 <hr/>
 
 <h3 id="continue-indicator-var">
   <span class="reference-type">var </span><code>continue_indicator</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
 </h3>
-<p>Visual indicator to indicate press for continue the dialogue (e.g. an arrow).</p>
-> <span class="alert-text">If you want to display a continue indicator in the dialog box, you need to set this property.</span>
+<p>Visual indicator to indicate press for continue the dialogue (e.g. an arrow). <b>If you want to display a continue indicator in the dialog box, you need to set this property.</b></p>
+
 <hr/>
 
 <h3 id="portrait-display-var">
   <span class="reference-type">var </span><code>portrait_display</code>
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a></span>
 </h3>
-<p>Node where the character portrait will be displayed (parent node).</p>
-> <span class="alert-text">If you want to display the portrait in the dialog box, you need to set this property.</span>
+<p>Node where the character portrait will be displayed (parent node). <b>If you want to display the portrait in the dialog box, you need to set this property.</b></p>
+
 <hr/>
 
 <h3 id="options-container-var">
   <span class="reference-type">var </span><code>options_container</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_container.html">Container</a></span>
+  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_container.html">Container</a></span> <span class="alert-text"> *</span>
 </h3>
-<p>Container where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/es/4.x/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/es/4.x/classes/class_gridcontainer.html) to display the options.</p>
-> <span class="alert-text">This component is required to display the dialog options in it.</span>
+<p>Container where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/es/4.x/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/es/4.x/classes/class_gridcontainer.html) to display the options. <b class="alert-text">This component is required to display the dialog options in it.</b></p>
+
 <hr/>
 
 <h3 id="option-template-var">
   <span class="reference-type">var </span><code>option_template</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
+  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span> <span class="alert-text"> *</span>
 </h3>
-<p>Node that will be used as a template for the options in the dialog box. It should be a <a href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it.</p>
-> <span class="alert-text">This component is required to display the dialog options.</span>
+<p>Node that will be used as a template for the options in the dialog box. It should be a <a href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it. <b class="alert-text">This component is required to display the dialog options.</b></p>
+
 <hr/>
 
 ## Method Descriptions
@@ -154,15 +157,13 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <h3 id="on-dialog-box-start-method">
   <span class="reference-type">func </span><code>_on_dialog_box_start</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
 </h3>
-<p>Called when the dialog box starts at the beginning of the dialog.</p>
-> *Override this method to customize the behavior of the dialog box when starts.*
+<p>Called when the dialog box starts at the beginning of the dialog. <b>Override this method to customize the behavior of the dialog box when starts.</b></p>
 <hr/>
 
 <h3 id="on-dialog-box-close-method">
   <span class="reference-type">func </span><code>_on_dialog_box_close</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
 </h3>
-<p> Called when the dialog box when is closed at the end of the dialog.</p>
-> *Override this method to customize the behavior of the dialog box when is closed.*
+<p> Called when the dialog box when is closed at the end of the dialog. <b>Override this method to customize the behavior of the dialog box when is closed.</b></p>
 <hr/>
 
 <h3 id="play-dialog-method">

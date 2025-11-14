@@ -12,7 +12,11 @@ This class is responsible for managing the resources used in the Sprouty Dialogs
 
 It loads the character data, dialog boxes and portraits. It also provides methods to instantiate the dialog boxes and portraits during the dialogs.
 
-> This manager is only use at runtime as a singleton when a dialog is played. <span class="alert-text">You should not access or use this class directly.</span>
+:::info[Important]
+
+This manager is only use at runtime as a singleton when a dialog is played. **You should not access or use this class directly.**
+
+:::
 
 ## Methods
 
@@ -41,17 +45,17 @@ It loads the character data, dialog boxes and portraits. It also provides method
 <h3 id="load-resources-method">
   <span class="reference-type">func </span><code>load_resources</code><span class="parameters">(dialog_data: <a href="/docs/class-reference/resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Load the resources needed to run a dialog. This will load the character data, dialog boxes, and portraits for the dialog. *This only loads the resources to use them later, it does not instantiate them.*</p>
+<p>Load the resources needed to run a dialog. This will load the character data, dialog boxes, and portraits for the dialog. <i>This only loads the resources to use them later, it does not instantiate them.</i></p>
 <hr/>
 
 <h3 id="instantiate-dialog-box-method">
   <span class="reference-type">func </span><code>instantiate_dialog_box</code><span class="parameters">(character_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog_box_parent: <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>)</span><span class="return-type"> -> <a href="/docs/class-reference/nodes/dialog-box">DialogBox</a></span>
 </h3>
-<p>Instantiate a dialog box for a character in the scene. Instantiate from the loaded dialog boxes for the dialogs in the current scene. <span class="alert-text">Cannot instantiate a dialog box that was not previously loaded.</span></p>
+<p>Instantiate a dialog box for a character in the scene. Instantiate from the loaded dialog boxes for the dialogs in the current scene. <i>Cannot instantiate a dialog box that was not previously loaded.</i></p>
 <hr/>
 
 <h3 id="instantiate-portrait-method">
   <span class="reference-type">func </span><code>instantiate_portrait</code><span class="parameters">(character_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parent: <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>, dialog_box: <a href="/docs/class-reference/nodes/dialog-box">DialogBox</a> = null)</span><span class="return-type"> -> <a href="/docs/class-reference/nodes/dialog-portrait">DialogPortrait</a></span>
 </h3>
-<p>Instantiate a character portrait. Instantiate from the loaded portraits for the dialogs in the current scene. <span class="alert-text">Cannot instantiate a portrait that was not previously loaded.</span></p>
+<p>Instantiate a character portrait. Instantiate from the loaded portraits for the dialogs in the current scene. <i>Cannot instantiate a portrait that was not previously loaded.</i></p>
 <hr/>

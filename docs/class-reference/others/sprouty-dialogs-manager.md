@@ -77,9 +77,13 @@ Keep track of the running dialog players and dialog states by signals. Also, all
 <p>
   Start a dialog with the given data and start ID. This will create a new [DialogPlayer](/docs/class-reference/nodes/dialog-player) instance and start it.
   
-  Also, <strong>will load the resources needed for the dialog, such as characters, dialog boxes, and portraits, before starting the dialog player.</strong>
-  <span class="alert-text"><strong>This may cause a slowdown if resources are large.</strong></span>
-  
-  > It is recommended to start the dialog from a previously created [DialogPlayer](/docs/class-reference/nodes/dialog-player) instance instead of calling this method from here. The dialog player will handle the resource loading on [_ready()](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready), loading the resources only once and reusing them for the dialog.
+  <i>Also, will load the resources needed for the dialog, such as characters, dialog boxes, and portraits, before starting the dialog player.<b>This may cause a slowdown if resources are large.</b></i>
 </p>
+
+:::info[Important]
+
+It is recommended to start the dialog from a previously created [DialogPlayer](/docs/class-reference/nodes/dialog-player) instance, instead of calling this method from here. The dialog player will handle the resource loading on [\_ready()](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready), loading the resources only once and reusing them for the dialog.
+
+:::
+
 <hr/>

@@ -14,7 +14,11 @@ Abstract class for graph nodes from Sprouty Dialogs plugin.
 
 It handles the node color and icon for the titlebar. It also provides methods to get and set the node data that should be overridden in each child node class.
 
-> You should inherit from this class to create your own dialog nodes.
+:::info
+
+You should inherit from this class to create your own dialog nodes.
+
+:::
 
 ## Properties
 
@@ -101,13 +105,13 @@ It handles the node color and icon for the titlebar. It also provides methods to
 <h3 id="get-data-method">
   <span class="reference-type">func </span><code>get_data</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span> <span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Returns the node data as a dictionary. <span class="abstract-method-label">This method should be overridden in each node.</span></p>
+<p>Returns the node data as a dictionary. <b>This method must be overridden in each node.</b></p>
 <hr/>
 
 <h3 id="set-data-method">
   <span class="reference-type">func </span><code>set_data</code><span class="parameters">(dict: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span> <span class="abstract-method-label"> (abstract)</span>
 </h3>
-<p>Set the node data from a dictionary. <span class="abstract-method-label">This method should be overridden in each node.</span></p>
+<p>Set the node data from a dictionary. <b>This method must be overridden in each node.</b></p>
 <hr/>
 
 <h3 id="get-start-id-method">

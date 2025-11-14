@@ -10,6 +10,8 @@ sidebar_position: 3
 
 Component that render a dialog option in a [DialogBox](/docs/class-reference/nodes/dialog-box) from Sprouty Dialogs plugin. It extends the [Button](https://docs.godotengine.org/en/stable/classes/class_button.html) class to provide a clickable option in the dialog.
 
+You can customize your own dialog options and extend their functionality by inheriting from this class.
+
 ## Properties
 
 | Type                                                                                     | Name                                        | Default |
@@ -41,9 +43,12 @@ Component that render a dialog option in a [DialogBox](/docs/class-reference/nod
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_label.html">Label</a></span>
 </h3>
 <p>[Label](https://docs.godotengine.org/en/stable/classes/class_label.html) to display the option text (Optional).</p>
-> If you want to use a custom Label to display the option text, assign it to this variable. *It should be a child of this node.*
->
-> Otherwise, the option text will be displayed on the button text.
+
+:::info[To consider]
+
+If you want to use a custom [Label](https://docs.godotengine.org/en/stable/classes/class_label.html) to display the option text, assign it to this variable. _It should be a child of this node._ Otherwise, the option text will be displayed on the [button text](https://docs.godotengine.org/en/stable/classes/class_button.html#class-button-property-text).
+
+:::
 
 <hr/>
 
@@ -52,9 +57,13 @@ Component that render a dialog option in a [DialogBox](/docs/class-reference/nod
   <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
 </h3>
 <p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) to display the option text (Optional).</p>
-> If you want to use a custom RichTextLabel, assign it to this variable. *It should be a child of this node.*
->
-> Otherwise, the option text will be displayed on the button text.
+
+:::info[To consider]
+
+If you want to use a custom [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) to display the option text, assign it to this variable. _It should be a child of this node._ Otherwise, the option text will be displayed on the [button text](https://docs.godotengine.org/en/stable/classes/class_button.html#class-button-property-text).
+
+:::
+
 <hr/>
 
 <h3 id="option-index-var">

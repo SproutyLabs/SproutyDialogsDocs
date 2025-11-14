@@ -31,11 +31,11 @@ Alert component to display errors and warnings in graph editor. It provides meth
 <p>Alert type to display.</p>
 <ul>
   <li>
-    <h4><span class="reference-type">AlertType </span><code>ERROR</code> <span class="default_value"> = 0</span></h4>
+    <h4><a href="#alert-type-enum">AlertType </a><code>ERROR</code> <span class="default_value"> = 0</span></h4>
     <p>Error alert type.</p>
   </li>
   <li>
-    <h4><span class="reference-type">AlertType </span><code>WARNING</code> <span class="default_value"> = 1</span></h4>
+    <h4><a href="#alert-type-enum">AlertType </a><code>WARNING</code> <span class="default_value"> = 1</span></h4>
     <p>Warning alert type.</p>
   </li>
 </ul>

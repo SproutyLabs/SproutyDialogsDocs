@@ -3,6 +3,6 @@
 	"position": 2,
 	"link": {
 		"type": "generated-index",
-		"description": "Dialog system node classes including DialogPlayer, DialogBox, DialogOption, and DialogPortrait."
+		"description": "Node classes for use the SproutyDialogs plugin."
 	}
 }

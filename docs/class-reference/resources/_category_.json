@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Resource classes for managing character data, dialogue data, and portrait data."
+    "description": "Resource classes for managing SproutyDialogs data."
   }
 }

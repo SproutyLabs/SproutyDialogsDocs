@@ -19,19 +19,19 @@ Also provides methods to parse variables in strings, get the UI fields and compo
 </h3>
 <p>Assignment operators for variables</p>
 
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>ASSIGN</code> <span class="default_value"> = 0</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>ASSIGN</code> <span class="default_value"> = 0</span></h4>
   <p>Direct assignment operator (=)</p>
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>ADD_ASSIGN</code> <span class="default_value"> = 1</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>ADD_ASSIGN</code> <span class="default_value"> = 1</span></h4>
   <p>Addition assignment operator (+=)</p>
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>SUB_ASSIGN</code> <span class="default_value"> = 2</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>SUB_ASSIGN</code> <span class="default_value"> = 2</span></h4>
   <p>Subtraction assignment operator (-=)</p>
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>MUL_ASSIGN</code> <span class="default_value"> = 3</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>MUL_ASSIGN</code> <span class="default_value"> = 3</span></h4>
   <p>Multiplication assignment operator (*=)</p>
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>DIV_ASSIGN</code> <span class="default_value"> = 4</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>DIV_ASSIGN</code> <span class="default_value"> = 4</span></h4>
   <p>Division assignment operator (/=)</p>
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>EXP_ASSIGN</code> <span class="default_value"> = 5</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>EXP_ASSIGN</code> <span class="default_value"> = 5</span></h4>
   <p>Exponentiation assignment operator (**=)</p>
-- <h4><span class="reference-type">ASSIGN_OPS </span><code>MOD_ASSIGN</code> <span class="default_value"> = 6</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>MOD_ASSIGN</code> <span class="default_value"> = 6</span></h4>
   <p>Modulus assignment operator (%=)</p>
 
 <hr/>
@@ -55,7 +55,14 @@ Also provides methods to parse variables in strings, get the UI fields and compo
 <h3 id="set-root-reference-method">
   <span class="reference-type">func </span><code>set_root_reference</code><span class="parameters">(root: <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Sets the root reference for the Variable Manager. This is used to access autoloads and other global nodes. <span class="alert-text">It should be called ONLY in the _ready() function of the SproutyDialogsManager.</span></p>
+<p>Sets the root reference for the Variable Manager. This is used to access autoloads and other global nodes.</p>
+
+:::warning
+
+**You should not use this method.** It should be called only in the [\_ready()](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready) function of the [SproutyDialogsManager](/docs/class-reference/others/sprouty-dialogs-manager.md) to initialize the variable manager.
+
+:::
+
 <hr/>
 
 <h3 id="get-variables-method">
