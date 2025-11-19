@@ -1,8 +1,0 @@
-{
-  "label": "Graph",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Graph editor modules for visual dialogue tree editing and alert display."
-  }
-}

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# EditorSproutyDialogsGraph
+# EditorSproutyDialogsGraphEditor
 
 **Inherits**: [GraphEdit](https://docs.godotengine.org/en/stable/classes/class_graphedit.html)
 
