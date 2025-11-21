@@ -1,4 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import godotDark from './src/theme/godot-dark';
+import godotLight from './src/theme/godot-light';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -141,8 +142,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: godotLight,
+      darkTheme: godotDark,
     },
   } satisfies Preset.ThemeConfig,
 };

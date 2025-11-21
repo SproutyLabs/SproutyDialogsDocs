@@ -108,8 +108,7 @@ For example, we can add a script to the `main` node and add a reference to the [
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
-## doccoment
-# comment
+
 @onready var dialog_player : DialogPlayer = $DialogPlayer
 
 func _ready() -> void:
