@@ -34,10 +34,10 @@ Now that you have the plugin in your project, you need to activate it to start u
 2. Click on `Plugins` tab.
 3. Check the `Enable` box status ✅
 
-![Enable plugin](../../static/img/screenshots/enable_plugin.png)
+![Enable plugin](../../static/img/screenshots/getting-started/enable_plugin.png)
 
 4. You will see this new tab in the editor:
 
-![Plugin Tab](../../static/img/screenshots/plugin_tab.png)
+![Plugin Tab](../../static/img/screenshots/getting-started/plugin_tab.png)
 
 Congratulations! Now you can start to create your own dialogues with Sprouty Dialogs!
