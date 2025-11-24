@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Create a Dialogue
 
-In this section you'll go to learn how creating your own dialogues and use it in your games.
+In this section you'll go to learn how creating your own dialogs and use it in your games.
 
 ## Dialogue data
 
@@ -12,7 +12,7 @@ In this section you'll go to learn how creating your own dialogues and use it in
 
 First, you need to create a new **dialogue data file** that will contain all the dialogue information, which will later be used by a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node to display the dialogues in your game. The dialogue data files are saved as `.tres` resource files.
 
-To create a new dialogue data file, click on the New Dialogue button, locate where you want to save the file, give it a name and click on `Create File`.
+To create a new dialogue data file, **click on the New Dialogue button**, locate where you want to save the file, give it a name and click on `Create File`.
 
 ![New Dialogue](../../static/img/screenshots/getting-started/new_dialogue.png)
 
@@ -26,7 +26,7 @@ It is recommended to **create a folder only to store your dialogues**, especiall
 
 ---
 
-Now you can start to create your dialogue adding [event nodes]() to it. Each node represents a event in a dialogue tree. To add a new node, right click anywhere in the graph and select the node you want from the popup list.
+Now you can start to create your dialogue adding [event nodes]() to it. Each node represents a event in a dialogue tree. To **add a new node, right click anywhere in the graph** and select the node you want from the popup list.
 
 ![New Dialogue](../../static/img/screenshots/getting-started/add_nodes.png)
 
@@ -78,7 +78,7 @@ You can test your dialogue playing it in a preview in-game view. To do this, **c
 
 ![Test Dialogue](../../static/img/screenshots/getting-started/test_dialogue.png)
 
-## Using the dialogue in your game
+## Using dialogues in your game
 
 ---
 
@@ -129,6 +129,7 @@ var dialog_data := load("res://dialogues/my_dialogue.tres")
 
 func _ready() -> void:
 	SproutyDialogs.start_dialog(dialog_data, "FIRST")
+
 ```
 
 And in this way you can also see the dialogue when you run the scene.

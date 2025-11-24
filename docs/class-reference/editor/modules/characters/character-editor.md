@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Description
 
-This module is responsible for the character files creation and editing. It allows the user to edit character data, including the character's name, description, dialogue box and portraits.
+This module is responsible for the character files creation and editing. It allows the user to edit character data, including the character's name, description, dialog box and portraits.
 
 ## Properties
 
