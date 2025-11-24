@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # DialogBox
 
-**Inherits**: [Panel](https://docs.godotengine.org/en/stable/classes/class_panel.html)
+**Inherits**: [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)
 
 ## Description
 
@@ -37,6 +37,8 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | void                                                                   | [\_on_dialog_box_start](#on-dialog-box-start-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                                                                                  |
 | void                                                                   | [\_on_dialog_box_close](#on-dialog-box-close-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                                                                                  |
+| void                                                                   | [\_on_options_displayed](#on-options-displayed-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                                                                                |
+| void                                                                   | [\_on_options_hidden](#on-options-hidden-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                                                                                      |
 | void                                                                   | [play_dialog](#play-dialog-method)(character_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), display_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), dialog: [String](https://docs.godotengine.org/en/stable/classes/class_string.html)) |
 | void                                                                   | [pause_dialog](#pause-dialog-method)()                                                                                                                                                                                                                                                                       |
 | void                                                                   | [resume_dialog](#resume-dialog-method)()                                                                                                                                                                                                                                                                     |
@@ -164,6 +166,18 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">func </span><code>_on_dialog_box_close</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
 </h3>
 <p> Called when the dialog box when is closed at the end of the dialog. <b>Override this method to customize the behavior of the dialog box when is closed.</b></p>
+<hr/>
+
+<h3 id="on-options-displayed-method">
+  <span class="reference-type">func </span><code>_on_options_displayed</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
+</h3>
+<p>Called when the dialog options are displayed. <b>Override this method to customize the behavior of the dialog box when options are displayed.</b></p>
+<hr/>
+
+<h3 id="on-options-hidden-method">
+  <span class="reference-type">func </span><code>_on_options_hidden</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
+</h3>
+<p> Called when the dialog options are hidden. <b>Override this method to customize the behavior of the dialog box when options are hidden.</b></p>
 <hr/>
 
 <h3 id="play-dialog-method">
