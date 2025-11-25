@@ -34,7 +34,7 @@ Now you can configure your character to use it in your dialogues. At the top of 
 
 ### General Settings
 
-First, we have the `Display Name` property, that is the **string that will be displayed as the character name in the dialogues**. The display name can be translated to different languages if you have the **translations** enabled in settings. For more information about translations see the [translations section]().
+First, we have the `Display Name` property, that is the **string that will be displayed as the character name in the dialogues**. The display name can be translated to different languages if you have the **translations** enabled in settings. For more information about translations see the [translations section](/docs/translations/).
 
 ![Display Name Translation](../../static/img/screenshots/getting-started/display_name_translation.png)
 

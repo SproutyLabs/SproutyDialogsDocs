@@ -69,7 +69,7 @@ The dialog tree is composed of nodes that represent dialogues and actions. The p
 
 <h3 id="option-selected-signal">
   <span class="reference-type">signal </span><code>option_selected</code>
-  <span class="parameters">(current_node: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, option_index: <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
+  <span class="parameters">(option_index: <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, option_dialog: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when a dialog option is selected.</p>
 <hr/>

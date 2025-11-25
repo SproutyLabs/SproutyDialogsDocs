@@ -26,7 +26,7 @@ It is recommended to **create a folder only to store your dialogues**, especiall
 
 ---
 
-Now you can start to create your dialogue adding [event nodes]() to it. Each node represents a event in a dialogue tree. To **add a new node, right click anywhere in the graph** and select the node you want from the popup list.
+Now you can start to create your dialogue adding [event nodes](/docs/dialogues/event-nodes.md) to it. Each node represents a event in a dialogue tree. To **add a new node, right click anywhere in the graph** and select the node you want from the popup list.
 
 ![New Dialogue](../../static/img/screenshots/getting-started/add_nodes.png)
 

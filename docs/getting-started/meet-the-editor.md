@@ -32,7 +32,7 @@ At the top of the plugin interface, there is a tab bar with each module of the p
 
 ### Dialogue Editor
 
-The dialogue editor is a graph view where you can create your own dialogues usign [event nodes](). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
+The dialogue editor is a graph view where you can create your own dialogues usign [event nodes](/docs/dialogues/event-nodes.md). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
 
 ![Dialogue Editor](../../static/img/screenshots/getting-started/dialogue_editor.png)
 
