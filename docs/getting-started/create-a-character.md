@@ -70,7 +70,7 @@ You don't need to assign a dialog box for each character. You can define a **def
 
 :::
 
-For more information about dialog boxes see the [dialog box section]().
+For more information about dialog boxes see the [customize dialog boxes section](/docs/dialog-boxes/customize-dialog-boxes.md).
 
 ### Portraits
 
@@ -100,7 +100,7 @@ And now we can see the image as the portrait in the preview!
 
 Also, we can edit the portrait transformation settings to change the position, scale, and rotation with which the portrait will be displayed on the screen.
 
-There are so many things you can do with portraits, for more information see the [portraits section]().
+There are so many things you can do with portraits, for more information see the [customize portraits section](/docs/characters/customize-portraits.md).
 
 ## Using characters in dialogues
 
@@ -126,7 +126,10 @@ If we run the dialogue, now we'll going to see the dialog box and the portrait o
 
 Congratulations! You have created your first character and used it in your dialogues.
 
-Now, you know the basics of Sprouty Dialogs, but there are more things than you can do with the plugin. Here is some tutorials that can be usefull for your creations:
+Now you know the basics of Sprouty Dialogs, but we've only scratched the surface! Here are some tutorials that you may find useful for your creations:
 
-- [Customize Dialog Boxes]()
-- [Customize Portraits]()
+- [Event Nodes](/docs/dialogues/event-nodes.md)
+- [Use Variables](/docs/variables/use-variables.md)
+- [Use Translations](/docs/translations/use-translations.md)
+- [Customize Dialog Boxes](/docs/dialog-boxes/customize-dialog-boxes.md)
+- [Customize Portraits](/docs/characters/customize-portraits.md)

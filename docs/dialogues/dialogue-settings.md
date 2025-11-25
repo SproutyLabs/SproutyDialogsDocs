@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# Text Settings
+# Dialogue Settings
