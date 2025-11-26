@@ -65,4 +65,4 @@ The variable editor allows you to create variables for use in dialogues. You can
 
 At the bottom of the interface, you can see the text editor again, because the string field can be expanded in the same way as before with the dialogue text boxes.
 
-For more information about variables see the [variables section]().
+For more information about variables see the [variables section](/docs/variables.md).

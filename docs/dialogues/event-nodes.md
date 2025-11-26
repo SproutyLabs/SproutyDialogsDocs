@@ -77,7 +77,7 @@ You can set the **variables defined in the plugin or global variables**. Conside
 - If you variables is inside a group you need to specify the whole path to it: `group1/group2/variable`
 - If you want to use global variables, you need to specify the autoload name followed by a dot and the variable name: `AutoloadName.variable`.
 
-For more information about variables, see [use variables]().
+For more information about variables, see the [variables section](/docs/variables.md).
 
 ## Condition Node
 
@@ -87,7 +87,7 @@ This node allows you to condition the flow of the dialogue tree. You can **check
 
 ![Condition Node](../../static/img/screenshots/event-nodes/condition_node.png)
 
-You can compare variables, expressions, values, etc. For more information about it, see [use variables]().
+You can compare variables, expressions, values, etc. For more information about it, see the [variables section](/docs/variables.md).
 
 ## Signal Node
 
