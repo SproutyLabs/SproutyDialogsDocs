@@ -91,7 +91,7 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
 </h3>
 <p>UndoRedo manager for handling undo/redo operations in the graph editor.</p>
 <hr/>

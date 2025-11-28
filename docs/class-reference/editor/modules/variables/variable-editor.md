@@ -12,9 +12,9 @@ This module is the main interface for managing variables in the Sprouty Dialogs 
 
 ## Properties
 
-| Type | Name | Default |
-| ---- | ---- | ------- |
-| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var) | null |
+| Type                                                                                                     | Name                        | Default |
+| -------------------------------------------------------------------------------------------------------- | --------------------------- | ------- |
+| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var) | null    |
 
 ## Signals
 
@@ -43,7 +43,7 @@ This module is the main interface for managing variables in the Sprouty Dialogs 
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
 </h3>
 <p>UndoRedo manager for handling undo/redo operations in the variable editor.</p>
 <hr/>

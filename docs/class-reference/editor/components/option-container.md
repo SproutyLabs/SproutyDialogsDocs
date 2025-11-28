@@ -12,17 +12,17 @@ Component that display a dialog option in the options node.
 
 ## Properties
 
-| Type | Name | Default |
-| ---- | ---- | ------- |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html) | [option_index](#option-index-var) | 0 |
+| Type                                                                 | Name                              | Default |
+| -------------------------------------------------------------------- | --------------------------------- | ------- |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html) | [option_index](#option-index-var) | 0       |
 
 ## Methods
 
-| Return Type | Method |
-| ----------- | ------ |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html) | [get_dialog_key](#get-dialog-key-method)() |
-| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_dialogs_text](#get-dialogs-text-method)() |
-| void | [load_dialogs](#load-dialogs-method)(dialogs: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
+| Return Type                                                                        | Method                                                                                                                            |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [get_dialog_key](#get-dialog-key-method)()                                                                                        |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_dialogs_text](#get-dialogs-text-method)()                                                                                    |
+| void                                                                               | [load_dialogs](#load-dialogs-method)(dialogs: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
 
 ## Signals
 
@@ -58,7 +58,7 @@ Component that display a dialog option in the options node.
 
 <h3 id="option-index-var">
   <span class="reference-type">var </span><code>option_index</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
 </h3>
 <p>Option position index.</p>
 <hr/>

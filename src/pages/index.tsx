@@ -6,20 +6,23 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
+import SVGLogo from '@site/static/img/logo.svg';
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero banner', styles.heroBanner)}>
       <div className="container">
+        <SVGLogo className={styles.featureSvg} role="img" style={{width:'200px'}} />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg rounded"
             to="/docs/intro">
             Get Started! \(^o^)/
           </Link>

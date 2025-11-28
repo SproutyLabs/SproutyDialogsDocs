@@ -83,21 +83,21 @@ Component that represents a single variable item in the variable editor panel. I
 
 <h3 id="parent-group-var">
   <span class="reference-type">var </span><code>parent_group</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> = null</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> = null</span>
 </h3>
 <p>Parent group of the item. Can be an [EditorSproutyDialogsVariableGroup](/docs/class-reference/editor/modules/variables/variable-group.md) or the main container.</p>
 <hr/>
 
 <h3 id="new-item-var">
   <span class="reference-type">var </span><code>new_item</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
 </h3>
 <p>Flag to indicate that the item has just been created.</p>
 <hr/>
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
 </h3>
 <p>UndoRedo manager for handling undo/redo operations.</p>
 <hr/>

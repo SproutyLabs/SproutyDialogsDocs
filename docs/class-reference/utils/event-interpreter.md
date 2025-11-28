@@ -59,7 +59,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="node-processors-var">
   <span class="reference-type">var </span><code>node_processors</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>
   Node processors reference dictionary. This dictionary maps the node type to its processing method. You can call the processors from this dictionary.
@@ -68,7 +68,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="print-debug-var">
   <span class="reference-type">var </span><code>print_debug</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
 </h3>
 <p>If true, will print debug messages to the console.</p>
 <hr/>

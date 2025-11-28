@@ -53,49 +53,49 @@ You should inherit from this class to create your own dialog nodes.
 
 <h3 id="node-color-var">
   <span class="reference-type">var </span><code>node_color</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_color.html">Color</a></span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_color.html">Color</a></span>
 </h3>
 <p>Node color to display on the node titlebar.</p>
 <hr/>
 
 <h3 id="node-icon-var">
   <span class="reference-type">var </span><code>node_icon</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_texture2d.html">Texture2D</a></span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_texture2d.html">Texture2D</a></span>
 </h3>
 <p>Icon to display on the node titlebar.</p>
 <hr/>
 
 <h3 id="start-node-name-var">
   <span class="reference-type">var </span><code>start_node_name</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
 </h3>
 <p>Name of the start node in the dialog tree where the node belongs. Used to find the start node in the graph editor on load.</p>
 <hr/>
 
 <h3 id="start-node-var">
   <span class="reference-type">var </span><code>start_node</code>
-  <span class="default_value"> : <a href="/docs/class-reference/event-nodes/base-node">SproutyDialogsBaseNode</a> = null</span>
+  <span class="default-value"> : <a href="/docs/class-reference/event-nodes/base-node">SproutyDialogsBaseNode</a> = null</span>
 </h3>
 <p>Start node of the dialog tree where the node belongs.</p>
 <hr/>
 
 <h3 id="to-node-var">
   <span class="reference-type">var </span><code>to_node</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a> = []</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a> = []</span>
 </h3>
 <p>Array to store the output nodes connections.</p>
 <hr/>
 
 <h3 id="node-type-var">
   <span class="reference-type">var </span><code>node_type</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
 </h3>
 <p>Node type name.</p>
 <hr/>
 
 <h3 id="node-index-var">
   <span class="reference-type">var </span><code>node_index</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
 </h3>
 <p>Index of the node in the graph editor.</p>
 <hr/>

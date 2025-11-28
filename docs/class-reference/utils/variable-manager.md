@@ -19,19 +19,19 @@ Also provides methods to parse variables in strings, get the UI fields and compo
 </h3>
 <p>Assignment operators for variables</p>
 
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>ASSIGN</code> <span class="default_value"> = 0</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>ASSIGN</code> <span class="default-value"> = 0</span></h4>
   <p>Direct assignment operator (=)</p>
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>ADD_ASSIGN</code> <span class="default_value"> = 1</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>ADD_ASSIGN</code> <span class="default-value"> = 1</span></h4>
   <p>Addition assignment operator (+=)</p>
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>SUB_ASSIGN</code> <span class="default_value"> = 2</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>SUB_ASSIGN</code> <span class="default-value"> = 2</span></h4>
   <p>Subtraction assignment operator (-=)</p>
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>MUL_ASSIGN</code> <span class="default_value"> = 3</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>MUL_ASSIGN</code> <span class="default-value"> = 3</span></h4>
   <p>Multiplication assignment operator (*=)</p>
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>DIV_ASSIGN</code> <span class="default_value"> = 4</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>DIV_ASSIGN</code> <span class="default-value"> = 4</span></h4>
   <p>Division assignment operator (/=)</p>
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>EXP_ASSIGN</code> <span class="default_value"> = 5</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>EXP_ASSIGN</code> <span class="default-value"> = 5</span></h4>
   <p>Exponentiation assignment operator (**=)</p>
-- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>MOD_ASSIGN</code> <span class="default_value"> = 6</span></h4>
+- <h4><a href="#assign-ops-enum">ASSIGN_OPS </a><code>MOD_ASSIGN</code> <span class="default-value"> = 6</span></h4>
   <p>Modulus assignment operator (%=)</p>
 
 <hr/>

@@ -30,7 +30,7 @@ This resource stores the dialogue data from the graph editor. It includes the gr
 
 <h3 id="graph-data-var">
   <span class="reference-type">var </span><code>graph_data</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
 </h3>
 <p>
   The dialogue data from the graph editor. This is a dictionary where each key is the ID (start id) of a dialogue branch and its value is a nested dictionary containing the nodes of that branch.
@@ -54,7 +54,7 @@ This resource stores the dialogue data from the graph editor. It includes the gr
 
 <h3 id="dialogs-var">
   <span class="reference-type">var </span><code>dialogs</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
 </h3>
 <p>
   A dictionary containing the dialogues for each dialogue ID. 
@@ -75,7 +75,7 @@ This resource stores the dialogue data from the graph editor. It includes the gr
 
 <h3 id="characters-var">
   <span class="reference-type">var </span><code>characters</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
 </h3>
 <p>
   A dictionary containing the characters for each dialogue ID. This is a dictionary where each key is the dialogue ID and its value is the characters associated with its UID.
@@ -96,7 +96,7 @@ This resource stores the dialogue data from the graph editor. It includes the gr
 
 <h3 id="csv-file-uid-var">
   <span class="reference-type">var </span><code>csv_file_uid</code>
-  <span class="default_value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1</span>
+  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1</span>
 </h3>
 <p>Reference to CSV file with the translations for the dialogues. This is the UID of the CSV file resource.</p>
 <hr/>

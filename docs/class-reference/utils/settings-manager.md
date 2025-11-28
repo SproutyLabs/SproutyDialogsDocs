@@ -13,13 +13,13 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
 ## Constants
 
 <h3 id="default-dialog-box-path-const">
-  <span class="reference-type">const </span><code>DEFAULT_DIALOG_BOX_PATH</code> <span class="default_value"> = "res://addons/sprouty_dialogs/nodes/defaults/default_dialog_box.tscn"</span>
+  <span class="reference-type">const </span><code>DEFAULT_DIALOG_BOX_PATH</code> <span class="default-value"> = "res://addons/sprouty_dialogs/nodes/defaults/default_dialog_box.tscn"</span>
 </h3>
 <p>Default dialog box path to load if no dialog box is specified.</p>
 <hr/>
 
 <h3 id="default-portrait-path-const">
-  <span class="reference-type">const </span><code>DEFAULT_PORTRAIT_PATH</code> <span class="default_value"> = "res://addons/sprouty_dialogs/nodes/defaults/default_portrait.tscn"</span>
+  <span class="reference-type">const </span><code>DEFAULT_PORTRAIT_PATH</code> <span class="default-value"> = "res://addons/sprouty_dialogs/nodes/defaults/default_portrait.tscn"</span>
 </h3>
 <p>Default portrait scene path to load when creating a new portrait.</p>
 <hr/>

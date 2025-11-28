@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -13,6 +15,9 @@
   --ifm-color-primary-light: #75c900;
   --ifm-color-primary-lighter: #7ad200;
   --ifm-color-primary-lightest: #8aee00;
+
+  --ifm-color-secondary: #fffaf3;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -29,10 +34,24 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Home page banner */
+.banner {
+  background-color: #b2f05f;
+  background-image: url(../../static/img/screenshots/getting-started/play_example.png);
+  background-size: 1000px;
+  background-position: 250px;
+  background-blend-mode:screen;
+  color: #26302c
+}
+
+.rounded {
+  border-radius: 2rem;
+}
+
 /*** Custom styles for class reference ***/
 
 /* Highlighting for parameters and default values */
-.parameters, .default_value {
+.parameters, .default-value {
   color: rgb(151, 151, 151)
 }
 
