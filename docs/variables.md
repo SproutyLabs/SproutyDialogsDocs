@@ -62,6 +62,8 @@ You can use variables in the `display_name` of the characters in the same way as
 
 > For example, a `display_name` can be the player name as `{player}` or maybe just a stylish name like `[color={player_color}] Sprouty`, or _why not both as `[color={player_color}]{player}`_.
 
+You can use **global variables** as well as **Sprouty Dialogs variables**.
+
 _Also, you can use variables in the name **translations**._
 
 ### Variables in conditions
@@ -70,7 +72,7 @@ Conditions allows to change the flow of the dialogue, so they are one of the mai
 
 ![Variable in Condition](../static/img/screenshots/variables/variable_in_condition.png)
 
-You can check relations between two variables, variable and value, expressions, etc.
+You can check relations between two variables, variable and value, expressions, etc. Also, you can compare **global variables** as well as **Sprouty Dialogs variables**.
 
 :::warning[Important]
 
@@ -80,11 +82,25 @@ You must check that the **comparation is valid**. You cannot compare an [String]
 
 ### Set variable events
 
-You can update or change the variables values in the dialogue tree using the [set variable node](/docs/dialogues/event-nodes#set-variable-node). You can update global variables as well as Sprouty Dialogs variables.
+You can update or change the variables values in the dialogue tree using the [set variable node](/docs/dialogues/event-nodes#set-variable-node). You can update **global variables** as well as **Sprouty Dialogs variables**.
+
+![Set Variable Example](../static/img/screenshots/variables/set_variable_example.png)
+
+You can update the value using different **assignment operations** depending on the type of variable.
 
 ## Using expressions
 
 ---
+
+Expression are **simple operations** that you can use in combination to variables. In text, you can use expressions inside brackets `{}` to do things like **math operations, string operations, and more**. For example:
+
+- Increment a variable: `{{variable} + 1}`
+- Multiply two variables: `{{first_variable} * {second_variable}}`
+- Append strings: `{"prefix " + {variable} + " suffix"}`
+
+You can use **global variables** as well as **Sprouty Dialogs variables** in expressions.
+
+Also, variables can be of the **expression type**. This type allows you to have variables that parse expressions, and you can use them like any other variable: in text, conditions, etc.
 
 ## Using variables in code
 
