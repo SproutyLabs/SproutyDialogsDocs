@@ -92,11 +92,10 @@ You can update the value using different **assignment operations** depending on 
 
 ---
 
-Expression are **simple operations** that you can use in combination to variables. In text, you can use expressions inside brackets `{}` to do things like **math operations, string operations, and more**. For example:
+Expression are **simple operations** that you can use in combination to variables. In text, you can use expressions inside brackets `{}` to do things like **math operations, boolean operations, and more**. For more information see the [evaluating expressions godot tutorial](https://docs.godotengine.org/en/stable/tutorials/scripting/evaluating_expressions.html). For example:
 
 - Increment a variable: `{{variable} + 1}`
 - Multiply two variables: `{{first_variable} * {second_variable}}`
-- Append strings: `{"prefix " + {variable} + " suffix"}`
 
 You can use **global variables** as well as **Sprouty Dialogs variables** in expressions.
 
@@ -105,3 +104,42 @@ Also, variables can be of the **expression type**. This type allows you to have 
 ## Using variables in code
 
 ---
+
+You can use the variables of Sprouty Dialogs from scripts outside the plugin. You can access them from the **Sprouty Dialogs autoload** by the `variables` property:
+
+```gdscript
+# Get variable value
+SproutyDialogs.variables.get_variable("variable_name")
+
+# Get variable inside a group
+SproutyDialogs.variables.get_variable("variable_group/variable_name")
+```
+
+:::info[Important]
+
+At the same way that before, if the variable is inside one or more groups, you need to set its full path as its name, such as: `"group1/group2/variable_name"`. The same applies when referring to the name of a group within other groups.
+
+:::
+
+Also, you can change the value of a variable, check if exist, and other useful things such as:
+
+```gdscript
+# Change the value of a variable
+SproutyDialogs.variables.set_variable("variable_name")
+
+# Check if a variable exist
+SproutyDialogs.variables.has_variable("variable_name")
+
+
+# Get a list with the names of the variables in a group
+SproutyDialogs.variables.get_variables_in_group("group_name")
+
+# Check if a variable is in a group
+SproutyDialogs.variables.is_variable_in_group("variable_name", "group_name")
+
+
+# Reset a variable to its initial value
+SproutyDialogs.variables.reset_variable("variable_name")
+```
+
+See the [variable manager class reference](/docs/class-reference/utils/variable-manager.md) for more information.
