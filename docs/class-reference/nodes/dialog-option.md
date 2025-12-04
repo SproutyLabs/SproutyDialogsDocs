@@ -31,7 +31,7 @@ You can customize your own dialog options and extend their functionality by inhe
 
 <h3 id="option-selected-signal">
   <span class="reference-type">signal </span><code>option_selected</code>
-  <span class="parameters">(option_index: <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
+  <span class="parameters">(option_index: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
 </h3>
 <p>Emitted when the option is selected.</p>
 <hr/>
@@ -40,7 +40,7 @@ You can customize your own dialog options and extend their functionality by inhe
 
 <h3 id="text-display-var">
   <span class="reference-type">var </span><code>text_display</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_label.html">Label</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_label.html">Label</a></span>
 </h3>
 <p>[Label](https://docs.godotengine.org/en/stable/classes/class_label.html) to display the option text (Optional).</p>
 
@@ -54,7 +54,7 @@ If you want to use a custom [Label](https://docs.godotengine.org/en/stable/class
 
 <h3 id="rich-text-display-var">
   <span class="reference-type">var </span><code>rich_text_display</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
 </h3>
 <p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) to display the option text (Optional).</p>
 
@@ -68,7 +68,7 @@ If you want to use a custom [RichTextLabel](https://docs.godotengine.org/en/stab
 
 <h3 id="option-index-var">
   <span class="reference-type">var </span><code>option_index</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
 </h3>
 <p>Index of the option in the dialog.</p>
 <hr/>
@@ -76,13 +76,13 @@ If you want to use a custom [RichTextLabel](https://docs.godotengine.org/en/stab
 ## Method Descriptions
 
 <h3 id="get-text-method">
-  <span class="reference-type">func </span><code>get_text</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+  <span class="reference-type">func </span><code>get_text</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Return the text of the option.</p>
 <hr/>
 
 <h3 id="set-text-method">
-  <span class="reference-type">func </span><code>set_text</code><span class="parameters">(text: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_text</code><span class="parameters">(text: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the text of the option.</p>
 <hr/>

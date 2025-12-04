@@ -28,14 +28,14 @@ This module allows the user to edit a portrait for a character. It provides a pr
 
 <h3 id="modified-signal">
   <span class="reference-type">signal </span><code>modified</code>
-  <span class="parameters">(modified: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
+  <span class="parameters">(modified: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
 </h3>
 <p>Emitted when the portrait is modified.</p>
 <hr/>
 
 <h3 id="request-open-scene-in-editor-signal">
   <span class="reference-type">signal </span><code>request_open_scene_in_editor</code>
-  <span class="parameters">(scene_path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(scene_path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted to request opening a scene in the editor.</p>
 <hr/>
@@ -44,7 +44,7 @@ This module allows the user to edit a portrait for a character. It provides a pr
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
 </h3>
 <p>UndoRedo manager for handling undo/redo operations in the portrait editor.</p>
 <hr/>
@@ -52,7 +52,7 @@ This module allows the user to edit a portrait for a character. It provides a pr
 ## Method Descriptions
 
 <h3 id="get-portrait-data-method">
-  <span class="reference-type">func </span><code>get_portrait_data</code><span class="parameters">()</span><span class="return-type"> -> <a href="/docs/class-reference/resources/portrait-data">SproutyDialogsPortraitData</a></span>
+  <span class="reference-type">func </span><code>get_portrait_data</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="/docs/class-reference/resources/portrait-data">SproutyDialogsPortraitData</a></span>
 </h3>
 <p>
   Returns the portrait data from the editor. This includes the portrait scene path, export property overrides, and transform settings (scale, offset, rotation, mirror).
@@ -60,7 +60,7 @@ This module allows the user to edit a portrait for a character. It provides a pr
 <hr/>
 
 <h3 id="load-portrait-data-method">
-  <span class="reference-type">func </span><code>load_portrait_data</code><span class="parameters">(name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, data: <a href="/docs/class-reference/resources/portrait-data">SproutyDialogsPortraitData</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>load_portrait_data</code><span class="parameters">(name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, data: <a target="_blank" href="/docs/class-reference/resources/portrait-data">SproutyDialogsPortraitData</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Load the portrait data into the editor. The <code>name</code> parameter is used to set the portrait name in the preview. This method loads the portrait scene, export overrides, and transform settings.
@@ -68,7 +68,7 @@ This module allows the user to edit a portrait for a character. It provides a pr
 <hr/>
 
 <h3 id="set-portrait-name-method">
-  <span class="reference-type">func </span><code>set_portrait_name</code><span class="parameters">(name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_portrait_name</code><span class="parameters">(name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the portrait name displayed in the editor.</p>
 <hr/>

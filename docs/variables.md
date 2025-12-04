@@ -117,7 +117,7 @@ SproutyDialogs.variables.get_variable("variable_group/variable_name")
 
 :::info[Important]
 
-At the same way that before, if the variable is inside one or more groups, you need to set its full path as its name, such as: `"group1/group2/variable_name"`. The same applies when referring to the name of a group within other groups.
+As the same way that before, if the variable is inside one or more groups, you need to set its full path as its name, such as: `"group1/group2/variable_name"`. The same applies when referring to the name of a group within other groups.
 
 :::
 

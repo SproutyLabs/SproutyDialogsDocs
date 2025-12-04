@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 # SproutyDialogsEventInterpreter
@@ -29,28 +29,28 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="continue-to-node-signal">
   <span class="reference-type">signal </span><code>continue_to_node</code>
-  <span class="parameters">(to_node: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(to_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a node is processed and is ready to continue to the next node.</p>
 <hr/>
 
 <h3 id="dialogue-processed-signal">
   <span class="reference-type">signal </span><code>dialogue_processed</code>
-  <span class="parameters">(character_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, translated_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, next_node: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(character_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, translated_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a dialogue node was processed.</p>
 <hr/>
 
 <h3 id="options-processed-signal">
   <span class="reference-type">signal </span><code>options_processed</code>
-  <span class="parameters">(options: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_nodes: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
+  <span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_nodes: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
 </h3>
 <p>Emitted when a options node was processed.</p>
 <hr/>
 
 <h3 id="signal-processed-signal">
   <span class="reference-type">signal </span><code>signal_processed</code>
-  <span class="parameters">(signal_argument: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, next_node: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(signal_argument: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a signal node was processed.</p>
 <hr/>
@@ -59,7 +59,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="node-processors-var">
   <span class="reference-type">var </span><code>node_processors</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>
   Node processors reference dictionary. This dictionary maps the node type to its processing method. You can call the processors from this dictionary.
@@ -68,7 +68,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="print-debug-var">
   <span class="reference-type">var </span><code>print_debug</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
 </h3>
 <p>If true, will print debug messages to the console.</p>
 <hr/>

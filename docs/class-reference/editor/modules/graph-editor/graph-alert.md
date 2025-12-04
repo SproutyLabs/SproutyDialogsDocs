@@ -31,11 +31,11 @@ Alert component to display errors and warnings in graph editor. It provides meth
 <p>Alert type to display.</p>
 <ul>
   <li>
-    <h4><a href="#alert-type-enum">AlertType </a><code>ERROR</code> <span class="default-value"> = 0</span></h4>
+    <h4><a target="_blank" href="#alert-type-enum">AlertType </a><code>ERROR</code> <span class="default-value"> = 0</span></h4>
     <p>Error alert type.</p>
   </li>
   <li>
-    <h4><a href="#alert-type-enum">AlertType </a><code>WARNING</code> <span class="default-value"> = 1</span></h4>
+    <h4><a target="_blank" href="#alert-type-enum">AlertType </a><code>WARNING</code> <span class="default-value"> = 1</span></h4>
     <p>Warning alert type.</p>
   </li>
 </ul>
@@ -45,7 +45,7 @@ Alert component to display errors and warnings in graph editor. It provides meth
 
 <h3 id="alert-type-var">
   <span class="reference-type">var </span><code>alert_type</code>
-  <span class="default-value"> : <a href="#alert-type-enum">AlertType</a> = AlertType.ERROR</span>
+  <span class="default-value"> : <a target="_blank" href="#alert-type-enum">AlertType</a> = AlertType.ERROR</span>
 </h3>
 <p>Alert type to display. Determines the icon and styling of the alert.</p>
 <hr/>
@@ -53,7 +53,7 @@ Alert component to display errors and warnings in graph editor. It provides meth
 ## Method Descriptions
 
 <h3 id="show-alert-method">
-  <span class="reference-type">func </span><code>show_alert</code><span class="parameters">(message: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>show_alert</code><span class="parameters">(message: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Show an alert with the given message. Displays the alert with a slide-in animation from the right.

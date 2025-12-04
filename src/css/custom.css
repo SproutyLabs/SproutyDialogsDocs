@@ -55,6 +55,12 @@
   color: rgb(151, 151, 151)
 }
 
+ /* Highlighting for constants values */
+.const-value {
+  color: rgb(151, 151, 151);
+  font-size: large
+}
+
 /* Highlighting for reference type prefix (var, func, enum, etc.) */
 .reference-type {
   font-weight: bold;

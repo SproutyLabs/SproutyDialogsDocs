@@ -30,7 +30,7 @@ This module is responsible for the character files creation and editing. It allo
 
 <h3 id="modified-signal">
   <span class="reference-type">signal </span><code>modified</code>
-  <span class="parameters">(modified: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
+  <span class="parameters">(modified: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
 </h3>
 <p>Triggered when something is modified in the character editor.</p>
 <hr/>
@@ -39,7 +39,7 @@ This module is responsible for the character files creation and editing. It allo
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
 </h3>
 <p>UndoRedo manager for handling undo/redo operations in the character editor.</p>
 <hr/>
@@ -47,7 +47,7 @@ This module is responsible for the character files creation and editing. It allo
 ## Method Descriptions
 
 <h3 id="get-character-data-method">
-  <span class="reference-type">func </span><code>get_character_data</code><span class="parameters">()</span><span class="return-type"> -> <a href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a></span>
+  <span class="reference-type">func </span><code>get_character_data</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a></span>
 </h3>
 <p>
   Returns the character data from the editor. This includes the character's key name, display name (with translations), description, dialog box scene path, portrait settings, and portraits data.
@@ -55,7 +55,7 @@ This module is responsible for the character files creation and editing. It allo
 <hr/>
 
 <h3 id="load-character-method">
-  <span class="reference-type">func </span><code>load_character</code><span class="parameters">(data: <a href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a>, name_data: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>load_character</code><span class="parameters">(data: <a target="_blank" href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a>, name_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Load the character data into the editor. If <code>name_data</code> is provided, it will be used to load the name translations. Otherwise, the name translations will be loaded from the character data.
@@ -71,7 +71,7 @@ This module is responsible for the character files creation and editing. It allo
 <hr/>
 
 <h3 id="on-translation-enabled-changed-method">
-  <span class="reference-type">func </span><code>on_translation_enabled_changed</code><span class="parameters">(enabled: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>on_translation_enabled_changed</code><span class="parameters">(enabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Handle the translation enabled change. When enabled is true, shows translation boxes. When false, hides translation boxes and default locale label.
@@ -79,7 +79,7 @@ This module is responsible for the character files creation and editing. It allo
 <hr/>
 
 <h3 id="open-scene-in-editor-method">
-  <span class="reference-type">func </span><code>open_scene_in_editor</code><span class="parameters">(path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>open_scene_in_editor</code><span class="parameters">(path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Open a scene in the editor given its path. If the path is valid and the resource exists, opens the scene in the 2D editor.

@@ -22,21 +22,21 @@ Component to handle translations text boxes. It allows to set the dialog text bo
 
 <h3 id="modified-signal">
   <span class="reference-type">signal </span><code>modified</code>
-  <span class="parameters">(modified: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
+  <span class="parameters">(modified: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
 </h3>
 <p>Emitted when the text in any of the text boxes changes.</p>
 <hr/>
 
 <h3 id="open-text-editor-signal">
   <span class="reference-type">signal </span><code>open_text_editor</code>
-  <span class="parameters">(text_box: <a href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
 </h3>
 <p>Emitted when pressing the expand button of a text box to open the text editor.</p>
 <hr/>
 
 <h3 id="update-text-editor-signal">
   <span class="reference-type">signal </span><code>update_text_editor</code>
-  <span class="parameters">(text_box: <a href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
 </h3>
 <p>Emitted when change the focus to another text box while the text editor is open.</p>
 <hr/>
@@ -44,19 +44,19 @@ Component to handle translations text boxes. It allows to set the dialog text bo
 ## Method Descriptions
 
 <h3 id="get-translations-text-method">
-  <span class="reference-type">func </span><code>get_translations_text</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>get_translations_text</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Return the dialog translations text on a dictionary.</p>
 <hr/>
 
 <h3 id="set-translation-boxes-method">
-  <span class="reference-type">func </span><code>set_translation_boxes</code><span class="parameters">(locales: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_translation_boxes</code><span class="parameters">(locales: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set input text boxes for each locale.</p>
 <hr/>
 
 <h3 id="load-translations-text-method">
-  <span class="reference-type">func </span><code>load_translations_text</code><span class="parameters">(dialogs: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>load_translations_text</code><span class="parameters">(dialogs: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Load dialog translations text.</p>
 <hr/>

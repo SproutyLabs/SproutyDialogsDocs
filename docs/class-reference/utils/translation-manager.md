@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # SproutyDialogsTranslationManager
 
-**Inherits**: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)
+**Inherits**: [RefCounted](https://docs.godotengine.org/en/stable/classes/class_refcounted.html)
 
 ## Description
 
@@ -21,13 +21,13 @@ This class manages the translations for the Sprouty Dialogs plugin. It provides 
 ## Method Descriptions
 
 <h3 id="get-translated-dialog-method">
-  <span class="reference-type">func </span><code>get_translated_dialog</code><span class="parameters">(key: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog_data: <a href="/docs/class-reference/resources/dialogue-data">SproutyDialogsDialogueData</a>)</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+  <span class="reference-type">func </span><code>get_translated_dialog</code><span class="parameters">(key: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog_data: <a target="_blank" href="/docs/class-reference/resources/dialogue-data">SproutyDialogsDialogueData</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Returns the translated dialog text for a given key in a [DialogueData](/docs/class-reference/resources/dialogue-data).</p>
 <hr/>
 
 <h3 id="get-translated-character-name-method">
-  <span class="reference-type">func </span><code>get_translated_character_name</code><span class="parameters">(key_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, character_data: <a href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a>)</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+  <span class="reference-type">func </span><code>get_translated_character_name</code><span class="parameters">(key_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, character_data: <a target="_blank" href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Returns the translated character name for a given key in a [CharacterData](/docs/class-reference/resources/character-data).</p>
 <hr/>

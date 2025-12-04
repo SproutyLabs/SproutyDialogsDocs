@@ -26,7 +26,7 @@ This class handles CSV files operations for saving and loading translations. It 
 ## Method Descriptions
 
 <h3 id="save-file-method">
-  <span class="reference-type">func </span><code>save_file</code><span class="parameters">(header: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, data: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, file_path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>save_file</code><span class="parameters">(header: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, file_path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Save data to a CSV file. The data is provided as an array of arrays, where each inner array represents a row in the CSV file. The header is an array representing the first row of the CSV file.
@@ -34,64 +34,64 @@ This class handles CSV files operations for saving and loading translations. It 
 <hr/>
 
 <h3 id="load-file-method">
-  <span class="reference-type">func </span><code>load_file</code><span class="parameters">(file_path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+  <span class="reference-type">func </span><code>load_file</code><span class="parameters">(file_path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
 </h3>
 <p>Load data from a CSV file. Returns an array with the CSV data.</p>
 <hr/>
 
 <h3 id="update-row-method">
-  <span class="reference-type">func </span><code>update_row</code><span class="parameters">(file_path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, header: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, row: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>update_row</code><span class="parameters">(file_path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, header: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, row: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Add or update a row in a CSV file. If the row with the same key exists, it will be updated. If not, it will be added to the end of the file.</p>
 <hr/>
 
 <h3 id="new-csv-template-file-method">
-  <span class="reference-type">func </span><code>new_csv_template_file</code><span class="parameters">(name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+  <span class="reference-type">func </span><code>new_csv_template_file</code><span class="parameters">(name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Create a new CSV template file. Returns the path of the created file or an empty string if an error occurred.</p>
 <hr/>
 
 <h3 id="save-dialogs-on-csv-method">
-  <span class="reference-type">func </span><code>save_dialogs_on_csv</code><span class="parameters">(dialogs: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>, path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>save_dialogs_on_csv</code><span class="parameters">(dialogs: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>, path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Save all dialogs from a dictionary to a CSV file. Update existing rows or add new ones if the dialog key does not exist and save the file with all the dialogs without removing any existing data.</p>
 <hr/>
 
 <h3 id="load-dialogs-from-csv-method">
-  <span class="reference-type">func </span><code>load_dialogs_from_csv</code><span class="parameters">(path: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>load_dialogs_from_csv</code><span class="parameters">(path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>
   Load all dialogs from a CSV file to a dictionary. Returns a dictionary with the dialogue data as:
 </p>
-<pre><code>
-{`{ 
-	  dialog_key: {
-		locale_1: translated_dialog_1,
-		locale_2: translated_dialog_2,
-		...
-	  },
-	  ...
-}`}
-</code></pre>
+```gdscript
+{ 
+  "dialogue_id_1": {
+    "locale_code_1": "Translated text in locale 1",
+    "locale_code_2": "Translated text in locale 2",
+    ...
+  },
+  ...
+}
+```
 <hr/>
 
 <h3 id="save-character-names-on-csv-method">
-  <span class="reference-type">func </span><code>save_character_names_on_csv</code><span class="parameters">(key_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, name_data: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>save_character_names_on_csv</code><span class="parameters">(key_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, name_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Save character name translations on the CSV file.</p>
 <hr/>
 
 <h3 id="load-character-names-from-csv-method">
-  <span class="reference-type">func </span><code>load_character_names_from_csv</code><span class="parameters">(key_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>load_character_names_from_csv</code><span class="parameters">(key_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>
   Load character name translations from a CSV file to a dictionary. Returns a dictionary with the character names as:
 </p>
-<pre><code>
-{`{ 
-	  locale_1: translated_name_1,
-	  locale_2: translated_name_2,
-	  ...
-}`}
-</code></pre>
+```gdscript
+{ 
+  "locale_code_1": "Translated name in locale 1",
+  "locale_code_2": "Translated name in locale 2",
+  ...
+}
+```
 <hr/>

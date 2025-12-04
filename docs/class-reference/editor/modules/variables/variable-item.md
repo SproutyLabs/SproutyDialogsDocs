@@ -40,21 +40,21 @@ Component that represents a single variable item in the variable editor panel. I
 
 <h3 id="modified-signal">
   <span class="reference-type">signal </span><code>modified</code>
-  <span class="parameters">(modified: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
+  <span class="parameters">(modified: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
 </h3>
 <p>Emitted when the variable is modified.</p>
 <hr/>
 
 <h3 id="variable-changed-signal">
   <span class="reference-type">signal </span><code>variable_changed</code>
-  <span class="parameters">(var_data: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
+  <span class="parameters">(var_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when the variable is changed.</p>
 <hr/>
 
 <h3 id="variable-renamed-signal">
   <span class="reference-type">signal </span><code>variable_renamed</code>
-  <span class="parameters">(old_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, new_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(old_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, new_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when the variable is renamed.</p>
 <hr/>
@@ -67,14 +67,14 @@ Component that represents a single variable item in the variable editor panel. I
 
 <h3 id="open-text-editor-signal">
   <span class="reference-type">signal </span><code>open_text_editor</code>
-  <span class="parameters">(text_box: <a href="https://docs.godotengine.org/en/stable/classes/class_lineedit.html">LineEdit</a>)</span>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_lineedit.html">LineEdit</a>)</span>
 </h3>
 <p>Emitted when an expand button is pressed to open the text editor.</p>
 <hr/>
 
 <h3 id="update-text-editor-signal">
   <span class="reference-type">signal </span><code>update_text_editor</code>
-  <span class="parameters">(text_box: <a href="https://docs.godotengine.org/en/stable/classes/class_lineedit.html">LineEdit</a>)</span>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_lineedit.html">LineEdit</a>)</span>
 </h3>
 <p>Emitted when change the focus to another text box to update the text editor.</p>
 <hr/>
@@ -83,21 +83,21 @@ Component that represents a single variable item in the variable editor panel. I
 
 <h3 id="parent-group-var">
   <span class="reference-type">var </span><code>parent_group</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> = null</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> = null</span>
 </h3>
 <p>Parent group of the item. Can be an [EditorSproutyDialogsVariableGroup](/docs/class-reference/editor/modules/variables/variable-group.md) or the main container.</p>
 <hr/>
 
 <h3 id="new-item-var">
   <span class="reference-type">var </span><code>new_item</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
 </h3>
 <p>Flag to indicate that the item has just been created.</p>
 <hr/>
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
 </h3>
 <p>UndoRedo manager for handling undo/redo operations.</p>
 <hr/>
@@ -105,59 +105,59 @@ Component that represents a single variable item in the variable editor panel. I
 ## Method Descriptions
 
 <h3 id="get-variable-data-method">
-  <span class="reference-type">func </span><code>get_variable_data</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>get_variable_data</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>
   Returns the variable data as a dictionary with the following structure:
 </p>
-<pre><code>
-{`{
-	  "name": String,
-	  "type": int,
-	  "value": Variant,
-	  "metadata": Dictionary
-}`}
-</code></pre>
+```gdscript
+{
+  "name": String,
+  "type": int,
+  "value": Variant,
+  "metadata": Dictionary
+}
+```
 <hr/>
 
 <h3 id="get-item-path-method">
-  <span class="reference-type">func </span><code>get_item_path</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+  <span class="reference-type">func </span><code>get_item_path</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Return the item path in the variables tree. For items in groups, returns the full path (e.g., "GroupName/VariableName").</p>
 <hr/>
 
 <h3 id="get-item-name-method">
-  <span class="reference-type">func </span><code>get_item_name</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+  <span class="reference-type">func </span><code>get_item_name</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Returns the variable name.</p>
 <hr/>
 
 <h3 id="get-type-method">
-  <span class="reference-type">func </span><code>get_type</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></span>
+  <span class="reference-type">func </span><code>get_type</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></span>
 </h3>
 <p>Returns the variable type.</p>
 <hr/>
 
 <h3 id="get-value-method">
-  <span class="reference-type">func </span><code>get_value</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
+  <span class="reference-type">func </span><code>get_value</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
 </h3>
 <p>Returns the variable value.</p>
 <hr/>
 
 <h3 id="set-item-name-method">
-  <span class="reference-type">func </span><code>set_item_name</code><span class="parameters">(new_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_item_name</code><span class="parameters">(new_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Rename the variable item and update the path tooltip.</p>
 <hr/>
 
 <h3 id="set-type-method">
-  <span class="reference-type">func </span><code>set_type</code><span class="parameters">(type: <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, metadata: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, metadata: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the variable type and metadata. Updates the value field to match the new type.</p>
 <hr/>
 
 <h3 id="set-value-method">
-  <span class="reference-type">func </span><code>set_value</code><span class="parameters">(value: <a href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_value</code><span class="parameters">(value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the variable value. The value type must match the current variable type.</p>
 <hr/>
@@ -169,7 +169,7 @@ Component that represents a single variable item in the variable editor panel. I
 <hr/>
 
 <h3 id="mark-as-modified-method">
-  <span class="reference-type">func </span><code>mark_as_modified</code><span class="parameters">(was_modified: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>mark_as_modified</code><span class="parameters">(was_modified: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Mark the variable item as modified. Shows a visual indicator when modified.</p>
 <hr/>
@@ -181,7 +181,7 @@ Component that represents a single variable item in the variable editor panel. I
 <hr/>
 
 <h3 id="show-drop-highlight-method">
-  <span class="reference-type">func </span><code>show_drop_highlight</code><span class="parameters">(above: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>show_drop_highlight</code><span class="parameters">(above: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Show the drop highlight for drag-and-drop operations. Displays above or below the item based on the parameter.</p>
 <hr/>

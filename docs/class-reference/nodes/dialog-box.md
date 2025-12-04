@@ -76,14 +76,14 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="meta-clicked-signal">
   <span class="reference-type">signal </span><code>meta_clicked</code>
-  <span class="parameters">(meta: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(meta: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a meta tag is clicked in the dialog.</p>
 <hr/>
 
 <h3 id="option-selected-signal">
   <span class="reference-type">signal </span><code>option_selected</code>
-  <span class="parameters">(option_index: <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
+  <span class="parameters">(option_index: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
 </h3>
 <p>Emitted when the player selects an option.</p>
 <hr/>
@@ -92,28 +92,28 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="typing-speed-var">
   <span class="reference-type">var </span><code>typing_speed</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a></span>
 </h3>
 <p>Typing speed of the dialog text in seconds.</p>
 <hr/>
 
 <h3 id="max-characters-var">
   <span class="reference-type">var </span><code>max_characters</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></span>
 </h3>
 <p>Maximum number of characters to be displayed in the dialog box. The dialogue will be split according to this limit and displayed in parts if the `split_dialog_by_max_characters` setting is active.</p>
 <hr/>
 
 <h3 id="dialog-display-var">
   <span class="reference-type">var </span><code>dialog_display</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span> <span class="alert-text"> *</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span> <span class="alert-text"> *</span>
 </h3>
 <p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where dialogue will be displayed. <b class="alert-text">This component is required to display the dialogue text in it.</b></p>
 <hr/>
 
 <h3 id="name-display-var">
   <span class="reference-type">var </span><code>name_display</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span>
 </h3>
 <p>[RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where character name will be displayed. <b>If you want to display the character name in the dialog box, you need to set this property.</b></p>
 
@@ -121,7 +121,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="continue-indicator-var">
   <span class="reference-type">var </span><code>continue_indicator</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
 </h3>
 <p>Visual indicator to indicate press for continue the dialogue (e.g. an arrow). <b>If you want to display a continue indicator in the dialog box, you need to set this property.</b></p>
 
@@ -129,7 +129,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="portrait-display-var">
   <span class="reference-type">var </span><code>portrait_display</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a></span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a></span>
 </h3>
 <p>Node where the character portrait will be displayed (parent node). <b>If you want to display the portrait in the dialog box, you need to set this property.</b></p>
 
@@ -137,7 +137,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="options-container-var">
   <span class="reference-type">var </span><code>options_container</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_container.html">Container</a></span> <span class="alert-text"> *</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_container.html">Container</a></span> <span class="alert-text"> *</span>
 </h3>
 <p>Container where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/es/4.x/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/es/4.x/classes/class_gridcontainer.html) to display the options. <b class="alert-text">This component is required to display the dialog options in it.</b></p>
 
@@ -145,9 +145,9 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="option-template-var">
   <span class="reference-type">var </span><code>option_template</code>
-  <span class="default-value"> : <a href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span> <span class="alert-text"> *</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span> <span class="alert-text"> *</span>
 </h3>
-<p>Node that will be used as a template for the options in the dialog box. It should be a <a href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it. <b class="alert-text">This component is required to display the dialog options.</b></p>
+<p>Node that will be used as a template for the options in the dialog box. It should be a <a target="_blank" href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it. <b class="alert-text">This component is required to display the dialog options.</b></p>
 
 <hr/>
 
@@ -178,7 +178,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <hr/>
 
 <h3 id="play-dialog-method">
-  <span class="reference-type">func </span><code>play_dialog</code><span class="parameters">(character_name: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>play_dialog</code><span class="parameters">(character_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Play a dialog on dialog box. Displays the character name and dialog text with typing animation.</p>
 <hr/>
@@ -196,25 +196,25 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <hr/>
 
 <h3 id="stop-dialog-method">
-  <span class="reference-type">func </span><code>stop_dialog</code><span class="parameters">(close_dialog: <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>stop_dialog</code><span class="parameters">(close_dialog: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Stop the dialog. If `close_dialog` is true, the dialog box will be closed.</p>
 <hr/>
 
 <h3 id="is-displaying-portrait-method">
-  <span class="reference-type">func </span><code>is_displaying_portrait</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a></span>
+  <span class="reference-type">func </span><code>is_displaying_portrait</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a></span>
 </h3>
 <p>Return if the dialog box is displaying a portrait.</p>
 <hr/>
 
 <h3 id="display-portrait-method">
-  <span class="reference-type">func </span><code>display_portrait</code><span class="parameters">(character_parent: <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>, portrait_node: <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>display_portrait</code><span class="parameters">(character_parent: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>, portrait_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set a portrait to be displayed in the dialog box.</p>
 <hr/>
 
 <h3 id="display-options-method">
-  <span class="reference-type">func </span><code>display_options</code><span class="parameters">(options: <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>display_options</code><span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Display the dialog options.</p>
 <hr/>

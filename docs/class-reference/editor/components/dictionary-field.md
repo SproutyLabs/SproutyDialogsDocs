@@ -31,28 +31,28 @@ This component is used to create a field for display a dictionary. It allows the
 
 <h3 id="dictionary-changed-signal">
   <span class="reference-type">signal </span><code>dictionary_changed</code>
-  <span class="parameters">(dictionary: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
+  <span class="parameters">(dictionary: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when the dictionary is changed.</p>
 <hr/>
 
 <h3 id="item-changed-signal">
   <span class="reference-type">signal </span><code>item_changed</code>
-  <span class="parameters">(item: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
+  <span class="parameters">(item: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when an item in the dictionary is changed.</p>
 <hr/>
 
 <h3 id="item-added-signal">
   <span class="reference-type">signal </span><code>item_added</code>
-  <span class="parameters">(item: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
+  <span class="parameters">(item: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when a new item is added to the dictionary.</p>
 <hr/>
 
 <h3 id="item-removed-signal">
   <span class="reference-type">signal </span><code>item_removed</code>
-  <span class="parameters">(item: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
+  <span class="parameters">(item: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when an item is removed from the dictionary.</p>
 <hr/>
@@ -60,41 +60,41 @@ This component is used to create a field for display a dictionary. It allows the
 ## Method Descriptions
 
 <h3 id="get-dictionary-method">
-  <span class="reference-type">func </span><code>get_dictionary</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>get_dictionary</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>
   Return the current dictionary of items data. Each item is a dictionary with the following structure:
 </p>
-<pre><code>
-{`{
-    "key": String,
-    "type": int,
-    "value": Variant,
-    "metadata": Dictionary
-}`}
-</code></pre>
+```gdscript
+{
+  "key": String,
+  "type": int,
+  "value": Variant,
+  "metadata": Dictionary
+}
+```
 <hr/>
 
 <h3 id="get-keys-method">
-  <span class="reference-type">func </span><code>get_keys</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+  <span class="reference-type">func </span><code>get_keys</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
 </h3>
 <p>Return the keys of the dictionary items.</p>
 <hr/>
 
 <h3 id="get-items-values-method">
-  <span class="reference-type">func </span><code>get_items_values</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>get_items_values</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Return the values of the dictionary items.</p>
 <hr/>
 
 <h3 id="get-items-types-method">
-  <span class="reference-type">func </span><code>get_items_types</code><span class="parameters">()</span><span class="return-type"> -> <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">func </span><code>get_items_types</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Return the types of the dictionary items.</p>
 <hr/>
 
 <h3 id="set-dictionary-method">
-  <span class="reference-type">func </span><code>set_dictionary</code><span class="parameters">(items: <a href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_dictionary</code><span class="parameters">(items: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the array component with a given dictionary.</p>
 <hr/>
