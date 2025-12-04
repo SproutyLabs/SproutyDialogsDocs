@@ -105,14 +105,14 @@ Also, variables can be of the **expression type**. This type allows you to have 
 
 ---
 
-You can use the variables of Sprouty Dialogs from scripts outside the plugin. You can access them from the **Sprouty Dialogs autoload** by the `variables` property:
+You can use the variables of Sprouty Dialogs from scripts outside the plugin. You can access them from the **Sprouty Dialogs autoload** by the `Variables` property:
 
 ```gdscript
 # Get variable value
-SproutyDialogs.variables.get_variable("variable_name")
+SproutyDialogs.Variables.get_variable("variable_name")
 
 # Get variable inside a group
-SproutyDialogs.variables.get_variable("variable_group/variable_name")
+SproutyDialogs.Variables.get_variable("variable_group/variable_name")
 ```
 
 :::info[Important]
@@ -125,21 +125,21 @@ Also, you can change the value of a variable, check if exist, and other useful t
 
 ```gdscript
 # Change the value of a variable
-SproutyDialogs.variables.set_variable("variable_name")
+SproutyDialogs.Variables.set_variable("variable_name")
 
 # Check if a variable exist
-SproutyDialogs.variables.has_variable("variable_name")
+SproutyDialogs.Variables.has_variable("variable_name")
 
 
 # Get a list with the names of the variables in a group
-SproutyDialogs.variables.get_variables_in_group("group_name")
+SproutyDialogs.Variables.get_variables_in_group("group_name")
 
 # Check if a variable is in a group
-SproutyDialogs.variables.is_variable_in_group("variable_name", "group_name")
+SproutyDialogs.Variables.is_variable_in_group("variable_name", "group_name")
 
 
 # Reset a variable to its initial value
-SproutyDialogs.variables.reset_variable("variable_name")
+SproutyDialogs.Variables.reset_variable("variable_name")
 ```
 
 See the [variable manager class reference](/docs/class-reference/utils/variable-manager.md) for more information.

@@ -14,7 +14,7 @@ It loads the character data, dialog boxes and portraits. It also provides method
 
 :::info[Important]
 
-This manager is used at runtime as an internal singleton to handle dialog resources. **You should not access or use this class directly.** Instead, you should access it through the **Sprouty Dialogs autoload**.
+This manager is used at runtime as an internal singleton to handle dialog resources. **You shouldn't instantiate this class directly. Instead, access the singleton through the [Sprouty Dialogs autoload](/docs/class-reference/core/sprouty-dialogs-manager.md).**
 
 :::
 
