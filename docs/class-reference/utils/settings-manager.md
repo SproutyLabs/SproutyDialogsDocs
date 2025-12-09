@@ -12,7 +12,7 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
 
 :::info[Important]
 
-**You shouldn't instantiate this class, use it directly as `SproutyDialogsSettingsManager`, or access it through the [Sprouty Dialogs autoload](/docs/class-reference/core/sprouty-dialogs-manager.md).**
+**You shouldn't instantiate this class directly**, use `SproutyDialogsSettingsManager` as a global class. Preferably use it **through the [Sprouty Dialogs autoload](/docs/class-reference/core/sprouty-dialogs-manager.md)** instead, as it is the recommended option.
 
 :::
 
@@ -23,7 +23,8 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
 | [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_setting](#get-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                      |
 | void                                                                         | [set_setting](#set-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)) |
 | [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)       | [has_setting](#has-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                      |
-| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [reset_setting](#reset-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                  |
+| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_default_setting](#get-default-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                      |
+| void                                                                         | [reset_setting](#reset-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                  |
 | void                                                                         | [initialize_default_settings](#initialize-default-settings-method)()                                                                                                                                              |
 
 ## Constants
@@ -60,10 +61,16 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
 <p>Checks if a setting exists in the plugin settings.</p>
 <hr/>
 
-<h3 id="reset-setting-method">
-  <span class="reference-type">func </span><code>reset_setting</code><span class="parameters">(setting_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
+<h3 id="get-default-setting-method">
+  <span class="reference-type">func </span><code>get_default_setting</code><span class="parameters">(setting_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
 </h3>
-<p>Reset a setting to its default value. Returns the default value.</p>
+<p>Returns the default value of a setting.</p>
+<hr/>
+
+<h3 id="reset-setting-method">
+  <span class="reference-type">func </span><code>reset_setting</code><span class="parameters">(setting_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Reset a setting to its default value.</p>
 <hr/>
 
 <h3 id="initialize-default-settings-method">
