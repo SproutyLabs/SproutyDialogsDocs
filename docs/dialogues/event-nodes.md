@@ -36,11 +36,11 @@ To write your dialogues, you can expand the text box **clicking on the right but
 
 :::info[Using Translations]
 
-When you use **translations**, this node also allows you to edit the translations here in the same way. A text box is added for each **locale** or language that you have set in the [translation settings](), and can be accessed through a new expandable section called “translations” at the bottom of the node.
+When you use **translations**, this node also allows you to edit the translations here in the same way. A text box is added for each **locale** or language that you have set in the [translation settings](/docs/settings#locales-settings), and can be accessed through a new expandable section called “translations” at the bottom of the node.
 
 ![Dialogue Node with Translations](../../static/img/screenshots/event-nodes/dialogue_node_with_translations.png)
 
-The main dialogue text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](). In this example, you can see that the default locale is English (en).
+The main dialogue text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](/docs/settings#locales-settings). In this example, you can see that the default locale is English (en).
 
 :::
 
@@ -56,11 +56,11 @@ Each option will be displayed in a [DialogOption](/docs/class-reference/nodes/di
 
 :::info[Using Translations]
 
-When you use **translations**, this node also allows you to edit the translations here in the same way that in the dialogue nodes. For each option, a new expandable "translations" section is added at the bottom, with a text box for each locale or language that you have set in the [translation settings]().
+When you use **translations**, this node also allows you to edit the translations here in the same way that in the dialogue nodes. For each option, a new expandable "translations" section is added at the bottom, with a text box for each locale or language that you have set in the [translation settings](/docs/settings#locales-settings).
 
 ![Options Node](../../static/img/screenshots/event-nodes/options_node_with_translations.png)
 
-In the same way as before, the main option text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](). In this example, the default locale is English (en).
+In the same way as before, the main option text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](/docs/settings#locales-settings). In this example, the default locale is English (en).
 
 :::
 

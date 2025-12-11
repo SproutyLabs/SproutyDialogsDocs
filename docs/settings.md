@@ -84,7 +84,7 @@ Let's take a look at each category and its settings.
 
 - `Use CSV files`: Enable the use of CSV files for translations. Otherwise, translations will be saved in the **dialogue data file**.
 
-- `CSV Translations Folder`: Path to the directory of the CSV translation files. This directory **must contain all the CSV files used for the dialogs** _(It is necessary to collect all translations in godot)._
+- `CSV Translations Folder`: Path to the directory of the CSV translation files. This directory **must contain all the CSV files used for the dialogs** _(It is necessary to collect the translations into godot)._
 
   :::warning[Important]
 
@@ -103,7 +103,7 @@ Let's take a look at each category and its settings.
 
 - `Collect translations`: Collect the translations from CSV files into Godot so they can be used. You can find the collected translations in **Project settings > Localization > Translations**.
 
-### Locale Settings
+### Locales Settings
 
 - `Default locale`: The locale in which the **dialogues are going to be written by default** in the plugin.
 
@@ -124,8 +124,6 @@ Let's take a look at each category and its settings.
 - `Locales`: Set the locales into which the dialogs will be translated.
 
   > _The locales are the combination of a **language with a region or country** in which the dialogs will be translated. In this list, you can add and remove the locales in which you want to translate your dialogs._
-  >
-  > _This allows to **configure the plugin to handle this locales**, mainly to add the text boxes necessaries to write the translations in it, but also to save the translations correctly._
   >
   > ![Locales List](./../static/img/screenshots/settings/locales_list.png)
   >
