@@ -77,41 +77,49 @@ This **only works on the editor**, may not work in exported projects. To change 
 
 By default, translations will be saved in the same `.tres` file you are working on, in the **dialogue data file** or **character data file** where you are writing the translations.
 
-For dialogues translations, **each dialogue text has a unique key associated with it**. Therefore, each dialogue in a `dialogue node` has an associated key, and each **option** in an `option node` also has a key.
+For dialogues translations, **each dialogue has a unique key associated with it**. Therefore, each dialogue text in a `Dialogue Node` has an associated key, and each **option** text in an `Options Node` also has a key.
 
-> On the one hand, each **dialogue** from a **dialogue node** has a key with the format:
->
-> ```gdscript
-> <START_ID>_DIALOG_<NODE_INDEX>
-> ```
->
-> _For example, the key of the dialogue text from the `Dialogue Node #1` that belongs to the dialogue tree with start id `EXAMPLE` is `EXAMPLE_DIALOG_1`._
+:::note[Dialogue keys format]
 
-> For the other hand, each **option** dialogue from a **options node** has a key with the format:
->
-> ```gdscript
-> <START_ID>_OPT<NODE_INDEX>_<OPTION_INDEX>
-> ```
->
-> F*or example, the key of the dialogue text from the second option of the `Options Node #1` that belongs to the dialogue tree with start id `EXAMPLE` is `EXAMPLE_OPT1_2`.*
+Each **dialogue** text from a **dialogue node** has a key with the format:
 
-In that way, you also can edit the translations outside the plugin, editing the **dialogs dictionary** in the `.tres` file, recognizing each dialogue by its key.
+```gdscript
+<START_ID>_DIALOG_<NODE_INDEX>
+```
 
-However, if you want to edit the translation outside of the plugin, it's better to use CSV files.
+> For example, `EXAMPLE_DIALOG_1` is the key of the dialogue text from `Dialogue Node #1` that belongs to the dialogue tree with start ID: `EXAMPLE`.
+
+For the other hand, each **option** text from a **options node** has a key with the format:
+
+```gdscript
+<START_ID>_OPT<NODE_INDEX>_<OPTION_INDEX>
+```
+
+> For example, `EXAMPLE_OPT1_2` is the key of the dialogue text from the **second option** of `Options Node #1` that belongs to the dialogue tree with start ID: `EXAMPLE`.
+
+:::
+
+In that way, you also can edit the translations outside the plugin, editing the dialogues from the **dialogs** dictionary in the `.tres` file.
+
+However, if you want to edit translations mainly outside the plugin, it's better to use CSV files.
 
 ## Using CSV files
 
 ---
 
+The most common way to localize games is using spreadsheets. Godot support CSV files for that, how its described in the guide [localization using spreadsheets in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_spreadsheets.html#doc-localization-using-spreadsheets). Sprouty Dialogs uses Godot's integrated localization system to use translations in CSV format.
+
 To use CSV files for translations, you need to enable the `Use CSV files` setting in the [translation settings](/docs/settings#translation-settings).
 
 ![Enable CSV Files](./../static/img/screenshots/translations/enable_csv_files.png)
 
-Once enabled, you can see new settings such as `CSV translation folder`, where you need to **select a directory where the CSV translations files will be saved**. This is required to **collect the translations into Godot**.
+Once enabled, you can see new settings such as `CSV translation folder`, where you need to **select a directory where the CSV translations files will be saved**.
+
+This is required to **collect the translations into the project**, because Godot needs to import all the CSV files as translations files to use them, how is described in [internationalizing games in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html).
 
 :::info[Important]
 
-Godot needs to import all the CSV files as translations files to use them, how is described in [internationalizing games in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html). So the plugin **automatically collect all the CSV files** that find in the indicated folder **when a dialogue or character file is saved**.
+The plugin **automatically collect all the CSV files** that find in the selected translations folder **when a dialogue or character file is saved**.
 
 In this way, you don't need to collect them manually, but in case that something went wrong, or you change the file outside the plugin, you can click on the `Collect Translations` button to do so.
 
@@ -123,35 +131,81 @@ _The csv translations folder can contain subfolders to organize them if you wish
 
 :::
 
-Now that the using of CSV files is enabled and the translations folder is setted, when you create a new dialogue file Sprouty Dialogs **automatically will create a new CSV file with the same name in the translations folder**, where your translations will be saved.
+Now that the using of CSV files is enabled and the translations folder is setted, when you create a **new dialogue file** Sprouty Dialogs **automatically will create a new CSV file with the same name in the translations folder**, where your translations will be saved.
 
-You can find the CSV file associated to your dialogue file in the new `CSV Translation File` field at the bottom of the side bar.
+You can find the CSV file associated to your dialogue file in the `CSV Translation File` field at the bottom of the side bar. Here **you can change the CSV file** where your translations will be saved if you want.
 
-[CSV File in Dialogue Image]
-
-Here **you can change the CSV file** where your translations will be saved if you want.
+![CSV File in Dialogue](./../static/img/screenshots/translations/csv_file_example.png)
 
 :::info
 
-The **CSV files are updated on save**. Each dialogue or translation text changed is updated, but the rest of the content in the CSV is **not replaced or deleted**.
-
-_So a single CSV file can contain the translations for **more than one dialogue file!**_
+**CSV files are updated on save**. Any modified dialog or translated text is updated, but the rest of the CSV content is not replaced or deleted. Therefore, a single CSV file can _**contain translations for more than one dialogue file**_, so you can associate a CSV to more than one dialogue file.
 
 Just make sure that **each dialogue has a unique key**, which means that **each dialogue tree needs a unique ID**, to avoid overriding errors.
 
 :::
 
-(explain fallback to resource)
-
 ### Editing CSV files
 
-The CSV format is simple and you can edit it outside the plugin, using any spreadsheet software, like Excel or Google Sheets.
+You can edit the CSV files **outside the plugin**, using any spreadsheet software, like Excel or Google Sheets. You can even edit them as plain text. This is because CSV files are a simple, plain text file format for storing tabular data, like spreadsheets, where each line is a row and the values within a row, separated by commas, define the columns.
 
-(explain csv format)
+Specifically, the CSV format for translations looks like this:
+
+```
+keys,en,es,ja
+HELLO_DIALOG_1,Hello There!,¡Hola!,こんにちは！
+HELLO_DIALOG_2,Hiii!,¡Holiiis!,やあ！
+```
+
+That is equivalent to this table:
+
+| keys           | en           | es        | ja           |
+| -------------- | ------------ | --------- | ------------ |
+| HELLO_DIALOG_1 | Hello There! | ¡Hola!    | こんにちは！ |
+| HELLO_DIALOG_2 | Hiii!        | ¡Holiiis! | やあ！       |
+
+How you can see, the first column have the **keys of each dialogue** (in the same format than was explained [here](#how-translations-are-saved)), and then each of the others columns have the **translated dialogue in a specific locale**. For example, here we have two dialogues translated to English, Spanish and Japanese.
+
+If you edit the CSV translations outside the plugin, when you open the dialogue file associated, the dialogues are going to be updated as well. You must open and **save the associated dialogue file to collect the updated translations** before running the dialogues, or they may not be updated in the project.
+
+:::info[What if some dialogue is missing?]
+
+When you edit CSV files outside of the plugin, some problems may occur, such as some **dialogue keys and their translations being missing**, either because they were accidentally deleted or for some other reason. For this cases, there is a `Fallback to resource` setting.
+
+If `Fallback to resource` is enabled, when you open a dialogue file and a **key is not found in the CSV**, the dialogue will be **loaded from the dialogue file instead**. This is a editor-only feature to allows you to restore the dialogue missing in case that the CSV have some error, this not work on run.
+
+_The dialogue file always have a copy of the dialogues, so you can recover the missing dialogues from there._
+
+    :::warning[Important]
+
+    If you edit the CSV file outside the plugin, and you have not **updated the dialogue file** opening and saving it again, the dialogue data file will not have the dialogues updated. So then if you lose a dialogue from the CSV, you cannot be able to recover it.
+
+    :::
 
 ### Character names using CSV
 
-(explain csv for character names)
+To translate character names using CSV files, you need to have enabled `Use CSV files`, and enable `Translate charater names` for then enable the `Use CSV for character names` setting.
+
+![Enable CSV Files](./../static/img/screenshots/translations/enable_csv_files.png)
+
+If you already have the CSV translations folder set up (which you **should** have!), when you enable the `Use CSV for character names` setting, a **new CSV file is going to be automatically created** in that folder. This file is called `character_names.csv` by default, and _all the character names and its translations will be saved here._
+
+The CSV format for the character names look like this:
+
+```
+keys,en,es,ja
+sprouty,Sprouty,El Brotes,スプラウティ
+```
+
+That is equivalent to this table:
+
+| keys    | en      | es        | ja           |
+| ------- | ------- | --------- | ------------ |
+| sprouty | Sprouty | El Brotes | スプラウティ |
+
+How you can see, here we use the **file name or key name of the character** as the translations key.
+
+You can change the CSV file where the character names will be saved in the translation settings.
 
 ## Changing the language
 
