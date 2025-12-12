@@ -194,18 +194,18 @@ The CSV format for the character names look like this:
 
 ```
 keys,en,es,ja
-sprouty,Sprouty,El Brotes,スプラウティ
+SPROUTY_CHAR,Sprouty,El Brotes,スプラウティ
 ```
 
 That is equivalent to this table:
 
-| keys    | en      | es        | ja           |
-| ------- | ------- | --------- | ------------ |
-| sprouty | Sprouty | El Brotes | スプラウティ |
+| keys         | en      | es        | ja           |
+| ------------ | ------- | --------- | ------------ |
+| SPROUTY_CHAR | Sprouty | El Brotes | スプラウティ |
 
-How you can see, here we use the **file name or key name of the character** as the translations key.
+As you can see, in this case we use the **file name or character key name** in uppercase, along with the suffix `_CHAR` as the translation key format. This is to ensure that character name keys are not confused with other translation keys.
 
-You can change the CSV file where the character names will be saved in the translation settings.
+You can change the CSV file where the character names will be saved in the [translation settings](/docs/settings#translation-settings).
 
 ## Changing the language
 
