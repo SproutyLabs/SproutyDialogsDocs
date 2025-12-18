@@ -32,7 +32,7 @@ This node is where you set the dialogues to display. This node allows you to wri
 
 ![Dialogue Node](../../static/img/screenshots/event-nodes/dialogue_node.png)
 
-To write your dialogues, you can expand the text box **clicking on the right button** that will open the **text editor** on the right side. Here you can easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to the text in a user-friendly interface, so you don't have to remember all the tags and its properties. For more details about the text editor, see the [text editor section]().
+To write your dialogues, you can expand the text box **clicking on the right button** that will open the **text editor** on the right side. Here you can easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to the text in a user-friendly interface, so you don't have to remember all the tags and its properties. For more details about the text editor, see the [text editor section](/docs/dialogues/text-editor.md).
 
 :::info[Using Translations]
 

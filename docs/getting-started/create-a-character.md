@@ -129,7 +129,7 @@ Congratulations! You have created your first character and used it in your dialo
 Now you know the basics of Sprouty Dialogs, but we've only scratched the surface! Here are some tutorials that you may find useful for your creations:
 
 - [Event Nodes](/docs/dialogues/event-nodes.md)
-- [Use Variables](/docs/variables/use-variables.md)
-- [Use Translations](/docs/translations/use-translations.md)
+- [Variables](/docs/variables.md)
+- [Translations](/docs/translations.md)
 - [Customize Dialog Boxes](/docs/dialog-boxes/customize-dialog-boxes.md)
 - [Customize Portraits](/docs/characters/customize-portraits.md)
