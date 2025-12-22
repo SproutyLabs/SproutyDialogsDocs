@@ -122,9 +122,19 @@ You can change the following properties:
 
 ### Insert Variables
 
-To insert a variable, you can use the **Insert Variable** option in the toolbar. You must **enter the variable name in the input field** and press `[Enter]` to add it. This is not a BBCode tag, but a special placeholder that will be replaced with the variable's value at runtime. Its format is: `{variable_name}`
+To insert a variable, you can use the **Insert Variable** option in the toolbar. You can **select the type of the variable** to filter the variables shown in the dropdown when you **enter the variable name in the input field**, and then **select it from the dropdown** or press `[Enter]` to add it.
+
+In this case, we do not insert a BBCode tag here, but rather a special placeholder that will be replaced by the value of the variable at runtime. Its format is: `{variable_name}`.
 
 ![Insert Variable](../../static/img/screenshots/text-editor/insert_variable.png)
+
+:::info[Important]
+
+You can insert any variable defined in the plugin, **including global variables**, but they are not going to be displayed in the text editor, because their values are only known at runtime.
+
+:::
+
+For more information about variables, you can check the [variables section](/docs/variables.md).
 
 ### Insert Images
 

@@ -54,7 +54,11 @@ With the variables configured here, you can do many things! Let's take a look.
 
 - Also, you can use **global variables from Autoloads**. To use global variables, you need to write the variable as `{AutoloadName.variable_name}` to use them.
 
-You can also use expressions inside the brackets. See the [using expressions section](#using-expressions).
+- You can also use expressions inside the brackets. See the [using expressions section](#using-expressions).
+
+When you edit dialogues using the text editor, you can see a list of available variables filtered by type to insert variables more easily. For more information, see the [text editor section](/docs/dialogues/text-editor#insert-variables).
+
+![Insert Variable](../static/img/screenshots/text-editor/insert_variable.png)
 
 ### Variables in character names
 
