@@ -10,7 +10,7 @@ sidebar_position: 9
 
 Component to display a text box with header labels that indicates the language and locale code of the translation.
 
-Needs a text box child node that can be a [LineEdit](https://docs.godotengine.org/es/4.x/classes/class_lineedit.html), [TextEdit](https://docs.godotengine.org/en/stable/classes/class_textedit.html) or [ExpandableTextBox](/docs/class-reference/editor/components/expandable-text-box).
+Needs a text box child node that can be a [LineEdit](https://docs.godotengine.org/en/stable/classes/class_lineedit.html), [TextEdit](https://docs.godotengine.org/en/stable/classes/class_textedit.html) or [ExpandableTextBox](/docs/class-reference/editor/components/expandable-text-box).
 
 ## Methods
 

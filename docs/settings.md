@@ -56,7 +56,7 @@ Let's take a look at each category and its settings.
 
 - `Default typing speed`: Time in seconds that the text takes to reveal each character. The higher the number, the longer it will take to reveal the next character.
 
-- `Open URL on meta tag click`: If enabled, **opens a hyperlink in the browser when a URL tag is clicked** during a dialog. By default the URL tags are handled by [meta_clicked](https://docs.godotengine.org/es/4.x/classes/class_richtextlabel.html#class-richtextlabel-signal-meta-clicked) signal on [RichTextLabels](https://docs.godotengine.org/es/4.x/classes/class_richtextlabel.html). You can do the same with the [meta_clicked](/docs/class-reference/nodes/dialog-box#meta-clicked-signal) signal in a [DialogBox](/docs/class-reference/nodes/dialog-box.md) to more advanced use cases.
+- `Open URL on meta tag click`: If enabled, **opens a hyperlink in the browser when a URL tag is clicked** during a dialog. By default the URL tags are handled by [meta_clicked](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel-signal-meta-clicked) signal on [RichTextLabels](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html). You can do the same with the [meta_clicked](/docs/class-reference/nodes/dialog-box#meta-clicked-signal) signal in a [DialogBox](/docs/class-reference/nodes/dialog-box.md) to more advanced use cases.
 
 ### Dialogue Display
 
@@ -119,7 +119,7 @@ Let's take a look at each category and its settings.
 
 - `Testing locale`: The locale that will be used to **test the dialogue when the game is run**. If no one is selected, _the automatically detected system language will be used_.
 
-  > This setting is equivalent to the **Project Settings > Internationalization > Locale > Test** property. See [testing translations in godot docs](https://docs.godotengine.org/es/4.x/tutorials/i18n/internationalizing_games.html#testing-translations) for more information.
+  > This setting is equivalent to the **Project Settings > Internationalization > Locale > Test** property. See [testing translations in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html#testing-translations) for more information.
 
 - `Locales`: Set the locales into which the dialogs will be translated.
 
@@ -127,7 +127,7 @@ Let's take a look at each category and its settings.
   >
   > ![Locales List](./../static/img/screenshots/settings/locales_list.png)
   >
-  > For more information about locales see [internationalizing games in godot docs](https://docs.godotengine.org/es/4.x/tutorials/i18n/internationalizing_games.html#locale-vs-language).
+  > For more information about locales see [internationalizing games in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html#locale-vs-language).
 
 ## Handle settings from code
 

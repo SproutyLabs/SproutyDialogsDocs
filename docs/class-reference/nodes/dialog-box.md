@@ -139,7 +139,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">var </span><code>options_container</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_container.html">Container</a></span> <span class="alert-text"> *</span>
 </h3>
-<p>Container where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/es/4.x/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/es/4.x/classes/class_gridcontainer.html) to display the options. <b class="alert-text">This component is required to display the dialog options in it.</b></p>
+<p>Container where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/en/stable/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/en/stable/classes/class_gridcontainer.html) to display the options. <b class="alert-text">This component is required to display the dialog options in it.</b></p>
 
 <hr/>
 

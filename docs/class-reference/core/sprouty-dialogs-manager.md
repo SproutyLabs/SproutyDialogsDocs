@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Description
 
-This class is used as the [Autoload](https://docs.godotengine.org/es/4.x/tutorials/scripting/singletons_autoload.html) that manages the Sprouty Dialogs plugin.
+This class is used as the [Autoload](https://docs.godotengine.org/en/stable/tutorials/scripting/singletons_autoload.html) that manages the Sprouty Dialogs plugin.
 
 Keep track of the running dialog players and dialog states by signals. Allows to access to the plugin singletons such as the variable manager, resource manager, and more.
 

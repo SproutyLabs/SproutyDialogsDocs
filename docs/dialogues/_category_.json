@@ -1,8 +1,8 @@
 {
-  "label": "Dialogues",
+  "label": "Dialogues & Text",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "All about dialogues."
+    "description": "All about dialogues and text features in Sprouty Dialogs."
   }
 }

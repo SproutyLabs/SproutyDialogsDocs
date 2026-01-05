@@ -70,7 +70,7 @@ You don't need to assign a dialog box for each character. You can define a **def
 
 :::
 
-For more information about dialog boxes see the [customize dialog boxes section](/docs/dialog-boxes/customize-dialog-boxes.md).
+For more information, see the [dialog boxes section](/docs/dialogues/dialog-boxes.md).
 
 ### Portraits
 
@@ -128,8 +128,8 @@ Congratulations! You have created your first character and used it in your dialo
 
 Now you know the basics of Sprouty Dialogs, but we've only scratched the surface! Here are some tutorials that you may find useful for your creations:
 
+- [Dialog Boxes](/docs/dialogues/dialog-boxes.md)
 - [Event Nodes](/docs/dialogues/event-nodes.md)
 - [Variables](/docs/variables.md)
 - [Translations](/docs/translations.md)
-- [Customize Dialog Boxes](/docs/dialog-boxes/customize-dialog-boxes.md)
 - [Customize Portraits](/docs/characters/customize-portraits.md)

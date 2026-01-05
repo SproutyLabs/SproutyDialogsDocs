@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Text Editor
@@ -32,7 +32,11 @@ To use BBCode in your dialogues, the dialogue must be displayed using a [RichTex
 
 ---
 
-You can simply **select the text you want to be affected by the tags** and click the option button in the toolbar to add the tags. The editor will automatically insert the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags around the selected text.
+When you are writting dialogues in a dialogue node, options node, or any text box, you can expand it **clicking on the right button** and the **text editor** will be open on the right side.
+
+![Expand Text Box](../../static/img/screenshots/getting-started/expand_text_box.png)
+
+You can simply **select the text you want to be affected by the tags** and click a option button in the toolbar to add the tags. The editor will automatically insert the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags around the selected text.
 
 ![Add tags](../../static/img/screenshots/getting-started/text_editor_add_tags.png)
 
