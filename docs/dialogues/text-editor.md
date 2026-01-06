@@ -170,7 +170,9 @@ By default, when the user clicks on it, its going to **open the URL in a web bro
 
 :::info
 
-If you want to customize this behavior, for more advanced use cases, it's also possible to store JSON in a `[url]` tag's option and parse it in the function that handles the `meta_clicked` signal of the [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html). For dialogues, you need to connect to the `meta_clicked` signal from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) node to implement the desired behavior when a URL is clicked.
+If you want to customize this behavior, for more advanced use cases, it's also possible to store JSON in a `[url]` tag's option and parse it in the function that handles the `meta_clicked` signal of the [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html).
+
+For dialogues, you need to connect to the `meta_clicked` signal from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) to implement the desired behavior when a URL is clicked.
 
 :::
 

@@ -50,11 +50,17 @@ When you create a new dialog box scene, the scene will open in the editor for ed
 
 ![Dialog Box Scene](../../static/img/screenshots/getting-started/dialog_box_scene.png)
 
-> In the file manager, you can see that in addition to the scene, **a script with the same name was created**: `sprouty_dialog_box.gd`.
->
-> This script is a template that inherits from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class, and you can edit it to **customize the behavior of the dialog box with more advanced features**, for example, to add animations when the dialog box opens or closes.
+:::info
 
-**You don't need to use all the components in the template**; you can configure your dialog box however you want. Just keep in mind that you **need the components indicated in the inspector** depending on what you're going to do. For example, if you don't want to show the character name in the dialog box, you can not assign the `Display Name` component and the name will be not displayed.
+In the file manager, you can see that in addition to the scene, **a script with the same name was created**: `sprouty_dialog_box.gd`.
+
+This script is a template that inherits from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class, and you can edit it to **customize the behavior of the dialog box**. See more in [Advanced Customization](/docs/dialogues/dialog-boxes#advanced-customization).
+
+:::
+
+**You don't need to use all the components in the template**; you can configure your dialog box however you want. Just keep in mind that you **need the components indicated in the inspector** depending on what you're going to do.
+
+> For example, if you don't want to show the character name in the dialog box, you can not assign the `Display Name` component and the name will be not displayed.
 
 Here is our example dialog box customized:
 
