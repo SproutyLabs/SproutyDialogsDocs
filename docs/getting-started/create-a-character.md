@@ -32,7 +32,7 @@ Now you can configure your character to use it in your dialogues. At the top of 
 
 ![Setting Character](../../static/img/screenshots/getting-started/setting_character.png)
 
-### General Settings
+### General settings
 
 First, we have the `Display Name` property, that is the **string that will be displayed as the character name in the dialogues**. The display name can be translated to different languages if you have the **translations** enabled in settings. For more information about translations see the [translations section](/docs/translations.md).
 
@@ -40,7 +40,7 @@ First, we have the `Display Name` property, that is the **string that will be di
 
 Then, we have the `Description` property that does nothing, is only for your own reference.
 
-### Dialog Box
+### Using a custom dialog box
 
 You can also assign a specific dialog box for the character. For that you need to load a dialog box scene or create a new one. You can **create a new dialog box scene clicking the `+` button in the `Dialog Box` property**, locate where you want to save the file, give it a name and click on `Create File`.
 
@@ -78,7 +78,7 @@ You don't need to assign a dialog box for each character. You can define a **def
 
 For more information, see the [dialog boxes section](/docs/dialogues/dialog-boxes.md).
 
-### Portraits
+### Using portraits
 
 At the bottom of the character editor interface you gonna see the portrait list, when you can create different portraits for your character. To create a new portrait, **click on the `+` button** and give it a name.
 

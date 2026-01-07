@@ -145,7 +145,15 @@ const config: Config = {
       theme: godotLight,
       darkTheme: godotDark,
     },
+    mermaid: {
+      theme: {light: 'forest', dark: 'dark'},
+    },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid']
 };
 
 export default config;

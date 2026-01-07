@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Text Editor
 
-The text editor allows you to write your dialogues using various formatting options and text effects with [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) to enhance the your the dialogues in a user-friendly interface. In this way, you can simply use the toolbar to add them to your text. _You don't have to remember all the tags and its properties!_
+The text editor allows you to write your dialogues using various formatting options and text effects with [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) to enhance the your the dialogues in a user-friendly interface.
+
+In this way, you can simply use the toolbar to add them to your text. _You don't have to remember all the tags and its properties!_
 
 ![Text Editor](../../static/img/screenshots/getting-started/dialogue_editor.png)
 
@@ -12,7 +14,9 @@ The text editor allows you to write your dialogues using various formatting opti
 
 ---
 
-To use formatting and effects in text, Godot uses the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) markup syntax, a simple tags system to format text. In general, BBCodes consist of 3 parts: _**the opening tag, the content and the closing tag**_. The opening tag indicates the start of the formattings and can also include parameters, the content is the text to be formatted, and the closing tag indicates the end of the formatting.
+To use formatting and effects in text, Godot uses the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) markup syntax, a simple tags system to format text. In general, BBCodes consist of 3 parts: _**the opening tag, the content and the closing tag**_.
+
+The opening tag indicates the start of the formattings and can also include parameters, the content is the text to be formatted, and the closing tag indicates the end of the formatting.
 
 > For example: `[color=red]hello world[/color]`
 >
@@ -124,7 +128,7 @@ You can change the following properties:
 
 ---
 
-### Insert Variables
+### Insert variables
 
 To insert a variable, you can use the **Insert Variable** option in the toolbar. You can **select the type of the variable** to filter the variables shown in the dropdown when you **enter the variable name in the input field**, and then **select it from the dropdown** or press `[Enter]` to add it.
 
@@ -140,7 +144,7 @@ You can insert any variable defined in the plugin, **including global variables*
 
 For more information about variables, you can check the [variables section](/docs/variables.md).
 
-### Insert Images
+### Insert images
 
 To insert an image, you can use the **Insert Image** option in the toolbar. You must **enter the image resource path in the input field** and press `[Enter]` to add it. Its tag format is: `[img]{image_resource_path}[/img]`
 

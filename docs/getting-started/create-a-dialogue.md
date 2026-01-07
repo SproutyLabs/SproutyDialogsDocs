@@ -86,7 +86,7 @@ To use the dialogue in your game, you need to add a [DialogPlayer](/docs/class-r
 
 ![Add Dialog Player](../../static/img/screenshots/getting-started/add_dialog_player.png)
 
-Next, you must assign the `Dialog Data` file you want to use; we will select the file created earlier.
+Next, you must assign the `Dialog Data` or dialogue data file you want to use; we will select the file created earlier.
 
 ![Select Dialogue Data](../../static/img/screenshots/getting-started/select_dialogue_data.png)
 
@@ -138,9 +138,11 @@ And in this way you can also see the dialogue when you run the scene.
 
 :::info[Important]
 
-This method loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**, such as characters and portraits.
+This method loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**, such as complex portraits scenes, dialog boxes, etc.
 
 So, if you have large resources in your dialogue, **it is not recommended use the autoload to play the dialogue**, instead use the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) nodes that load the resources on ready.
+
+For more details see [about dialogue resources](/docs/dialogues/using-dialogues#about-dialogue-resources).
 
 :::
 

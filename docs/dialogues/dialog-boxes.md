@@ -108,7 +108,7 @@ When we create a new dialog box, a **script with the same name** is also created
 
 This script is a duplicate of the template script that extends from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class, which allows you to **customize the behavior of the dialog box**. For example, to add animations when the dialog box open or closes.
 
-You can use this script to can override the following methods:
+You can use this script to override the following methods:
 
 ```gdscript
 ## Called when the dialog box is open at the beginning of the dialog.
