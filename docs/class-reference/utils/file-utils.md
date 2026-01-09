@@ -57,7 +57,7 @@ This module is responsible for some file operations and references. It provides 
 <h3 id="open-scene-in-editor-method">
   <span class="reference-type">func </span><code>open_scene_in_editor</code><span class="parameters">(scene_path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, scene_tree: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_scenetree.html">SceneTree</a>)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Open a scene in the editor given its path. Also, needs a reference to the <a target="_blank" href="https://docs.godotengine.org/en/stable/tutorials/scripting/scene_tree.html">SceneTree</a> (using <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-get-tree">Node.get_tree()</a>) to process a timer.</p>
+<p>Open a scene in the editor given its path. Also, needs a reference to the <a target="_blank" href="https://docs.godotengine.org/en/stable/tutorials/scripting/scene_tree.html">SceneTree</a> (using <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-get-tree">Node.get_tree</a>()) to process a timer.</p>
 <hr/>
 
 <h3 id="create-new-scene-file-method">

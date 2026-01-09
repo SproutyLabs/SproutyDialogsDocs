@@ -68,7 +68,7 @@ func _ready() -> void:
 
 All the resources needed for the dialog will be loaded at once when the [set_dialog](/docs/class-reference/nodes/dialog-player#set-dialog-method)() method is called, which can cause **slowdowns if large resources need to be loaded**.
 
-For more details see the next section [about dialogue resources](#about-dialogue-resources).
+For more details see the [about dialogue resources](#about-dialogue-resources) section.
 
 :::
 
@@ -94,7 +94,7 @@ And in this way you can also see the dialogue when you run the scene.
 
 This method also loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**.
 
-For more details see the next section [about dialogue resources](#about-dialogue-resources).
+For more details see the [about dialogue resources](#about-dialogue-resources) section.
 
 :::
 
@@ -102,34 +102,130 @@ For more details see the next section [about dialogue resources](#about-dialogue
 
 ---
 
-When you use a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node in a scene to run a dialogue, this node is will all load the resources needed (dialog boxes, characters, portraits, etc) on ready, using the [Resource Manager](/docs/class-reference/utils/resource-manager.md) singleton.
+When you set a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node in a scene to run a dialogue, this node will load all the resources needed (dialog boxes, characters, portraits, etc) on ready, using the [Resource Manager](/docs/class-reference/utils/resource-manager.md) singleton.
 
-The [Resource Manager](/docs/class-reference/utils/resource-manager.md) is going to keep track of the resources required for all the dialogues that will run in the current scene, which means, the resources needed by **all the dialog players in the scene**.
+The [Resource Manager](/docs/class-reference/utils/resource-manager.md) is going to keep track of the resources required for all the dialogues that will run in the current scene, which means, the resources needed by **all the dialog players in the scene**. The resource manager **ensures that each resource is only loaded once**, even if more than one dialog player uses it.
 
 ```mermaid
----
-config:
-  theme: 'forest'
-  themeVariables:
-    lineColor: '#949494ff'
----
 graph TD;
-    DialogPlayer1-->|Call to load resources| ResourceManager;
-    DialogPlayer2-->|Call to load resources| ResourceManager;
-    DialogPlayer3-->|Call to load resources| ResourceManager;
-    DialogPlayer4-->|Call to load resources| ResourceManager;
+	subgraph OnReady ["_on_ready()"]
+		subgraph OnScene ["DialogPlayers on scene"]
+		DialogPlayer1
+		DialogPlayer2
+		DialogPlayer3
+		DialogPlayer4
+		end
+        DialogPlayer1 e1@--Call to load resources-->ResourceManager
+    	DialogPlayer2 e2@--Call to load resources-->ResourceManager
+   		DialogPlayer3 e3@--Call to load resources-->ResourceManager
+    	DialogPlayer4 e4@--Call to load resources-->ResourceManager
+		e1@{ animate: slow }
+		e2@{ animate: slow }
+		e3@{ animate: slow }
+		e4@{ animate: slow }
+    end
 ```
 
 This way, resources are **loaded only once at the start of the scene** and then **instantiated when needed in a dialog**. Furthermore, they are **destroyed when they are no longer needed**.
 
-For this reason, is recommended use dialog players in the scene instead of use the SproutyDialogs autoload to play the dialogues. Because the [start_dialog](/docs/class-reference/core/sprouty-dialogs-manager#start-dialog-method)() method **loads all the resources needed for the dialogue at once when the method is called**, so may cause a **slowdown if you have large resources to load**, such as complex portrait scenes, for example.
+For this reason, care must be taken when loading **large resources, such as complex portrait scenes**. If you set the **dialog players from the code or use the Sprouty Dialogs autoload**, the resources will be loaded when you call the [set_dialog](/docs/class-reference/nodes/dialog-player#set-dialog-method)() or [start_dialog](/docs/class-reference/core/sprouty-dialogs-manager#start-dialog-method)() methods.
+
+_If you call these methods during runtime, there will be a **slowdown due to resource loading**. However, if you have set the **DialogPlayer node directly in the scene**, you will **ensure that resources are loaded when the scene starts**._
 
 ## Override display parents
 
 ---
 
-You can override the parents of your dialog boxes and portraits for each character in a dialogue ...
+You can override the parents of your dialog boxes and portraits for each character in a dialogue to **change the position of the dialog box or portrait on screen** for a given dialogue, for example, or wharever you want. This allows more flexibility to display the dialogue components, for example, to use **dialogue bubbles as dialog boxes that follow the position of the NPCs**.
 
-## Dialog player signals
+When you assign a dialogue data file that use characters in a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node, the inspector will add a new group of properties called `Override Display Parents`.
+
+![Dialog Box Inspector](../../static/img/screenshots/override_display_parents.png)
+
+Here you will find **a section for each character in the dialogues** of the selected dialog data, where you can **assign any nodes in the scene** to override the parent of the character portraits or dialog box.
+
+Also, you can set this from code. You must **define a dictionary** of the new portraits or dialog box parents, where **each key is the character's key name (file name), and the value is the desired new parent node**.
+
+```gdscript title="main.gd" showLineNumbers
+extends Node2D
+
+var dialog_data := load("res://dialogues/example.tres")
+var portrait_parents : Dictionary = {
+	"sprouty": get_node("PortraitParent")
+}
+var dialog_box_parents : Dictionary = {
+	"sprouty": get_node("DialogBoxParent")
+}
+```
+
+You can then pass these dictionaries to the [set_dialog](/docs/class-reference/nodes/dialog-player#set-dialog-method)() method in the dialog player node.
+
+```gdscript title="main.gd (Using DialogPlayer)" showLineNumbers=10
+func _ready() -> void:
+	var dialog_player = DialogPlayer.new()
+	add_child(dialog_player)
+
+	dialog_player.set_dialog(dialog_data, "EXAMPLE", portraits_parents, dialog_box_parents)
+	dialog_player.start()
+```
+
+Or you can pass them in the [start_dialog](/docs/class-reference/core/sprouty-dialogs-manager#start-dialog-method)() method when you use the Sprouty Dialogs autoload.
+
+```gdscript title="main.gd (Using the SproutyDialogs autoload)" showLineNumbers=10
+func _ready() -> void:
+	SproutyDialogs.start_dialog(dialog_data, "EXAMPLE", portraits_parents, dialog_box_parents)
+```
+
+## Using DialogPlayer signals
 
 ---
+
+The [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) nodes have some signals that you can use to handle the state of the dialogue. This signals are the following:
+
+```gdscript
+## Emitted when the dialog starts.
+signal dialog_started()
+## Emitted when the dialog is paused.
+signal dialog_paused()
+## Emitted when the dialog is resumed.
+signal dialog_resumed()
+## Emitted when the dialog is ended.
+signal dialog_ended()
+```
+
+Also, there are two special signals:
+
+```gdscript
+## Emitted when a dialog option is selected.
+signal option_selected(option_index: int, option_dialog: Dictionary)
+## Emitted when a signal event is emitted.
+signal signal_event(argument: String)
+```
+
+First, the `option_selected` signal is emitted when an **option is selected in the dialogue** and returns the option index and a dictionary with the dialogue and translations of the selected option in the following format:
+
+```
+{
+	"en" : "This is the option in Engligh"
+	"es" :" Esta es la opción en Español"
+}
+```
+
+For the other hand, the `signal_event` signal is emitted when a [Signal Node](/docs/dialogues/event-nodes#signal-node) is trigger in the dialogue tree. This signal returns the argument that you give to the event node to do wharever you need with it.
+
+You can also handle the **same signals from the Sprouty Dialogs autoload**.
+
+```gdscript title="main.gd" showLineNumbers
+extends Node2D
+
+var dialog_data := load("res://dialogues/example.tres")
+
+func _ready() -> void:
+	SproutyDialogs.dialog_ended.connect(_on_dialog_ended)
+	SproutyDialogs.start_dialog(dialog_data, "EXAMPLE")
+
+func _on_dialog_ended() -> void:
+	SproutyDialogs.dialog_ended.disconnect(_on_dialog_ended)
+	print("The dialogue has ended!")
+
+```

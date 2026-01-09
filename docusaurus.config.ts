@@ -146,7 +146,7 @@ const config: Config = {
       darkTheme: godotDark,
     },
     mermaid: {
-      theme: {light: 'forest', dark: 'dark'},
+      theme: {light: 'neutral', dark: 'dark'},
     },
   } satisfies Preset.ThemeConfig,
 

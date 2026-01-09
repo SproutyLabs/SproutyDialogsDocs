@@ -34,37 +34,30 @@ The dialog tree is composed of nodes that represent dialogues and actions. The p
 
 <h3 id="dialog-started-signal">
   <span class="reference-type">signal </span><code>dialog_started</code>
-  <span class="parameters">(dialog_file: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">()</span>
 </h3>
 <p>Emitted when the dialog starts.</p>
 <hr/>
 
 <h3 id="dialog-paused-signal">
   <span class="reference-type">signal </span><code>dialog_paused</code>
-  <span class="parameters">(dialog_file: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">()</span>
 </h3>
 <p>Emitted when the dialog is paused.</p>
 <hr/>
 
 <h3 id="dialog-resumed-signal">
   <span class="reference-type">signal </span><code>dialog_resumed</code>
-  <span class="parameters">(dialog_file: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">()</span>
 </h3>
 <p>Emitted when the dialog is resumed.</p>
 <hr/>
 
 <h3 id="dialog-ended-signal">
   <span class="reference-type">signal </span><code>dialog_ended</code>
-  <span class="parameters">(dialog_file: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">()</span>
 </h3>
 <p>Emitted when the dialog is ended.</p>
-<hr/>
-
-<h3 id="dialog-player-stop-signal">
-  <span class="reference-type">signal </span><code>dialog_player_stop</code>
-  <span class="parameters">(dialog_player: <a target="_blank" href="/docs/class-reference/nodes/dialog-player">DialogPlayer</a>)</span>
-</h3>
-<p>Emitted when the dialog player stops.</p>
 <hr/>
 
 <h3 id="option-selected-signal">
@@ -79,6 +72,13 @@ The dialog tree is composed of nodes that represent dialogues and actions. The p
   <span class="parameters">(argument: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a signal event is emitted.</p>
+<hr/>
+
+<h3 id="dialog-player-stop-signal">
+  <span class="reference-type">signal </span><code>dialog_player_stop</code>
+  <span class="parameters">()</span>
+</h3>
+<p>Emitted when the dialog player stops.</p>
 <hr/>
 
 ## Method Descriptions
@@ -128,13 +128,13 @@ The dialog tree is composed of nodes that represent dialogues and actions. The p
 <h3 id="set-dialog-method">
   <span class="reference-type">func </span><code>set_dialog</code><span class="parameters">(data: <a target="_blank" href="/docs/class-reference/resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, dialog_box_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> void</span>
 </h3>
-<p>Set the dialogue data and start ID to play a dialog tree. This method loads the dialog resources and prepares the player to process the dialog tree before calling the <a target="_blank" href="#start-method">start()</a> method.</p>
+<p>Set the dialogue data and start ID to play a dialog tree. This method loads the dialog resources and prepares the player to process the dialog tree before calling the <a target="_blank" href="#start-method">start</a>() method.</p>
 <hr/>
 
 <h3 id="start-method">
   <span class="reference-type">func </span><code>start</code><span class="parameters">()</span><span class="return-type"> -> void</span>
 </h3>
-<p>Start processing a dialog tree. Need to set the dialogue data and start ID before calling this method. The resources are loaded on the [_ready()](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready) method.</p>
+<p>Start processing a dialog tree. Need to set the dialogue data and start ID before calling this method. The resources are loaded on the [_ready](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready)() method.</p>
 <hr/>
 
 <h3 id="pause-method">
