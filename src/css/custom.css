@@ -82,12 +82,12 @@
   font-style: italic;
   font-weight: bold;
   font-size: x-large;
-  color: lightcoral
+  color: rgb(255, 178, 36)
 }
 
 /* Highlighting for abstract method indication */
 .abstract-method-label {
-  color: lightcoral
+  color: rgb(255, 178, 36)
 }
 
 /* Highlighting for virtual method indication */

@@ -39,6 +39,7 @@ You should inherit from this class to create your own dialog nodes.
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_data](#get-data-method)() <span class="abstract-method-label">(abstract)</span>                                                                                         |
 | void                                                                               | [set_data](#set-data-method)(dict: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) <span class="abstract-method-label">(abstract)</span> |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [get_start_id](#get-start-id-method)()                                                                                                                                       |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)           | [get_output_connections](#get-output-connections-method)()                                                                                                                   |
 
 ## Signals
 
@@ -118,4 +119,10 @@ You should inherit from this class to create your own dialog nodes.
   <span class="reference-type">func </span><code>get_start_id</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
 </h3>
 <p>Returns the start node id of the dialog tree.</p>
+<hr/>
+
+<h3 id="get-output-connections-method">
+  <span class="reference-type">func </span><code>get_output_connections</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+</h3>
+<p>Returns an array with the node's output connections.</p>
 <hr/>

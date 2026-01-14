@@ -48,6 +48,14 @@ Let's take a look at each category and its settings.
 
   > _By default, the portraits are displayed **behind the dialog box**, so its canvas layer index is 1._
 
+### Custom Event Nodes
+
+- `Use custom event nodes`: Enable/disable the use of custom event nodes.
+
+- `Custom event nodes folder`: Path to the directory where you have your custom event nodes (`.tscn` files).
+
+- `Custom event interpreter`: Path to the custom event interpreter script file (`.gd`) that extends from the [SproutyDialogsEventInterpreter](/docs/class-reference/utils/event-interpreter.md) class. Where you define the process methods to run your custom event nodes.
+
 ## Text Settings
 
 ---
