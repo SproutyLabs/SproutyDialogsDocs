@@ -115,10 +115,10 @@ graph TD;
 		DialogPlayer3
 		DialogPlayer4
 		end
-        DialogPlayer1 e1@--Call to load resources-->ResourceManager
-    	DialogPlayer2 e2@--Call to load resources-->ResourceManager
-   		DialogPlayer3 e3@--Call to load resources-->ResourceManager
-    	DialogPlayer4 e4@--Call to load resources-->ResourceManager
+        DialogPlayer1 e1@--Call to load<br/>resources-->ResourceManager
+    	DialogPlayer2 e2@--Call to load<br/>resources-->ResourceManager
+   		DialogPlayer3 e3@--Call to load<br/>resources-->ResourceManager
+    	DialogPlayer4 e4@--Call to load<br/>resources-->ResourceManager
 		e1@{ animate: slow }
 		e2@{ animate: slow }
 		e3@{ animate: slow }
