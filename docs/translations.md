@@ -61,7 +61,7 @@ To use translations for the character names, you need to enable the `Translate c
 
 At the same way that before, when you edit a character and the translations are enabled, you will going to see that in the `display name` property the default text input now is associated with the **default locale**. Also, there is **translation** section where you can translate the name that will be displayed on the dialog box to each locale.
 
-![Display Name Translation](./../static/img/screenshots/getting-started/display_name_translation.png)
+![Character Name Translations](./../static/img/screenshots/characters/character_name_translations.png)
 
 ### Testing translations
 

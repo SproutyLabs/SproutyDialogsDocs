@@ -37,7 +37,7 @@
 /* Home page banner */
 .banner {
   background-color: #b2f05f;
-  background-image: url(../../static/img/screenshots/getting-started/play_example.png);
+  background-image: url(../../static/img/screenshots/getting-started/meet-the-editor/play_example.png);
   background-size: 1000px;
   background-position: 250px;
   background-blend-mode:screen;

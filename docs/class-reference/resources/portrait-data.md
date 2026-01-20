@@ -68,6 +68,7 @@ This resource stores data for character portraits. Each portrait includes the re
   Transform settings for the portrait. This is a dictionary containing the following keys:
 </p>
 <ul>
+  <li><strong>ignore_main_transform</strong>: whether to ignore the main transform settings from the character.</li>
   <li><strong>scale</strong>: the scale of the portrait.</li>
   <li><strong>scale_lock_ratio</strong>: whether to lock the aspect ratio of the scale.</li>
   <li><strong>offset</strong>: the offset of the portrait.</li>
@@ -77,6 +78,7 @@ This resource stores data for character portraits. Each portrait includes the re
 <p>Default values:</p>
 ```gdscript
 {
+  "ignore_main_transform": false,
   "scale": Vector2.ONE,
   "scale_lock_ratio": true,
   "offset": Vector2.ZERO,

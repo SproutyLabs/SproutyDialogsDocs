@@ -30,7 +30,7 @@ Let's take a look at each category and its settings.
 
   > _By default, the default dialog box is a template that look like this:_
   >
-  > ![Default Dialog Box](./../static/img/screenshots/getting-started/dialog_box_scene.png)
+  > ![Default Dialog Box](./../static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
 - `Default portrait scene`: Default portrait scene that will be used as a template when creating a new portrait for a character. The root of the scene must be a node inherited from the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class.
 

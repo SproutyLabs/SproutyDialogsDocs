@@ -8,7 +8,7 @@ The text editor allows you to write your dialogues using various formatting opti
 
 In this way, you can simply use the toolbar to add them to your text. _You don't have to remember all the tags and its properties!_
 
-![Text Editor](../../static/img/screenshots/getting-started/dialogue_editor.png)
+![Text Editor](../../static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
 
 ## What is BBcode?
 
@@ -38,15 +38,15 @@ To use BBCode in your dialogues, the dialogue must be displayed using a [RichTex
 
 When you are writting dialogues in a dialogue node, options node, or any text box, you can expand it **clicking on the right button** and the **text editor** will be open on the right side.
 
-![Expand Text Box](../../static/img/screenshots/getting-started/expand_text_box.png)
+![Expand Text Box](../../static/img/screenshots/getting-started/create-a-dialogue/expand_text_box.png)
 
 You can simply **select the text you want to be affected by the tags** and click a option button in the toolbar to add the tags. The editor will automatically insert the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags around the selected text.
 
-![Add tags](../../static/img/screenshots/getting-started/text_editor_add_tags.png)
+![Add tags](../../static/img/screenshots/getting-started/create-a-dialogue/text_editor_add_tags.png)
 
 You can **change the properties of the tag while you have the _opening tag_ selected**, then you can modify the properties in the toolbar to update the tag. For example, in this case we change the color of the text.
 
-![Change Properties](../../static/img/screenshots/getting-started/text_editor_change_properties.png)
+![Change Properties](../../static/img/screenshots/getting-started/create-a-dialogue/text_editor_change_properties.png)
 
 You can also **edit or add the tags manually** by typing them directly in the text editor.
 

@@ -24,11 +24,11 @@ If you change the `Default Dialog Box` in the settings, this dialog box will als
 
 You can also assign a custom dialog box for each character. With a character file open, you can **create a new dialog box scene clicking the `+` button in the `Dialog Box` property**, locate where you want to save the file, give it a name and click on `Create File`.
 
-![New Dialog Box](../../static/img/screenshots/getting-started/new_dialog_box.png)
+![New Dialog Box](../../static/img/screenshots/getting-started/create-a-character/new_dialog_box.png)
 
 When you create a new dialog box scene, **the scene will open in the editor for editing**. This scene by default is a **template** with a basic dialog box layout.
 
-![Dialog Box Scene](../../static/img/screenshots/getting-started/dialog_box_scene.png)
+![Dialog Box Scene](../../static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
 :::info
 
@@ -52,7 +52,7 @@ Now, let's see how we can customize the dialog boxes!
 
 You will going to see that the dialog box node have some properties in the inspector. First of all, you can override the `Typing Speed` and `Max Characters` settings for a specific dialog box. If you don't change them, the default parameters from [text settings](/docs/settings#text-settings) will be used.
 
-![Dialog Box Scene](../../static/img/screenshots/getting-started/dialog_box_scene.png)
+![Dialog Box Scene](../../static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
 Also, there is a `Dialog Box Components` section, where some components are required. This components are:
 
@@ -98,7 +98,7 @@ If you don't assign any of these components, the option text is going to be disp
 
 Here is an example of a dialog box customized with custom components:
 
-![Sprouty Dialog Box](../../static/img/screenshots/getting-started/sprouty_dialog_box.png)
+![Sprouty Dialog Box](../../static/img/screenshots/getting-started/create-a-character/sprouty_dialog_box.png)
 
 As you can see, in this case, the `Portrait Display` component is not used because this dialog box will not display any portraits in it. The same applies to the other components, **except for `Dialogs Display`, which is a necessary component to display the dialogs**.
 

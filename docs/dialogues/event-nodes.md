@@ -6,7 +6,7 @@ sidebar_position: 4
 
 The event nodes are the **building blocks of the dialogue system**. They are graph nodes that can trigger different events in the dialogue. Let's take a look at each of them.
 
-![New Dialogue](../../static/img/screenshots/getting-started/add_nodes.png)
+![New Dialogue](../../static/img/screenshots/getting-started/create-a-dialogue/add_nodes.png)
 
 ## Start Node
 

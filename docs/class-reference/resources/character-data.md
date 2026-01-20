@@ -14,16 +14,18 @@ It includes the character's key name or identifier, translations of the name, de
 
 ## Properties
 
-| Type                                                                               | Name                                                  | Default |
-| ---------------------------------------------------------------------------------- | ----------------------------------------------------- | ------- |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [key_name](#key-name-var)                             | ""      |
-| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [display_name](#display-name-var)                     | \{\}    |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [description](#description-var)                       | ""      |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)               | [dialog_box_uid](#dialog-box-uid-var)                 | -1      |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [dialog_box_path](#dialog-box-path-var)               | ""      |
-| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)             | [portrait_on_dialog_box](#portrait-on-dialog-box-var) | false   |
-| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [portraits](#portraits-var)                           | \{\}    |
-| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [typing_sounds](#typing-sounds-var)                   | \{\}    |
+| Type                                                                               | Name                                                    | Default         |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------- | --------------- |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [key_name](#key-name-var)                               | ""              |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [display_name](#display-name-var)                       | \{\}            |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [description](#description-var)                         | ""              |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)               | [dialog_box_uid](#dialog-box-uid-var)                   | -1              |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [dialog_box_path](#dialog-box-path-var)                 | ""              |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)             | [portrait_on_dialog_box](#portrait-on-dialog-box-var)   | false           |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [default_portrait](#default-portrait-var)               | ""              |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [main_transform_settings](#main-transform-settings-var) | See description |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [portraits](#portraits-var)                             | \{\}            |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [typing_sounds](#typing-sounds-var)                     | \{\}            |
 
 ## Methods
 
@@ -85,13 +87,48 @@ It includes the character's key name or identifier, translations of the name, de
 <p>Flag to indicate if the character's portrait should be displayed on the dialog box. If true, the character's portrait scene will be shown in the [portrait display](/docs/class-reference/nodes/dialog-box/#portrait-display-var) node of the <a target="_blank" href="/docs/class-reference/nodes/dialog-box">DialogBox</a>. For this you need to set the [portrait display](/docs/class-reference/nodes/dialog-box/#portrait-display-var) node that will hold the portrait as a parent of the portrait scene.</p>
 <hr/>
 
+<h3 id="default-portrait-var">
+  <span class="reference-type">var </span><code>default_portrait</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
+</h3>
+<p>Name of the default portrait to use for this character. If set, this portrait will be used when no specific portrait is specified in the dialogue.</p>
+<hr/>
+
+<h3 id="main-transform-settings-var">
+  <span class="reference-type">var </span><code>main_transform_settings</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+</h3>
+<p>
+  Transform settings for all the character portraits. This is a dictionary with the following keys:
+</p>
+<ul>
+  <li><strong>scale</strong>: the scale of the portrait.</li>
+  <li><strong>scale_lock_ratio</strong>: whether to lock the aspect ratio of the scale.</li>
+  <li><strong>offset</strong>: the offset of the portrait.</li>
+  <li><strong>rotation</strong>: the rotation of the portrait in degrees.</li>
+  <li><strong>mirror</strong>: whether to mirror the portrait.</li>
+</ul>
+<p>Default values:</p>
+```gdscript
+{
+  "scale": Vector2.ONE,
+  "scale_lock_ratio": true,
+  "offset": Vector2.ZERO,
+  "rotation": 0.0,
+  "mirror": false
+}
+```
+<hr/>
+
 <h3 id="portraits-var">
   <span class="reference-type">var </span><code>portraits</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
 </h3>
 <p>
   Character's portraits. This is a dictionary where each key is a portrait name or a group of portraits and its value is a dictionary containing the [portrait data](/docs/class-reference/resources/portrait-data) or more portraits.
-  The dictionary structure is as follows:
+
+The dictionary structure is as follows:
+
 </p>
 ```gdscript
 {
@@ -112,6 +149,7 @@ It includes the character's key name or identifier, translations of the name, de
 </h3>
 <p>
   Typing sounds for the character. This is a dictionary where each key is the sound name (e.g., "typing_1") and its value is a dictionary containing the sound data.
+  
   The dictionary structure is as follows:
 </p>
 ```gdscript

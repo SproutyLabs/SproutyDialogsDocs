@@ -16,17 +16,17 @@ To use the dialogues from Sprouty Dialogs in your game, as we have already seen 
 
 The recommended way to run your dialogues is using dialog players. To use a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node, first you need to **add it to the scene** where you want to run the dialogue.
 
-![Add Dialog Player](../../static/img/screenshots/getting-started/add_dialog_player.png)
+![Add Dialog Player](../../static/img/screenshots/getting-started/create-a-dialogue/add_dialog_player.png)
 
 Then, you must assign the `Dialog Data` or dialogue data file where your dialogue is.
 
-![Select Dialogue Data](../../static/img/screenshots/getting-started/select_dialogue_data.png)
+![Select Dialogue Data](../../static/img/screenshots/getting-started/create-a-dialogue/select_dialogue_data.png)
 
 When you select a file, the inspector automatically going to update and now you will see some settings for the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md).
 
 You must choose the **dialogue tree ID of the dialogue you want to play** from the `Start ID` dropdown; otherwise, the player will not know which dialogue tree to run.
 
-![Select Start ID](../../static/img/screenshots/getting-started/select_start_id.png)
+![Select Start ID](../../static/img/screenshots/getting-started/create-a-dialogue/select_start_id.png)
 
 Now that you have your dialog player configured, you can call the dialogue from code, using the [start](/docs/class-reference/nodes/dialog-player#start-method)() method from the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node.
 
@@ -44,7 +44,7 @@ func _ready() -> void:
 
 In this case, we run the dialog in the [\_ready](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready)() method of the `main` node or when the scene begins again, so when you run the scene you will see the dialogue.
 
-![Play from Code](../../static/img/screenshots/getting-started/play_from_code.png)
+![Play from Code](../../static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
 
 And that's it! So easy right? 🥳
 
@@ -88,7 +88,7 @@ func _ready() -> void:
 
 And in this way you can also see the dialogue when you run the scene.
 
-![Play from Autoload](../../static/img/screenshots/getting-started/play_from_autoload.png)
+![Play from Autoload](../../static/img/screenshots/getting-started/create-a-dialogue/play_from_autoload.png)
 
 :::info[Important]
 
