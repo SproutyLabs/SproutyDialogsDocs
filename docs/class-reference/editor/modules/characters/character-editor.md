@@ -24,7 +24,6 @@ This module is responsible for the character files creation and editing. It allo
 | void                                                                          | [load_character](#load-character-method)(data: [SproutyDialogsCharacterData](/docs/class-reference/resources/character-data), name_data: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
 | void                                                                          | [on_locales_changed](#on-locales-changed-method)()                                                                                                                                                                           |
 | void                                                                          | [on_translation_enabled_changed](#on-translation-enabled-changed-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                                    |
-| void                                                                          | [open_scene_in_editor](#open-scene-in-editor-method)(path: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                       |
 
 ## Signals
 
@@ -75,13 +74,5 @@ This module is responsible for the character files creation and editing. It allo
 </h3>
 <p>
   Handle the translation enabled change. When enabled is true, shows translation boxes. When false, hides translation boxes and default locale label.
-</p>
-<hr/>
-
-<h3 id="open-scene-in-editor-method">
-  <span class="reference-type">func </span><code>open_scene_in_editor</code><span class="parameters">(path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
-</h3>
-<p>
-  Open a scene in the editor given its path. If the path is valid and the resource exists, opens the scene in the 2D editor.
 </p>
 <hr/>
