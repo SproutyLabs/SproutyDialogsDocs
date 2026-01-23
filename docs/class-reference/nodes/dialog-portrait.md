@@ -25,7 +25,7 @@ You should inherit from this class to create your own dialog portraits.
 | Return Type | Method                                                                                                               |
 | ----------- | -------------------------------------------------------------------------------------------------------------------- |
 | void        | [set_portrait](#set-portrait-method)()<span class="abstract-method-label"> (abstract)</span>                         |
-| void        | [on_portrait_entry](#on-portrait-entry-method)()<span class="abstract-method-label"> (abstract)</span>               |
+| void        | [on_portrait_enter](#on-portrait-enter-method)()<span class="abstract-method-label"> (abstract)</span>               |
 | void        | [on_portrait_exit](#on-portrait-exit-method)()<span class="abstract-method-label"> (abstract)</span>                 |
 | void        | [on_portrait_talk](#on-portrait-talk-method)()<span class="abstract-method-label"> (abstract)</span>                 |
 | void        | [on_portrait_stop_talking](#on-portrait-stop-talking-method)()<span class="abstract-method-label"> (abstract)</span> |
@@ -40,8 +40,8 @@ You should inherit from this class to create your own dialog portraits.
 <p>Called when the portrait is instantiated or changed. <b>Override this method to set up the portrait initially</b></p>
 <hr/>
 
-<h3 id="on-portrait-entry-method">
-  <span class="reference-type">func </span><code>on_portrait_entry</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
+<h3 id="on-portrait-enter-method">
+  <span class="reference-type">func </span><code>on_portrait_enter</code><span class="parameters">()</span><span class="return-type"> -> void</span><span class="abstract-method-label"> (abstract)</span>
 </h3>
 <p>Called when the character is added to the scene. <b>Override this method to update the portrait when character enters the scene.</b></p>
 <hr/>

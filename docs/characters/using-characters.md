@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Using Characters
 
-We already see how to create a character in the [create a character](/docs/getting-started//create-a-character.md) section, but some details are missing. This section will cover all the character properties and how to use them.
+We already saw how to create a character in the [create a character](/docs/getting-started//create-a-character.md) section, but some details are missing. This section will cover all the character properties and how to use them.
 
 Let's review the character editor and all its settings.
 
@@ -53,7 +53,7 @@ You can also assign a specific dialog box for the character. For that you have s
   > ![Portrait on Dialog Box](../../static/img/screenshots/dialog-boxes/portrait_on_dialog_example.png)
   > See more information in the [using portraits in dialog boxes](/docs/dialogues/dialog-boxes#using-portraits-in-dialog-boxes) section.
 
-## Portrait settings
+## Portraits settings
 
 ---
 
