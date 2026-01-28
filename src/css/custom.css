@@ -16,7 +16,7 @@
   --ifm-color-primary-lighter: #7ad200;
   --ifm-color-primary-lightest: #8aee00;
 
-  --ifm-color-secondary: #fffaf3;
+  --ifm-color-secondary: #ffffff;
   
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -31,6 +31,7 @@
   --ifm-color-primary-light: #b2f05f;
   --ifm-color-primary-lighter: #b9f16d;
   --ifm-color-primary-lightest: #cdf596;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -44,8 +45,10 @@
   color: #26302c
 }
 
-.rounded {
-  border-radius: 2rem;
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*** Custom styles for class reference ***/

@@ -132,10 +132,19 @@ The dictionary structure is as follows:
 </p>
 ```gdscript
 {
-  "portrait_name_1": SproutyDialogsPortraitData,
+  "portrait_name_1": {
+    "index" : 0,
+    "data": SproutyDialogsPortraitData (SubResource)
+  },
   "portrait_group": {
-    "portrait_name_2": SproutyDialogsPortraitData,
-    "portrait_name_3": SproutyDialogsPortraitData,
+    "index" : 1,
+    "data": {
+      "portrait_name_2": {
+        "index" : 0,
+        "data": SproutyDialogsPortraitData (SubResource)
+      },
+      ...
+    },
     ...
   },
   ...
