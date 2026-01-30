@@ -63,7 +63,7 @@ Component that represents a group of variables in the variable editor panel. It 
   <span class="reference-type">var </span><code>parent_group</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> = null</span>
 </h3>
-<p>Parent group of this group. Can be another [EditorSproutyDialogsVariableGroup]() or the main container.</p>
+<p>Parent group of this group. Can be another [EditorSproutyDialogsVariableGroup](#) or the main container.</p>
 <hr/>
 
 <h3 id="new-item-var">
@@ -121,7 +121,7 @@ Component that represents a group of variables in the variable editor panel. It 
 <h3 id="add-item-method">
   <span class="reference-type">func </span><code>add_item</code><span class="parameters">(item: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Add an item to the group. The item can be a [EditorSproutyDialogsVariableItem](/docs/class-reference/editor/modules/variables/variable-item.md) or another [EditorSproutyDialogsVariableGroup]().</p>
+<p>Add an item to the group. The item can be a [EditorSproutyDialogsVariableItem](/docs/class-reference/editor/modules/variables/variable-item.md) or another [EditorSproutyDialogsVariableGroup](#).</p>
 <hr/>
 
 <h3 id="show-items-method">

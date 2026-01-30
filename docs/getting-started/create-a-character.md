@@ -142,7 +142,7 @@ Congratulations! You have created your first character and used it in your dialo
 
 Now you know the basics of Sprouty Dialogs, but we've only scratched the surface! Here are some tutorials that you may find useful for your creations:
 
-- [Using Dialogues](/docs/getting-started/using-dialogues.md)
+- [Using Dialogues](/docs/dialogues/using-dialogues.md)
 - [Event Nodes](/docs/dialogues/event-nodes.md)
 - [Using Characters](/docs/characters/using-characters.md)
 - [Customize Portraits](/docs/characters/customize-portraits.md)

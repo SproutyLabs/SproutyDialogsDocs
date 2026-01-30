@@ -210,7 +210,7 @@ You should save your custom event nodes and custom event interpreter **outside t
 
 :::
 
-Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](/docs/dialogues/dialogue-graph-editor.md). You will see your custom event node available in the event nodes list to add it to the graph.
+Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](/docs/getting-started/meet-the-editor#dialogue-editor). You will see your custom event node available in the event nodes list to add it to the graph.
 
 ![Custom Node in List](../../static/img/screenshots/custom-event-nodes/custom_node_in_list.png)
 

@@ -164,11 +164,11 @@ You can change the following properties:
 
 - **Color (color)**: Sets a modulate color for the image. Property: `color={color}`
 
-### Insert URLs
+### Insert Links
 
-To insert a URL link, you can use the **Insert URL** option in the toolbar. You must **select the text to be linked and enter the URL in the input field**, then press `[Enter]` to add it. Its tag format is: `[url={url}]{text}[/url]`
+To insert a link, you can use the **Insert Link** option in the toolbar. You must **select the text to be linked and enter the URL in the input field**, then press `[Enter]` to add it. Its tag format is: `[url={url}]{text}[/url]`
 
-![Insert URL](../../static/img/screenshots/text-editor/insert_url.png)
+![Insert Link](../../static/img/screenshots/text-editor/insert_link.png)
 
 By default, when the user clicks on it, its going to **open the URL in a web browser**, if you have enabled the `Open URL on meta tag click` setting in the [text settings](/docs/settings#text-settings) of the plugin.
 

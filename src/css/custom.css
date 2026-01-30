@@ -45,9 +45,21 @@
   color: #26302c
 }
 
-.poppins-bold {
+.poppins-light {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 

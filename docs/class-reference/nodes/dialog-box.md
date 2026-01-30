@@ -14,7 +14,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 :::info[Important]
 
-**You should not use this node directly to play a dialogue.** You should use a [DialogPlayer](/docs/class-reference/nodes/dialog-player) node to play dialogues, which will process it and use a [DialogBox]() to display it.
+**You should not use this node directly to play a dialogue.** You should use a [DialogPlayer](/docs/class-reference/nodes/dialog-player) node to play dialogues, which will process it and use a [DialogBox](#) to display it.
 
 :::
 

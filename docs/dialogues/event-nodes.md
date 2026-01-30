@@ -52,7 +52,7 @@ This node allows you to add options or choices to the dialogue. You can add **mu
 
 ![Options Node](../../static/img/screenshots/event-nodes/options_node.png)
 
-Each option will be displayed in a [DialogOption](/docs/class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how looks the options buttons in your dialog box. For more information see the [customize options section]().
+Each option will be displayed in a [DialogOption](/docs/class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how looks the options buttons in your dialog box. For more information see the [customize options section](#).
 
 :::info[Using Translations]
 

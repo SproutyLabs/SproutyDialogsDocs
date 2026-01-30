@@ -29,9 +29,9 @@ It includes the character's key name or identifier, translations of the name, de
 
 ## Methods
 
-| Return Type                                                                  | Method                                                                                                                                                                                                                                                           |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_portrait_from_path_name](#get-portrait-from-path-name-method)(path_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), group: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = portraits) |
+| Return Type                                                                  | Method                                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_portrait_from_path_name](#get-portrait-from-path-name-method)(path_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), group: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{"data": portraits\}) |
 
 ## Property Descriptions
 
@@ -182,7 +182,7 @@ The dictionary structure is as follows:
 ## Method Descriptions
 
 <h3 id="get-portrait-from-path-name-method">
-  <span class="reference-type">func </span><code>get_portrait_from_path_name</code><span class="parameters">(path_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, group: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = portraits)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
+  <span class="reference-type">func </span><code>get_portrait_from_path_name</code><span class="parameters">(path_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, group: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{"data": portraits\})</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
 </h3>
 <p>Returns the portrait data for a given portrait path name. The path name can be a portrait name or a path (e.g., "group/portrait"). If the portrait is a group, it will recursively search for the portrait data.</p>
 <hr/>

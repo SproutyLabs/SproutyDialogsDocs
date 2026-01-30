@@ -8,7 +8,6 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import SVGLogo from '@site/static/img/logo.svg';
-
 import SproutyGIF from '@site/static/img/screenshots/characters/sprouty_talk_animation.gif';
 import DialogueExampleImage from '@site/static/img/screenshots/first_dialogue_example.png'
 import TranslationExampleImage from '@site/static/img/screenshots/dialogue_spanish.png'
@@ -23,10 +22,10 @@ function HomepageHeader() {
     <header className={clsx('hero banner', styles.heroBanner)}>
       <div className="container">
         <SVGLogo className={styles.featureSvg} role="img" style={{width:'200px'}} />
-        <Heading as="h1" className="hero__title poppins-bold">
+        <Heading as="h1" className="hero__title poppins-extrabold">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle poppins-light">{siteConfig.tagline}</p>
         <GetStartedButton />
       </div>
     </header>
@@ -37,7 +36,7 @@ function GetStartedButton () {
   return (
     <div className={styles.buttons}>
       <Link
-        className="button button--secondary button--lg"
+        className="button button--secondary button--lg poppins-medium"
         style={{borderRadius: '2rem'}}
         to="/docs/intro">
         Get Started! 🌱
