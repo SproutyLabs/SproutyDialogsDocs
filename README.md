@@ -2,7 +2,7 @@
 
 # Sprouty Dialogs Documentation
 
-Welcome to the official documentation repository for Sprouty Dialogs, a graph-based visual dialogue system plugin for the Godot Engine.
+Welcome to the official documentation repository for [Sprouty Dialogs](https://github.com/SproutyLabs/SproutyDialogs/), a graph-based visual dialogue system plugin for the Godot Engine.
 
 > [!NOTE]
 > This documentation is built using [Docusaurus](https://docusaurus.io/). To understand how the project is structured or how to customize it, refer to the [Docusaurus documentation](https://docusaurus.io/docs).
