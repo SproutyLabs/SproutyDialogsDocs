@@ -128,7 +128,7 @@ const config: Config = {
             },
             {
               label: 'Report a Bug',
-              href: 'https://github.com/SproutyLabs/SproutyDialogs/issues/new',
+              href: 'https://github.com/SproutyLabs/SproutyDialogs/issues/new?template=bug_report.md',
             },
           ],
         },
