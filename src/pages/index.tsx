@@ -10,8 +10,9 @@ import Heading from '@theme/Heading';
 import SVGLogo from '@site/static/img/logo.svg';
 import SproutyGIF from '@site/static/img/screenshots/characters/sprouty_talk_animation.gif';
 import DialogueExampleImage from '@site/static/img/screenshots/first_dialogue_example.png'
-import TranslationExampleImage from '@site/static/img/screenshots/dialogue_spanish.png'
+import TranslationExampleImage from '@site/static/img/screenshots/translation_dialogue_example.png'
 import CharacterEditorImage from '@site/static/img/screenshots/characters/character_editor.png'
+import ComplexExampleImage from '@site/static/img/screenshots/complex_dialogue_example.png'
 
 import styles from './index.module.css';
 
@@ -86,6 +87,14 @@ function SproutyDialogsFeatures() {
           <h2 style={{ textAlign: 'center' }}>Translate your dialogues in the editor</h2>
           <p style={{ textAlign: 'center' }}>Translate your dialogues and characters to any language without leaving the engine!</p>
           <img style={{ width: '800', borderRadius: '10px'}} src={TranslationExampleImage} alt='Translation Example'/>
+        </div>
+      </div>
+      {/* Complex example */}
+      <div className="row">
+        <div className="col padding-top--lg">
+          <h2 style={{ textAlign: 'center' }}>Organize your dialogues wharever you want!</h2>
+          <p style={{ textAlign: 'center' }}>You can have multiple dialogue trees in a single dialogue file and organize them however you want</p>
+          <img style={{ width: '800', borderRadius: '10px'}} src={ComplexExampleImage} alt='Complex Example'/>
         </div>
       </div>
     </div>

@@ -60,7 +60,7 @@ Build games for international audiences with built-in translation features:
 - **Live switching** between locales during dialogue editing
 - **Character name translations** for full localization support
 
-![Dialogue Translation](../static/img/screenshots/dialogue_spanish.png)
+![Dialogue Translation](../static/img/screenshots/translation_dialogue_example.png)
 
 ### 🚀 Easy integration
 
