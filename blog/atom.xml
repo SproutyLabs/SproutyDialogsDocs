@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://SproutyLabs.github.io/SproutyDialogsDocs/blog</id>
+    <title>Sprouty Dialogs Blog</title>
+    <updated>2026-02-05T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://SproutyLabs.github.io/SproutyDialogsDocs/blog"/>
+    <subtitle>Sprouty Dialogs Blog</subtitle>
+    <icon>https://SproutyLabs.github.io/SproutyDialogsDocs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Sprouty Dialogs Release]]></title>
+        <id>https://SproutyLabs.github.io/SproutyDialogsDocs/blog/sprouty-dialogs-release</id>
+        <link href="https://SproutyLabs.github.io/SproutyDialogsDocs/blog/sprouty-dialogs-release"/>
+        <updated>2026-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 Sprouty Dialogs first release is here! 🎉]]></summary>
+        <content type="html"><![CDATA[<p>🎉 <em>Sprouty Dialogs first release is here!</em> 🎉</p>
+<p>Sprouty dialogs is a dialogue system plugin for Godot 4.5+, that provide an <strong>easy-to-use, customizable and extensible</strong> way to create dialogues without having to build your own system.</p>
+<p>The core features from this first release are:</p>
+<ul>
+<li class=""><strong>Graph-based visual interface</strong> to create your dialogues in an easy and intuitive way</li>
+<li class=""><strong>Text editor</strong> to write and format your dialogues easily using BBCode in a user-friendly way</li>
+<li class=""><strong>Character editor</strong> to create and manage characters and portraits to use in your dialogues!</li>
+<li class=""><strong>Variables support</strong> to condicional branching, parse variables and more!</li>
+<li class=""><strong>Signals support</strong> to trigger events from your dialogues</li>
+<li class=""><strong>Custom event nodes support</strong> to create you own events for your game</li>
+<li class=""><strong>Translations support</strong> using <code>.tres</code> files or CSV files</li>
+<li class=""><strong>Edit translations in the editor</strong> without leave the engine</li>
+<li class=""><strong>And preview your dialogues</strong> directly in the editor!</li>
+</ul>
+<p>You can find the release <a href="https://github.com/SproutyLabs/SproutyDialogs/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer" class="">v1.0.0 here</a>.</p>]]></content>
+        <author>
+            <name>Camila Rapu (Kazy)</name>
+            <uri>https://github.com/Kazymila</uri>
+        </author>
+        <category label="Release" term="Release"/>
+        <category label="First post! 🎉" term="First post! 🎉"/>
+    </entry>
+</feed>

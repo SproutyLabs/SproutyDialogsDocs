@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksprouty_dialogs_docs=globalThis.webpackChunksprouty_dialogs_docs||[]).push([[6366],{86366:(s,c,e)=>{e.d(c,{createArchitectureServices:()=>a.S});var a=e(38980);e(87960)}}]);

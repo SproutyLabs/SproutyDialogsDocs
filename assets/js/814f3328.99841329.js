@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksprouty_dialogs_docs=globalThis.webpackChunksprouty_dialogs_docs||[]).push([[7472],{55513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Sprouty Dialogs Release","permalink":"/SproutyDialogsDocs/blog/sprouty-dialogs-release","unlisted":false,"date":"2026-02-05T00:00:00.000Z"}]}')}}]);

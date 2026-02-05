@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksprouty_dialogs_docs=globalThis.webpackChunksprouty_dialogs_docs||[]).push([[9879],{83279:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/SproutyDialogsDocs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

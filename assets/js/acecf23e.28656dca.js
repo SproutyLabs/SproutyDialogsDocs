@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksprouty_dialogs_docs=globalThis.webpackChunksprouty_dialogs_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/SproutyDialogsDocs/blog","blogTitle":"Blog","authorsListPath":"/SproutyDialogsDocs/blog/authors"}')}}]);
