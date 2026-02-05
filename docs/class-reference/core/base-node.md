@@ -27,7 +27,7 @@ You should inherit from this class to create your own dialog nodes.
 | [Color](https://docs.godotengine.org/en/stable/classes/class_color.html)         | [node_color](#node-color-var)           | -       |
 | [Texture2D](https://docs.godotengine.org/en/stable/classes/class_texture2d.html) | [node_icon](#node-icon-var)             | null    |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [start_node_name](#start-node-name-var) | ""      |
-| [SproutyDialogsBaseNode](/docs/class-reference/event-nodes/base-node)            | [start_node](#start-node-var)           | null    |
+| [SproutyDialogsBaseNode](#)                                                      | [start_node](#start-node-var)           | null    |
 | [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)         | [to_node](#to-node-var)                 | []      |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [node_type](#node-type-var)             | ""      |
 | [int](https://docs.godotengine.org/en/stable/classes/class_int.html)             | [node_index](#node-index-var)           | 0       |
@@ -75,7 +75,7 @@ You should inherit from this class to create your own dialog nodes.
 
 <h3 id="start-node-var">
   <span class="reference-type">var </span><code>start_node</code>
-  <span class="default-value"> : <a target="_blank" href="/docs/class-reference/event-nodes/base-node">SproutyDialogsBaseNode</a> = null</span>
+  <span class="default-value"> : <a href="">SproutyDialogsBaseNode</a> = null</span>
 </h3>
 <p>Start node of the dialog tree where the node belongs.</p>
 <hr/>
