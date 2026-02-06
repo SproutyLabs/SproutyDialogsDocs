@@ -69,7 +69,7 @@ function SproutyDialogsFeatures() {
         <div className="col">
            <img style={{ width: '800', borderRadius: '10px'}} src={CharacterEditorImage} alt='Character Editor'/>
         </div>
-        <div className="col col--4" style={{ alignContent: 'center'}}>
+        <div className="col col--4 padding-top--lg" style={{ alignContent: 'center'}}>
           <h2>Manage character, variables and more!</h2>
           <p>You can create and manage your characters for your dialogues with the <b>character editor</b>:</p>
           <ul>
