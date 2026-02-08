@@ -9,7 +9,7 @@ tags:
 
 🎉 _Sprouty Dialogs first release is here!_ 🎉
 
-Sprouty dialogs is a dialogue system plugin for Godot 4.5+, that provide an **easy-to-use, customizable and extensible** way to create dialogues without having to build your own system.
+Sprouty dialogs is a dialogue system plugin for Godot 4.5+, that provides an **easy-to-use, customizable and extensible** way to create dialogues without having to build your own system.
 
 The core features from this first release are:
 

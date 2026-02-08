@@ -189,6 +189,12 @@ func on_portrait_stop_talking() -> void:
 
 How the spritesheets only have one row, we only need to change the `x` coordinate of the `frame coords` property to switch between the normal expression and the mouth open expression.
 
+:::tip
+
+You can learn more about tweens with this amazing **[interactive guide by Christophe](https://qaqelol.itch.io/tweens)!** 🌱
+
+:::
+
 Now, when the character talks, the portrait will animate **switching between the normal expression and the mouth open expression**, like this:
 
 ![Talk Animation](../../static/img/screenshots/characters/sprouty_talk_animation.gif)

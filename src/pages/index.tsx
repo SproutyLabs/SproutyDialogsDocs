@@ -58,18 +58,15 @@ function SproutyDialogsFeatures() {
       </div>
       <div className="row padding-top--md">
         <div className="col">
-          <img style={{ width: '800', borderRadius: '10px'}} src={DialogueExampleImage} alt='Dialogue Example'/>
+          <img style={{ borderRadius: '10px'}} src={DialogueExampleImage} alt='Dialogue Example'/>
         </div>
         <div className="col">
-           <img style={{ width: '600px', borderRadius: '10px'}} src={SproutyGIF} alt='Sprouty Dialogue'/>
+           <img style={{ borderRadius: '10px'}} src={SproutyGIF} alt='Sprouty Dialogue'/>
         </div>
       </div>
       {/* Character editor example */}
       <div className="row padding-top--lg">
-        <div className="col">
-           <img style={{ width: '800', borderRadius: '10px'}} src={CharacterEditorImage} alt='Character Editor'/>
-        </div>
-        <div className="col col--4 padding-top--lg" style={{ alignContent: 'center'}}>
+        <div className="col col--4" style={{ alignContent: 'center'}}>
           <h2>Manage character, variables and more!</h2>
           <p>You can create and manage your characters for your dialogues with the <b>character editor</b>:</p>
           <ul>
@@ -79,6 +76,9 @@ function SproutyDialogsFeatures() {
             <li>You can <b>translate character names</b> for multi-language support</li>
           </ul>
           <p>Also, you can create and manage variables in the variable editor to <b>change the dialogue flow, make conditions, and more!</b></p>
+        </div>
+        <div className="col">
+           <img style={{ width: '800', borderRadius: '10px'}} src={CharacterEditorImage} alt='Character Editor'/>
         </div>
       </div>
       {/* Translation example */}

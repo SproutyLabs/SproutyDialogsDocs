@@ -114,27 +114,27 @@ You can use this script to override the following methods:
 ## Called when the dialog box is open at the beginning of the dialog.
 ## Override this method to customize the behavior of the dialog box when is open.
 func _on_dialog_box_open() -> void:
-	show()
+    show()
 
 
 ## Called when the dialog box is closed at the end of the dialog.
 ## Override this method to customize the behavior of the dialog box when is closed.
 func _on_dialog_box_close() -> void:
-	hide()
+    hide()
 
 
 ## Called when the dialog options are displayed.
 ## Override this method to customize the behavior of the dialog box when options are displayed.
 func _on_options_displayed() -> void:
-	if options_container:
-		options_container.show()
+    if options_container:
+        options_container.show()
 
 
 ## Called when the dialog options are hidden.
 ## Override this method to customize the behavior of the dialog box when options are hidden.
 func _on_options_hidden() -> void:
-	if options_container:
-		options_container.hide()
+    if options_container:
+        options_container.hide()
 ```
 
 ## Using portraits in dialog boxes
