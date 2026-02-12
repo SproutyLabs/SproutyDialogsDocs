@@ -3,7 +3,7 @@ release:
   permalink: /release
   description: Sprouty Dialogs releases
 
-welcome:
-  label: Welcome
-  permalink: /welcome
-  description: lol
+patch:
+  label: Patch
+  permalink: /patch
+  description: Sprouty Dialogs patches
