@@ -42,6 +42,13 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/SproutyLabs/SproutyDialogsDocs/tree/main/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '1.1.0',
+              path: '1.1.0',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -84,6 +91,14 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          versions: {
+            current: {label: 'v1.1.0'},
+            '1.0.0': {label: 'v1.0.0'},
+          },
+          position: 'right',
+        },
         {
           href: 'https://github.com/SproutyLabs/SproutyDialogs',
           label: 'GitHub',
