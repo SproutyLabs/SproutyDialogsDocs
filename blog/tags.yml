@@ -7,3 +7,13 @@ patch:
   label: Patch
   permalink: /patch
   description: Sprouty Dialogs patches
+
+minor:
+  label: Minor
+  permalink: /minor
+  description: Sprouty Dialogs minor releases
+
+new_node:
+  label: New Node!
+  permalink: /new-node
+  description: New event node added!
