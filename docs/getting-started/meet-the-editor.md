@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Let's explore an overview of the plugin interface. When you click on the new **Dialogs** tab, you will see this view:
 
-![Start View](../../static/img/screenshots/getting-started/meet-the-editor/plugin_start_view.png)
+![Start View](@site/static/img/screenshots/getting-started/meet-the-editor/plugin_start_view.png)
 
 ## Resource Sidebar
 
@@ -34,7 +34,7 @@ At the top of the plugin interface, there is a tab bar with each module of the p
 
 The dialogue editor is a graph view where you can **create your own dialogues** usign [event nodes](/docs/dialogues/event-nodes.md). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
 
-![Dialogue Editor](../../static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
+![Dialogue Editor](@site/static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
 
 On the right of the graph editor is the text editor. When editing dialogue text, you can expand the text box and edit the dialogue in the text editor.
 
@@ -42,7 +42,7 @@ This not only gives you a larger view, but also allows you to use a toolbar to e
 
 The text editor have a text preview where you can see the [BBcode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags working for a faster editing. But, you can also preview your dialogues in a in-game view by clicking the play button on the **Start Node** of your dialogue.
 
-![Play Example](../../static/img/screenshots/getting-started/meet-the-editor/play_example.png)
+![Play Example](@site/static/img/screenshots/getting-started/meet-the-editor/play_example.png)
 
 If you don't understand this completely, don't worry, this is only an overview. In the next section, you'll learn how to [create your first dialogue](create-a-dialogue).
 
@@ -53,7 +53,7 @@ The character editor allows you to create characters to use in the dialogues. Th
 1. First, you can set the character's settings, such as the display name, dialog box, and portrait settings.
 2. The second section is the portrait editor, where you can edit the selected portrait.
 
-![Character Editor](../../static/img/screenshots/characters/character_editor.png)
+![Character Editor](@site/static/img/screenshots/characters/character_editor.png)
 
 You can start making your own characters by viewing the [create a character](create-a-character) section. For more information about characters and portraits, see the [using characters](/docs/characters/using-characters.md) section.
 
@@ -61,7 +61,7 @@ You can start making your own characters by viewing the [create a character](cre
 
 The variable editor allows you to create variables for use in dialogues. You can add **variables of different types**, group them, and edit them. These variables can be used for display in dialogues, conditional events, and more.
 
-![Variable Editor](../../static/img/screenshots/getting-started/meet-the-editor/variable_editor.png)
+![Variable Editor](@site/static/img/screenshots/getting-started/meet-the-editor/variable_editor.png)
 
 > You can call variables within `{}` to use them in text, as can be seen in `not_pass_alert`, which uses the variable `alert_color` to color the text.
 

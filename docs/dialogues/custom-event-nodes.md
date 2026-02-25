@@ -51,7 +51,7 @@ Also, the name should be in **snake_case format** (lowercase letters with unders
 
 Here's an example of a custom event node called `Custom Node`:
 
-![Custom Node scene](../../static/img/screenshots/custom-event-nodes/custom_node_scene.png)
+![Custom Node scene](@site/static/img/screenshots/custom-event-nodes/custom_node_scene.png)
 
 As you can see, the [SproutyDialogsBaseNode](/docs/class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. Also, you can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
 
@@ -196,7 +196,7 @@ You can access to the dialogue resources from the [DialogPlayer](/docs/class-ref
 
 Having your custom node and custom event interpreter ready, you need to set up some settings to use them in your dialogues. For that, you need to go to the [general settings](/docs/settings#general-settings) in the Sprouty Dialogs settings tab.
 
-![Custom Settings](../../static/img/screenshots/custom-event-nodes/custom_settings.png)
+![Custom Settings](@site/static/img/screenshots/custom-event-nodes/custom_settings.png)
 
 Here, you need to do the following:
 
@@ -212,17 +212,17 @@ You should save your custom event nodes and custom event interpreter **outside t
 
 Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](/docs/getting-started/meet-the-editor#dialogue-editor). You will see your custom event node available in the event nodes list to add it to the graph.
 
-![Custom Node in List](../../static/img/screenshots/custom-event-nodes/custom_node_in_list.png)
+![Custom Node in List](@site/static/img/screenshots/custom-event-nodes/custom_node_in_list.png)
 
 And you can use it like any other event node in the graph editor.
 
-![Custom Node in Dialogue](../../static/img/screenshots/custom-event-nodes/custom_node_example.png)
+![Custom Node in Dialogue](@site/static/img/screenshots/custom-event-nodes/custom_node_example.png)
 
 When the dialogue is played, the dialog player will use your custom event interpreter to process the event nodes, including your custom event nodes.
 
 Here's an example of the output when the dialogue with the custom event node is played:
 
-![Custom Node on Play](../../static/img/screenshots/custom-event-nodes/custom_node_play.png)
+![Custom Node on Play](@site/static/img/screenshots/custom-event-nodes/custom_node_play.png)
 
 As you can see, the custom event node is processed correctly, and the **text entered in the node is printed to the console** as we expect.
 

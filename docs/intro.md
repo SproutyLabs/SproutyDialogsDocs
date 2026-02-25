@@ -8,7 +8,7 @@ sidebar_position: 1
 
 The plugin has a **graph-based visual dialogue editor**, allowing you to design complex dialogue trees. Also, manage characters and portraits in a **dedicated character editor**, and much more without leaving the Godot editor.
 
-![Dialogue editor](../static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
+![Dialogue editor](@site/static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
 
 Sprouty Dialogs is based in [Dialogic](https://github.com/dialogic-godot/dialogic/) and [Dialogue Nodes](https://github.com/nagidev/DialogueNodes) plugins, combining the powerful features of Dialogic such as the character editor, but with a graph-based visual interface like Dialogue Nodes.
 
@@ -27,7 +27,7 @@ Design your dialogues visually using an **intuitive graph-based node system**. C
 - **Event nodes** for dialogue progression, variable manipulation, branching, and more
 - **Real-time preview** with a built-in play button to test your dialogues instantly
 
-![Preview](../static/img/screenshots/getting-started/meet-the-editor/play_example.png)
+![Preview](@site/static/img/screenshots/getting-started/meet-the-editor/play_example.png)
 
 ### 👥 Character management
 
@@ -38,7 +38,7 @@ Create and manage characters for your dialogues with a dedicated character edito
 - **Portrait system** with multiple portrait states per character
 - **Easy use** of characters and portraits in your dialogues
 
-![Character Editor](../static/img/screenshots/characters/character_editor.png)
+![Character Editor](@site/static/img/screenshots/characters/character_editor.png)
 
 ### 🔀 Variables system
 
@@ -49,7 +49,7 @@ Manage game state and create complex dialogue logic with an integrated variable 
 - **Integration with Godot autoloads** for using global game variables
 - **Conditional branching** based on variable states and comparisons
 
-![Conditional Branching](../static/img/screenshots/variables/variable_in_condition.png)
+![Conditional Branching](@site/static/img/screenshots/variables/variable_in_condition.png)
 
 ### 🌍 Multi-language translation support
 
@@ -60,7 +60,7 @@ Build games for international audiences with built-in translation features:
 - **Live switching** between locales during dialogue editing
 - **Character name translations** for full localization support
 
-![Dialogue Translation](../static/img/screenshots/translation_dialogue_example.png)
+![Dialogue Translation](@site/static/img/screenshots/translation_dialogue_example.png)
 
 ### 🚀 Easy integration
 
@@ -79,4 +79,4 @@ Use dialogues in your game with minimal code:
 
 How to start using Sprouty Dialogs? Check out the [Getting Started guide](/docs/category/getting-started) to install the plugin and learn how to create and run your first dialogue!
 
-![Sprouty Dialogue](../static/img/screenshots/characters/sprouty_talk_animation.gif)
+![Sprouty Dialogue](@site/static/img/screenshots/characters/sprouty_talk_animation.gif)

@@ -8,7 +8,7 @@ We already saw how to create a character in the [create a character](/docs/getti
 
 Let's review the character editor and all its settings.
 
-![Character Editor](../../static/img/screenshots/characters/character_editor.png)
+![Character Editor](@site/static/img/screenshots/characters/character_editor.png)
 
 ## Main settings
 
@@ -28,7 +28,7 @@ In the character data file, you can see several properties that you can configur
 
 - `Display Name`: The name that will be displayed in the dialog box when the character speaks. This can be translated if you have **translations enabled**.
 
-  > ![Display Name Translations](../../static/img/screenshots/characters/character_name_translations.png)
+  > ![Display Name Translations](@site/static/img/screenshots/characters/character_name_translations.png)
   >
   > Also, you can use **variables, expressions and rich text formatting** in the display name. See more information in the [variables in character names](/docs/variables#variables-in-character-names) section.
 
@@ -40,7 +40,7 @@ In the character data file, you can see several properties that you can configur
 
 You can also assign a specific dialog box for the character. For that you have some settings.
 
-![Character Dialog Box Settings](../../static/img/screenshots/characters/character_dialog_box_settings.png)
+![Character Dialog Box Settings](@site/static/img/screenshots/characters/character_dialog_box_settings.png)
 
 - `Dialog Box`: The dialog box scene that will be used when this character speaks.
 
@@ -50,7 +50,7 @@ You can also assign a specific dialog box for the character. For that you have s
 
   > If is enabled, the portrait will be displayed inside the dialog box, where you configure the `Portrait Display` component of the dialog box.
   >
-  > ![Portrait on Dialog Box](../../static/img/screenshots/dialog-boxes/portrait_on_dialog_example.png)
+  > ![Portrait on Dialog Box](@site/static/img/screenshots/dialog-boxes/portrait_on_dialog_example.png)
   > See more information in the [using portraits in dialog boxes](/docs/dialogues/dialog-boxes#using-portraits-in-dialog-boxes) section.
 
 ## Portraits settings
@@ -59,7 +59,7 @@ You can also assign a specific dialog box for the character. For that you have s
 
 You can also configure some settings for the character portraits.
 
-![Character Portrait Settings](../../static/img/screenshots/characters/character_portrait_settings.png)
+![Character Portrait Settings](@site/static/img/screenshots/characters/character_portrait_settings.png)
 
 - `Default Portrait`: The default portrait that will be used when the character speaks if **no specific portrait is assigned in the dialogue**.
 
@@ -77,10 +77,10 @@ You can also configure some settings for the character portraits.
 
 Finally, you can see the list of portraits assigned to the character. You can add as many portraits as you want and organize them in groups.
 
-![Character Portrait List](../../static/img/screenshots/characters/character_portrait_list.png)
+![Character Portrait List](@site/static/img/screenshots/characters/character_portrait_list.png)
 
 You can create different portraits for different expressions, poses, outfits, etc. You can then use these portraits in the dialogues by **selecting the portrait** in a [Dialogue Node](/docs/dialogues/event-nodes#dialogue-node), after selecting the character.
 
-![Character in Dialogue](../../static/img/screenshots/getting-started/create-a-character/character_in_dialogue.png)
+![Character in Dialogue](@site/static/img/screenshots/getting-started/create-a-character/character_in_dialogue.png)
 
 To learn how to configure portraits, continue to the [customize portraits](/docs/characters/customize-portraits.md) section.

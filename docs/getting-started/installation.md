@@ -14,7 +14,7 @@ Sprouty Dialogs requires **Godot 4.5** or higher!
 
 The easiest way to install the plugin is by using the AssetLib within the Godot engine.
 
-![Plugin on Assetlib](../../static/img/screenshots/getting-started/installation/plugin_asset_lib.png)
+![Plugin on Assetlib](@site/static/img/screenshots/getting-started/installation/plugin_asset_lib.png)
 
 To install the plugin from the AssetLib follow these instructions:
 
@@ -48,10 +48,10 @@ Now that you have the plugin in your project, you need to activate it to start u
 2. Click on `Plugins` tab.
 3. Check the `Enable` box status ✅
 
-![Enable plugin](../../static/img/screenshots/getting-started/installation/enable_plugin.png)
+![Enable plugin](@site/static/img/screenshots/getting-started/installation/enable_plugin.png)
 
 4. You will see this new tab in the editor:
 
-![Plugin Tab](../../static/img/screenshots/getting-started/installation/plugin_tab.png)
+![Plugin Tab](@site/static/img/screenshots/getting-started/installation/plugin_tab.png)
 
 Congratulations! Now you can start to create your own dialogues with Sprouty Dialogs!

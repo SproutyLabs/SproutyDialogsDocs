@@ -18,7 +18,7 @@ The Sprouty Dialogs plugin **has a built-in interface to handle variables in a u
 
 The variable editor allows you to **create and handle variables of different types** to use in your dialogues. You can add, remove, rename, set an inital value and filter the variables. They can be **organized into groups** and support drag-and-drop reordering.
 
-![Variable Editor](../static/img/screenshots/variables/variable_editor.png)
+![Variable Editor](@site/static/img/screenshots/variables/variable_editor.png)
 
 As you can see, **groups can be nested** and **assigned a color** to distinguish them more easily. To change the group color, **click on the squared colored button at the left of the group name** and select a color.
 
@@ -32,7 +32,7 @@ When grouping variables, you must consider the **full path to reference a variab
 
 To view the full path for each variable or group, you can **hover your cursor over it for a moment**.
 
-![Variable Path Tooltip](../static/img/screenshots/variables/variable_path_tooltip.png)
+![Variable Path Tooltip](@site/static/img/screenshots/variables/variable_path_tooltip.png)
 
 :::info[Important]
 
@@ -58,7 +58,7 @@ With the variables configured here, you can do many things! Let's take a look.
 
 When you edit dialogues using the text editor, you can see a list of available variables filtered by type to insert variables more easily. For more information, see the [text editor section](/docs/dialogues/text-editor#insert-variables).
 
-![Insert Variable](../static/img/screenshots/text-editor/insert_variable.png)
+![Insert Variable](@site/static/img/screenshots/text-editor/insert_variable.png)
 
 ### Variables in character names
 
@@ -74,7 +74,7 @@ _Also, you can use variables in the name **translations**._
 
 Conditions allows to change the flow of the dialogue, so they are one of the main uses for variables. You can add conditions in the dialogue tree using the [condition node](/docs/dialogues/event-nodes#condition-node).
 
-![Variable in Condition](../static/img/screenshots/variables/variable_in_condition.png)
+![Variable in Condition](@site/static/img/screenshots/variables/variable_in_condition.png)
 
 You can check relations between two variables, variable and value, expressions, etc. Also, you can compare **global variables** as well as **Sprouty Dialogs variables**.
 
@@ -88,7 +88,7 @@ You must check that the **comparation is valid**. You cannot compare an [String]
 
 You can update or change the variables values in the dialogue tree using the [set variable node](/docs/dialogues/event-nodes#set-variable-node). You can update **global variables** as well as **Sprouty Dialogs variables**.
 
-![Set Variable Example](../static/img/screenshots/variables/set_variable_example.png)
+![Set Variable Example](@site/static/img/screenshots/variables/set_variable_example.png)
 
 You can update the value using different **assignment operations** depending on the type of variable.
 

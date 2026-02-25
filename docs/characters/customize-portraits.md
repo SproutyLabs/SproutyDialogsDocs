@@ -14,19 +14,19 @@ Each portrait have a corresponding **scene**, which is used to **render the port
 
 When you create a new portrait to the portrait list, you need to **create a new portrait scene or use an existing one**, that allows you to **reuse the same scene for multiple portraits**.
 
-![New portrait](../../static/img/screenshots/getting-started/create-a-character/new_portrait.png)
+![New portrait](@site/static/img/screenshots/getting-started/create-a-character/new_portrait.png)
 
 To create a new portrait scene, **click on the `+` button** next to the `Scene` field in the portrait editor, locate where you want to save the file, give it a name and click on `Create File`.
 
-![New portrait Scene](../../static/img/screenshots/getting-started/create-a-character/new_portrait_scene.png)
+![New portrait Scene](@site/static/img/screenshots/getting-started/create-a-character/new_portrait_scene.png)
 
 By default, the new scene will be a template where you can **assign a image to display as portrait**. For that, you will see a `Portrait Image` property in a new `Properties` section where you can select an image.
 
-![Select Portrait Image](../../static/img/screenshots/getting-started/create-a-character/select_portrait_image.png)
+![Select Portrait Image](@site/static/img/screenshots/getting-started/create-a-character/select_portrait_image.png)
 
 After selecting an image, you can see the image as the portrait in the preview!
 
-![Portrait preview](../../static/img/screenshots/getting-started/create-a-character/portrait_preview.png)
+![Portrait preview](@site/static/img/screenshots/getting-started/create-a-character/portrait_preview.png)
 
 Additionally, you can edit the portrait transformation settings to change the position, scale, and rotation with which the portrait will be displayed on the screen.
 
@@ -44,7 +44,7 @@ This script is a template that inherits from the [DialogPortrait](/docs/class-re
 
 By default, this template have some animations to show how to use the overridable methods of the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class. This animations look like this:
 
-![Sprouty Dialogue](../../static/img/screenshots/characters/sprouty_default_animations.gif)
+![Sprouty Dialogue](@site/static/img/screenshots/characters/sprouty_default_animations.gif)
 
 You can modify or remove these animations and create your own behavior by overriding the methods provided by the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class.
 
@@ -100,7 +100,7 @@ extends DialogPortrait
 
 The exported properties will be visible in the portrait editor in the `Properties` section when you select the portrait from the list:
 
-![Export Portrait Image](../../static/img/screenshots/characters/export_portrait_image.png)
+![Export Portrait Image](@site/static/img/screenshots/characters/export_portrait_image.png)
 
 As you see, the exported properties inside the **"Private"** group will not be visible in the portrait editor, but you can still modify them directly in the scene and in the portrait script. You can use this to create properties that are only used **internally by the portrait scene**.
 
@@ -114,7 +114,7 @@ Let's see how to create a portrait scene that allows to select a character expre
 
 To do that, we will create a new portrait scene and a new script attached in root that inherits from [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) with a [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) child, like the default template.
 
-![Portrait Scene](../../static/img/screenshots/characters/spritesheet_portrait.png)
+![Portrait Scene](@site/static/img/screenshots/characters/spritesheet_portrait.png)
 
 In the [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) node, we can **assign a spritesheet image** that contains multiple expressions of the character, **slice the image** using the [Hframes](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html#class-sprite2d-property-hframes) and [Vframes](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html#class-sprite2d-property-vframes) properties that correspond to the **number of rows and columns in the spritesheet**, and display a specific expression using the [Frame](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html#class-sprite2d-property-frame) or [Frame Coords](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html#class-sprite2d-property-frame-coords) property to **select which frame to show**.
 
@@ -132,7 +132,7 @@ extends DialogPortrait
 
 These exported properties will be visible in the inspector when we select the portrait scene:
 
-![Inspector Exported Properties](../../static/img/screenshots/characters/spritesheet_portrait_inspector.png)
+![Inspector Exported Properties](@site/static/img/screenshots/characters/spritesheet_portrait_inspector.png)
 
 Then, in the [set_portrait](/docs/class-reference/nodes/dialog-portrait#set-portrait-method)() method, we will set the corresponding properties of the [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) node to display the portrait using the exported properties:
 
@@ -151,7 +151,7 @@ We add a validation to check that the `portrait_image` is not empty and exist be
 
 Now, if we go to the character editor and create a new portrait using this portrait scene, we will see the exported properties in the portrait editor:
 
-![Portrait Exported Properties](../../static/img/screenshots/characters/spritesheet_portrait_exported_properties.png)
+![Portrait Exported Properties](@site/static/img/screenshots/characters/spritesheet_portrait_exported_properties.png)
 
 :::info
 
@@ -161,11 +161,11 @@ When you modify the portrait scene or its script, you need to **reload the scene
 
 By assigning different spritesheet images and frame coordinates to different portraits, we can create multiple character expressions using the same portrait scene.
 
-![Neutral Portrait](../../static/img/screenshots/characters/sprouty_neutral.png)
+![Neutral Portrait](@site/static/img/screenshots/characters/sprouty_neutral.png)
 
 In this case, we only need to change the `frame coords` property to display different expressions from the same spritesheet image.
 
-![Actually Portrait](../../static/img/screenshots/characters/sprouty_actually.png)
+![Actually Portrait](@site/static/img/screenshots/characters/sprouty_actually.png)
 
 But we can do more things, for example, we can override the [on_portrait_talk](/docs/class-reference/nodes/dialog-portrait#on-portrait-talk-method)() and [on_portrait_stop_talking](/docs/class-reference/nodes/dialog-portrait#on-portrait-stop-talking-method)() methods to create a simple mouth movement animation when the character talks.
 
@@ -197,7 +197,7 @@ You can learn more about tweens with this amazing **[interactive guide by Christ
 
 Now, when the character talks, the portrait will animate **switching between the normal expression and the mouth open expression**, like this:
 
-![Talk Animation](../../static/img/screenshots/characters/sprouty_talk_animation.gif)
+![Talk Animation](@site/static/img/screenshots/characters/sprouty_talk_animation.gif)
 
 This is just a simple example of what you can do to customize your portrait scenes.
 

@@ -16,17 +16,17 @@ To use the dialogues from Sprouty Dialogs in your game, as we have already seen 
 
 The recommended way to run your dialogues is using dialog players. To use a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node, first you need to **add it to the scene** where you want to run the dialogue.
 
-![Add Dialog Player](../../static/img/screenshots/getting-started/create-a-dialogue/add_dialog_player.png)
+![Add Dialog Player](@site/static/img/screenshots/getting-started/create-a-dialogue/add_dialog_player.png)
 
 Then, you must assign the `Dialog Data` or dialogue data file where your dialogue is.
 
-![Select Dialogue Data](../../static/img/screenshots/getting-started/create-a-dialogue/select_dialogue_data.png)
+![Select Dialogue Data](@site/static/img/screenshots/getting-started/create-a-dialogue/select_dialogue_data.png)
 
 When you select a file, the inspector automatically going to update and now you will see some settings for the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md).
 
 You must choose the **dialogue tree ID of the dialogue you want to play** from the `Start ID` dropdown; otherwise, the player will not know which dialogue tree to run.
 
-![Select Start ID](../../static/img/screenshots/getting-started/create-a-dialogue/select_start_id.png)
+![Select Start ID](@site/static/img/screenshots/getting-started/create-a-dialogue/select_start_id.png)
 
 Now that you have your dialog player configured, you can call the dialogue from code, using the [start](/docs/class-reference/nodes/dialog-player#start-method)() method from the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node.
 
@@ -44,7 +44,7 @@ func _ready() -> void:
 
 In this case, we run the dialog in the [\_ready](https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-private-method-ready)() method of the `main` node or when the scene begins again, so when you run the scene you will see the dialogue.
 
-![Play from Code](../../static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
+![Play from Code](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
 
 And that's it! So easy right? 🥳
 
@@ -88,7 +88,7 @@ func _ready() -> void:
 
 And in this way you can also see the dialogue when you run the scene.
 
-![Play from Autoload](../../static/img/screenshots/getting-started/create-a-dialogue/play_from_autoload.png)
+![Play from Autoload](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_autoload.png)
 
 :::info[Important]
 
@@ -140,7 +140,7 @@ You can override the parents of your dialog boxes and portraits for each charact
 
 When you assign a dialogue data file that use characters in a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node, the inspector will add a new group of properties called `Override Display Parents`.
 
-![Dialog Box Inspector](../../static/img/screenshots/override_display_parents.png)
+![Dialog Box Inspector](@site/static/img/screenshots/override_display_parents.png)
 
 Here you will find **a section for each character in the dialogues** of the selected dialog data, where you can **assign any nodes in the scene** to override the parent of the character portraits or dialog box.
 

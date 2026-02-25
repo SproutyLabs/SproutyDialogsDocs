@@ -14,7 +14,7 @@ First, you need to create a new **character data file** that will contain all th
 
 To create a new character data file, **click on the New Character button**, locate where you want to save the file, give it a name and click on `Create File`.
 
-![New Character File](../../static/img/screenshots/getting-started/create-a-character/new_character_file.png)
+![New Character File](@site/static/img/screenshots/getting-started/create-a-character/new_character_file.png)
 
 :::info[Important]
 
@@ -30,13 +30,13 @@ Don't worry, this is not the name that will be displayed in the dialogues. You c
 
 Now you can configure your character to use it in your dialogues. At the top of the character editor interface, you'll see the **file name as the character's key name**, followed by some settings that we'll look at.
 
-![New Character](../../static/img/screenshots/getting-started/create-a-character/new_character.png)
+![New Character](@site/static/img/screenshots/getting-started/create-a-character/new_character.png)
 
 First, we have the `Display Name` property, that is the **name that will be displayed in the dialogues when the character speaks**.
 
 > The display name can be translated to different languages if you have the **translations** enabled in settings. For more information about translations see the [translations section](/docs/translations.md).
 >
-> ![Display Name Translation](../../static/img/screenshots/characters/character_name_translations.png)
+> ![Display Name Translation](@site/static/img/screenshots/characters/character_name_translations.png)
 
 Then, we have the `Description` property that does nothing, is only for your own reference.
 
@@ -44,11 +44,11 @@ Then, we have the `Description` property that does nothing, is only for your own
 
 You can also assign a specific dialog box for the character. For that you need to load a dialog box scene or create a new one. You can **create a new dialog box scene clicking the `+` button in the `Dialog Box` property**, locate where you want to save the file, give it a name and click on `Create File`.
 
-![New Dialog Box](../../static/img/screenshots/getting-started/create-a-character/new_dialog_box.png)
+![New Dialog Box](@site/static/img/screenshots/getting-started/create-a-character/new_dialog_box.png)
 
 When you create a new dialog box scene, the scene will open in the editor for editing. This scene is a template with a basic dialog box layout.
 
-![Dialog Box Scene](../../static/img/screenshots/dialog-boxes/dialog_box_scene.png)
+![Dialog Box Scene](@site/static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
 :::info
 
@@ -64,7 +64,7 @@ This script is a template that inherits from the [DialogBox](/docs/class-referen
 
 Here is our example dialog box customized:
 
-![Sprouty Dialog Box](../../static/img/screenshots/getting-started/create-a-character/sprouty_dialog_box.png)
+![Sprouty Dialog Box](@site/static/img/screenshots/getting-started/create-a-character/sprouty_dialog_box.png)
 
 Here you can see a `Portrait Display` component in the inspector that is empty. This component is necessary if you want to display character portraits in the dialog box, which is configured in the character's `Portrait on dialog box` property.
 
@@ -84,13 +84,13 @@ For more information, see the [dialog boxes section](/docs/dialogues/dialog-boxe
 
 At the bottom of the character editor interface you gonna see the portrait list, when you can create different portraits for your character. To create a new portrait, **click on the `+` button** and give it a name.
 
-![New portrait](../../static/img/screenshots/getting-started/create-a-character/new_portrait.png)
+![New portrait](@site/static/img/screenshots/getting-started/create-a-character/new_portrait.png)
 
 When you create a portrait, you can see that the **portrait editor** appears in the right side of the character editor interface. Here you can see a preview of the portrait and some settings.
 
 To see a portrait you need to load or create a portrait scene first. To create a new portrait scene, **click on the `+` button in the `Scene` property**, locate where you want to save the file, give it a name and click on `Create File`.
 
-![New portrait Scene](../../static/img/screenshots/getting-started/create-a-character/new_portrait_scene.png)
+![New portrait Scene](@site/static/img/screenshots/getting-started/create-a-character/new_portrait_scene.png)
 
 When you create a new portrait scene, the scene will open in the editor for editing. This scene is a template with a basic portrait, as the dialog box template.
 
@@ -106,11 +106,11 @@ This script is a template that inherits from the [DialogPortrait](/docs/class-re
 
 In the portrait editor, you can see how a **new property called `Portrait Image` was added to the portrait settings**, where we can select an image.
 
-![Select Portrait Image](../../static/img/screenshots/getting-started/create-a-character/select_portrait_image.png)
+![Select Portrait Image](@site/static/img/screenshots/getting-started/create-a-character/select_portrait_image.png)
 
 And now we can see the image as the portrait in the preview!
 
-![Portrait preview](../../static/img/screenshots/getting-started/create-a-character/portrait_preview.png)
+![Portrait preview](@site/static/img/screenshots/getting-started/create-a-character/portrait_preview.png)
 
 Also, we can edit the portrait transformation settings to change the position, scale, and rotation with which the portrait will be displayed on the screen.
 
@@ -124,19 +124,19 @@ To use characters in your dialogues, **you need to assign them in the `Dialogue 
 
 So, we'll going to open again our first dialogue, and in our little dialogue tree, we can **click on the folder icon in the characters section** to locate and select the character data file of the character that we want to assign, and then click on `Open File`.
 
-![Select Character in Dialogue](../../static/img/screenshots/getting-started/create-a-character/select_character_in_dialogue.png)
+![Select Character in Dialogue](@site/static/img/screenshots/getting-started/create-a-character/select_character_in_dialogue.png)
 
 Now, you gonna see the character key name in the character field of the `Dialogue Node` and we can see the portrait list in the portrait dropdown, when you can **select the portrait that you want to show with this dialogue**. In this case, we select the `Neutral` portrait that we made before.
 
-![Select Portrait in Dialogue](../../static/img/screenshots/getting-started/create-a-character/select_portrait_in_dialogue.png)
+![Select Portrait in Dialogue](@site/static/img/screenshots/getting-started/create-a-character/select_portrait_in_dialogue.png)
 
 So, now you can see the character and portrait setted in the `Dialogue Node`:
 
-![Character in Dialogue](../../static/img/screenshots/getting-started/create-a-character/character_in_dialogue.png)
+![Character in Dialogue](@site/static/img/screenshots/getting-started/create-a-character/character_in_dialogue.png)
 
 If we run the dialogue, now we'll going to see the dialog box and the portrait on screen.
 
-![Player Dialogue with Character](../../static/img/screenshots/getting-started/create-a-character/play_dialogue_with_character.png)
+![Player Dialogue with Character](@site/static/img/screenshots/getting-started/create-a-character/play_dialogue_with_character.png)
 
 Congratulations! You have created your first character and used it in your dialogues.
 

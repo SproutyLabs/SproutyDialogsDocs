@@ -8,7 +8,7 @@ The text editor allows you to write your dialogues using various formatting opti
 
 In this way, you can simply use the toolbar to add them to your text. _You don't have to remember all the tags and its properties!_
 
-![Text Editor](../../static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
+![Text Editor](@site/static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
 
 ## What is BBcode?
 
@@ -38,15 +38,15 @@ To use BBCode in your dialogues, the dialogue must be displayed using a [RichTex
 
 When you are writting dialogues in a dialogue node, options node, or any text box, you can expand it **clicking on the right button** and the **text editor** will be open on the right side.
 
-![Expand Text Box](../../static/img/screenshots/getting-started/create-a-dialogue/expand_text_box.png)
+![Expand Text Box](@site/static/img/screenshots/getting-started/create-a-dialogue/expand_text_box.png)
 
 You can simply **select the text you want to be affected by the tags** and click a option button in the toolbar to add the tags. The editor will automatically insert the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags around the selected text.
 
-![Add tags](../../static/img/screenshots/getting-started/create-a-dialogue/text_editor_add_tags.png)
+![Add tags](@site/static/img/screenshots/getting-started/create-a-dialogue/text_editor_add_tags.png)
 
 You can **change the properties of the tag while you have the _opening tag_ selected**, then you can modify the properties in the toolbar to update the tag. For example, in this case we change the color of the text.
 
-![Change Properties](../../static/img/screenshots/getting-started/create-a-dialogue/text_editor_change_properties.png)
+![Change Properties](@site/static/img/screenshots/getting-started/create-a-dialogue/text_editor_change_properties.png)
 
 You can also **edit or add the tags manually** by typing them directly in the text editor.
 
@@ -72,7 +72,7 @@ There is a **Font Style** option that allows you to configure the font propertie
 
 You can change the **size** and **font** of the selected text, as well as other advanced properties.
 
-![Change Font Style](../../static/img/screenshots/text-editor/change_font_style.png)
+![Change Font Style](@site/static/img/screenshots/text-editor/change_font_style.png)
 
 You can change the following properties:
 
@@ -134,7 +134,7 @@ To insert a variable, you can use the **Insert Variable** option in the toolbar.
 
 In this case, we do not insert a BBCode tag here, but rather a special placeholder that will be replaced by the value of the variable at runtime. Its format is: `{variable_name}`.
 
-![Insert Variable](../../static/img/screenshots/text-editor/insert_variable.png)
+![Insert Variable](@site/static/img/screenshots/text-editor/insert_variable.png)
 
 :::info[Important]
 
@@ -150,7 +150,7 @@ To insert an image, you can use the **Insert Image** option in the toolbar. You 
 
 You not only can insert images, but you can also change its size and other settings modifying its properties.
 
-![Insert Image](../../static/img/screenshots/text-editor/insert_image.png)
+![Insert Image](@site/static/img/screenshots/text-editor/insert_image.png)
 
 You can change the following properties:
 
@@ -168,7 +168,7 @@ You can change the following properties:
 
 To insert a link, you can use the **Insert Link** option in the toolbar. You must **select the text to be linked and enter the URL in the input field**, then press `[Enter]` to add it. Its tag format is: `[url={url}]{text}[/url]`
 
-![Insert Link](../../static/img/screenshots/text-editor/insert_link.png)
+![Insert Link](@site/static/img/screenshots/text-editor/insert_link.png)
 
 By default, when the user clicks on it, its going to **open the URL in a web browser**, if you have enabled the `Open URL on meta tag click` setting in the [text settings](/docs/settings#text-settings) of the plugin.
 
@@ -186,7 +186,7 @@ For dialogues, you need to connect to the `meta_clicked` signal from the [Dialog
 
 The text editor provides some animated effects supported by default by Godot that you can see in [text effects in godot docs](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html#text-effects). You can access them through the **Effects** menu in the toolbar.
 
-![Effects Menu](../../static/img/screenshots/text-editor/effects_menu.png)
+![Effects Menu](@site/static/img/screenshots/text-editor/effects_menu.png)
 
 ### Pulse
 
