@@ -12,12 +12,6 @@ Hi everyone! 🌱
 
 This release adds some new QoL features to the Graph Editor, and also a new cool event node! 😎
 
-:::important
-
-_The documentation will be updated soon!_ 👀
-
-:::
-
 <!-- truncate -->
 
 ## New features
