@@ -85,7 +85,7 @@ Component that represents a single variable item in the variable editor panel. I
   <span class="reference-type">var </span><code>parent_group</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> = null</span>
 </h3>
-<p>Parent group of the item. Can be an [EditorSproutyDialogsVariableGroup](/docs/class-reference/editor/modules/variables/variable-group.md) or the main container.</p>
+<p>Parent group of the item. Can be an [EditorSproutyDialogsVariableGroup](./variable-group.md) or the main container.</p>
 <hr/>
 
 <h3 id="new-item-var">

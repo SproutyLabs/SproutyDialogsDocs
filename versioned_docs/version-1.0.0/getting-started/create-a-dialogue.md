@@ -10,7 +10,7 @@ In this section you'll go to learn how creating your own dialogs and use it in y
 
 ---
 
-First, you need to create a new **dialogue data file** that will contain all the dialogue information, which will later be used by a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node to display the dialogues in your game. The dialogue data files are saved as `.tres` resource files.
+First, you need to create a new **dialogue data file** that will contain all the dialogue information, which will later be used by a [DialogPlayer](../class-reference/nodes/dialog-player.md) node to display the dialogues in your game. The dialogue data files are saved as `.tres` resource files.
 
 To create a new dialogue data file, **click on the New Dialogue button**, locate where you want to save the file, give it a name and click on `Create File`.
 
@@ -26,7 +26,7 @@ It is recommended to **create a folder only to store your dialogues**, especiall
 
 ---
 
-Now you can start to create your dialogue adding [event nodes](/docs/dialogues/event-nodes.md) to it. Each node represents a event in a dialogue tree. To **add a new node, right click anywhere in the graph** and select the node you want from the popup list.
+Now you can start to create your dialogue adding [event nodes](../dialogues/event-nodes.md) to it. Each node represents a event in a dialogue tree. To **add a new node, right click anywhere in the graph** and select the node you want from the popup list.
 
 ![New Dialogue](@site/static/img/screenshots/getting-started/create-a-dialogue/add_nodes.png)
 
@@ -82,7 +82,7 @@ You can test your dialogue playing it in a preview in-game view. To do this, **c
 
 ---
 
-To use the dialogue in your game, you need to add a [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node to the scene where you want to run the dialogue. In this case, we'll add the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) to a 2D scene.
+To use the dialogue in your game, you need to add a [DialogPlayer](../class-reference/nodes/dialog-player.md) node to the scene where you want to run the dialogue. In this case, we'll add the [DialogPlayer](../class-reference/nodes/dialog-player.md) to a 2D scene.
 
 ![Add Dialog Player](@site/static/img/screenshots/getting-started/create-a-dialogue/add_dialog_player.png)
 
@@ -90,11 +90,11 @@ Next, you must assign the `Dialog Data` or dialogue data file you want to use; w
 
 ![Select Dialogue Data](@site/static/img/screenshots/getting-started/create-a-dialogue/select_dialogue_data.png)
 
-When you select a file, the inspector automatically going to update and now you will see some settings for the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md). You must choose the **dialogue tree ID from the dialogue file you want to play in the `Start ID` property**; otherwise, the player will not know which dialogue tree to run.
+When you select a file, the inspector automatically going to update and now you will see some settings for the [DialogPlayer](../class-reference/nodes/dialog-player.md). You must choose the **dialogue tree ID from the dialogue file you want to play in the `Start ID` property**; otherwise, the player will not know which dialogue tree to run.
 
 ![Select Start ID](@site/static/img/screenshots/getting-started/create-a-dialogue/select_start_id.png)
 
-Also, you can set other settings, such as `Play on Ready`, that will run the dialogue when the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node is ready on the scene tree. If we enable this property, you'll see the dialogue when you play the scene.
+Also, you can set other settings, such as `Play on Ready`, that will run the dialogue when the [DialogPlayer](../class-reference/nodes/dialog-player.md) node is ready on the scene tree. If we enable this property, you'll see the dialogue when you play the scene.
 
 ![Play on Ready](@site/static/img/screenshots/getting-started/create-a-dialogue/play_on_ready.png)
 
@@ -102,9 +102,9 @@ Generally, you'll want to trigger the dialogue at a specific moment, not only wh
 
 ### Trigger the dialogue
 
-You can call the dialogue from code, using the [start](/docs/class-reference/nodes/dialog-player#start-method)() method from the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) node.
+You can call the dialogue from code, using the [start](../class-reference/nodes/dialog-player#start-method)() method from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node.
 
-For example, we can add a script to the `main` node and add a reference to the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) that we create before to then call the [start](/docs/class-reference/nodes/dialog-player#start-method)() method where we want in the script.
+For example, we can add a script to the `main` node and add a reference to the [DialogPlayer](../class-reference/nodes/dialog-player.md) that we create before to then call the [start](../class-reference/nodes/dialog-player#start-method)() method where we want in the script.
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
@@ -120,7 +120,7 @@ In this case, we run the dialog in the [\_ready](https://docs.godotengine.org/en
 
 ![Play from Code](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
 
-Otherwise, instead of create a DialogPlayer node in the scene, you can play a dialogue using the Sprouty Dialogs Autoload. You can call the [start_dialog](/docs/class-reference/core/sprouty-dialogs-manager#start-dialog-method)() method from the [SproutyDialogs](/docs/class-reference/core/sprouty-dialogs-manager.md) autoload passing the dialogue data resource and the ID of the dialogue tree you want to run.
+Otherwise, instead of create a DialogPlayer node in the scene, you can play a dialogue using the Sprouty Dialogs Autoload. You can call the [start_dialog](../class-reference/core/sprouty-dialogs-manager#start-dialog-method)() method from the [SproutyDialogs](../class-reference/core/sprouty-dialogs-manager.md) autoload passing the dialogue data resource and the ID of the dialogue tree you want to run.
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
@@ -140,9 +140,9 @@ And in this way you can also see the dialogue when you run the scene.
 
 This method loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**, such as complex portraits scenes, dialog boxes, etc.
 
-So, if you have large resources in your dialogue, **it is not recommended use the autoload to play the dialogue**, instead use the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) nodes that load the resources on ready.
+So, if you have large resources in your dialogue, **it is not recommended use the autoload to play the dialogue**, instead use the [DialogPlayer](../class-reference/nodes/dialog-player.md) nodes that load the resources on ready.
 
-For more details see [about dialogue resources](/docs/dialogues/using-dialogues#about-dialogue-resources).
+For more details see [about dialogue resources](../dialogues/using-dialogues#about-dialogue-resources).
 
 :::
 

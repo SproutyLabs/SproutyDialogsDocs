@@ -51,13 +51,13 @@ Once you enable translations and set the locales, now you can see that a **trans
 
 ![Dialogue Node With Translations](@site/static/img/screenshots/event-nodes/dialogue_node_with_translations.png)
 
-You can see that the text box of the **dialogue is now associated with a locale**, specifically the **default locale** (in this example, “en” or English), which means that the dialogs written in that text box will be the dialogs for this default locale. You can set the default locale in the [translation settings](/docs/settings#locales-settings).
+You can see that the text box of the **dialogue is now associated with a locale**, specifically the **default locale** (in this example, "en" or English), which means that the dialogs written in that text box will be the dialogs for this default locale. You can set the default locale in the [translation settings](./settings#locales-settings).
 
 The text boxes for edit the dialogues in other locales are in the **translation section**, where you can write and edit each of your translations using the text editor in the same way that the default dialogue.
 
 ### Translating characters
 
-To use translations for the character names, you need to enable the `Translate character names` setting in the [translation settings](/docs/settings#translation-settings).
+To use translations for the character names, you need to enable the `Translate character names` setting in the [translation settings](./settings#translation-settings).
 
 At the same way that before, when you edit a character and the translations are enabled, you will going to see that in the `display name` property the default text input now is associated with the **default locale**. Also, there is **translation** section where you can translate the name that will be displayed on the dialog box to each locale.
 
@@ -65,7 +65,7 @@ At the same way that before, when you edit a character and the translations are 
 
 ### Testing translations
 
-To test the translations, you can select the locale in which you want to test the dialogues in the `testing locale` dropdown from [translation settings](/docs/settings#locales-settings). If **no testing locale is selected**, the **automatically detected system locale** will be used. Then you can run the dialogue from a **play button** from a `Start Node` or directly run the project to test your dialogues.
+To test the translations, you can select the locale in which you want to test the dialogues in the `testing locale` dropdown from [translation settings](./settings#locales-settings). If **no testing locale is selected**, the **automatically detected system locale** will be used. Then you can run the dialogue from a **play button** from a `Start Node` or directly run the project to test your dialogues.
 
 :::info[Important]
 
@@ -109,7 +109,7 @@ However, if you want to edit translations mainly outside the plugin, it's better
 
 The most common way to localize games is using spreadsheets. Godot support CSV files for that, how its described in the guide [localization using spreadsheets in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_spreadsheets.html#doc-localization-using-spreadsheets). Sprouty Dialogs uses Godot's integrated localization system to use translations in CSV format.
 
-To use CSV files for translations, you need to enable the `Use CSV files` setting in the [translation settings](/docs/settings#translation-settings).
+To use CSV files for translations, you need to enable the `Use CSV files` setting in the [translation settings](./settings#translation-settings).
 
 ![Enable CSV Files](@site/static/img/screenshots/translations/enable_csv_files.png)
 
@@ -205,7 +205,7 @@ That is equivalent to this table:
 
 As you can see, in this case we use the **file name or character key name** in uppercase, along with the suffix `_CHAR` as the translation key format. This is to ensure that character name keys are not confused with other translation keys.
 
-You can change the CSV file where the character names will be saved in the [translation settings](/docs/settings#translation-settings).
+You can change the CSV file where the character names will be saved in the [translation settings](./settings#translation-settings).
 
 ## Changing the language
 

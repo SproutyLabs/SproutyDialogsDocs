@@ -77,6 +77,6 @@ Use dialogues in your game with minimal code:
 
 ---
 
-How to start using Sprouty Dialogs? Check out the [Getting Started guide](/docs/category/getting-started) to install the plugin and learn how to create and run your first dialogue!
+How to start using Sprouty Dialogs? Check out the [Getting Started guide](./category/getting-started) to install the plugin and learn how to create and run your first dialogue!
 
 ![Sprouty Dialogue](@site/static/img/screenshots/characters/sprouty_talk_animation.gif)

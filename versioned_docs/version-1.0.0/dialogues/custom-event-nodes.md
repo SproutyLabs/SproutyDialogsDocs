@@ -14,9 +14,9 @@ Let's explore how to create custom event nodes and use them in your dialogues.
 
 ---
 
-Each event node corresponds to a **specific action or behavior** that can be triggered during a dialogue. To process an event node, we have the [SproutyDialogsEventInterpreter](/docs/class-reference/utils/event-interpreter.md) class, which is responsible for **executing the actions** associated with event nodes.
+Each event node corresponds to a **specific action or behavior** that can be triggered during a dialogue. To process an event node, we have the [SproutyDialogsEventInterpreter](../class-reference/utils/event-interpreter.md) class, which is responsible for **executing the actions** associated with event nodes.
 
-The event interpreter has a **process method** for each event node type, which contains the logic to handle that specific event. To do this, the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) creates and uses the **event interpreter as its child** to process event nodes as they are reached during the dialogue flow.
+The event interpreter has a **process method** for each event node type, which contains the logic to handle that specific event. To do this, the [DialogPlayer](../class-reference/nodes/dialog-player.md) creates and uses the **event interpreter as its child** to process event nodes as they are reached during the dialogue flow.
 
 So when the dialog player encounters an event node, it calls to the event interpreter to execute the associated action.
 
@@ -37,9 +37,9 @@ graph LR
 
 ---
 
-To create custom event nodes, first you need to create a new graph node that extends from the [SproutyDialogsBaseNode](/docs/class-reference/core/base-node.md) class. This new node will represent your custom event node in the graph editor.
+To create custom event nodes, first you need to create a new graph node that extends from the [SproutyDialogsBaseNode](../class-reference/core/base-node.md) class. This new node will represent your custom event node in the graph editor.
 
-To do this, you need to **create a new scene** with a [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) node as root, and then attach a **new script** to it that extends from the [SproutyDialogsBaseNode](/docs/class-reference/core/base-node.md) class.
+To do this, you need to **create a new scene** with a [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) node as root, and then attach a **new script** to it that extends from the [SproutyDialogsBaseNode](../class-reference/core/base-node.md) class.
 
 :::warning
 
@@ -53,7 +53,7 @@ Here's an example of a custom event node called `Custom Node`:
 
 ![Custom Node scene](@site/static/img/screenshots/custom-event-nodes/custom_node_scene.png)
 
-As you can see, the [SproutyDialogsBaseNode](/docs/class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. Also, you can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
+As you can see, the [SproutyDialogsBaseNode](../class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. Also, you can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
 
 :::info
 
@@ -81,9 +81,9 @@ Now that you have your node set up, you need to **implement the logic** of your 
 
 There are two methods that **you need to override** in your custom event node script:
 
-- [get_data](/docs/class-reference/core/base-node.md#get-data-method)(): This method should return a dictionary containing the data of the event node. You need to include some **required properties** and also can include any properties or values that you want to store to **save the state** of the event node and **process it** later.
+- [get_data](../class-reference/core/base-node.md#get-data-method)(): This method should return a dictionary containing the data of the event node. You need to include some **required properties** and also can include any properties or values that you want to store to **save the state** of the event node and **process it** later.
 
-- [set_data](/docs/class-reference/core/base-node.md#set-data-method)(): This method take a dictionary as a parameter and set or **load the properties** of the event node based on the values in the dictionary.
+- [set_data](../class-reference/core/base-node.md#set-data-method)(): This method take a dictionary as a parameter and set or **load the properties** of the event node based on the values in the dictionary.
 
 Here's an example implementation of the `Custom Node` event node script:
 
@@ -154,7 +154,7 @@ To understand more about how to make your own nodes, you can check the built-in 
 
 ### Handling the event node processing
 
-To process your new event nodes, you need to create a custom event interpreter that extends from the [SproutyDialogsEventInterpreter](/docs/class-reference/utils/event-interpreter.md) class. This new interpreter will be responsible for **processing your custom event nodes** during the dialogue flow.
+To process your new event nodes, you need to create a custom event interpreter that extends from the [SproutyDialogsEventInterpreter](../class-reference/utils/event-interpreter.md) class. This new interpreter will be responsible for **processing your custom event nodes** during the dialogue flow.
 
 The event interpreter have a dictionary called `node_processors`, which maps the **node names to their corresponding process methods**. To handle your custom event node, you need to **add an entry** to this dictionary that maps the node name to a method that will process the node data.
 
@@ -186,7 +186,7 @@ Finally, it calls the `continue_to_node` signal to move to the next node in the 
 
 :::info
 
-You can access to the dialogue resources from the [DialogPlayer](/docs/class-reference/nodes/dialog-player.md) using `get_parent()`, if you need to access any data from the dialogue (such as the character data) while processing your custom event nodes.
+You can access to the dialogue resources from the [DialogPlayer](../class-reference/nodes/dialog-player.md) using `get_parent()`, if you need to access any data from the dialogue (such as the character data) while processing your custom event nodes.
 
 :::
 
@@ -194,7 +194,7 @@ You can access to the dialogue resources from the [DialogPlayer](/docs/class-ref
 
 ---
 
-Having your custom node and custom event interpreter ready, you need to set up some settings to use them in your dialogues. For that, you need to go to the [general settings](/docs/settings#general-settings) in the Sprouty Dialogs settings tab.
+Having your custom node and custom event interpreter ready, you need to set up some settings to use them in your dialogues. For that, you need to go to the [general settings](../settings#general-settings) in the Sprouty Dialogs settings tab.
 
 ![Custom Settings](@site/static/img/screenshots/custom-event-nodes/custom_settings.png)
 
@@ -210,7 +210,7 @@ You should save your custom event nodes and custom event interpreter **outside t
 
 :::
 
-Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](/docs/getting-started/meet-the-editor#dialogue-editor). You will see your custom event node available in the event nodes list to add it to the graph.
+Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](../getting-started/meet-the-editor#dialogue-editor). You will see your custom event node available in the event nodes list to add it to the graph.
 
 ![Custom Node in List](@site/static/img/screenshots/custom-event-nodes/custom_node_in_list.png)
 

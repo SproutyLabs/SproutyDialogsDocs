@@ -142,7 +142,7 @@ You can insert any variable defined in the plugin, **including global variables*
 
 :::
 
-For more information about variables, you can check the [variables section](/docs/variables.md).
+For more information about variables, you can check the [variables section](../variables.md).
 
 ### Insert images
 
@@ -170,13 +170,13 @@ To insert a link, you can use the **Insert Link** option in the toolbar. You mus
 
 ![Insert Link](@site/static/img/screenshots/text-editor/insert_link.png)
 
-By default, when the user clicks on it, its going to **open the URL in a web browser**, if you have enabled the `Open URL on meta tag click` setting in the [text settings](/docs/settings#text-settings) of the plugin.
+By default, when the user clicks on it, its going to **open the URL in a web browser**, if you have enabled the `Open URL on meta tag click` setting in the [text settings](../settings#text-settings) of the plugin.
 
 :::info
 
 If you want to customize this behavior, for more advanced use cases, it's also possible to store JSON in a `[url]` tag's option and parse it in the function that handles the `meta_clicked` signal of the [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html).
 
-For dialogues, you need to connect to the `meta_clicked` signal from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) to implement the desired behavior when a URL is clicked.
+For dialogues, you need to connect to the `meta_clicked` signal from the [DialogBox](../class-reference/nodes/dialog-box.md) to implement the desired behavior when a URL is clicked.
 
 :::
 

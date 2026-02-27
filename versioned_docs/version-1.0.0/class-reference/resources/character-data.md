@@ -70,7 +70,7 @@ It includes the character's key name or identifier, translations of the name, de
   <span class="reference-type">var </span><code>dialog_box_uid</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1</span>
 </h3>
-<p>Reference to the dialog box scene used by this character. This is the UID of a scene that contains a <a target="_blank" href="/docs/class-reference/nodes/dialog-box">DialogBox</a> node which will be used to display the character's dialogue.</p>
+<p>Reference to the dialog box scene used by this character. This is the UID of a scene that contains a <a target="_blank" href="../nodes/dialog-box">DialogBox</a> node which will be used to display the character's dialogue.</p>
 <hr/>
 
 <h3 id="dialog-box-path-var">
@@ -84,7 +84,7 @@ It includes the character's key name or identifier, translations of the name, de
   <span class="reference-type">var </span><code>portrait_on_dialog_box</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false</span>
 </h3>
-<p>Flag to indicate if the character's portrait should be displayed on the dialog box. If true, the character's portrait scene will be shown in the [portrait display](/docs/class-reference/nodes/dialog-box/#portrait-display-var) node of the <a target="_blank" href="/docs/class-reference/nodes/dialog-box">DialogBox</a>. For this you need to set the [portrait display](/docs/class-reference/nodes/dialog-box/#portrait-display-var) node that will hold the portrait as a parent of the portrait scene.</p>
+<p>Flag to indicate if the character's portrait should be displayed on the dialog box. If true, the character's portrait scene will be shown in the [portrait display](../nodes/dialog-box/#portrait-display-var) node of the <a target="_blank" href="../nodes/dialog-box">DialogBox</a>. For this you need to set the [portrait display](../nodes/dialog-box/#portrait-display-var) node that will hold the portrait as a parent of the portrait scene.</p>
 <hr/>
 
 <h3 id="default-portrait-var">
@@ -125,7 +125,7 @@ It includes the character's key name or identifier, translations of the name, de
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}</span>
 </h3>
 <p>
-  Character's portraits. This is a dictionary where each key is a portrait name or a group of portraits and its value is a dictionary containing the [portrait data](/docs/class-reference/resources/portrait-data) or more portraits.
+  Character's portraits. This is a dictionary where each key is a portrait name or a group of portraits and its value is a dictionary containing the [portrait data](./portrait-data) or more portraits.
 
 The dictionary structure is as follows:
 

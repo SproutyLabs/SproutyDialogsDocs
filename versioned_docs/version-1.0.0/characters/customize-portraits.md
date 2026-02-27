@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Customize Portraits
 
-We already saw how to use characters and portraits in the [using character](/docs/characters/using-characters.md) section. This section will cover how to create and customize your own portrait scenes.
+We already saw how to use characters and portraits in the [using character](./using-characters.md) section. This section will cover how to create and customize your own portrait scenes.
 
 ## Portrait scenes
 
@@ -40,17 +40,17 @@ Let's see how to customize your portrait scene.
 
 When you create a new portrait scene, a **script with the same name** of the scene is created and attached to the scene automatically.
 
-This script is a template that inherits from the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class, and provide some methods that you can override to change the behavior of the portrait and also you can add your own properties to customize the portrait.
+This script is a template that inherits from the [DialogPortrait](../class-reference/nodes/dialog-portrait.md) class, and provide some methods that you can override to change the behavior of the portrait and also you can add your own properties to customize the portrait.
 
-By default, this template have some animations to show how to use the overridable methods of the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class. This animations look like this:
+By default, this template have some animations to show how to use the overridable methods of the [DialogPortrait](../class-reference/nodes/dialog-portrait.md) class. This animations look like this:
 
 ![Sprouty Dialogue](@site/static/img/screenshots/characters/sprouty_default_animations.gif)
 
-You can modify or remove these animations and create your own behavior by overriding the methods provided by the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class.
+You can modify or remove these animations and create your own behavior by overriding the methods provided by the [DialogPortrait](../class-reference/nodes/dialog-portrait.md) class.
 
 ### Overridable methods
 
-[DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) provide the following methods that you can override to customize the behavior of your portrait. These are called automatically by the dialog system when certain events happen:
+[DialogPortrait](../class-reference/nodes/dialog-portrait.md) provide the following methods that you can override to customize the behavior of your portrait. These are called automatically by the dialog system when certain events happen:
 
 - `set_portrait()`: Called when the portrait is instantiated or changed. This is the **default behavior** of the portrait.
 
@@ -112,7 +112,7 @@ In this way, you can create your own exported properties that allows to **reuse 
 
 Let's see how to create a portrait scene that allows to select a character expression from a spritesheet image.
 
-To do that, we will create a new portrait scene and a new script attached in root that inherits from [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) with a [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) child, like the default template.
+To do that, we will create a new portrait scene and a new script attached in root that inherits from [DialogPortrait](../class-reference/nodes/dialog-portrait.md) with a [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) child, like the default template.
 
 ![Portrait Scene](@site/static/img/screenshots/characters/spritesheet_portrait.png)
 
@@ -134,7 +134,7 @@ These exported properties will be visible in the inspector when we select the po
 
 ![Inspector Exported Properties](@site/static/img/screenshots/characters/spritesheet_portrait_inspector.png)
 
-Then, in the [set_portrait](/docs/class-reference/nodes/dialog-portrait#set-portrait-method)() method, we will set the corresponding properties of the [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) node to display the portrait using the exported properties:
+Then, in the [set_portrait](../class-reference/nodes/dialog-portrait#set-portrait-method)() method, we will set the corresponding properties of the [Sprite2D](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html) node to display the portrait using the exported properties:
 
 ```gdscript title="spritesheet_portrait.gd" showLineNumbers=10
 var sprite: Sprite2D = $Sprite2D
@@ -167,7 +167,7 @@ In this case, we only need to change the `frame coords` property to display diff
 
 ![Actually Portrait](@site/static/img/screenshots/characters/sprouty_actually.png)
 
-But we can do more things, for example, we can override the [on_portrait_talk](/docs/class-reference/nodes/dialog-portrait#on-portrait-talk-method)() and [on_portrait_stop_talking](/docs/class-reference/nodes/dialog-portrait#on-portrait-stop-talking-method)() methods to create a simple mouth movement animation when the character talks.
+But we can do more things, for example, we can override the [on_portrait_talk](../class-reference/nodes/dialog-portrait#on-portrait-talk-method)() and [on_portrait_stop_talking](../class-reference/nodes/dialog-portrait#on-portrait-stop-talking-method)() methods to create a simple mouth movement animation when the character talks.
 
 The spritesheet have a sprite with the mouth open expression, so we can change the `frame coords` property to switch between the normal expression and the mouth open expression when the character talks.
 
@@ -205,7 +205,7 @@ You can create more **complex behaviors and animations** by overriding the provi
 
 :::info
 
-If you want to reuse a portrait scene for all your characters, you can set a **default portrait scene** in [general settings](/docs/settings#defaults).
+If you want to reuse a portrait scene for all your characters, you can set a **default portrait scene** in [general settings](../settings#defaults).
 
 :::warning
 When you change the default portrait scene, this scene will also **become the new default template** to create new portrait scenes.

@@ -32,7 +32,7 @@ At the top of the plugin interface, there is a tab bar with each module of the p
 
 ### Dialogue Editor
 
-The dialogue editor is a graph view where you can **create your own dialogues** usign [event nodes](/docs/dialogues/event-nodes.md). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
+The dialogue editor is a graph view where you can **create your own dialogues** usign [event nodes](../dialogues/event-nodes.md). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
 
 ![Dialogue Editor](@site/static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
 
@@ -55,7 +55,7 @@ The character editor allows you to create characters to use in the dialogues. Th
 
 ![Character Editor](@site/static/img/screenshots/characters/character_editor.png)
 
-You can start making your own characters by viewing the [create a character](create-a-character) section. For more information about characters and portraits, see the [using characters](/docs/characters/using-characters.md) section.
+You can start making your own characters by viewing the [create a character](create-a-character) section. For more information about characters and portraits, see the [using characters](../characters/using-characters.md) section.
 
 ### Variable Editor
 
@@ -67,4 +67,4 @@ The variable editor allows you to create variables for use in dialogues. You can
 
 At the bottom of the interface, you can see the text editor again, because the string field can be expanded in the same way as before with the dialogue text boxes.
 
-For more information about variables see the [variables section](/docs/variables.md).
+For more information about variables see the [variables section](../variables.md).

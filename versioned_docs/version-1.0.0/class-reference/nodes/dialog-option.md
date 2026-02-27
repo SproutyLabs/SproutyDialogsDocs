@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ## Description
 
-Component that render a dialog option in a [DialogBox](/docs/class-reference/nodes/dialog-box) from Sprouty Dialogs plugin. It extends the [Button](https://docs.godotengine.org/en/stable/classes/class_button.html) class to provide a clickable option in the dialog.
+Component that render a dialog option in a [DialogBox](./dialog-box) from Sprouty Dialogs plugin. It extends the [Button](https://docs.godotengine.org/en/stable/classes/class_button.html) class to provide a clickable option in the dialog.
 
 You can customize your own dialog options and extend their functionality by inheriting from this class.
 

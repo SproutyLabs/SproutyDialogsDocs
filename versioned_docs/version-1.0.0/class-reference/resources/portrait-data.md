@@ -26,7 +26,7 @@ This resource stores data for character portraits. Each portrait includes the re
   <span class="reference-type">var </span><code>portrait_scene_uid</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1</span>
 </h3>
-<p>Reference to the portrait scene used for this portrait. This is the UID of the scene that will be used as the character's portrait. The scene should contain a root node that extends <a target="_blank" href="/docs/class-reference/nodes/dialog-portrait">DialogPortrait</a> to can integrate with the dialog system.</p>
+<p>Reference to the portrait scene used for this portrait. This is the UID of the scene that will be used as the character's portrait. The scene should contain a root node that extends <a target="_blank" href="../nodes/dialog-portrait">DialogPortrait</a> to can integrate with the dialog system.</p>
 <hr/>
 
 <h3 id="portrait-scene-path-var">
