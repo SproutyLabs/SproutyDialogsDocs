@@ -85,6 +85,14 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          type: 'docsVersionDropdown',
+          versions: {
+            '1.1.0': {label: 'v1.1.0'},
+            '1.0.0': {label: 'v1.0.0'},
+          },
+          position: 'right',
+        },
+        {
           href: 'https://github.com/SproutyLabs/SproutyDialogs',
           label: 'GitHub',
           position: 'right',

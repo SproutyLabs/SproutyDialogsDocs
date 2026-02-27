@@ -1,0 +1,8 @@
+{
+  "label": "Characters",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Character editor modules for managing character data and portraits."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Variables",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Variable editor modules for managing project variables and variable groups."
+  }
+}
