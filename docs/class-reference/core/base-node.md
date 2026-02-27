@@ -26,6 +26,7 @@ You should inherit from this class to create your own dialog nodes.
 | -------------------------------------------------------------------------------- | --------------------------------------- | ------- |
 | [Color](https://docs.godotengine.org/en/stable/classes/class_color.html)         | [node_color](#node-color-var)           | -       |
 | [Texture2D](https://docs.godotengine.org/en/stable/classes/class_texture2d.html) | [node_icon](#node-icon-var)             | null    |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)             | [node_list_index](#node-list-index-var) | 0       |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [start_node_name](#start-node-name-var) | ""      |
 | [SproutyDialogsBaseNode](#)                                                      | [start_node](#start-node-var)           | null    |
 | [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)         | [to_node](#to-node-var)                 | []      |
@@ -64,6 +65,13 @@ You should inherit from this class to create your own dialog nodes.
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_texture2d.html">Texture2D</a></span>
 </h3>
 <p>Icon to display on the node titlebar.</p>
+<hr/>
+
+<h3 id="node-list-index-var">
+  <span class="reference-type">var </span><code>node_list_index</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
+</h3>
+<p>Node list position index.</p>
 <hr/>
 
 <h3 id="start-node-name-var">

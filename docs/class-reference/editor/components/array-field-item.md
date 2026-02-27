@@ -10,6 +10,12 @@ sidebar_position: 2
 
 This component is an item field from the array field. It allows the user to modify the item value and type.
 
+## Properties
+
+| Type                                                                   | Name                                                | Default |
+| ---------------------------------------------------------------------- | --------------------------------------------------- | ------- |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [no_expandable_textbox](#no-expandable-textbox-var) | false   |
+
 ## Methods
 
 | Return Type                                                                        | Method                                                                                                                                                                                                                                                                                        |
@@ -22,6 +28,7 @@ This component is an item field from the array field. It allows the user to modi
 | void                                                                               | [set_item_index](#set-item-index-method)(index: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                                                                                                                                                                         |
 | void                                                                               | [set_value](#set-value-method)(value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html), type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html), metadata: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
 | void                                                                               | [set_type](#set-type-method)(type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html), metadata: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                                                                                        |
+| void                                                                               | [set_as_parameter_field](#set-as-parameter-field-method)(name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                                                                                    |
 
 ## Signals
 
@@ -43,6 +50,29 @@ This component is an item field from the array field. It allows the user to modi
   <span class="parameters">(index: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
 </h3>
 <p>Emitted when the remove button is pressed.</p>
+<hr/>
+
+<h3 id="open-text-editor-signal">
+  <span class="reference-type">signal </span><code>open_text_editor</code>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+</h3>
+<p>Emitted when press the expand button in a text box field.</p>
+<hr/>
+
+<h3 id="update-text-editor-signal">
+  <span class="reference-type">signal </span><code>update_text_editor</code>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+</h3>
+<p>Emitted when a text box field gains focus and should update the text editor.</p>
+<hr/>
+
+## Property Descriptions
+
+<h3 id="no-expandable-textbox-var">
+  <span class="reference-type">var </span><code>no_expandable_textbox</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false</span>
+</h3>
+<p>Flag to remove the expandable text box from string fields.</p>
 <hr/>
 
 ## Method Descriptions
@@ -103,4 +133,10 @@ This component is an item field from the array field. It allows the user to modi
   <span class="reference-type">func </span><code>set_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, metadata: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the variable type and metadata for the item.</p>
+<hr/>
+
+<h3 id="set-as-parameter-field-method">
+  <span class="reference-type">func </span><code>set_as_parameter_field</code><span class="parameters">(name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Set the item field as a parameter field.</p>
 <hr/>

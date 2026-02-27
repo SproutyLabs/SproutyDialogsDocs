@@ -20,6 +20,9 @@ This class provides utility methods to handle variables, such as get the UI fiel
 | void                                                                                   | [set_field_value](#set-field-value-method)(field: [Control](https://docs.godotengine.org/en/stable/classes/class_control.html), type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html), value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html))                                                                                                                                                                                                                                                                                                  |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)     | [get_assignment_operators](#get-assignment-operators-method)(type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)     | [get_comparison_operators](#get-comparison-operators-method)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| void                                                                                   | [set_property](#set-property-method)(object: [Object](https://docs.godotengine.org/en/stable/classes/class_object.html), name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html), type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                                                                                                                                                                                                                       |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)               | [get_array_from_data](#get-array-from-data-method)(array_data: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html))                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)     | [get_dictionary_from_data](#get-dictionary-from-data-method)(dict_data: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 ## Enumerations
 
@@ -108,4 +111,22 @@ This class provides utility methods to handle variables, such as get the UI fiel
   <span class="reference-type">func </span><code>get_comparison_operators</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Returns all the comparison operators as a dictionary.</p>
+<hr/>
+
+<h3 id="set-property-method">
+  <span class="reference-type">func </span><code>set_property</code><span class="parameters">(object: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_object.html">Object</a>, name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>, type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Assigns a value to a given property of an object. Ensures that collections values are passed properly.</p>
+<hr/>
+
+<h3 id="get-array-from-data-method">
+  <span class="reference-type">func </span><code>get_array_from_data</code><span class="parameters">(array_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+</h3>
+<p>Recursively get array from array data.</p>
+<hr/>
+
+<h3 id="get-dictionary-from-data-method">
+  <span class="reference-type">func </span><code>get_dictionary_from_data</code><span class="parameters">(dict_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+</h3>
+<p>Recursively get dictionary from dictionary data.</p>
 <hr/>

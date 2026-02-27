@@ -10,6 +10,12 @@ sidebar_position: 4
 
 This component is an item field from the dictionary field. It allows the user to modify the item key, value type and value.
 
+## Properties
+
+| Type                                                                   | Name                                                | Default |
+| ---------------------------------------------------------------------- | --------------------------------------------------- | ------- |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [no_expandable_textbox](#no-expandable-textbox-var) | false   |
+
 ## Methods
 
 | Return Type                                                                        | Method                                                                                                                                                                                                                                                                                        |
@@ -50,6 +56,29 @@ This component is an item field from the dictionary field. It allows the user to
   <span class="parameters">(key: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when the item key is modified.</p>
+<hr/>
+
+<h3 id="open-text-editor-signal">
+  <span class="reference-type">signal </span><code>open_text_editor</code>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+</h3>
+<p>Emitted when press the expand button in a text box field.</p>
+<hr/>
+
+<h3 id="update-text-editor-signal">
+  <span class="reference-type">signal </span><code>update_text_editor</code>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+</h3>
+<p>Emitted when a text box field gains focus and should update the text editor.</p>
+<hr/>
+
+## Property Descriptions
+
+<h3 id="no-expandable-textbox-var">
+  <span class="reference-type">var </span><code>no_expandable_textbox</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false</span>
+</h3>
+<p>Flag to remove the expandable text box from string fields.</p>
 <hr/>
 
 ## Method Descriptions

@@ -22,6 +22,7 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | void                                                                               | [on_locales_changed](#on-locales-changed-method)()                                                                                                                                                                                                                                                          |
 | void                                                                               | [on_translation_enabled_changed](#on-translation-enabled-changed-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                                                                                                                   |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)           | [get_start_ids](#get-start-ids-method)()                                                                                                                                                                                                                                                                    |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_graph_data](#get-graph-data-method)()                                                                                                                                                                                                                                                                  |
 | void                                                                               | [load_graph_data](#load-graph-data-method)(data: [SproutyDialogsDialogueData](/docs/class-reference/resources/dialogue-data), dialogs: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                                                                                  |
 | void                                                                               | [delete_node](#delete-node-method)(node: [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html), from_request: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                                                            |
@@ -30,6 +31,8 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 | void                                                                               | [disconnect_node_on_port](#disconnect-node-on-port-method)(node: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), port: [int](https://docs.godotengine.org/en/stable/classes/class_int.html), as_action: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)) |
 | [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)             | [is_graph_empty](#is-graph-empty-method)()                                                                                                                                                                                                                                                                  |
 | void                                                                               | [clear_graph](#clear-graph-method)()                                                                                                                                                                                                                                                                        |
+| void                                                                               | [show_expand_toolbar_button](#show-expand-toolbar-button-method)(show: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                                                                                                                              |
+| void                                                                               | [on_node_option_selected](#on-node-option-selected-method)(id: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                                                                                                                                                                        |
 
 ## Signals
 
@@ -87,6 +90,26 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 <p>Emitted when the translation enabled state is changed.</p>
 <hr/>
 
+<h3 id="nodes-selection-changed-signal">
+  <span class="reference-type">signal </span><code>nodes_selection_changed</code>
+  <span class="parameters">(has_selection: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
+</h3>
+<p>Emitted when nodes are selected or deselected.</p>
+<hr/>
+
+<h3 id="paste-selection-changed-signal">
+  <span class="reference-type">signal </span><code>paste_selection_changed</code>
+  <span class="parameters">(has_selection: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span>
+</h3>
+<p>Emitted when the selection of nodes to paste change.</p>
+<hr/>
+
+<h3 id="toolbar-expanded-signal">
+  <span class="reference-type">signal </span><code>toolbar_expanded</code>
+</h3>
+<p>Emitted when the toolbar is expanded.</p>
+<hr/>
+
 ## Property Descriptions
 
 <h3 id="undo-redo-var">
@@ -108,6 +131,12 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
   <span class="reference-type">func </span><code>on_translation_enabled_changed</code><span class="parameters">(enabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Notify the nodes that the translation enabled state has changed.</p>
+<hr/>
+
+<h3 id="get-start-ids-method">
+  <span class="reference-type">func </span><code>get_start_ids</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+</h3>
+<p>Returns all the start ids in the graph.</p>
 <hr/>
 
 <h3 id="get-graph-data-method">
@@ -166,4 +195,16 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
   <span class="reference-type">func </span><code>clear_graph</code><span class="parameters">()</span><span class="return-type"> -> void</span>
 </h3>
 <p>Clear graph removing all current nodes.</p>
+<hr/>
+
+<h3 id="show-expand-toolbar-button-method">
+  <span class="reference-type">func </span><code>show_expand_toolbar_button</code><span class="parameters">(show: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Show expand toolbar button.</p>
+<hr/>
+
+<h3 id="on-node-option-selected-method">
+  <span class="reference-type">func </span><code>on_node_option_selected</code><span class="parameters">(id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Handle node options from the pop-up menu or the toolbar.</p>
 <hr/>

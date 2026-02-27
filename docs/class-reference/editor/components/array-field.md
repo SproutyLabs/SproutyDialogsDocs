@@ -10,15 +10,23 @@ sidebar_position: 1
 
 This component is used to create a field for an array of data. It allows the user to add, remove and modify items in the array.
 
+## Properties
+
+| Type                                                                   | Name                                                | Default |
+| ---------------------------------------------------------------------- | --------------------------------------------------- | ------- |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [parameters_array](#parameters-array-var)           | false   |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [no_expandable_textbox](#no-expandable-textbox-var) | false   |
+
 ## Methods
 
-| Return Type                                                              | Method                                                                                                          |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) | [get_array](#get-array-method)()                                                                                |
-| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) | [get_items_values](#get-items-values-method)()                                                                  |
-| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) | [get_items_types](#get-items-types-method)()                                                                    |
-| void                                                                     | [set_array](#set-array-method)(items: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)) |
-| void                                                                     | [clear_array](#clear-array-method)()                                                                            |
+| Return Type                                                              | Method                                                                                                                   |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) | [get_array](#get-array-method)()                                                                                         |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) | [get_items_values](#get-items-values-method)()                                                                           |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) | [get_items_types](#get-items-types-method)()                                                                             |
+| void                                                                     | [set_array](#set-array-method)(items: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html))          |
+| void                                                                     | [clear_array](#clear-array-method)()                                                                                     |
+| void                                                                     | [disable_field](#disable-field-method)(disabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)) |
 
 ## Signals
 
@@ -54,6 +62,36 @@ This component is used to create a field for an array of data. It allows the use
   <span class="parameters">(item: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
 </h3>
 <p>Emitted when an item is removed from the array.</p>
+<hr/>
+
+<h3 id="open-text-editor-signal">
+  <span class="reference-type">signal </span><code>open_text_editor</code>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+</h3>
+<p>Emitted when press the expand button in a text box field.</p>
+<hr/>
+
+<h3 id="update-text-editor-signal">
+  <span class="reference-type">signal </span><code>update_text_editor</code>
+  <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
+</h3>
+<p>Emitted when a text box field gains focus and should update the text editor.</p>
+<hr/>
+
+## Property Descriptions
+
+<h3 id="parameters-array-var">
+  <span class="reference-type">var </span><code>parameters_array</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false</span>
+</h3>
+<p>If true, you only can edit the previously setted items.</p>
+<hr/>
+
+<h3 id="no-expandable-textbox-var">
+  <span class="reference-type">var </span><code>no_expandable_textbox</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false</span>
+</h3>
+<p>Flag to remove the expandable text box from string fields.</p>
 <hr/>
 
 ## Method Descriptions
@@ -96,4 +134,10 @@ This component is used to create a field for an array of data. It allows the use
   <span class="reference-type">func </span><code>clear_array</code><span class="parameters">()</span><span class="return-type"> -> void</span>
 </h3>
 <p>Clear the array items.</p>
+<hr/>
+
+<h3 id="disable-field-method">
+  <span class="reference-type">func </span><code>disable_field</code><span class="parameters">(disabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Disable or enable the array field.</p>
 <hr/>
