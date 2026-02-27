@@ -69,7 +69,7 @@ The dialog tree is composed of nodes that represent dialogues and actions. The p
 
 <h3 id="signal-event-signal">
   <span class="reference-type">signal </span><code>signal_event</code>
-  <span class="parameters">(argument: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(signal_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, args: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
 </h3>
 <p>Emitted when a signal event is emitted.</p>
 <hr/>

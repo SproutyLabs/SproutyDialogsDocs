@@ -199,7 +199,7 @@ Also, there are two special signals:
 ## Emitted when a dialog option is selected.
 signal option_selected(option_index: int, option_dialog: Dictionary)
 ## Emitted when a signal event is emitted.
-signal signal_event(argument: String)
+signal signal_event(signal_id: String, args: Array)
 ```
 
 First, the `option_selected` signal is emitted when an **option is selected in the dialogue** and returns the option index and a dictionary with the dialogue and translations of the selected option in the following format:
