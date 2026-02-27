@@ -51,9 +51,11 @@ Also, the name should be in **snake_case format** (lowercase letters with unders
 
 Here's an example of a custom event node called `Custom Node`:
 
-![Custom Node scene](@site/static/img/screenshots/custom-event-nodes/custom_node_scene.png)
+![Custom Node scene](img/custom-event-nodes/custom_node_scene.png)
 
-As you can see, the [SproutyDialogsBaseNode](/docs/class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. Also, you can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
+As you can see, the [SproutyDialogsBaseNode](/docs/class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. You can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
+
+In addition, you can change the **position of the node in the node list** by modifying the `Node list index` property, allowing you to sort the nodes in the pop-up list as desired.
 
 :::info
 
@@ -61,7 +63,7 @@ When you change the **color and icon** of the node in the inspector, the node wi
 
 :::
 
-This node only has a **text input component** to enter a message that will be printed to the console when the event is processed. You can add more components to the node to customize its functionality as needed.
+In this case, this node only has a **text input component** to enter a message that will be printed to the console when the event is processed. You can add more components to the node to customize its functionality as needed.
 
 Also, you can add more **output ports to the node**, if you want to **connect the node to multiple next nodes**, like in a branching event. To do this, your node needs **at least one child node for each output port**, to set slots for the connections. You can enable the ports that you want in the `slot` section in the inspector.
 

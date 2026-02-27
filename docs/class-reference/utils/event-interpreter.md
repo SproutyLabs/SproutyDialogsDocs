@@ -50,7 +50,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="signal-processed-signal">
   <span class="reference-type">signal </span><code>signal_processed</code>
-  <span class="parameters">(signal_argument: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(signal_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, args: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a signal node was processed.</p>
 <hr/>
