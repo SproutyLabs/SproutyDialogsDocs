@@ -10,7 +10,7 @@ sidebar_position: 1
 
 The text editor component is a panel that allows the user to add text effects, font styles, colors and others using [BBCode tags](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) in a user friendly way.
 
-The text editor is shown when the user clicks on a expand button from a [ExpandableTextBox](/docs/class-reference/editor/components/expandable-text-box).
+The text editor is shown when the user clicks on a expand button from a [ExpandableTextBox](../../components/expandable-text-box).
 
 ## Methods
 

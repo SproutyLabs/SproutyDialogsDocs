@@ -10,7 +10,7 @@ The dialogues are displayed on screen using dialog boxes. Sprouty Dialogs allows
 
 ---
 
-By default, there is a **default dialog box** that will be displayed for all dialogues. You can change this dialog box in the `Default dialog box` setting from [general settings](/docs/settings#defaults), selecting a existing dialog box or creating a new one.
+By default, there is a **default dialog box** that will be displayed for all dialogues. You can change this dialog box in the `Default dialog box` setting from [general settings](../settings#defaults), selecting a existing dialog box or creating a new one.
 
 To create a new dialog box, clean the path in the field and **you will see a `+` button, click it, locate where you want to save the file**, give it a name and then click on `Create File`.
 
@@ -34,13 +34,13 @@ When you create a new dialog box scene, **the scene will open in the editor for 
 
 In the file manager, you can see that in addition to the scene, **a script with the same name was created**: `sprouty_dialog_box.gd`.
 
-This script is a template that inherits from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class, and you can edit it to **customize the behavior of the dialog box**. See more in [Advanced Customization](#advanced-customization).
+This script is a template that inherits from the [DialogBox](../class-reference/nodes/dialog-box.md) class, and you can edit it to **customize the behavior of the dialog box**. See more in [Advanced Customization](#advanced-customization).
 
 :::
 
 :::note
 
-You can also create a **dialog box from scratch** using the [DialogBox](/docs/class-reference/nodes/dialog-box.md) node as the root, but here we show you some easy ways to get started with a template.
+You can also create a **dialog box from scratch** using the [DialogBox](../class-reference/nodes/dialog-box.md) node as the root, but here we show you some easy ways to get started with a template.
 
 :::
 
@@ -50,7 +50,7 @@ Now, let's see how we can customize the dialog boxes!
 
 ---
 
-You will going to see that the dialog box node have some properties in the inspector. First of all, you can override the `Typing Speed` and `Max Characters` settings for a specific dialog box. If you don't change them, the default parameters from [text settings](/docs/settings#text-settings) will be used.
+You will going to see that the dialog box node have some properties in the inspector. First of all, you can override the `Typing Speed` and `Max Characters` settings for a specific dialog box. If you don't change them, the default parameters from [text settings](../settings#text-settings) will be used.
 
 ![Dialog Box Scene](@site/static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
@@ -80,15 +80,15 @@ Lastly, there is a `Options Components` section with the follow properties:
 
 - `Options Container`: [Container](https://docs.godotengine.org/en/stable/classes/class_container.html) where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/en/stable/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/en/stable/classes/class_gridcontainer.html) to display the options. _This component is required to display the dialog options in it._
 
-- `Option Template`: Node that will be used as a template for the options in the dialog box. It should be a [DialogOption](/docs/class-reference/nodes/dialog-option.md) node or a node that extends from it. _This component is required to display the dialog options._
+- `Option Template`: Node that will be used as a template for the options in the dialog box. It should be a [DialogOption](../class-reference/nodes/dialog-option.md) node or a node that extends from it. _This component is required to display the dialog options._
 
 :::info[Important]
 
-This components are **not required only if you don't want to display options** in the dialogue, what means that you are not going to use [options nodes](/docs/dialogues/event-nodes#options-node) in your dialogue trees.
+This components are **not required only if you don't want to display options** in the dialogue, what means that you are not going to use [options nodes](./event-nodes#options-node) in your dialogue trees.
 
 :::
 
-The [DialogOption](/docs/class-reference/nodes/dialog-option.md) node extends from the [Button](https://docs.godotengine.org/en/stable/classes/class_button.html) class, because the options are clickeable, so they are basically buttons. The [DialogOption](/docs/class-reference/nodes/dialog-option.md) node has two optional properties:
+The [DialogOption](../class-reference/nodes/dialog-option.md) node extends from the [Button](https://docs.godotengine.org/en/stable/classes/class_button.html) class, because the options are clickeable, so they are basically buttons. The [DialogOption](../class-reference/nodes/dialog-option.md) node has two optional properties:
 
 - `Text Display`: A [Label](https://docs.godotengine.org/en/stable/classes/class_label.html) node. Assign this component if you want to use a custom simple label without text effects in the options text.
 
@@ -106,7 +106,7 @@ As you can see, in this case, the `Portrait Display` component is not used becau
 
 When we create a new dialog box, a **script with the same name** is also created.
 
-This script is a duplicate of the template script that extends from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class, which allows you to **customize the behavior of the dialog box**. For example, to add animations when the dialog box open or closes.
+This script is a duplicate of the template script that extends from the [DialogBox](../class-reference/nodes/dialog-box.md) class, which allows you to **customize the behavior of the dialog box**. For example, to add animations when the dialog box open or closes.
 
 You can use this script to override the following methods:
 
@@ -145,7 +145,7 @@ In you want to display a portrait in the dialog box you need to set the `Portrai
 
 ![Portrait Display](@site/static/img/screenshots/dialog-boxes/portrait_display.png)
 
-Also, you need to enable the `Portrait on dialog box` property in the character that you want to be displayed on a dialog box. For more information see [Characters & Portraits](/docs/category/characters--portraits) section.
+Also, you need to enable the `Portrait on dialog box` property in the character that you want to be displayed on a dialog box. For more information see [Characters & Portraits](../category/characters--portraits) section.
 
 ![Portrait On Dialog Enabled](@site/static/img/screenshots/dialog-boxes/portrait_on_dialog_enabled.png)
 

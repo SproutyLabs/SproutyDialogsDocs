@@ -14,7 +14,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 :::info[Important]
 
-**You should not use this node directly to play a dialogue.** You should use a [DialogPlayer](/docs/class-reference/nodes/dialog-player) node to play dialogues, which will process it and use a [DialogBox](#) to display it.
+**You should not use this node directly to play a dialogue.** You should use a [DialogPlayer](./dialog-player) node to play dialogues, which will process it and use a [DialogBox](#) to display it.
 
 :::
 
@@ -147,7 +147,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">var </span><code>option_template</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span> <span class="alert-text"> *</span>
 </h3>
-<p>Node that will be used as a template for the options in the dialog box. It should be a <a target="_blank" href="/docs/class-reference/nodes/dialog-option">DialogOption</a> node or another node that extends it. <b class="alert-text">This component is required to display the dialog options.</b></p>
+<p>Node that will be used as a template for the options in the dialog box. It should be a <a target="_blank" href="./dialog-option">DialogOption</a> node or another node that extends it. <b class="alert-text">This component is required to display the dialog options.</b></p>
 
 <hr/>
 

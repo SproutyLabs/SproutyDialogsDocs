@@ -43,9 +43,9 @@ Component that allows to select a scene and show its path in the field. It has b
 <p>Scene types available for selection</p>
 
 - <h4><a target="_blank" href="#scene-type-enum">SceneType </a><code>DIALOG_BOX</code> <span class="default-value"> = 0</span></h4>
-  <p>Dialog box scene. The root of the scene must be a [DialogBox](/docs/class-reference/nodes/dialog-box.md) node.</p>
+  <p>Dialog box scene. The root of the scene must be a [DialogBox](../../nodes/dialog-box.md) node.</p>
 - <h4><a target="_blank" href="#scene-type-enum">SceneType </a><code>PORTRAIT</code> <span class="default-value"> = 1</span></h4>
-  <p>Portrait scene. The root of the scene must be a [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) node.</p>
+  <p>Portrait scene. The root of the scene must be a [DialogPortrait](../../nodes/dialog-portrait.md) node.</p>
 
 <hr/>
 

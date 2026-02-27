@@ -121,7 +121,7 @@ Component that represents a group of variables in the variable editor panel. It 
 <h3 id="add-item-method">
   <span class="reference-type">func </span><code>add_item</code><span class="parameters">(item: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a>)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Add an item to the group. The item can be a [EditorSproutyDialogsVariableItem](/docs/class-reference/editor/modules/variables/variable-item.md) or another [EditorSproutyDialogsVariableGroup](#).</p>
+<p>Add an item to the group. The item can be a [EditorSproutyDialogsVariableItem](./variable-item.md) or another [EditorSproutyDialogsVariableGroup](#).</p>
 <hr/>
 
 <h3 id="show-items-method">

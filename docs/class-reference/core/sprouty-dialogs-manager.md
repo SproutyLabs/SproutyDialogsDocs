@@ -12,22 +12,22 @@ This class is used as the [Autoload](https://docs.godotengine.org/en/stable/tuto
 
 Keep track of the running dialog players and dialog states by signals. Allows to access to the plugin singletons such as the variable manager, resource manager, and more.
 
-Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() method directly from code, without needing to create a [DialogPlayer](/docs/class-reference/nodes/dialog-player) instance previously in the scene.
+Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() method directly from code, without needing to create a [DialogPlayer](../nodes/dialog-player) instance previously in the scene.
 
 ## Properties
 
-| Type                                                                                                                                   | Name                                                  | Default                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)[[DialogPlayer](/docs/class-reference/nodes/dialog-player.md)] | [dialog_players_running](#dialog-players-running-var) | []                                                                               |
-| [SproutyDialogsResourceManager](/docs/class-reference/utils/resource-manager.md)                                                       | [Resources](#resources-var)                           | new()                                                                            |
-| [SproutyDialogsVariableManager](/docs/class-reference/utils/variable-manager.md)                                                       | [Variables](#variables-var)                           | new()                                                                            |
-| [SproutyDialogsSettingsManager](/docs/class-reference/utils/settings-manager.md)                                                       | [Settings](#settings-var)                             | [SproutyDialogsSettingsManager](/docs/class-reference/utils/settings-manager.md) |
+| Type                                                                                                                | Name                                                  | Default                                                       |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------- |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)[[DialogPlayer](../nodes/dialog-player.md)] | [dialog_players_running](#dialog-players-running-var) | []                                                            |
+| [SproutyDialogsResourceManager](../utils/resource-manager.md)                                                       | [Resources](#resources-var)                           | new()                                                         |
+| [SproutyDialogsVariableManager](../utils/variable-manager.md)                                                       | [Variables](#variables-var)                           | new()                                                         |
+| [SproutyDialogsSettingsManager](../utils/settings-manager.md)                                                       | [Settings](#settings-var)                             | [SproutyDialogsSettingsManager](../utils/settings-manager.md) |
 
 ## Methods
 
-| Return Type                                               | Method                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [DialogPlayer](/docs/class-reference/nodes/dialog-player) | [start_dialog](#start-dialog-method)(data: [SproutyDialogsDialogueData](/docs/class-reference/resources/dialogue-data), start_id: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), portrait_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}, dialog_box_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}) |
+| Return Type                            | Method                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [DialogPlayer](../nodes/dialog-player) | [start_dialog](#start-dialog-method)(data: [SproutyDialogsDialogueData](../resources/dialogue-data), start_id: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), portrait_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}, dialog_box_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}) |
 
 ## Signals
 
@@ -77,39 +77,39 @@ Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() m
 
 <h3 id="dialog-players-running-var">
   <span class="reference-type">var </span><code>dialog_players_running</code>
-  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a target="_blank" href="/docs/class-reference/nodes/dialog-player.md">DialogPlayer</a>] = []</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a target="_blank" href="../nodes/dialog-player.md">DialogPlayer</a>] = []</span>
 </h3>
 <p>The list of dialog players currently running. This is used to keep track of multiple dialog players running at the same time.</p>
 <hr/>
 
 <h3 id="resources-var">
   <span class="reference-type">var </span><code>Resources</code>
-  <span class="default-value"> : <a target="_blank" href="/docs/class-reference/utils/resource-manager.md">SproutyDialogsResourceManager</a> = new()</span>
+  <span class="default-value"> : <a target="_blank" href="../utils/resource-manager.md">SproutyDialogsResourceManager</a> = new()</span>
 </h3>
-<p>Resource manager singleton instance. You can access and handle the dialogue resources from this singleton. For more information see the <a target="_blank" href="/docs/class-reference/utils/resource-manager.md">resource manager</a> class reference.</p>
+<p>Resource manager singleton instance. You can access and handle the dialogue resources from this singleton. For more information see the <a target="_blank" href="../utils/resource-manager.md">resource manager</a> class reference.</p>
 <hr/>
 
 <h3 id="variables-var">
   <span class="reference-type">var </span><code>Variables</code>
-  <span class="default-value"> : <a target="_blank" href="/docs/class-reference/utils/variable-manager.md">SproutyDialogsVariableManager</a> = new()</span>
+  <span class="default-value"> : <a target="_blank" href="../utils/variable-manager.md">SproutyDialogsVariableManager</a> = new()</span>
 </h3>
-<p>Variable manager singleton instance. You can access and handle the variables from this singleton. For more information see the <a target="_blank" href="/docs/class-reference/utils/variable-manager.md">variable manager</a> class reference.</p>
+<p>Variable manager singleton instance. You can access and handle the variables from this singleton. For more information see the <a target="_blank" href="../utils/variable-manager.md">variable manager</a> class reference.</p>
 <hr/>
 
 <h3 id="settings-var">
   <span class="reference-type">var </span><code>Settings</code>
-  <span class="default-value"> : <a target="_blank" href="/docs/class-reference/utils/settings-manager.md">SproutyDialogsSettingsManager</a> = <a target="_blank" href="/docs/class-reference/utils/settings-manager.md">SproutyDialogsSettingsManager</a></span>
+  <span class="default-value"> : <a target="_blank" href="../utils/settings-manager.md">SproutyDialogsSettingsManager</a> = <a target="_blank" href="../utils/settings-manager.md">SproutyDialogsSettingsManager</a></span>
 </h3>
-<p>Settings manager reference. You can access and handle the plugin settings from this reference. For more information see the <a target="_blank" href="/docs/class-reference/utils/settings-manager.md">settings manager</a> class reference.</p>
+<p>Settings manager reference. You can access and handle the plugin settings from this reference. For more information see the <a target="_blank" href="../utils/settings-manager.md">settings manager</a> class reference.</p>
 <hr/>
 
 ## Method Descriptions
 
 <h3 id="start-dialog-method">
-  <span class="reference-type">func </span><code>start_dialog</code><span class="parameters">(data: <a target="_blank" href="/docs/class-reference/resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, dialog_box_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> <a target="_blank" href="/docs/class-reference/nodes/dialog-player">DialogPlayer</a></span>
+  <span class="reference-type">func </span><code>start_dialog</code><span class="parameters">(data: <a target="_blank" href="../resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, dialog_box_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> <a target="_blank" href="../nodes/dialog-player">DialogPlayer</a></span>
 </h3>
 <p>
-  Start a dialog with the given data and start ID. This will create a new [DialogPlayer](/docs/class-reference/nodes/dialog-player) instance and start it.
+  Start a dialog with the given data and start ID. This will create a new [DialogPlayer](../nodes/dialog-player) instance and start it.
 </p>
 
 :::info[Important]

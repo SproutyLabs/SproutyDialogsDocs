@@ -71,7 +71,7 @@ Use dialogues in your game with minimal code:
 - **Signal system** for responding to dialogue events in your game
 - **Custom event node support** to extend the dialogue system with game-specific actions
 
-![Play from Code](/../static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
+![Play from Code](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
 
 ## How to get started
 

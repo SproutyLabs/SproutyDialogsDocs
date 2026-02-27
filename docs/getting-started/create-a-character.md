@@ -34,7 +34,7 @@ Now you can configure your character to use it in your dialogues. At the top of 
 
 First, we have the `Display Name` property, that is the **name that will be displayed in the dialogues when the character speaks**.
 
-> The display name can be translated to different languages if you have the **translations** enabled in settings. For more information about translations see the [translations section](/docs/translations.md).
+> The display name can be translated to different languages if you have the **translations** enabled in settings. For more information about translations see the [translations section](../translations.md).
 >
 > ![Display Name Translation](@site/static/img/screenshots/characters/character_name_translations.png)
 
@@ -54,7 +54,7 @@ When you create a new dialog box scene, the scene will open in the editor for ed
 
 In the file manager, you can see that in addition to the scene, **a script with the same name was created**: `sprouty_dialog_box.gd`.
 
-This script is a template that inherits from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class, and you can edit it to **customize the behavior of the dialog box**. See more in [Advanced Customization](/docs/dialogues/dialog-boxes#advanced-customization).
+This script is a template that inherits from the [DialogBox](../class-reference/nodes/dialog-box.md) class, and you can edit it to **customize the behavior of the dialog box**. See more in [Advanced Customization](../dialogues/dialog-boxes#advanced-customization).
 
 :::
 
@@ -78,7 +78,7 @@ Then, you can assign specific dialog boxes to some characters that will not use 
 
 :::
 
-For more information, see the [dialog boxes section](/docs/dialogues/dialog-boxes.md).
+For more information, see the [dialog boxes section](../dialogues/dialog-boxes.md).
 
 ### Using portraits
 
@@ -100,7 +100,7 @@ The portrait template allows you to **assign a image to display as the portrait*
 
 You can **customize your own behavior for the portrait editing the script** that was created with the **same name of the scene**.
 
-This script is a template that inherits from the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class, and provide some methods that you can override to change the behavior of the portrait and _do whatever you want!_
+This script is a template that inherits from the [DialogPortrait](../class-reference/nodes/dialog-portrait.md) class, and provide some methods that you can override to change the behavior of the portrait and _do whatever you want!_
 
 :::
 
@@ -114,7 +114,7 @@ And now we can see the image as the portrait in the preview!
 
 Also, we can edit the portrait transformation settings to change the position, scale, and rotation with which the portrait will be displayed on the screen.
 
-There are so many things you can do with portraits, for more information see the [customize portraits](/docs/characters/customize-portraits.md) section.
+There are so many things you can do with portraits, for more information see the [customize portraits](../characters/customize-portraits.md) section.
 
 ## Using characters in dialogues
 
@@ -142,8 +142,8 @@ Congratulations! You have created your first character and used it in your dialo
 
 Now you know the basics of Sprouty Dialogs, but we've only scratched the surface! Here are some tutorials that you may find useful for your creations:
 
-- [Using Dialogues](/docs/dialogues/using-dialogues.md)
-- [Event Nodes](/docs/dialogues/event-nodes.md)
-- [Using Characters](/docs/characters/using-characters.md)
-- [Customize Portraits](/docs/characters/customize-portraits.md)
-- [Dialog Boxes](/docs/dialogues/dialog-boxes.md)
+- [Using Dialogues](../dialogues/using-dialogues.md)
+- [Event Nodes](../dialogues/event-nodes.md)
+- [Using Characters](../characters/using-characters.md)
+- [Customize Portraits](../characters/customize-portraits.md)
+- [Dialog Boxes](../dialogues/dialog-boxes.md)

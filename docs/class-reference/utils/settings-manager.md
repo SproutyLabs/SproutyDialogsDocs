@@ -12,7 +12,7 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
 
 :::info[Important]
 
-**You shouldn't instantiate this class directly**, use `SproutyDialogsSettingsManager` as a global class. Preferably use it **through the [Sprouty Dialogs autoload](/docs/class-reference/core/sprouty-dialogs-manager.md)** instead, as it is the recommended option.
+**You shouldn't instantiate this class directly**, use `SproutyDialogsSettingsManager` as a global class. Preferably use it **through the [Sprouty Dialogs autoload](../core/sprouty-dialogs-manager.md)** instead, as it is the recommended option.
 
 :::
 

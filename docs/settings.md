@@ -26,13 +26,13 @@ Let's take a look at each category and its settings.
 
 ### Defaults
 
-- `Default dialog box`: Default dialog box that will be displayed when no character is selected. It will also be used as a template when creating a new dialog box for a character. The root of the scene must be a node inherited from the [DialogBox](/docs/class-reference/nodes/dialog-box.md) class.
+- `Default dialog box`: Default dialog box that will be displayed when no character is selected. It will also be used as a template when creating a new dialog box for a character. The root of the scene must be a node inherited from the [DialogBox](./class-reference/nodes/dialog-box.md) class.
 
   > _By default, the default dialog box is a template that look like this:_
   >
   > ![Default Dialog Box](@site/static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
-- `Default portrait scene`: Default portrait scene that will be used as a template when creating a new portrait for a character. The root of the scene must be a node inherited from the [DialogPortrait](/docs/class-reference/nodes/dialog-portrait.md) class.
+- `Default portrait scene`: Default portrait scene that will be used as a template when creating a new portrait for a character. The root of the scene must be a node inherited from the [DialogPortrait](./class-reference/nodes/dialog-portrait.md) class.
 
   > _By default, the default portrait scene is a template that allows you to display an image as portrait:_
   >
@@ -54,7 +54,7 @@ Let's take a look at each category and its settings.
 
 - `Custom event nodes folder`: Path to the directory where you have your custom event nodes (`.tscn` files).
 
-- `Custom event interpreter`: Path to the custom event interpreter script file (`.gd`) that extends from the [SproutyDialogsEventInterpreter](/docs/class-reference/utils/event-interpreter.md) class. Where you define the process methods to run your custom event nodes.
+- `Custom event interpreter`: Path to the custom event interpreter script file (`.gd`) that extends from the [SproutyDialogsEventInterpreter](./class-reference/utils/event-interpreter.md) class. Where you define the process methods to run your custom event nodes.
 
 ## Text Settings
 
@@ -64,7 +64,7 @@ Let's take a look at each category and its settings.
 
 - `Default typing speed`: Time in seconds that the text takes to reveal each character. The higher the number, the longer it will take to reveal the next character.
 
-- `Open URL on meta tag click`: If enabled, **opens a hyperlink in the browser when a URL tag is clicked** during a dialog. By default the URL tags are handled by [meta_clicked](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel-signal-meta-clicked) signal on [RichTextLabels](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html). You can do the same with the [meta_clicked](/docs/class-reference/nodes/dialog-box#meta-clicked-signal) signal in a [DialogBox](/docs/class-reference/nodes/dialog-box.md) to more advanced use cases.
+- `Open URL on meta tag click`: If enabled, **opens a hyperlink in the browser when a URL tag is clicked** during a dialog. By default the URL tags are handled by [meta_clicked](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel-signal-meta-clicked) signal on [RichTextLabels](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html). You can do the same with the [meta_clicked](./class-reference/nodes/dialog-box#meta-clicked-signal) signal in a [DialogBox](./class-reference/nodes/dialog-box.md) to more advanced use cases.
 
 ### Dialogue Display
 
@@ -170,4 +170,4 @@ SproutyDialogs.Settings.get_default_setting("setting_name")
 SproutyDialogs.Settings.reset_setting("setting_name")
 ```
 
-See the [settings manager class reference](/docs/class-reference/utils/settings-manager.md) for more information.
+See the [settings manager class reference](./class-reference/utils/settings-manager.md) for more information.

@@ -18,12 +18,12 @@ This module is responsible for the character files creation and editing. It allo
 
 ## Methods
 
-| Return Type                                                                   | Method                                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SproutyDialogsCharacterData](/docs/class-reference/resources/character-data) | [get_character_data](#get-character-data-method)()                                                                                                                                                                           |
-| void                                                                          | [load_character](#load-character-method)(data: [SproutyDialogsCharacterData](/docs/class-reference/resources/character-data), name_data: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
-| void                                                                          | [on_locales_changed](#on-locales-changed-method)()                                                                                                                                                                           |
-| void                                                                          | [on_translation_enabled_changed](#on-translation-enabled-changed-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                                    |
+| Return Type                                                   | Method                                                                                                                                                                                                       |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [SproutyDialogsCharacterData](../../resources/character-data) | [get_character_data](#get-character-data-method)()                                                                                                                                                           |
+| void                                                          | [load_character](#load-character-method)(data: [SproutyDialogsCharacterData](../../resources/character-data), name_data: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
+| void                                                          | [on_locales_changed](#on-locales-changed-method)()                                                                                                                                                           |
+| void                                                          | [on_translation_enabled_changed](#on-translation-enabled-changed-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                    |
 
 ## Signals
 
@@ -46,7 +46,7 @@ This module is responsible for the character files creation and editing. It allo
 ## Method Descriptions
 
 <h3 id="get-character-data-method">
-  <span class="reference-type">func </span><code>get_character_data</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a></span>
+  <span class="reference-type">func </span><code>get_character_data</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="../../resources/character-data">SproutyDialogsCharacterData</a></span>
 </h3>
 <p>
   Returns the character data from the editor. This includes the character's key name, display name (with translations), description, dialog box scene path, portrait settings, and portraits data.
@@ -54,7 +54,7 @@ This module is responsible for the character files creation and editing. It allo
 <hr/>
 
 <h3 id="load-character-method">
-  <span class="reference-type">func </span><code>load_character</code><span class="parameters">(data: <a target="_blank" href="/docs/class-reference/resources/character-data">SproutyDialogsCharacterData</a>, name_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>load_character</code><span class="parameters">(data: <a target="_blank" href="../../resources/character-data">SproutyDialogsCharacterData</a>, name_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>
   Load the character data into the editor. If <code>name_data</code> is provided, it will be used to load the name translations. Otherwise, the name translations will be loaded from the character data.

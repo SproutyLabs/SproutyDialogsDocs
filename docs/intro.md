@@ -71,12 +71,12 @@ Use dialogues in your game with minimal code:
 - **Signal system** for responding to dialogue events in your game
 - **Custom event node support** to extend the dialogue system with game-specific actions
 
-![Play from Code](/../static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
+![Play from Code](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
 
 ## How to get started
 
 ---
 
-How to start using Sprouty Dialogs? Check out the [Getting Started guide](/docs/category/getting-started) to install the plugin and learn how to create and run your first dialogue!
+How to start using Sprouty Dialogs? Check out the [Getting Started guide](./category/getting-started/) to install the plugin and learn how to create and run your first dialogue!
 
 ![Sprouty Dialogue](@site/static/img/screenshots/characters/sprouty_talk_animation.gif)
