@@ -77,30 +77,30 @@ Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() m
 
 <h3 id="dialog-players-running-var">
   <span class="reference-type">var </span><code>dialog_players_running</code>
-  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a target="_blank" href="../nodes/dialog-player.md">DialogPlayer</a>] = []</span>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a target="_blank" href="../nodes/dialog-player">DialogPlayer</a>] = []</span>
 </h3>
 <p>The list of dialog players currently running. This is used to keep track of multiple dialog players running at the same time.</p>
 <hr/>
 
 <h3 id="resources-var">
   <span class="reference-type">var </span><code>Resources</code>
-  <span class="default-value"> : <a target="_blank" href="../utils/resource-manager.md">SproutyDialogsResourceManager</a> = new()</span>
+  <span class="default-value"> : <a target="_blank" href="../utils/resource-manager">SproutyDialogsResourceManager</a> = new()</span>
 </h3>
-<p>Resource manager singleton instance. You can access and handle the dialogue resources from this singleton. For more information see the <a target="_blank" href="../utils/resource-manager.md">resource manager</a> class reference.</p>
+<p>Resource manager singleton instance. You can access and handle the dialogue resources from this singleton. For more information see the <a target="_blank" href="../utils/resource-manager">resource manager</a> class reference.</p>
 <hr/>
 
 <h3 id="variables-var">
   <span class="reference-type">var </span><code>Variables</code>
-  <span class="default-value"> : <a target="_blank" href="../utils/variable-manager.md">SproutyDialogsVariableManager</a> = new()</span>
+  <span class="default-value"> : <a target="_blank" href="../utils/variable-manager">SproutyDialogsVariableManager</a> = new()</span>
 </h3>
-<p>Variable manager singleton instance. You can access and handle the variables from this singleton. For more information see the <a target="_blank" href="../utils/variable-manager.md">variable manager</a> class reference.</p>
+<p>Variable manager singleton instance. You can access and handle the variables from this singleton. For more information see the <a target="_blank" href="../utils/variable-manager">variable manager</a> class reference.</p>
 <hr/>
 
 <h3 id="settings-var">
   <span class="reference-type">var </span><code>Settings</code>
-  <span class="default-value"> : <a target="_blank" href="../utils/settings-manager.md">SproutyDialogsSettingsManager</a> = <a target="_blank" href="../utils/settings-manager.md">SproutyDialogsSettingsManager</a></span>
+  <span class="default-value"> : <a target="_blank" href="../utils/settings-manager">SproutyDialogsSettingsManager</a> = <a target="_blank" href="../utils/settings-manager">SproutyDialogsSettingsManager</a></span>
 </h3>
-<p>Settings manager reference. You can access and handle the plugin settings from this reference. For more information see the <a target="_blank" href="../utils/settings-manager.md">settings manager</a> class reference.</p>
+<p>Settings manager reference. You can access and handle the plugin settings from this reference. For more information see the <a target="_blank" href="../utils/settings-manager">settings manager</a> class reference.</p>
 <hr/>
 
 ## Method Descriptions

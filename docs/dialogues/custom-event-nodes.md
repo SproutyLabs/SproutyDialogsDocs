@@ -83,9 +83,9 @@ Now that you have your node set up, you need to **implement the logic** of your 
 
 There are two methods that **you need to override** in your custom event node script:
 
-- [get_data](../class-reference/core/base-node.md#get-data-method)(): This method should return a dictionary containing the data of the event node. You need to include some **required properties** and also can include any properties or values that you want to store to **save the state** of the event node and **process it** later.
+- [get_data](../class-reference/core/base-node#get-data-method)(): This method should return a dictionary containing the data of the event node. You need to include some **required properties** and also can include any properties or values that you want to store to **save the state** of the event node and **process it** later.
 
-- [set_data](../class-reference/core/base-node.md#set-data-method)(): This method take a dictionary as a parameter and set or **load the properties** of the event node based on the values in the dictionary.
+- [set_data](../class-reference/core/base-node#set-data-method)(): This method take a dictionary as a parameter and set or **load the properties** of the event node based on the values in the dictionary.
 
 Here's an example implementation of the `Custom Node` event node script:
 
