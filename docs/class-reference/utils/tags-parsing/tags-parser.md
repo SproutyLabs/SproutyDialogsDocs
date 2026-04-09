@@ -23,14 +23,14 @@ This parser automatically registers [tag processors](tag-processor.md) from the 
 
 ## Constructors
 
-| Constructor                                                                                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SproutyDialogsTagsParser](#tags-parser-constructor)(text: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), variable_manager: [SproutyDialogsVariableManager](../../variable-manager.md)) |
+| Constructor                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SproutyDialogsTagsParser](#tags-parser-constructor)(text: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), variable_manager: [SproutyDialogsVariableManager](../variable-manager.md)) |
 
 ## Constructor Descriptions
 
 <h3 id="tags-parser-constructor">
-  <code>SproutyDialogsTagsParser</code><span class="parameters">(text: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, variable_manager: <a href="../../variable-manager">SproutyDialogsVariableManager</a>)</span>
+  <code>SproutyDialogsTagsParser</code><span class="parameters">(text: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, variable_manager: <a href="../variable-manager">SproutyDialogsVariableManager</a>)</span>
 </h3>
 <p>Initializes a new instance of the tags parser with the given text and variable manager. This constructor scans the tags folder to register all available tag processors, parses variables in the text, constructs the AST, transforms it, and generates the final dialogue data.</p>
 <hr/>
