@@ -188,64 +188,126 @@ The text editor provides some animated effects supported by default by Godot tha
 
 ![Effects Menu](@site/static/img/screenshots/text-editor/effects_menu.png)
 
-### Pulse
-
 ![Pulse Effect](https://docs.godotengine.org/en/stable/_images/bbcode_in_richtextlabel_effect_pulse.webp)
 
-Pulse creates an **animated pulsing effect** that multiplies each character's opacity and color. Its tag format is:
-`[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]`
+- **Pulse**: Pulse creates an **animated pulsing effect** that multiplies each character's opacity and color. Its tag format is:
 
-- `freq` controls the frequency of the half-pulsing cycle (higher is faster). A full pulsing cycle takes 2 \* (1.0 / freq) seconds.
-- `color` is the target color multiplier for blinking. The default mostly fades out text, but not entirely.
-- `ease` is the easing function exponent to use. Negative values provide in-out easing, which is why the default is -2.0.
-
-### Wave
+  > ```
+  > [pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]
+  > ```
+  >
+  > - `freq` controls the frequency of the half-pulsing cycle (higher is faster). A full pulsing cycle takes 2 \* (1.0 / freq) seconds.
+  > - `color` is the target color multiplier for blinking. The default mostly fades out text, but not entirely.
+  > - `ease` is the easing function exponent to use. Negative values provide in-out easing, which is why the default is -2.0.
 
 ![Wave Effect](https://docs.godotengine.org/en/stable/_images/bbcode_in_richtextlabel_effect_wave.webp)
 
-Wave **makes the text go up and down** in a wave form (obviously). Its tag format is:
-`[wave amp=50.0 freq=5.0 connected=1]{text}[/wave]`.
+- **Wave**: Wave **makes the text go up and down** in a wave form (obviously). Its tag format is:
 
-- `amp` controls how high and low the effect goes.
-- `freq` controls how fast the text goes up and down. A freq value of 0 will result in no visible waves, and negative freq values won't display any waves either.
-- If `connected` is 1 (default), glyphs with ligatures will be moved together. If connected is 0, each glyph is moved individually even if they are joined by ligatures. This can work around certain rendering issues with font ligatures.
-
-### Tornado
+  > ```
+  > [wave amp=50.0 freq=5.0 connected=1]{text}[/wave]
+  > ```
+  >
+  > - `amp` controls how high and low the effect goes.
+  > - `freq` controls how fast the text goes up and down. A freq value of 0 will result in no visible waves, and negative freq values won't display any waves either.
+  > - If `connected` is 1 (default), glyphs with ligatures will be moved together. If connected is 0, each glyph is moved individually even if they are joined by ligatures. This can work around certain rendering issues with font ligatures.
 
 ![Tornado Effect](https://docs.godotengine.org/en/stable/_images/bbcode_in_richtextlabel_effect_tornado.webp)
 
-Tornado **makes the text move around in a circle**. Its tag format is: `[tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]`.
+- **Tornado**: Tornado **makes the text move around in a circle**. Its tag format is:
 
-- `radius` is the radius of the circle that controls the offset.
-- `freq` is how fast the text moves in a circle. A freq value of 0 will pause the animation, while negative freq will play the animation backwards.
-- If `connected` is 1 (default), glyphs with ligatures will be moved together. If connected is 0, each glyph is moved individually even if they are joined by ligatures. This can work around certain rendering issues with font ligatures.
-
-### Shake
+  > ```
+  > [tornado radius=10.0 freq=1.0 connected=1]{text}[/tornado]
+  > ```
+  >
+  > - `radius` is the radius of the circle that controls the offset.
+  > - `freq` is how fast the text moves in a circle. A freq value of 0 will pause the animation, while negative >freq will play the animation backwards.
+  > - If `connected` is 1 (default), glyphs with ligatures will be moved together. If connected is 0, each glyph is moved individually even if they are joined by ligatures. This can work around certain rendering issues with font ligatures.
 
 ![Shake Effect](https://docs.godotengine.org/en/stable/_images/bbcode_in_richtextlabel_effect_shake.webp)
 
-Shake **makes the text shake** (duh). Its tag format is: `[shake rate=20.0 level=5 connected=1]{text}[/shake]`.
+- **Shake**: Shake **makes the text shake** (duh). Its tag format is:
 
-- `rate` controls how fast the text shakes.
-- `level` controls how far the text is offset from the origin.
-- If `connected` is 1 (default), glyphs with ligatures will be moved together. If connected is 0, each glyph is moved individually even if they are joined by ligatures. This can work around certain rendering issues with font ligatures.
-
-### Fade
+  > ```
+  > [shake rate=20.0 level=5 connected=1]{text}[/shake]
+  > ```
+  >
+  > - `rate` controls how fast the text shakes.
+  > - `level` controls how far the text is offset from the origin.
+  > - If `connected` is 1 (default), glyphs with ligatures will be moved together. If connected is 0, each glyph is moved individually even if they are joined by ligatures. This can work around certain rendering issues with font ligatures.
 
 ![Fade Effect](https://docs.godotengine.org/en/stable/_images/bbcode_in_richtextlabel_effect_fade.webp)
 
-Fade creates a static **fade effect that multiplies each character's opacity**. Its tag format is: `[fade start=4 length=14]{text}[/fade]`.
+- **Fade**: Fade creates a static **fade effect that multiplies each character's opacity**. Its tag format is:
 
-- `start` controls the starting position of the falloff relative to where the fade command is inserted.
-- `length` controls over how many characters should the fade out take place.
-
-### Rainbow
+  > ```
+  > [fade start=4 length=14]{text}[/fade]
+  > ```
+  >
+  > - `start` controls the starting position of the falloff relative to where the fade command is inserted.
+  > - `length` controls over how many characters should the fade out take place.
 
 ![Rainbow Effect](https://docs.godotengine.org/en/stable/_images/bbcode_in_richtextlabel_effect_rainbow.webp)
 
-Rainbow gives the text a **rainbow color that changes over time**. Its tag format is: `[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]`.
+- **Rainbow**: Rainbow gives the text a **rainbow color that changes over time**. Its tag format is:
 
-- `freq` determines how many letters the rainbow extends over before it repeats itself.
-- `sat` is the saturation of the color of the rainbow.
-- `val` is the value of the color of the rainbow.
-- `speed` is the number of full rainbow cycles per second. A positive speed value will play the animation forwards, a value of 0 will pause the animation, and a negative speed value will play the animation backwards.
+  > ```
+  > [rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]
+  > ```
+  >
+  > - `freq` determines how many letters the rainbow extends over before it repeats itself.
+  > - `sat` is the saturation of the color of the rainbow.
+  > - `val` is the value of the color of the rainbow.
+  > - `speed` is the number of full rainbow cycles per second. A positive speed value will play the animation forwards, a value of 0 will pause the animation, and a negative speed value will play the animation backwards.
+
+## Special Tags
+
+---
+
+There are also some special tags that you can add to your text to add some extra functionality, such as controlling the typing speed, adding pauses, or showing/hiding text based on conditions.
+
+You can access them through the **Special Tags** menu in the toolbar.
+
+![Special Tags Menu](img/text-editor/special-tags-menu.png)
+
+- **Typing Speed Control** `[Speed]`: This tag allows you to control the speed of the typewriter effect for the text it is applied to. You can set the speed in two ways:
+
+  > - **Absolute speed**: `[speed=0.03]`
+  >   Sets the time (in seconds) taken to display each character. A larger value slows down the typing.
+  > - **Relative speed**: `[speed=2x]`
+  >   A multiplier relative to the default typing speed configured in the settings (e.g., 2x means twice the default speed). Larger values make typing faster (shorter character intervals).
+
+  > **Example**:
+  >
+  > ```
+  > [speed=2x]This text appears twice as fast.[/speed]
+  > ```
+
+- **Pause** `[Wait]`: Inserts a fixed pause (in seconds) between characters. The typewriter waits before continuing with the subsequent content.
+
+  > **Example**:
+  >
+  > ```
+  > Hello...[wait=1.5] how are you?
+  > ```
+
+- **Conditional Visibility** `[If]`: This tag allows to shows or hides its content based on a variable comparison. If the condition is not met, the content inside the tag will be not displayed.
+
+  > The tag needs the following parameters:
+  >
+  > - `var`: The name of the variable to compare.
+  >   > - The variable must be defined in the plugin variables system, and only variables of type `bool`, `int`, `float` and `String` are supported.
+  > - `op`: The comparison operator. Supported operators are:
+  >   > - `eq` (equal)
+  >   > - `neq` (not equal)
+  >   > - `gt` (greater than)
+  >   > - `lt` (less than)
+  >   > - `gte` (greater than or equal)
+  >   > - `lte` (less than or equal)
+  > - `val`: The value to compare the variable against.
+
+  > **Example**:
+  >
+  > ```
+  > [if var="score" op="gt" val="10"]You win![/if]
+  > ```
