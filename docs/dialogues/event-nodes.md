@@ -50,6 +50,10 @@ This node allows you to add options or choices to the dialogue. You can add **mu
 
 ![Options Node](img/event-nodes/options-node.png)
 
+You can set **conditions** to display the options, if the condition is not met, you can set the option as "hidden" or "disabled", otherwise, the option will be displayed normally.
+
+![Options Node Conditions](img/event-nodes/options-node-conditions.png)
+
 Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how looks the options buttons in your dialog box. For more information see the [customize options section](#).
 
 :::info[Using Translations]
@@ -115,9 +119,23 @@ To **catch the signal**, you need to connect the [signal_event](../class-referen
 
 ---
 
-This node allows you to **wait a few seconds** between events in a dialogue tree. You must define the wait time in seconds in the node field.
+This node allows you to **wait a few seconds** between events in a dialogue tree. You must define the wait time in seconds in the input field.
 
 ![Wait Node](img/event-nodes/wait-node.png)
+
+You can also choose whether **the dialog box will close while you wait or remain on the screen**. This can be useful for example if you want to wait for a few seconds before showing the next dialogue, but you don't want the dialog box to remain with the previous text on the screen.
+
+## Jump To Node
+
+---
+
+This node allows you to **jump to another dialogue tree**. You need to specify the `ID` of the dialogue tree that you want to jump to, that is defined in the [Start Node](#start-node) of the dialogue tree.
+
+![Jump To Node](img/event-nodes/jump-to-node.png)
+
+If the node has an output connection, the dialogue system will **return to the current dialogue tree after finishing the jumped dialogue tree**, and continue from the connected node.
+
+Otherwise, if you don't connect any node to the output slot, the dialogue system will not return to the current dialogue tree after finishing the jumped dialogue tree.
 
 ## Comment Node
 
