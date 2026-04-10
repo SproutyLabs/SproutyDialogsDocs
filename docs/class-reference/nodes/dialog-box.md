@@ -45,7 +45,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 | void                                                                   | [stop_dialog](#stop-dialog-method)(close_dialog: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) = false)                                                                                              |
 | [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [is_displaying_portrait](#is-displaying-portrait-method)()                                                                                                                                                                    |
 | void                                                                   | [display_portrait](#display-portrait-method)(character_parent: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html), portrait_node: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)) |
-| void                                                                   | [display_options](#display-options-method)(options: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html))                                                                                                 |
+| void                                                                   | [display_options](#display-options-method)(options: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html), disabled_flags: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) = [])  |
 | void                                                                   | [hide_options](#hide-options-method)()                                                                                                                                                                                        |
 
 ## Signals
@@ -214,7 +214,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <hr/>
 
 <h3 id="display-options-method">
-  <span class="reference-type">func </span><code>display_options</code><span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>display_options</code><span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, disabled_flags: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a> = [])</span><span class="return-type"> -> void</span>
 </h3>
 <p>Display the dialog options.</p>
 <hr/>

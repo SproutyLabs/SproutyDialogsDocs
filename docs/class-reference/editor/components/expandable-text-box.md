@@ -46,6 +46,20 @@ Component that extends a text box with an expand button to open a larger text ed
 <p>Emitted when the text box loses focus.</p>
 <hr/>
 
+## Constants
+
+<h3 id="max-visible-lines-const">
+  <span class="reference-type">const </span><code>MAX_VISIBLE_LINES</code> <span class="const-value"> = 3</span>
+</h3>
+<p>Maximum number of visible lines in the text box.</p>
+<hr/>
+
+<h3 id="extra-y-padding-const">
+  <span class="reference-type">const </span><code>EXTRA_Y_PADDING</code> <span class="const-value"> = 8</span>
+</h3>
+<p>Extra vertical padding for the text box.</p>
+<hr/>
+
 ## Method Descriptions
 
 <h3 id="get-text-method">

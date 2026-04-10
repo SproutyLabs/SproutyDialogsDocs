@@ -8,9 +8,9 @@ sidebar_position: 1
 
 ## Description
 
-Class that processes special tags from dialogues (such as speed, if, etc).
+Class that processes special tags from dialogues (such as speed, wait, if, etc).
 
-This parser automatically registers [tag processors](tag-processor.md) from the "/tags" folder and creates an **Abstract Syntax Tree (AST)** representation of the dialogue text, which is then used to generate the final bbcode text and dialogue data.
+This parser automatically registers [tag processors](tag-processor.md) from the `/tags` folder and creates an **Abstract Syntax Tree (AST)** representation of the dialogue text, which is then used to generate the final bbcode text and dialogue data.
 
 ## Properties
 

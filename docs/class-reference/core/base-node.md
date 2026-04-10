@@ -30,6 +30,7 @@ You should inherit from this class to create your own dialog nodes.
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [start_node_name](#start-node-name-var) | ""      |
 | [SproutyDialogsBaseNode](#)                                                      | [start_node](#start-node-var)           | null    |
 | [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)         | [to_node](#to-node-var)                 | []      |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [to_dialog](#to-dialog-var)             | ""      |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [node_type](#node-type-var)             | ""      |
 | [int](https://docs.godotengine.org/en/stable/classes/class_int.html)             | [node_index](#node-index-var)           | 0       |
 
@@ -93,6 +94,13 @@ You should inherit from this class to create your own dialog nodes.
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a> = []</span>
 </h3>
 <p>Array to store the output nodes connections.</p>
+<hr/>
+
+<h3 id="to-dialog-var">
+  <span class="reference-type">var </span><code>to_dialog</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
+</h3>
+<p>Start ID of the dialog tree where the next node belongs. If the next node belongs to another dialog, it will be used to find the node.</p>
 <hr/>
 
 <h3 id="node-type-var">

@@ -43,7 +43,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="options-processed-signal">
   <span class="reference-type">signal </span><code>options_processed</code>
-  <span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_nodes: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
+  <span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_nodes: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, option_keys: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, disabled_flags: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
 </h3>
 <p>Emitted when a options node was processed.</p>
 <hr/>
@@ -53,6 +53,13 @@ The processors can be access by the [node_processors](#node-processors-var) dict
   <span class="parameters">(signal_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, args: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a signal node was processed.</p>
+<hr/>
+
+<h3 id="jump-to-node-signal">
+  <span class="reference-type">signal </span><code>jump_to_node</code>
+  <span class="parameters">(start_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, return_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+</h3>
+<p>Emitted when a jump node was processed.</p>
 <hr/>
 
 ## Property Descriptions

@@ -10,7 +10,13 @@ sidebar_position: 2
 
 ## Description
 
-Abstract base class that defines how to process special tags in dialogues. All custom tag processors must extend this class and implement its abstract methods. Tag processors are automatically discovered and registered by [SproutyDialogsTagsParser](tags-parser.md) from a designated tags folder.
+Abstract base class that defines how to process special tags in dialogues.
+
+:::important
+
+All custom tag processors must extend this class and implement its abstract methods. Tag processors are automatically discovered and registered by [SproutyDialogsTagsParser](tags-parser.md) from a designated tags folder.
+
+:::
 
 A tag processor has two primary responsibilities:
 
