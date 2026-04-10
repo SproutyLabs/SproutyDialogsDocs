@@ -14,12 +14,6 @@ This release has many bug fixes, improvements, and a _new event node!_
 
 But also, we’re excited to release a new feature from our roadmap: **Custom text effects tags support!** 🔥
 
-:::important[About Docs]
-
-_The documentation will be updated soon!_
-
-:::
-
 <!-- truncate -->
 
 ## New Features
