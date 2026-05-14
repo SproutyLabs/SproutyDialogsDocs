@@ -311,3 +311,29 @@ You can access them through the **Special Tags** menu in the toolbar.
   > ```
   > [if var="score" op="gt" val="10"]You win![/if]
   > ```
+
+- **Content Repetition** `[repeat]`: A block tag that repeats the enclosed content a specified number of times. The content is displayed consecutively that many times.
+
+  > - You need to specify a positive integer indicating how many times the content should be repeated.
+  >   > - _For performance reasons, the **maximum number of repetitions** allowed is 10,000._
+  >   > - _If the number of repetitions is 0, the **content is removed**._
+  >   >
+  >   > ```
+  >   > [repeat=0]This will be removed[/repeat] → (nothing)
+  >   > ```
+  > - **Variables are also supported** (e.g., `[repeat={count}]...[/repeat]`). _Variable substitution is performed before repetition._
+  >   > ```
+  >   > [repeat={player_echo}]Echo![/repeat]
+  >   > ```
+  > - **Nesting is supported**. _Nested `[repeat]` tags are processed recursively:_
+  >   > ```
+  >   > [repeat=3]A[repeat=3]B[/repeat]C[/repeat] → ABBBCABBBCABBBC
+  >   > ```
+  >   >
+  >   > _(Inner `[repeat=3]B[/repeat]` becomes BBB, then outer repeats A + BBB + C three times.)_
+
+  > **Example**:
+  >
+  > ```
+  > [repeat=3]Ha! [/repeat] → Ha! Ha! Ha!
+  > ```
