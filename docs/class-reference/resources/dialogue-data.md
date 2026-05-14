@@ -25,6 +25,7 @@ This resource stores the dialogue data from the graph editor. It includes the gr
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)\[[String](https://docs.godotengine.org/en/stable/classes/class_string.html)\] | [get_start_ids](#get-start-ids-method)()                                                                                                         |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)                                                                     | [get_portraits_on_dialog](#get-portraits-on-dialog-method)(start_id: [String](https://docs.godotengine.org/en/stable/classes/class_string.html)) |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)                                                                     | [get_all_character_references](#get-all-character-references-method)()                                                                           |
 
 ## Property Descriptions
 
@@ -124,4 +125,10 @@ This resource stores the dialogue data from the graph editor. It includes the gr
   ...
 }
 ```
+<hr/>
+
+<h3 id="get-all-character-references-method">
+  <span class="reference-type">func </span><code>get_all_character_references</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+</h3>
+<p>Return all the character references count from the dialogue file.</p>
 <hr/>

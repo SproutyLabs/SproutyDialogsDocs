@@ -21,6 +21,7 @@ This module is responsible for some file operations and references. It provides 
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html) | [ensure_unique_name](#ensure-unique-name-method)(name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), existing_names: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html), empty_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html) = "Unnamed") |
 | void                                                                       | [open_scene_in_editor](#open-scene-in-editor-method)(scene_path: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), scene_tree: [SceneTree](https://docs.godotengine.org/en/stable/classes/class_scenetree.html))                                                                                       |
 | void                                                                       | [create_new_scene_file](#create-new-scene-file-method)(scene_path: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), scene_type: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                           |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)   | [get_resources_of_type](#get-resources-of-type-method)(type: [String](https://docs.godotengine.org/en/stable/classes/class_string.html) = "dialogue", path: [String](https://docs.godotengine.org/en/stable/classes/class_string.html) = "res://")                                                                               |
 
 ## Method Descriptions
 
@@ -64,4 +65,10 @@ This module is responsible for some file operations and references. It provides 
   <span class="reference-type">func </span><code>create_new_scene_file</code><span class="parameters">(scene_path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, scene_type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Create a new dialog box or portrait scene file. Needs the path where save the scene file and the type of the scene that can be `"dialog_box"` or `"portrait_scene"`.</p>
+<hr/>
+
+<h3 id="get-resources-of-type-method">
+  <span class="reference-type">static func </span><code>get_resources_of_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = "dialogue", path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = "res://")</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+</h3>
+<p>Return all the resources of a given type in the project. The type can be <code>"dialogue"</code> or <code>"character"</code> resource.</p>
 <hr/>
