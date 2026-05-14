@@ -133,6 +133,14 @@ This node allows you to **jump to another dialogue tree**. You need to specify t
 
 ![Jump To Node](img/event-nodes/jump-to-node.png)
 
+:::important
+
+You can also **jump to a dialogue tree from another dialogue file**. For that, you need to check the `Jump to another file` toggle, assign the dialogue file and then specify the `ID` of the dialogue tree you want to jump to.
+
+![Jump to another dialog](img/event-nodes/jump-to-node-another-dialog.png)
+
+:::
+
 If the node has an output connection, the dialogue system will **return to the current dialogue tree after finishing the jumped dialogue tree**, and continue from the connected node.
 
 Otherwise, if you don't connect any node to the output slot, the dialogue system will not return to the current dialogue tree after finishing the jumped dialogue tree.
