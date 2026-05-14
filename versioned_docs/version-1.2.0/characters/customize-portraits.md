@@ -212,4 +212,51 @@ When you change the default portrait scene, this scene will also **become the ne
 
 :::
 
+## Using control nodes
+
+---
+
+The portrait scene uses 2D nodes, but the [DialogPortrait](../class-reference/nodes/dialog-portrait.md) class inherits from the [Node](https://docs.godotengine.org/en/stable/classes/class_node.html) class, allowing you to **_use any type of node as the root of the portrait._**
+
+For example, if you want to display a portrait in a dialog box (for more information see [using portraits in dialog boxes](../dialogues/dialog-boxes#using-portraits-in-dialog-boxes)), and you want that the **portrait fills the container**, you can use **control nodes to fit the portrait to the UI**.
+
+To do this, in the dialog box you can use a [Panel Container](https://docs.godotengine.org/en/stable/classes/class_panelcontainer.html) as portrait display.
+
+![Portrait display in dialog box](img/portait_display_in_dialog_box.png)
+
+Now, you need to create a custom portrait scene that uses a [Control](https://docs.godotengine.org/en/stable/classes/class_control.html) node as its root and assign a new script to it that inherits from [DialogPortrait](../class-reference/nodes/dialog-portrait.md) to control it.
+
+You can set the anchors preset to `Full Rect` to ensure that the portrait is going to fill the display container. To display the image you can use a [TextureRect](https://docs.godotengine.org/en/stable/classes/class_texturerect.html) and also set it as `Full Rect`.
+
+![Portrait with control nodes](img/portrait_with_control_nodes.png)
+
+:::important
+
+Remember to modify the script to display the texture in the [TextureRect](https://docs.godotengine.org/en/stable/classes/class_texturerect.html) node!
+
+```gdscript showLineNumbers
+@tool
+extends DialogPortrait
+
+## Portrait image file path
+@export_file("*.png", "*.jpg", "*.svg") var portrait_image: String
+
+func set_portrait() -> void:
+  $TextureRect.texture = load(portrait_image)
+```
+
+:::
+
+So, if you **assign this dialog box and the portrait scene to a character and then use it in a dialogue**, you'll see that the portrait fits within the display panel.
+
+![Control portrait preview](img/control_portrait_preview.png)
+
+In this way, you can **customize even more the portrait behavior!**
+
+:::warning
+
+The portrait **preview in the characters tab might not work properly**. But don't worry, the portrait will still works in the dialogue!
+
+:::
+
 Now that you know how to create and customize your own portrait scenes, you can _create unique and dynamic portraits for your characters in your game!_
