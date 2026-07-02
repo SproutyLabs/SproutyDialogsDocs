@@ -9,7 +9,7 @@ tags:
 
 Hi everyone! 🌱
 
-Many bugs fixes and plugin settings refactor 🪠
+Many bug fixes and plugin settings refactor 🪠
 
 <!-- truncate -->
 
