@@ -94,7 +94,7 @@ When you select a file, the inspector automatically going to update and now you 
 
 ![Select Start ID](@site/static/img/screenshots/getting-started/create-a-dialogue/select_start_id.png)
 
-Also, you can set other settings, such as `Play on Ready`, that will run the dialogue when the [DialogPlayer](../class-reference/nodes/dialog-player.md) node is ready on the scene tree. If we enable this property, you'll see the dialogue when you play the scene.
+Also, you can set other settings, such as `Autoplay` _(or `Play on Ready` on older versions)_, that will run the dialogue when the [DialogPlayer](../class-reference/nodes/dialog-player.md) node is ready on the scene tree. If we enable this property, you'll see the dialogue when you play the scene.
 
 ![Play on Ready](@site/static/img/screenshots/getting-started/create-a-dialogue/play_on_ready.png)
 
@@ -102,9 +102,9 @@ Generally, you'll want to trigger the dialogue at a specific moment, not only wh
 
 ### Trigger the dialogue
 
-You can call the dialogue from code, using the [start](../class-reference/nodes/dialog-player#start-method)() method from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node.
+You can call the dialogue from code, using the [play](../class-reference/nodes/dialog-player#play-method)() method _(or [start](../class-reference/nodes/dialog-player#play-method)() on older versions)_ from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node.
 
-For example, we can add a script to the `main` node and add a reference to the [DialogPlayer](../class-reference/nodes/dialog-player.md) that we create before to then call the [start](../class-reference/nodes/dialog-player#start-method)() method where we want in the script.
+For example, we can add a script to the `main` node and add a reference to the [DialogPlayer](../class-reference/nodes/dialog-player.md) that we create before to then call the [play](../class-reference/nodes/dialog-player#play-method)() method where we want in the script.
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
@@ -112,7 +112,7 @@ extends Node2D
 @onready var dialog_player : DialogPlayer = $DialogPlayer
 
 func _ready() -> void:
-	dialog_player.start()
+	dialog_player.play()
 
 ```
 
@@ -120,7 +120,7 @@ In this case, we run the dialog in the [\_ready](https://docs.godotengine.org/en
 
 ![Play from Code](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_code.png)
 
-Otherwise, instead of create a DialogPlayer node in the scene, you can play a dialogue using the Sprouty Dialogs Autoload. You can call the [start_dialog](../class-reference/core/sprouty-dialogs-manager#start-dialog-method)() method from the [SproutyDialogs](../class-reference/core/sprouty-dialogs-manager.md) autoload passing the dialogue data resource and the ID of the dialogue tree you want to run.
+Otherwise, instead of create a DialogPlayer node in the scene, you can play a dialogue using the Sprouty Dialogs Autoload. You can call the [play](../class-reference/core/sprouty-dialogs-manager#play-method)() method _(or [start_dialog](../class-reference/core/sprouty-dialogs-manager#start-dialog-method)() on older versions)_ from the [SproutyDialogs](../class-reference/core/sprouty-dialogs-manager.md) autoload passing the dialogue data resource and the ID of the dialogue tree you want to run.
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
@@ -128,7 +128,7 @@ extends Node2D
 var dialog_data := load("res://dialogues/my_dialogue.tres")
 
 func _ready() -> void:
-	SproutyDialogs.start_dialog(dialog_data, "FIRST")
+	SproutyDialogs.play(dialog_data, "FIRST")
 
 ```
 

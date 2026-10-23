@@ -18,13 +18,7 @@ In the character data file, you can see several properties that you can configur
 
 - `Key name`: The **unique identifier** for the character, shown above the display name. This name will be used to **refer to the character in the dialogues**.
 
-  > Corresponds to the **file name with which the character was created**.
-
-  :::warning[Important]
-
-  It **cannot be changed** after creating the character, even if you **rename** the file. _So choose it wisely!_
-
-  :::
+  > Corresponds to the **character data file name**.
 
 - `Display Name`: The name that will be displayed in the dialog box when the character speaks. This can be translated if you have **translations enabled**.
 
