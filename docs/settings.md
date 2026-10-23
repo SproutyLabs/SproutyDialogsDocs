@@ -88,8 +88,6 @@ Let's take a look at each category and its settings.
 
 ### Auto-Advance
 
----
-
 - `Enabled at the start`: Enable auto-advance at the game start, so dialogues will **automatically progress without waiting for user input**.
 
   > _This corresponds to the [auto_advance](./class-reference/nodes/dialog-player.md#auto-advance-var) property of the [DialogPlayer](./class-reference/nodes/dialog-player.md)._
@@ -97,6 +95,8 @@ Let's take a look at each category and its settings.
 - `Default advance delay`: Time in seconds to wait before advancing to the next dialog/event.
 
   > _This is the default auto-advance delay used by [DialogBoxes](./class-reference/nodes/dialog-box.md) (see [set_auto_advance](./class-reference/nodes/dialog-box.md#set-auto-advance-method)) and by the [auto tag](./class-reference/utils/tags-parsing/tags/auto-tag-processor.md) when no `delay` attribute is provided._
+
+For a complete guide on how the auto-advance feature works, check the [Auto-Advance page](./dialogues/auto-advance.md).
 
 ## Translation Settings
 

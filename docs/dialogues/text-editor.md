@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Text Editor
+# Text Editor & Text Effects
 
 The text editor allows you to write your dialogues using various formatting options and text effects with [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) to enhance the your the dialogues in a user-friendly interface.
 
