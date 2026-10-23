@@ -10,7 +10,7 @@ sidebar_position: 6
 
 Defines how to process a noskip tag in dialogues. This processor disables the text reveal skip feature, which allows the player to skip the text reveal animation and instantly display the full text.
 
-This is an inline tag, so it doesn't have opening and closing variations. You can use it to disable/enable text reveal skipping across different dialogue node events.
+This is an inline tag, so it doesn't have opening and closing variations. **You can use it to disable/enable text reveal skipping across different dialogue node events.**
 
 ## Attributes
 

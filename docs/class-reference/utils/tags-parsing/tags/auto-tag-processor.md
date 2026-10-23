@@ -12,14 +12,14 @@ Defines how to process an auto tag in dialogues. This processor enables or disab
 
 By default, the auto-advance delay is taken from the advance delay setting configured in the Sprouty Dialogs settings, but you can override it.
 
-This is an inline tag, so it doesn't have opening and closing variations. You can use it to enable/disable auto-advance across different dialogue node events.
+This is an inline tag, so it doesn't have opening and closing variations. **You can use it to enable/disable auto-advance across different dialogue node events.**
 
 ## Attributes
 
-| Attribute | Description                                                                                                                          |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `value`   | `[auto=true]` or `[auto=false]`: enable or disable the auto-advance feature. If no value is provided, it will be enabled by default  |
-| `delay`   | `[auto delay=0.5]`: specify a custom time in seconds for the auto-advance delay                                                      |
+| Attribute | Description                                                                                                                         |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `value`   | `[auto=true]` or `[auto=false]`: enable or disable the auto-advance feature. If no value is provided, it will be enabled by default |
+| `delay`   | `[auto delay=0.5]`: specify a custom time in seconds for the auto-advance delay                                                     |
 
 ## Example
 

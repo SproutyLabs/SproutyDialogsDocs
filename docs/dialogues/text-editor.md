@@ -337,3 +337,31 @@ You can access them through the **Special Tags** menu in the toolbar.
   > ```
   > [repeat=3]Ha! [/repeat] → Ha! Ha! Ha!
   > ```
+
+- **Auto Advance** `[auto]`: Enables or disables the [auto-advance feature](../settings#auto-advance), which automatically advances the dialogue after a specified time, without requiring user input. **You can use it to enable/disable auto-advance across different dialogue node events.** By default, the delay is taken from the [Default advance delay](../settings#auto-advance) setting, but you can override it.
+
+  > Parameters:
+  >
+  > - `value`: `true` or `false`. Enables or disables the auto-advance feature. _If no value is provided, it is enabled by default._
+  > - `delay`: A custom time in seconds that overrides the default advance delay.
+
+  > **Example**:
+  >
+  > ```
+  > Hello...[auto delay=0.5] how are you?
+  > I'm fine, thanks! [auto=false] Let's continue the conversation.
+  > ```
+
+- **No Skip** `[noskip]`: Disables the text reveal skip feature for the dialogue that contains the tag, so the player cannot skip the typing animation to instantly display the full text. **The effect persists across the dialogue node events until it is re-enabled.**
+
+  > Parameters:
+  >
+  > - `value`: `true` or `false`. A bare `[noskip]` is enabled by default, and `[noskip=false]` re-enables the text reveal skip feature.
+
+  > **Example**:
+  >
+  > ```
+  > Pay attention to each word! [noskip]
+  > This is the secret of the universe...
+  > [noskip=false] Now you can skip the text reveal animation.
+  > ```
