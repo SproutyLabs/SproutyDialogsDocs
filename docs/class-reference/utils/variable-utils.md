@@ -77,56 +77,56 @@ This class provides utility methods to handle variables, such as get the UI fiel
 ## Method Descriptions
 
 <h3 id="get-variables-of-type-method">
-  <span class="reference-type">func </span><code>get_variables_of_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1, metadata: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, group: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+  <span class="reference-type">static func </span><code>get_variables_of_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1, metadata: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, group: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
 </h3>
 <p>Returns a list with the names of variables of the given type. If a type is specified, it returns only the variables of that type. If no type is specified, it returns all variables. If no variables are found, it returns an empty array.</p>
 <hr/>
 
 <h3 id="get-types-dropdown-method">
-  <span class="reference-type">func </span><code>get_types_dropdown</code><span class="parameters">(label: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true, excluded: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>] = [])</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_optionbutton.html">OptionButton</a></span>
+  <span class="reference-type">static func </span><code>get_types_dropdown</code><span class="parameters">(label: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true, excluded: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>] = [])</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_optionbutton.html">OptionButton</a></span>
 </h3>
 <p>Returns an OptionButton component with all the variable types that can be selected. You can hide the label text by setting `label` to false. Also, you can exclude types by passing their names in the `excluded` array.</p>
 <hr/>
 
 <h3 id="new-field-by-type-method">
-  <span class="reference-type">func </span><code>new_field_by_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, init_value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a> = null,
-	property_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = {}, on_value_changed: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_callable.html">Callable</a> = func(value, type, field): return , on_modified_callable: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_callable.html">Callable</a> = func(): return)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">static func </span><code>new_field_by_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, init_value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a> = null,
+	property_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, on_value_changed: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_callable.html">Callable</a> = func(value, type, field): return , on_modified_callable: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_callable.html">Callable</a> = func(): return)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Create a new field based on the variable type. Returns a dictionary with the field created and its default value. You can pass an initial value and property data for hints. Also, you can pass callables for when the value changes or when the field is modified.</p>
 <hr/>
 
 <h3 id="set-field-value-method">
-  <span class="reference-type">func </span><code>set_field_value</code><span class="parameters">(field: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a>, type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">static func </span><code>set_field_value</code><span class="parameters">(field: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a>, type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Sets a value in the given field based on its type.</p>
 <hr/>
 
 <h3 id="get-assignment-operators-method">
-  <span class="reference-type">func </span><code>get_assignment_operators</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">static func </span><code>get_assignment_operators</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Returns a list of assignment operators by type.</p>
 <hr/>
 
 <h3 id="get-comparison-operators-method">
-  <span class="reference-type">func </span><code>get_comparison_operators</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">static func </span><code>get_comparison_operators</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Returns all the comparison operators as a dictionary.</p>
 <hr/>
 
 <h3 id="set-property-method">
-  <span class="reference-type">func </span><code>set_property</code><span class="parameters">(object: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_object.html">Object</a>, name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>, type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">static func </span><code>set_property</code><span class="parameters">(object: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_object.html">Object</a>, name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>, type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Assigns a value to a given property of an object. Ensures that collections values are passed properly.</p>
 <hr/>
 
 <h3 id="get-array-from-data-method">
-  <span class="reference-type">func </span><code>get_array_from_data</code><span class="parameters">(array_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
+  <span class="reference-type">static func </span><code>get_array_from_data</code><span class="parameters">(array_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a></span>
 </h3>
 <p>Recursively get array from array data.</p>
 <hr/>
 
 <h3 id="get-dictionary-from-data-method">
-  <span class="reference-type">func </span><code>get_dictionary_from_data</code><span class="parameters">(dict_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+  <span class="reference-type">static func </span><code>get_dictionary_from_data</code><span class="parameters">(dict_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
 <p>Recursively get dictionary from dictionary data.</p>
 <hr/>

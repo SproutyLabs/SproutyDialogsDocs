@@ -36,7 +36,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="dialogue-processed-signal">
   <span class="reference-type">signal </span><code>dialogue_processed</code>
-  <span class="parameters">(character_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, translated_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(character_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, translated_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>, next_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
 <p>Emitted when a dialogue node was processed.</p>
 <hr/>
@@ -57,7 +57,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
 
 <h3 id="jump-to-node-signal">
   <span class="reference-type">signal </span><code>jump_to_node</code>
-  <span class="parameters">(start_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, return_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
+  <span class="parameters">(start_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, return_node: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog_data: <a target="_blank" href="../resources/dialogue-data">SproutyDialogsDialogueData</a>)</span>
 </h3>
 <p>Emitted when a jump node was processed.</p>
 <hr/>

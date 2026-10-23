@@ -12,17 +12,23 @@ Component that display a dialog option in the options node.
 
 ## Properties
 
-| Type                                                                 | Name                              | Default |
-| -------------------------------------------------------------------- | --------------------------------- | ------- |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html) | [option_index](#option-index-var) | 0       |
+| Type                                                                                                     | Name                              | Default |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------- | ------- |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                                     | [option_index](#option-index-var) | 0       |
+| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var)       | -       |
 
 ## Methods
 
-| Return Type                                                                        | Method                                                                                                                            |
-| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [get_dialog_key](#get-dialog-key-method)()                                                                                        |
-| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_dialogs_text](#get-dialogs-text-method)()                                                                                    |
-| void                                                                               | [load_dialogs](#load-dialogs-method)(dialogs: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html)) |
+| Return Type                                                                        | Method                                                                                                                                                    |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_conditions](#get-conditions-method)()                                                                                                                |
+| void                                                                               | [load_conditions](#load-conditions-method)(data: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                      |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [get_dialog_key](#get-dialog-key-method)()                                                                                                                |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_dialogs_text](#get-dialogs-text-method)()                                                                                                            |
+| void                                                                               | [load_dialogs](#load-dialogs-method)(dialogs: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                         |
+| void                                                                               | [on_locales_changed](#on-locales-changed-method)()                                                                                                        |
+| void                                                                               | [on_translation_enabled_changed](#on-translation-enabled-changed-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)) |
+| void                                                                               | [update_option_index](#update-option-index-method)(index: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                           |
 
 ## Signals
 
@@ -63,7 +69,26 @@ Component that display a dialog option in the options node.
 <p>Option position index.</p>
 <hr/>
 
+<h3 id="undo-redo-var">
+  <span class="reference-type">var </span><code>undo_redo</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+</h3>
+<p>UndoRedo manager for tracking changes to the option.</p>
+<hr/>
+
 ## Method Descriptions
+
+<h3 id="get-conditions-method">
+  <span class="reference-type">func </span><code>get_conditions</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+</h3>
+<p>Returns the conditions data of this option.</p>
+<hr/>
+
+<h3 id="load-conditions-method">
+  <span class="reference-type">func </span><code>load_conditions</code><span class="parameters">(data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Load the given conditions data into this option.</p>
+<hr/>
 
 <h3 id="get-dialog-key-method">
   <span class="reference-type">func </span><code>get_dialog_key</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
@@ -81,4 +106,22 @@ Component that display a dialog option in the options node.
   <span class="reference-type">func </span><code>load_dialogs</code><span class="parameters">(dialogs: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Load dialog and translations.</p>
+<hr/>
+
+<h3 id="on-locales-changed-method">
+  <span class="reference-type">func </span><code>on_locales_changed</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+</h3>
+<p>Update the locale text boxes.</p>
+<hr/>
+
+<h3 id="on-translation-enabled-changed-method">
+  <span class="reference-type">func </span><code>on_translation_enabled_changed</code><span class="parameters">(enabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Handle the translation enabled setting change.</p>
+<hr/>
+
+<h3 id="update-option-index-method">
+  <span class="reference-type">func </span><code>update_option_index</code><span class="parameters">(index: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Update the option position index.</p>
 <hr/>

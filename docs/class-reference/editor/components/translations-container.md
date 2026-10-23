@@ -41,6 +41,14 @@ Component to handle translations text boxes. It allows to set the dialog text bo
 <p>Emitted when change the focus to another text box while the text editor is open.</p>
 <hr/>
 
+## Constants
+
+<h3 id="max-translations-height-const">
+  <span class="reference-type">const </span><code>MAX_TRANSLATIONS_HEIGHT</code> <span class="const-value"> = 160.0</span>
+</h3>
+<p>Maximum height of the translations scroll container when the text boxes are expanded.</p>
+<hr/>
+
 ## Method Descriptions
 
 <h3 id="get-translations-text-method">

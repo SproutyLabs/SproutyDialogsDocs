@@ -20,33 +20,36 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 ## Properties
 
-| Type                                                                                     | Name                                          | Default                              |
-| ---------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------ |
-| [float](https://docs.godotengine.org/en/stable/classes/class_float.html)                 | [typing_speed](#typing-speed-var)             | `default_typing_speed` from settings |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                     | [max_characters](#max-characters-var)         | `max_characters` from settings       |
-| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [dialog_display](#dialog-display-var)         | null                                 |
-| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [name_display](#name-display-var)             | null                                 |
-| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [continue_indicator](#continue-indicator-var) | null                                 |
-| [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)                   | [portrait_display](#portrait-display-var)     | null                                 |
-| [Container](https://docs.godotengine.org/en/stable/classes/class_container.html)         | [options_container](#options-container-var)   | null                                 |
-| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [option_template](#option-template-var)       | null                                 |
+| Type                                                                                     | Name                                                    | Default                              |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------ |
+| [float](https://docs.godotengine.org/en/stable/classes/class_float.html)                 | [typing_speed](#typing-speed-var)                       | `default_typing_speed` from settings |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                     | [max_characters](#max-characters-var)                   | `max_characters` from settings       |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)                   | [block_input_propagation](#block-input-propagation-var) | `true`                               |
+| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [dialog_display](#dialog-display-var)                   | null                                 |
+| [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [name_display](#name-display-var)                       | null                                 |
+| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [continue_indicator](#continue-indicator-var)           | null                                 |
+| [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)                   | [portrait_display](#portrait-display-var)               | null                                 |
+| [Container](https://docs.godotengine.org/en/stable/classes/class_container.html)         | [options_container](#options-container-var)             | null                                 |
+| [DialogOption](./dialog-option)                                                          | [option_template](#option-template-var)                 | null                                 |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)                   | [text_reveal_skippable](#text-reveal-skippable-var)     | `true`                               |
 
 ## Methods
 
-| Return Type                                                            | Method                                                                                                                                                                                                                        |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| void                                                                   | [\_on_dialog_box_start](#on-dialog-box-start-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                   |
-| void                                                                   | [\_on_dialog_box_close](#on-dialog-box-close-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                   |
-| void                                                                   | [\_on_options_displayed](#on-options-displayed-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                 |
-| void                                                                   | [\_on_options_hidden](#on-options-hidden-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                       |
-| void                                                                   | [play_dialog](#play-dialog-method)(character_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), dialog: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))            |
-| void                                                                   | [pause_dialog](#pause-dialog-method)()                                                                                                                                                                                        |
-| void                                                                   | [resume_dialog](#resume-dialog-method)()                                                                                                                                                                                      |
-| void                                                                   | [stop_dialog](#stop-dialog-method)(close_dialog: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) = false)                                                                                              |
-| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [is_displaying_portrait](#is-displaying-portrait-method)()                                                                                                                                                                    |
-| void                                                                   | [display_portrait](#display-portrait-method)(character_parent: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html), portrait_node: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html)) |
-| void                                                                   | [display_options](#display-options-method)(options: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html), disabled_flags: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) = [])  |
-| void                                                                   | [hide_options](#hide-options-method)()                                                                                                                                                                                        |
+| Return Type                                                            | Method                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| void                                                                   | [\_on_dialog_box_open](#on-dialog-box-open-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                  |
+| void                                                                   | [\_on_dialog_box_close](#on-dialog-box-close-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                |
+| void                                                                   | [\_on_options_displayed](#on-options-displayed-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                              |
+| void                                                                   | [\_on_options_hidden](#on-options-hidden-method)() <span class="virtual-method-label"> (virtual)</span>                                                                                                                                    |
+| void                                                                   | [play_dialog](#play-dialog-method)(character_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), dialog_data: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))            |
+| void                                                                   | [pause_dialog](#pause-dialog-method)()                                                                                                                                                                                                     |
+| void                                                                   | [resume_dialog](#resume-dialog-method)()                                                                                                                                                                                                   |
+| void                                                                   | [stop_dialog](#stop-dialog-method)(close_dialog: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) = false)                                                                                                           |
+| void                                                                   | [set_auto_advance](#set-auto-advance-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html), delay: [float](https://docs.godotengine.org/en/stable/classes/class_float.html) = 0.1)                       |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [is_displaying_portrait](#is-displaying-portrait-method)()                                                                                                                                                                                 |
+| void                                                                   | [display_portrait](#display-portrait-method)(character_parent: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html), portrait_node: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html))              |
+| void                                                                   | [display_options](#display-options-method)(options: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html), disabled_flags: [Array](https://docs.godotengine.org/en/stable/classes/class_array.html) = [])               |
+| void                                                                   | [hide_options](#hide-options-method)()                                                                                                                                                                                                     |
 
 ## Signals
 
@@ -54,6 +57,12 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">signal </span><code>dialog_starts</code>
 </h3>
 <p>Emitted when the dialog is started.</p>
+<hr/>
+
+<h3 id="dialog-typing-starts-signal">
+  <span class="reference-type">signal </span><code>dialog_typing_starts</code>
+</h3>
+<p>Emitted when the dialog starts typing.</p>
 <hr/>
 
 <h3 id="dialog-typing-ends-signal">
@@ -104,6 +113,13 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <p>Maximum number of characters to be displayed in the dialog box. The dialogue will be split according to this limit and displayed in parts if the `split_dialog_by_max_characters` setting is active.</p>
 <hr/>
 
+<h3 id="block-input-propagation-var">
+  <span class="reference-type">var </span><code>block_input_propagation</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+</h3>
+<p>If true, the dialog box will block input propagation to other nodes in the scene tree. This is useful to prevent the player from interacting with other nodes while the dialog is active.</p>
+<hr/>
+
 <h3 id="dialog-display-var">
   <span class="reference-type">var </span><code>dialog_display</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html">RichTextLabel</a></span> <span class="alert-text"> *</span>
@@ -145,18 +161,25 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 <h3 id="option-template-var">
   <span class="reference-type">var </span><code>option_template</code>
-  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span> <span class="alert-text"> *</span>
+  <span class="default-value"> : <a target="_blank" href="./dialog-option">DialogOption</a></span> <span class="alert-text"> *</span>
 </h3>
 <p>Node that will be used as a template for the options in the dialog box. It should be a <a target="_blank" href="./dialog-option">DialogOption</a> node or another node that extends it. <b class="alert-text">This component is required to display the dialog options.</b></p>
 
 <hr/>
 
+<h3 id="text-reveal-skippable-var">
+  <span class="reference-type">var </span><code>text_reveal_skippable</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+</h3>
+<p>Flag to control if text reveal skipping is enabled. If it is disabled, the player will not be able to skip the typing animation while the dialog text is being revealed.</p>
+<hr/>
+
 ## Method Descriptions
 
-<h3 id="on-dialog-box-start-method">
-  <span class="reference-type">func </span><code>_on_dialog_box_start</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
+<h3 id="on-dialog-box-open-method">
+  <span class="reference-type">func </span><code>_on_dialog_box_open</code><span class="parameters">()</span><span class="return-type"> -> void</span> <span class="virtual-method-label"> (virtual)</span>
 </h3>
-<p>Called when the dialog box starts at the beginning of the dialog. <b>Override this method to customize the behavior of the dialog box when starts.</b></p>
+<p>Called when the dialog box is open at the beginning of the dialog. <b>Override this method to customize the behavior of the dialog box when is open.</b></p>
 <hr/>
 
 <h3 id="on-dialog-box-close-method">
@@ -178,7 +201,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <hr/>
 
 <h3 id="play-dialog-method">
-  <span class="reference-type">func </span><code>play_dialog</code><span class="parameters">(character_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>play_dialog</code><span class="parameters">(character_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, dialog_data: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Play a dialog on dialog box. Displays the character name and dialog text with typing animation.</p>
 <hr/>
@@ -199,6 +222,12 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">func </span><code>stop_dialog</code><span class="parameters">(close_dialog: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = false)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Stop the dialog. If `close_dialog` is true, the dialog box will be closed.</p>
+<hr/>
+
+<h3 id="set-auto-advance-method">
+  <span class="reference-type">func </span><code>set_auto_advance</code><span class="parameters">(enabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>, delay: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a> = 0.1)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Enable or disable the auto-advance of the dialog. If enabled, the dialog will automatically progress to the next sentence or node after the configured delay. If no delay is provided, the delay configured in the `auto_advance_delay` setting is used.</p>
 <hr/>
 
 <h3 id="is-displaying-portrait-method">

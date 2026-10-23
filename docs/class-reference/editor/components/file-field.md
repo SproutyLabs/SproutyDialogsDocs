@@ -18,6 +18,7 @@ Component that allows the user to select a file from the file system. Also can b
 | void                                                                       | [set_value](#set-value-method)(value: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))          |
 | void                                                                       | [open_directory](#open-directory-method)(open_dir: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)) |
 | void                                                                       | [disable_field](#disable-field-method)(disable: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))    |
+| void                                                                       | [clear_path](#clear-path-method)()                                                                                         |
 
 ## Signals
 
@@ -65,4 +66,10 @@ Component that allows the user to select a file from the file system. Also can b
   <span class="reference-type">func </span><code>disable_field</code><span class="parameters">(disable: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Disable the field for editing.</p>
+<hr/>
+
+<h3 id="clear-path-method">
+  <span class="reference-type">func </span><code>clear_path</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+</h3>
+<p>Clear the current value of the field.</p>
 <hr/>

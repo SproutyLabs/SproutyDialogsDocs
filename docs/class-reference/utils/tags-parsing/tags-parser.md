@@ -67,6 +67,7 @@ Represents a node in the Abstract Syntax Tree. Each node can be either a text no
 
 - `_init(init_name: String)` - Creates a new AST node with the given name
 - `add_child(child: ASTNode, pos: int = -1)` - Adds a child node at the specified position (or at the end if pos is -1)
+- `set_children(new_children: Array[ASTNode])` - Sets the children array and updates the parent reference of each child (assigned as the setter for `children`)
 - `get_all_children() -> Array[ASTNode]` - Recursively returns all descendant nodes in a flat array
 - `free_self()` - Clears children and removes parent reference
 - `free_tree()` - Recursively frees this node and all descendants

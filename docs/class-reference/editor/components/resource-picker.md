@@ -20,9 +20,9 @@ Component that allows to pick a dialogue, character or scene resource. Provides 
 
 ## Methods
 
-| Return Type | Method                                                                                                                     |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------- |
-| void        | [set_resource_type](#set-resource-type-method)(type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html)) |
+| Return Type | Method                                                                                    |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| void        | [set_resource_type](#set-resource-type-method)(type: [ResourceType](#resource-type-enum)) |
 
 ## Signals
 
@@ -85,7 +85,7 @@ Component that allows to pick a dialogue, character or scene resource. Provides 
 ## Method Descriptions
 
 <h3 id="set-resource-type-method">
-  <span class="reference-type">func </span><code>set_resource_type</code><span class="parameters">(type: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>set_resource_type</code><span class="parameters">(type: <a target="_blank" href="#resource-type-enum">ResourceType</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Set the resource type to load. Updates the base type filter and dialog settings based on the selected resource type.</p>
 <hr/>

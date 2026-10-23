@@ -27,6 +27,7 @@ Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() m
 
 | Return Type                            | Method                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [DialogPlayer](../nodes/dialog-player) | [play](#play-method)(data: [SproutyDialogsDialogueData](../resources/dialogue-data), start_id: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), portrait_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}, dialog_box_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\})                 |
 | [DialogPlayer](../nodes/dialog-player) | [start_dialog](#start-dialog-method)(data: [SproutyDialogsDialogueData](../resources/dialogue-data), start_id: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), portrait_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}, dialog_box_parents: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\}) |
 
 ## Signals
@@ -68,7 +69,7 @@ Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() m
 
 <h3 id="signal-event-signal">
   <span class="reference-type">signal </span><code>signal_event</code>
-  <span class="parameters">(argument: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, args: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
+  <span class="parameters">(signal_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, args: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
 </h3>
 <p>Emitted when a signal event is emitted.</p>
 <hr/>
@@ -105,6 +106,23 @@ Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() m
 
 ## Method Descriptions
 
+<h3 id="play-method">
+  <span class="reference-type">func </span><code>play</code><span class="parameters">(data: <a target="_blank" href="../resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, dialog_box_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> <a target="_blank" href="../nodes/dialog-player">DialogPlayer</a></span>
+</h3>
+<p>
+  Play a dialog with the given data and start ID. This will create a new [DialogPlayer](../nodes/dialog-player) instance and play it. It's the same as [start_dialog](#start-dialog-method). *(This was added to follow the Godot conventions, without breaking existing API.)*
+</p>
+
+:::info[Important]
+
+This method also loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**.
+
+For more details see the [about dialogue resources](../utils/resource-manager) section.
+
+:::
+
+<hr/>
+
 <h3 id="start-dialog-method">
   <span class="reference-type">func </span><code>start_dialog</code><span class="parameters">(data: <a target="_blank" href="../resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, dialog_box_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> <a target="_blank" href="../nodes/dialog-player">DialogPlayer</a></span>
 </h3>
@@ -112,11 +130,17 @@ Also, allows to start a dialog with the [start_dialog](#start-dialog-method)() m
   Start a dialog with the given data and start ID. This will create a new [DialogPlayer](../nodes/dialog-player) instance and start it.
 </p>
 
+:::note[Deprecated]
+
+Use [play](#play-method) instead.
+
+:::
+
 :::info[Important]
 
 This method also loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**.
 
-For more details see the [about dialogue resources](#about-dialogue-resources) section.
+For more details see the [about dialogue resources](../utils/resource-manager) section.
 
 :::
 

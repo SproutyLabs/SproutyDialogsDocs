@@ -12,11 +12,18 @@ This module is the main interface for managing variables in the Sprouty Dialogs 
 
 ## Properties
 
-| Type                                                                                                     | Name                        | Default |
-| -------------------------------------------------------------------------------------------------------- | --------------------------- | ------- |
-| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var) | null    |
+| Type                                                                                                     | Name                                | Default |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------- |
+| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)                             | [plugin_editor](#plugin-editor-var) | null    |
+| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var)         | null    |
 
 ## Signals
+
+<h3 id="variables-changed-signal">
+  <span class="reference-type">signal </span><code>variables_changed</code>
+</h3>
+<p>Emitted when variables are saved.</p>
+<hr/>
 
 <h3 id="variable-changed-signal">
   <span class="reference-type">signal </span><code>variable_changed</code>
@@ -40,6 +47,13 @@ This module is the main interface for managing variables in the Sprouty Dialogs 
 <hr/>
 
 ## Property Descriptions
+
+<h3 id="plugin-editor-var">
+  <span class="reference-type">var </span><code>plugin_editor</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a> = null</span>
+</h3>
+<p>Editor main reference. Used to check when the Sprouty Dialogs tab is visible and handle the save shortcut.</p>
+<hr/>
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>

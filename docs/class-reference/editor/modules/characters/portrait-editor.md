@@ -23,7 +23,7 @@ This module allows the user to edit a portrait for a character. It provides a pr
 | [SproutyDialogsPortraitData](../../../resources/portrait-data) | [get_portrait_data](#get-portrait-data-method)()                                                                                                                                                         |
 | void                                                           | [load_portrait_data](#load-portrait-data-method)(name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), data: [SproutyDialogsPortraitData](../../../resources/portrait-data)) |
 | void                                                           | [set_portrait_name](#set-portrait-name-method)(name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                         |
-| void                                                           | [update_preview_transform](#update-preview-transform-method)(parent_transform: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                                       |
+| void                                                           | [update_preview_transform](#update-preview-transform-method)(main_transform: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{\})                                  |
 
 ## Signals
 
@@ -68,7 +68,7 @@ This module allows the user to edit a portrait for a character. It provides a pr
 <hr/>
 
 <h3 id="update-preview-transform-method">
-  <span class="reference-type">func </span><code>update_preview_transform</code><span class="parameters">(parent_transform: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> void</span>
+  <span class="reference-type">func </span><code>update_preview_transform</code><span class="parameters">(main_transform: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> void</span>
 </h3>
 <p>Update the preview scene with the transformation settings.</p>
 <hr/>

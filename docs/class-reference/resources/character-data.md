@@ -16,10 +16,8 @@ It includes the character's key name or identifier, translations of the name, de
 
 | Type                                                                               | Name                                                    | Default         |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------- | --------------- |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [key_name](#key-name-var)                               | ""              |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [display_name](#display-name-var)                       | \{\}            |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [description](#description-var)                         | ""              |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)               | [dialog_box_uid](#dialog-box-uid-var)                   | -1              |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [dialog_box_path](#dialog-box-path-var)                 | ""              |
 | [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)             | [portrait_on_dialog_box](#portrait-on-dialog-box-var)   | false           |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [default_portrait](#default-portrait-var)               | ""              |
@@ -32,15 +30,10 @@ It includes the character's key name or identifier, translations of the name, de
 | Return Type                                                                  | Method                                                                                                                                                                                                                                                                       |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_portrait_from_path_name](#get-portrait-from-path-name-method)(path_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), group: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) = \{"data": portraits\}) |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)   | [get_csv_name_key](#get-csv-name-key-method)()                                                                                                                                                                                                                               |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)       | [sync_key_name](#sync-key-name-method)()                                                                                                                                                                                                                                     |
 
 ## Property Descriptions
-
-<h3 id="key-name-var">
-  <span class="reference-type">var </span><code>key_name</code>
-  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
-</h3>
-<p>Character identifier. Corresponds to the file name of the character's resource.</p>
-<hr/>
 
 <h3 id="display-name-var">
   <span class="reference-type">var </span><code>display_name</code>
@@ -66,18 +59,11 @@ It includes the character's key name or identifier, translations of the name, de
 <p>Character description. This does nothing, its only for your reference.</p>
 <hr/>
 
-<h3 id="dialog-box-uid-var">
-  <span class="reference-type">var </span><code>dialog_box_uid</code>
-  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1</span>
-</h3>
-<p>Reference to the dialog box scene used by this character. This is the UID of a scene that contains a <a target="_blank" href="../nodes/dialog-box">DialogBox</a> node which will be used to display the character's dialogue.</p>
-<hr/>
-
 <h3 id="dialog-box-path-var">
   <span class="reference-type">var </span><code>dialog_box_path</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
 </h3>
-<p>Path to the dialog box scene to display the character's dialogue. This is for reference only, use [dialog_box_uid](#dialog-box-uid-var) to set the dialog box.</p>
+<p>Path to the dialog box scene to display the character's dialogue. This is for reference only, the dialog box is set from the character editor.</p>
 <hr/>
 
 <h3 id="portrait-on-dialog-box-var">
@@ -185,4 +171,19 @@ The dictionary structure is as follows:
   <span class="reference-type">func </span><code>get_portrait_from_path_name</code><span class="parameters">(path_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, group: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{"data": portraits\})</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
 </h3>
 <p>Returns the portrait data for a given portrait path name. The path name can be a portrait name or a path (e.g., "group/portrait"). If the portrait is a group, it will recursively search for the portrait data.</p>
+<hr/>
+
+<h3 id="get-csv-name-key-method">
+  <span class="reference-type">func </span><code>get_csv_name_key</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a></span>
+</h3>
+<p>Returns the translation key used on the CSV file for this character's display name. Characters created before the CSV name key existed may have it empty, in that case it falls back to the key derived from the key name.</p>
+<hr/>
+
+<h3 id="sync-key-name-method">
+  <span class="reference-type">func </span><code>sync_key_name</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a></span>
+</h3>
+<p>
+  Updates the key name to match the current file name of this character resource. It should be called every time the character file is loaded so the key name is always the current file name.
+  Returns true if any property was updated (the key name or the CSV name key), so the caller can save the changes to the file.
+</p>
 <hr/>

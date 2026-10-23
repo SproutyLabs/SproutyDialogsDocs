@@ -12,9 +12,10 @@ Component that allows to select a scene and show its path in the field. It has b
 
 ## Properties
 
-| Type                          | Name                          | Default |
-| ----------------------------- | ----------------------------- | ------- |
-| [SceneType](#scene-type-enum) | [scene_type](#scene-type-var) | -       |
+| Type                                                       | Name                              | Default |
+| ---------------------------------------------------------- | --------------------------------- | ------- |
+| [SceneType](#scene-type-enum)                              | [scene_type](#scene-type-var)     | -       |
+| [EditorSproutyDialogsResourcePicker](./resource-picker.md) | [scene_picker](#scene-picker-var) | -       |
 
 ## Methods
 
@@ -56,6 +57,13 @@ Component that allows to select a scene and show its path in the field. It has b
   <span class="default-value"> : <a target="_blank" href="#scene-type-enum">SceneType</a></span>
 </h3>
 <p>Scene type to load. Determines which scene types are available for selection and validation.</p>
+<hr/>
+
+<h3 id="scene-picker-var">
+  <span class="reference-type">var </span><code>scene_picker</code>
+  <span class="default-value"> : <a target="_blank" href="./resource-picker">EditorSproutyDialogsResourcePicker</a></span>
+</h3>
+<p>Scene resource picker. Used to select and clear the scene path.</p>
 <hr/>
 
 ## Method Descriptions

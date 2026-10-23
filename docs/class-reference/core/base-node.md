@@ -22,17 +22,18 @@ You should inherit from this class to create your own dialog nodes.
 
 ## Properties
 
-| Type                                                                             | Name                                    | Default |
-| -------------------------------------------------------------------------------- | --------------------------------------- | ------- |
-| [Color](https://docs.godotengine.org/en/stable/classes/class_color.html)         | [node_color](#node-color-var)           | -       |
-| [Texture2D](https://docs.godotengine.org/en/stable/classes/class_texture2d.html) | [node_icon](#node-icon-var)             | null    |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)             | [node_list_index](#node-list-index-var) | 0       |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [start_node_name](#start-node-name-var) | ""      |
-| [SproutyDialogsBaseNode](#)                                                      | [start_node](#start-node-var)           | null    |
-| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)         | [to_node](#to-node-var)                 | []      |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [to_dialog](#to-dialog-var)             | ""      |
-| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)       | [node_type](#node-type-var)             | ""      |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)             | [node_index](#node-index-var)           | 0       |
+| Type                                                                                                     | Name                                    | Default |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------- | ------- |
+| [Color](https://docs.godotengine.org/en/stable/classes/class_color.html)                                 | [node_color](#node-color-var)           | -       |
+| [Texture2D](https://docs.godotengine.org/en/stable/classes/class_texture2d.html)                         | [node_icon](#node-icon-var)             | null    |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                                     | [node_list_index](#node-list-index-var) | 0       |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)                               | [start_node_name](#start-node-name-var) | ""      |
+| [SproutyDialogsBaseNode](#)                                                                              | [start_node](#start-node-var)           | null    |
+| [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)                                 | [to_node](#to-node-var)                 | []      |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)                               | [to_dialog](#to-dialog-var)             | ""      |
+| [String](https://docs.godotengine.org/en/stable/classes/class_string.html)                               | [node_type](#node-type-var)             | ""      |
+| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                                     | [node_index](#node-index-var)           | 0       |
+| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var)             | null    |
 
 ## Methods
 
@@ -84,7 +85,7 @@ You should inherit from this class to create your own dialog nodes.
 
 <h3 id="start-node-var">
   <span class="reference-type">var </span><code>start_node</code>
-  <span class="default-value"> : <a href="">SproutyDialogsBaseNode</a> = null</span>
+  <span class="default-value"> : <a href="#">SproutyDialogsBaseNode</a> = null</span>
 </h3>
 <p>Start node of the dialog tree where the node belongs.</p>
 <hr/>
@@ -115,6 +116,13 @@ You should inherit from this class to create your own dialog nodes.
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = 0</span>
 </h3>
 <p>Index of the node in the graph editor.</p>
+<hr/>
+
+<h3 id="undo-redo-var">
+  <span class="reference-type">var </span><code>undo_redo</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html">EditorUndoRedoManager</a></span>
+</h3>
+<p>UndoRedo manager.</p>
 <hr/>
 
 ## Method Descriptions

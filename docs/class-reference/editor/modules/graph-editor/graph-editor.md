@@ -12,16 +12,17 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 
 ## Properties
 
-| Type                                                                                                     | Name                        | Default |
-| -------------------------------------------------------------------------------------------------------- | --------------------------- | ------- |
-| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var) | null    |
+| Type                                                                                                     | Name                                  | Default |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------- |
+| [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)                             | [dialogue_panel](#dialogue-panel-var) | null    |
+| [EditorUndoRedoManager](https://docs.godotengine.org/en/stable/classes/class_editorundoredomanager.html) | [undo_redo](#undo-redo-var)           | null    |
 
 ## Methods
 
 | Return Type                                                                        | Method                                                                                                                                                                                                                                                                                                      |
 | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| void                                                                               | [on_locales_changed](#on-locales-changed-method)()                                                                                                                                                                                                                                                          |
-| void                                                                               | [on_translation_enabled_changed](#on-translation-enabled-changed-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html))                                                                                                                                                   |
+| void                                                                               | [get_editor_state](#get-editor-state-method)()                                                                                                                                                                                                                                                              |
+| void                                                                               | [load_editor_state](#load-editor-state-method)(editor_state: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                                                                                                                                                            |
 | [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)           | [get_start_ids](#get-start-ids-method)()                                                                                                                                                                                                                                                                    |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_graph_data](#get-graph-data-method)()                                                                                                                                                                                                                                                                  |
 | void                                                                               | [load_graph_data](#load-graph-data-method)(data: [SproutyDialogsDialogueData](../../resources/dialogue-data), dialogs: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html))                                                                                                  |
@@ -49,11 +50,11 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 <p>Triggered when all the nodes are loaded.</p>
 <hr/>
 
-<h3 id="open-character-file-request-signal">
-  <span class="reference-type">signal </span><code>open_character_file_request</code>
+<h3 id="open-file-request-signal">
+  <span class="reference-type">signal </span><code>open_file_request</code>
   <span class="parameters">(path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span>
 </h3>
-<p>Emitted when is requesting to open a character file.</p>
+<p>Emitted when is requesting to open a file.</p>
 <hr/>
 
 <h3 id="play-dialog-request-signal">
@@ -75,6 +76,26 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
   <span class="parameters">(text_box: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_textedit.html">TextEdit</a>)</span>
 </h3>
 <p>Emitted when change the focus to another text box while the text editor is open.</p>
+<hr/>
+
+<h3 id="dialogue-changed-signal">
+  <span class="reference-type">signal </span><code>dialogue_changed</code>
+  <span class="parameters">(dialogue: <a href="../../resources/dialogue-data">SproutyDialogsDialogueData</a>)</span>
+</h3>
+<p>Emitted when a dialogue is changed.</p>
+<hr/>
+
+<h3 id="character-changed-signal">
+  <span class="reference-type">signal </span><code>character_changed</code>
+  <span class="parameters">(character: <a href="../../resources/character-data">SproutyDialogsCharacterData</a>)</span>
+</h3>
+<p>Emitted when a character is changed.</p>
+<hr/>
+
+<h3 id="variables-changed-signal">
+  <span class="reference-type">signal </span><code>variables_changed</code>
+</h3>
+<p>Emitted when the variables are saved.</p>
 <hr/>
 
 <h3 id="locales-changed-signal">
@@ -104,13 +125,35 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 <p>Emitted when the selection of nodes to paste change.</p>
 <hr/>
 
+<h3 id="view-state-changed-signal">
+  <span class="reference-type">signal </span><code>view_state_changed</code>
+  <span class="parameters">(view_state: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span>
+</h3>
+<p>Emitted when the graph view state changes, like the zoom, grid visibility, scroll offset, snapping, or minimap settings.</p>
+<hr/>
+
 <h3 id="toolbar-expanded-signal">
   <span class="reference-type">signal </span><code>toolbar_expanded</code>
 </h3>
 <p>Emitted when the toolbar is expanded.</p>
 <hr/>
 
+## Constants
+
+<h3 id="nodes-path-const">
+  <span class="reference-type">const </span><code>NODES_PATH</code> <span class="const-value"> = "res://addons/sprouty_dialogs/event_nodes/"</span>
+</h3>
+<p>Path to the nodes folder, which contains the event node scenes that can be added to the graph.</p>
+<hr/>
+
 ## Property Descriptions
+
+<h3 id="dialogue-panel-var">
+  <span class="reference-type">var </span><code>dialogue_panel</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_control.html">Control</a></span>
+</h3>
+<p>Reference to the parent dialogue panel, used to share the clipboard of copied nodes between graph editors.</p>
+<hr/>
 
 <h3 id="undo-redo-var">
   <span class="reference-type">var </span><code>undo_redo</code>
@@ -121,16 +164,20 @@ This module is the graph editor where the dialog trees are edited in the Sprouty
 
 ## Method Descriptions
 
-<h3 id="on-locales-changed-method">
-  <span class="reference-type">func </span><code>on_locales_changed</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+<h3 id="get-editor-state-method">
+  <span class="reference-type">func </span><code>get_editor_state</code><span class="parameters">()</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
 </h3>
-<p>Notify the nodes that the locales have changed in the project settings.</p>
+<p>
+  Returns the current view state of the editor as a dictionary, including the zoom, grid visibility, scroll offset, snapping, and minimap settings.
+</p>
 <hr/>
 
-<h3 id="on-translation-enabled-changed-method">
-  <span class="reference-type">func </span><code>on_translation_enabled_changed</code><span class="parameters">(enabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>)</span><span class="return-type"> -> void</span>
+<h3 id="load-editor-state-method">
+  <span class="reference-type">func </span><code>load_editor_state</code><span class="parameters">(editor_state: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>)</span><span class="return-type"> -> void</span>
 </h3>
-<p>Notify the nodes that the translation enabled state has changed.</p>
+<p>
+  Load the view state of the editor from a dictionary. Only the keys present in the dictionary are applied.
+</p>
 <hr/>
 
 <h3 id="get-start-ids-method">

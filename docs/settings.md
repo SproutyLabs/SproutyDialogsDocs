@@ -24,6 +24,8 @@ Let's take a look at each category and its settings.
   >
   > ![Default Input Action](@site/static/img/screenshots/settings/default_input_action.png)
 
+- `Save only Sprouty's resources on Ctrl+S/Cmd+S`: If enabled, pressing Ctrl+S/Cmd+S while the plugin editor is open will **save only the Sprouty resources**. The current scene and other open resources in Godot will not be saved. Otherwise, all open resources will be saved.
+
 ### Defaults
 
 - `Default dialog box`: Default dialog box that will be displayed when no character is selected. It will also be used as a template when creating a new dialog box for a character. The root of the scene must be a node inherited from the [DialogBox](./class-reference/nodes/dialog-box.md) class.
@@ -83,6 +85,18 @@ Let's take a look at each category and its settings.
 - `Can skip delay`: Time in seconds during which the text cannot be skipped again. This is necessary to prevent the entire text from being skipped.
 
 - `Skip continue delay`: Time in seconds during which you must wait for the dialogue to continue after skipping the text reveal.
+
+### Auto-Advance
+
+---
+
+- `Enabled at the start`: Enable auto-advance at the game start, so dialogues will **automatically progress without waiting for user input**.
+
+  > _This corresponds to the [auto_advance](./class-reference/nodes/dialog-player.md#auto-advance-var) property of the [DialogPlayer](./class-reference/nodes/dialog-player.md)._
+
+- `Default advance delay`: Time in seconds to wait before advancing to the next dialog/event.
+
+  > _This is the default auto-advance delay used by [DialogBoxes](./class-reference/nodes/dialog-box.md) (see [set_auto_advance](./class-reference/nodes/dialog-box.md#set-auto-advance-method)) and by the [auto tag](./class-reference/utils/tags-parsing/tags/auto-tag-processor.md) when no `delay` attribute is provided._
 
 ## Translation Settings
 
