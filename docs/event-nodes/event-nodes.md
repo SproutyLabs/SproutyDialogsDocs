@@ -10,7 +10,7 @@ The event nodes are the **building blocks of the dialogue system**. They are gra
 
 ---
 
-This node defines the **beginning of a dialogue tree**. You must **assign it an `ID` that will be the name or reference** for calling the dialogue tree later. Also, you can see that this node has a **play button**, you can click on it to [test your dialogue tree](../getting-started/create-a-dialogue#test-the-dialogue).
+This node defines the **beginning of a dialogue tree**. You must **assign it an `ID` that will be the name or reference** for calling the dialogue tree later. Also, you can see that this node has a **play button**, you can click on it to [test your dialogue tree](../getting-started/create-a-dialogue.md#test-the-dialogue).
 
 ![Start Node](img/event-nodes/start-node.png)
 
@@ -34,11 +34,11 @@ To write your dialogues, you can expand the text box **clicking on the right but
 
 :::info[Using Translations]
 
-When you use **translations**, this node also allows you to edit the translations here in the same way. A text box is added for each **locale** or language that you have set in the [translation settings](../settings#locales-settings), and can be accessed through a new expandable section called "translations" at the bottom of the node.
+When you use **translations**, this node also allows you to edit the translations here in the same way. A text box is added for each **locale** or language that you have set in the [translation settings](../settings.md#locales-settings), and can be accessed through a new expandable section called "translations" at the bottom of the node.
 
 ![Dialogue Node with Translations](img/event-nodes/dialogue-node-translations.png)
 
-The main dialogue text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](../settings#locales-settings). In this example, you can see that the default locale is English (en).
+The main dialogue text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](../settings.md#locales-settings). In this example, you can see that the default locale is English (en).
 
 :::
 
@@ -54,15 +54,15 @@ You can set **conditions** to display the options, if the condition is not met, 
 
 ![Options Node Conditions](img/event-nodes/options-node-conditions.png)
 
-Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how the option buttons look in your dialog box. For more information, see the [customize dialog options section](../dialogues/dialog-boxes#customize-dialog-options).
+Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how the option buttons look in your dialog box. For more information, see the [customize dialog options section](../dialogues/dialog-boxes.md#customize-dialog-options).
 
 :::info[Using Translations]
 
-When you use **translations**, this node also allows you to edit the translations here in the same way that in the dialogue nodes. For each option, a new expandable "translations" section is added at the bottom, with a text box for each locale or language that you have set in the [translation settings](../settings#locales-settings).
+When you use **translations**, this node also allows you to edit the translations here in the same way that in the dialogue nodes. For each option, a new expandable "translations" section is added at the bottom, with a text box for each locale or language that you have set in the [translation settings](../settings.md#locales-settings).
 
 ![Options Node](img/event-nodes/options-node-translations.png)
 
-In the same way as before, the main option text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](../settings#locales-settings). In this example, the default locale is English (en).
+In the same way as before, the main option text box is going to have the dialogue in the **default locale**, that you can set in the [translation settings](../settings.md#locales-settings). In this example, the default locale is English (en).
 
 :::
 
@@ -111,7 +111,7 @@ This will **emit a signal with two arguments**: the identifier string and the ex
 
 :::info[Using Signals]
 
-To **catch the signal**, you need to connect the [signal_event](../class-reference/nodes/dialog-player#signal-event-signal) signal from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node where you run the dialogue. As shown in the [using dialogues section](../dialogues/using-dialogues#using-dialogplayer-signals).
+To **catch the signal**, you need to connect the [signal_event](../class-reference/nodes/dialog-player.md#signal-event-signal) signal from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node where you run the dialogue. As shown in the [using dialogues section](../dialogues/using-dialogues.md#using-dialogplayer-signals).
 
 :::
 

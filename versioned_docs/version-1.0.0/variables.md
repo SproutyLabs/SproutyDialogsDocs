@@ -72,7 +72,7 @@ _Also, you can use variables in the name **translations**._
 
 ### Variables in conditions
 
-Conditions allows to change the flow of the dialogue, so they are one of the main uses for variables. You can add conditions in the dialogue tree using the [condition node](./dialogues/event-nodes#condition-node).
+Conditions allows to change the flow of the dialogue, so they are one of the main uses for variables. You can add conditions in the dialogue tree using the [condition node](./event-nodes/event-nodes.md#condition-node).
 
 ![Variable in Condition](@site/static/img/screenshots/variables/variable_in_condition.png)
 
@@ -86,7 +86,7 @@ You must check that the **comparation is valid**. You cannot compare an [String]
 
 ### Set variable events
 
-You can update or change the variables values in the dialogue tree using the [set variable node](./dialogues/event-nodes#set-variable-node). You can update **global variables** as well as **Sprouty Dialogs variables**.
+You can update or change the variables values in the dialogue tree using the [set variable node](./event-nodes/event-nodes.md#set-variable-node). You can update **global variables** as well as **Sprouty Dialogs variables**.
 
 ![Set Variable Example](@site/static/img/screenshots/variables/set_variable_example.png)
 

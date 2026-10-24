@@ -211,7 +211,7 @@ First, the `option_selected` signal is emitted when an **option is selected in t
 }
 ```
 
-On the other hand, the `signal_event` signal is emitted when a [Signal Node](./event-nodes#signal-node) is triggered in the dialogue tree. This signal returns the argument that you give to the event node to do whatever you need with it.
+On the other hand, the `signal_event` signal is emitted when a [Signal Node](../event-nodes/event-nodes.md#signal-node) is triggered in the dialogue tree. This signal returns the argument that you give to the event node to do whatever you need with it.
 
 You can also handle the **same signals from the Sprouty Dialogs autoload**.
 

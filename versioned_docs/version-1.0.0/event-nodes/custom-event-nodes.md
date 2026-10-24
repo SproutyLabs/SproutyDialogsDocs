@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 # Custom Event Nodes
@@ -51,11 +51,9 @@ Also, the name should be in **snake_case format** (lowercase letters with unders
 
 Here's an example of a custom event node called `Custom Node`:
 
-![Custom Node scene](img/custom-event-nodes/custom_node_scene.png)
+![Custom Node scene](@site/static/img/screenshots/custom-event-nodes/custom_node_scene.png)
 
-As you can see, the [SproutyDialogsBaseNode](../class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. You can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
-
-In addition, you can change the **position of the node in the node list** by modifying the `Node list index` property, allowing you to sort the nodes in the pop-up list as desired.
+As you can see, the [SproutyDialogsBaseNode](../class-reference/core/base-node.md) has some inspector properties that you can configure to set the **node's titlebar color and icon**. Also, you can change the title of the node in the [GraphNode](https://docs.godotengine.org/en/stable/classes/class_graphnode.html) properties.
 
 :::info
 
@@ -63,7 +61,7 @@ When you change the **color and icon** of the node in the inspector, the node wi
 
 :::
 
-In this case, this node only has a **text input component** to enter a message that will be printed to the console when the event is processed. You can add more components to the node to customize its functionality as needed.
+This node only has a **text input component** to enter a message that will be printed to the console when the event is processed. You can add more components to the node to customize its functionality as needed.
 
 Also, you can add more **output ports to the node**, if you want to **connect the node to multiple next nodes**, like in a branching event. To do this, your node needs **at least one child node for each output port**, to set slots for the connections. You can enable the ports that you want in the `slot` section in the inspector.
 
@@ -83,9 +81,9 @@ Now that you have your node set up, you need to **implement the logic** of your 
 
 There are two methods that **you need to override** in your custom event node script:
 
-- [get_data](../class-reference/core/base-node#get-data-method)(): This method should return a dictionary containing the data of the event node. You need to include some **required properties** and also can include any properties or values that you want to store to **save the state** of the event node and **process it** later.
+- [get_data](../class-reference/core/base-node.md#get-data-method)(): This method should return a dictionary containing the data of the event node. You need to include some **required properties** and also can include any properties or values that you want to store to **save the state** of the event node and **process it** later.
 
-- [set_data](../class-reference/core/base-node#set-data-method)(): This method take a dictionary as a parameter and set or **load the properties** of the event node based on the values in the dictionary.
+- [set_data](../class-reference/core/base-node.md#set-data-method)(): This method take a dictionary as a parameter and set or **load the properties** of the event node based on the values in the dictionary.
 
 Here's an example implementation of the `Custom Node` event node script:
 
@@ -196,7 +194,7 @@ You can access to the dialogue resources from the [DialogPlayer](../class-refere
 
 ---
 
-Having your custom node and custom event interpreter ready, you need to set up some settings to use them in your dialogues. For that, you need to go to the [general settings](../settings#general-settings) in the Sprouty Dialogs settings tab.
+Having your custom node and custom event interpreter ready, you need to set up some settings to use them in your dialogues. For that, you need to go to the [general settings](../settings.md#general-settings) in the Sprouty Dialogs settings tab.
 
 ![Custom Settings](@site/static/img/screenshots/custom-event-nodes/custom_settings.png)
 
@@ -212,7 +210,7 @@ You should save your custom event nodes and custom event interpreter **outside t
 
 :::
 
-Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](../getting-started/meet-the-editor#dialogue-editor). You will see your custom event node available in the event nodes list to add it to the graph.
+Now, you can create dialogues using your custom event nodes in the [Dialogue Editor](../getting-started/meet-the-editor.md#dialogue-editor). You will see your custom event node available in the event nodes list to add it to the graph.
 
 ![Custom Node in List](@site/static/img/screenshots/custom-event-nodes/custom_node_in_list.png)
 
