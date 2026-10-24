@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ## Description
 
-This class manages the variables in the Sprouty Dialogs plugin. It provides methods to get, set, check, parse variables in strings and get assigment and comparision operations results.
+This class manages the variables in the Sprouty Dialogs plugin. It provides methods to get, set, check, and parse variables in strings, and to get assignment and comparison operation results.
 
 :::info[Important]
 
@@ -30,7 +30,7 @@ This manager is used at runtime as an internal singleton to handle variables. **
 | void                                                                               | [reset_variable](#reset-variable-method)(name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html) = "")                                                                                                                                                                                                                                                                  |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [parse_variables](#parse-variables-method)(text: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), ignore_error: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) = false)                                                                                                                                                                       |
 | [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)       | [get_assignment_result](#get-assignment-result-method)(type: [int](https://docs.godotengine.org/en/stable/classes/class_int.html), operator: [int](https://docs.godotengine.org/en/stable/classes/class_int.html), value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html), new_value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)) |
-| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)       | [get_comparision_result](#get-assignment-result-method)(first_var: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html), second_var: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html), operator: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                                                           |
+| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)       | [get_comparison_result](#get-comparison-result-method)(first_var: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html), second_var: [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html), operator: [int](https://docs.godotengine.org/en/stable/classes/class_int.html))                                                            |
 
 ## Method Descriptions
 
@@ -94,7 +94,7 @@ This manager is used at runtime as an internal singleton to handle variables. **
 <p>Returns the value resulting from an assignment operation.</p>
 <hr/>
 
-<h3 id="get-comparision-result-method">
+<h3 id="get-comparison-result-method">
   <span class="reference-type">func </span><code>get_comparison_result</code><span class="parameters">(first_var: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>, second_var: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a>, operator: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></span>
 </h3>
 <p>Returns the result of comparing two values based on the specified operator.</p>

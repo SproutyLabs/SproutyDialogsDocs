@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ## Description
 
-This class manages the variables in the Sprouty Dialogs plugin. It provides methods to get, set, check, parse variables in strings and get assigment and comparision operations results.
+This class manages the variables in the Sprouty Dialogs plugin. It provides methods to get, set, check, and parse variables in strings, and to get assignment and comparison operation results.
 
 :::info[Important]
 

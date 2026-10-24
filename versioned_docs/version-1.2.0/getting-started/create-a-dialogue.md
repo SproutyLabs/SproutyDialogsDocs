@@ -32,7 +32,7 @@ Now you can start to create your dialogue adding [event nodes](../dialogues/even
 
 ### Adding a Start Node
 
-To create a dialogue, you must first add a `Start Node`. This node define the beggining of a dialogue tree. You must assign it an `ID` that will be the name or reference for calling the dialogue tree.
+To create a dialogue, you must first add a `Start Node`. This node defines the beginning of a dialogue tree. You must assign it an `ID` that will be the name or reference for calling the dialogue tree.
 
 ![Add Start Node](@site/static/img/screenshots/getting-started/create-a-dialogue/add_start_node.png)
 
@@ -64,7 +64,7 @@ Therefore, you can write the dialogue in the `dialogue` text box, but it is a bi
 
 ![Expand Text Box](@site/static/img/screenshots/getting-started/create-a-dialogue/expand_text_box.png)
 
-In the text editor you can easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to the text in a user-friendly interface, so you don't have to remember all the tags and its properties. You can add styles and effects **selecting the text what you want to be affected by the tags** and then click on the desire feature to add the tags around the selection.
+In the text editor you can easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to the text in a user-friendly interface, so you don't have to remember all the tags and its properties. You can add styles and effects **selecting the text that you want to be affected by the tags** and then click on the desired feature to add the tags around the selection.
 
 ![Text Editor Add Tags](@site/static/img/screenshots/getting-started/create-a-dialogue/text_editor_add_tags.png)
 
@@ -90,7 +90,7 @@ Next, you must assign the `Dialog Data` or dialogue data file you want to use; w
 
 ![Select Dialogue Data](@site/static/img/screenshots/getting-started/create-a-dialogue/select_dialogue_data.png)
 
-When you select a file, the inspector automatically going to update and now you will see some settings for the [DialogPlayer](../class-reference/nodes/dialog-player.md). You must choose the **dialogue tree ID from the dialogue file you want to play in the `Start ID` property**; otherwise, the player will not know which dialogue tree to run.
+When you select a file, the inspector will automatically update and now you will see some settings for the [DialogPlayer](../class-reference/nodes/dialog-player.md). You must choose the **dialogue tree ID from the dialogue file you want to play in the `Start ID` property**; otherwise, the player will not know which dialogue tree to run.
 
 ![Select Start ID](@site/static/img/screenshots/getting-started/create-a-dialogue/select_start_id.png)
 

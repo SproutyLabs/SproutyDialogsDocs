@@ -98,7 +98,7 @@ extends SproutyDialogsBaseNode
 
 
 func _ready():
-	super () # Required to initialize the node
+	super() # Required to initialize the node
 	_text_input.text_changed.connect(_on_text_input_changed)
 
 

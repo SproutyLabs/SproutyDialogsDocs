@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Text Editor
 
-The text editor allows you to write your dialogues using various formatting options and text effects with [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) to enhance the your the dialogues in a user-friendly interface.
+The text editor allows you to write your dialogues using various formatting options and text effects with [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) to enhance your dialogues in a user-friendly interface.
 
 In this way, you can simply use the toolbar to add them to your text. _You don't have to remember all the tags and its properties!_
 
@@ -30,17 +30,17 @@ Some tags do not require a closing tag, such as `[br]` for line breaks.
 
 :::
 
-To use BBCode in your dialogues, the dialogue must be displayed using a [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel) node, which supports [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.htm) formatting. You need to ensure the [bbcode_enabled](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel-property-bbcode-enabled) property is set to `true`.
+To use BBCode in your dialogues, the dialogue must be displayed using a [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel) node, which supports [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) formatting. You need to ensure the [bbcode_enabled](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html#class-richtextlabel-property-bbcode-enabled) property is set to `true`.
 
 ## Using the text editor
 
 ---
 
-When you are writting dialogues in a dialogue node, options node, or any text box, you can expand it **clicking on the right button** and the **text editor** will be open on the right side.
+When you are writing dialogues in a dialogue node, options node, or any text box, you can expand it **clicking on the right button** and the **text editor** will be open on the right side.
 
 ![Expand Text Box](@site/static/img/screenshots/getting-started/create-a-dialogue/expand_text_box.png)
 
-You can simply **select the text you want to be affected by the tags** and click a option button in the toolbar to add the tags. The editor will automatically insert the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags around the selected text.
+You can simply **select the text you want to be affected by the tags** and click an option button in the toolbar to add the tags. The editor will automatically insert the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags around the selected text.
 
 ![Add tags](@site/static/img/screenshots/getting-started/create-a-dialogue/text_editor_add_tags.png)
 

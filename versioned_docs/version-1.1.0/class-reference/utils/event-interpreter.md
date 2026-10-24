@@ -45,7 +45,7 @@ The processors can be access by the [node_processors](#node-processors-var) dict
   <span class="reference-type">signal </span><code>options_processed</code>
   <span class="parameters">(options: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>, next_nodes: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</span>
 </h3>
-<p>Emitted when a options node was processed.</p>
+<p>Emitted when an options node was processed.</p>
 <hr/>
 
 <h3 id="signal-processed-signal">

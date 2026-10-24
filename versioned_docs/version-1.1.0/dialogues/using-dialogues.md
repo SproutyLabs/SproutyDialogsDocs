@@ -22,7 +22,7 @@ Then, you must assign the `Dialog Data` or dialogue data file where your dialogu
 
 ![Select Dialogue Data](@site/static/img/screenshots/getting-started/create-a-dialogue/select_dialogue_data.png)
 
-When you select a file, the inspector automatically going to update and now you will see some settings for the [DialogPlayer](../class-reference/nodes/dialog-player.md).
+When you select a file, the inspector will automatically update and now you will see some settings for the [DialogPlayer](../class-reference/nodes/dialog-player.md).
 
 You must choose the **dialogue tree ID of the dialogue you want to play** from the `Start ID` dropdown; otherwise, the player will not know which dialogue tree to run.
 
@@ -48,7 +48,7 @@ In this case, we run the dialog in the [\_ready](https://docs.godotengine.org/en
 
 And that's it! So easy right? 🥳
 
-You can also, create a dialog player node from code and use it in the same way, but you must **first add it to the tree** and **configure the dialogue data file and start ID** before running it.
+You can also create a dialog player node from code and use it in the same way, but you must **first add it to the tree** and **configure the dialogue data file and start ID** before running it.
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
@@ -136,7 +136,7 @@ _If you call these methods during runtime, there will be a **slowdown due to res
 
 ---
 
-You can override the parents of your dialog boxes and portraits for each character in a dialogue to **change the position of the dialog box or portrait on screen** for a given dialogue, for example, or wharever you want. This allows more flexibility to display the dialogue components, for example, to use **dialogue bubbles as dialog boxes that follow the position of the NPCs**.
+You can override the parents of your dialog boxes and portraits for each character in a dialogue to **change the position of the dialog box or portrait on screen** for a given dialogue, for example, or whatever you want. This allows more flexibility to display the dialogue components, for example, to use **dialogue bubbles as dialog boxes that follow the position of the NPCs**.
 
 When you assign a dialogue data file that use characters in a [DialogPlayer](../class-reference/nodes/dialog-player.md) node, the inspector will add a new group of properties called `Override Display Parents`.
 
@@ -180,7 +180,7 @@ func _ready() -> void:
 
 ---
 
-The [DialogPlayer](../class-reference/nodes/dialog-player.md) nodes have some signals that you can use to handle the state of the dialogue. This signals are the following:
+The [DialogPlayer](../class-reference/nodes/dialog-player.md) nodes have some signals that you can use to handle the state of the dialogue. These signals are the following:
 
 ```gdscript
 ## Emitted when the dialog starts.
@@ -202,16 +202,16 @@ signal option_selected(option_index: int, option_dialog: Dictionary)
 signal signal_event(signal_id: String, args: Array)
 ```
 
-First, the `option_selected` signal is emitted when an **option is selected in the dialogue** and returns the option index and a dictionary with the dialogue and translations of the selected option in the following format:
+First, the `option_selected` signal is emitted when an **option is selected in the dialogue** and returns the **selected option index** (starting from 1) and a dictionary with the dialogue information and the translations of the selected option in the following format:
 
 ```
 {
-	"en" : "This is the option in Engligh"
-	"es" :" Esta es la opción en Español"
+	"en" : "This is the option in English",
+	"es": "Esta es la opción en Español"
 }
 ```
 
-For the other hand, the `signal_event` signal is emitted when a [Signal Node](./event-nodes#signal-node) is trigger in the dialogue tree. This signal returns the argument that you give to the event node to do wharever you need with it.
+On the other hand, the `signal_event` signal is emitted when a [Signal Node](./event-nodes#signal-node) is triggered in the dialogue tree. This signal returns the argument that you give to the event node to do whatever you need with it.
 
 You can also handle the **same signals from the Sprouty Dialogs autoload**.
 

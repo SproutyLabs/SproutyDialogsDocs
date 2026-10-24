@@ -10,7 +10,7 @@ The event nodes are the **building blocks of the dialogue system**. They are gra
 
 ---
 
-This node define the **beggining of a dialogue tree**. You must **assign it an `ID` that will be the name or reference** for calling the dialogue tree later. Also, you can see that this node have a **play button**, you can click on it to [test your dialogue tree](../getting-started/create-a-dialogue#test-the-dialogue).
+This node defines the **beginning of a dialogue tree**. You must **assign it an `ID` that will be the name or reference** for calling the dialogue tree later. Also, you can see that this node has a **play button**, you can click on it to [test your dialogue tree](../getting-started/create-a-dialogue#test-the-dialogue).
 
 ![Start Node](img/event-nodes/start-node.png)
 
@@ -50,7 +50,7 @@ This node allows you to add options or choices to the dialogue. You can add **mu
 
 ![Options Node](img/event-nodes/options-node.png)
 
-Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how looks the options buttons in your dialog box. For more information see the [customize options section](#).
+Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how the option buttons look in your dialog box. For more information see the [customize dialog options section](./dialog-boxes#customize-dialog-options).
 
 :::info[Using Translations]
 
@@ -91,7 +91,7 @@ For more information about variables, see the [variables section](../variables.m
 
 ---
 
-This node allows you to call a method from an [Autoload](https://docs.godotengine.org/en/stable/tutorials/scripting/singletons_autoload.html). First, you need to select an Autoload, then **search the method name and select one from the popup list**. If the method have parameters, you will see that the **parameters array is going to update**. You can click the array field button to see and **edit each value**.
+This node allows you to call a method from an [Autoload](https://docs.godotengine.org/en/stable/tutorials/scripting/singletons_autoload.html). First, you need to select an Autoload, then **search the method name and select one from the popup list**. If the method has parameters, you will see that the **parameters array is going to update**. You can click the array field button to see and **edit each value**.
 
 ![Call Method Node](img/event-nodes/call-method-node.png)
 

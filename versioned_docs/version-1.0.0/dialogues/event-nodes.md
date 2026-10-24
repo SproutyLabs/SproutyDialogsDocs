@@ -12,7 +12,7 @@ The event nodes are the **building blocks of the dialogue system**. They are gra
 
 ---
 
-This node define the **beggining of a dialogue tree**. You must **assign it an `ID` that will be the name or reference** for calling the dialogue tree later. Also, you can see that this node have a **play button**, you can click on it to [test your dialogue tree](../getting-started/create-a-dialogue#test-the-dialogue).
+This node defines the **beginning of a dialogue tree**. You must **assign it an `ID` that will be the name or reference** for calling the dialogue tree later. Also, you can see that this node has a **play button**, you can click on it to [test your dialogue tree](../getting-started/create-a-dialogue#test-the-dialogue).
 
 ![Start Node](@site/static/img/screenshots/event-nodes/start_node.png)
 
@@ -52,7 +52,7 @@ This node allows you to add options or choices to the dialogue. You can add **mu
 
 ![Options Node](@site/static/img/screenshots/event-nodes/options_node.png)
 
-Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how looks the options buttons in your dialog box. For more information see the [customize options section](#).
+Each option will be displayed in a [DialogOption](../class-reference/nodes/dialog-option.md) node when the dialogue runs. You can customize how the option buttons look in your dialog box. For more information see the [customize dialog options section](./dialog-boxes#customize-dialog-options).
 
 :::info[Using Translations]
 
@@ -93,7 +93,7 @@ You can compare variables, expressions, values, etc. For more information about 
 
 ---
 
-This node allows you to emit a signal during the dialogue. It **receives an [String](https://docs.godotengine.org/en/stable/classes/class_string.html) argument**, that is going to be emited with the signal. You can use the argument to **identify the signal** or wharever you want to do with, like parse more than one argument separated by a symbol, such as a comma.
+This node allows you to emit a signal during the dialogue. It **receives an [String](https://docs.godotengine.org/en/stable/classes/class_string.html) argument**, that is going to be emitted with the signal. You can use the argument to **identify the signal** or do whatever you want with it, like parsing more than one argument separated by a symbol, such as a comma.
 
 ![Signal Node](@site/static/img/screenshots/event-nodes/signal_node.png)
 

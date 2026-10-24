@@ -35,5 +35,5 @@ This class manages the translations for the Sprouty Dialogs plugin. It provides 
 <h3 id="collect-translations-method">
   <span class="reference-type">static func </span><code>collect_translations</code><span class="parameters">()</span><span class="return-type"> -> void</span>
 </h3>
-<p>Collect translation files from the CSV folder and add them to **Project > Project Settings > Localization > Translations** to import the translations. This allow to use the translations from CSV files in the project. More information on [Godot Internationalizing games](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html).</p>
+<p>Collect translation files from the CSV folder and add them to **Project > Project Settings > Localization > Translations** to import the translations. This allows using the translations from CSV files in the project. More information on [Godot Internationalizing games](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html).</p>
 <hr/>

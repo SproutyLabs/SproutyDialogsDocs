@@ -57,8 +57,8 @@ You can also configure some settings for the character portraits.
 
 - `Default Portrait`: The default portrait that will be used when the character speaks if **no specific portrait is assigned in the dialogue**.
 
-- `Main Transform Settings`: The main transform settings for all the character portraits. This settings will be **applied to all the character portraits by default**, but you can override them in a specific portrait by configuring its own `Transform Settings`.
-  > This settings are the following:
+- `Main Transform Settings`: The main transform settings for all the character portraits. These settings will be **applied to all the character portraits by default**, but you can override them in a specific portrait by configuring its own `Transform Settings`.
+  > These settings are the following:
   >
   > - `Scale`: The default scale of the character portraits.
   > - `Offset`: The default position of the character portraits.

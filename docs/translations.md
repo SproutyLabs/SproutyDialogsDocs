@@ -89,7 +89,7 @@ Each **dialogue** text from a **dialogue node** has a key with the format:
 
 > For example, `EXAMPLE_DIALOG_1` is the key of the dialogue text from `Dialogue Node #1` that belongs to the dialogue tree with start ID: `EXAMPLE`.
 
-For the other hand, each **option** text from a **options node** has a key with the format:
+On the other hand, each **option** text from a **options node** has a key with the format:
 
 ```gdscript
 <START_ID>_OPT<NODE_INDEX>_<OPTION_INDEX>
@@ -115,7 +115,7 @@ To use CSV files for translations, you need to enable the `Use CSV files` settin
 
 Once enabled, you can see new settings such as `CSV translation folder`, where you need to **select a directory where the CSV translations files will be saved**.
 
-This is required to **collect the translations into the project**, because Godot needs to import all the CSV files as translations files to use them, how is described in [internationalizing games in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html).
+This is required to **collect the translations into the project**, because Godot needs to import all the CSV files as translations files to use them, as described in [internationalizing games in godot docs](https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html).
 
 :::info[Important]
 
@@ -170,9 +170,9 @@ If you edit the CSV translations outside the plugin, when you open the dialogue 
 
 :::info[What if some dialogue is missing?]
 
-When you edit CSV files outside of the plugin, some problems may occur, such as some **dialogue keys and their translations being missing**, either because they were accidentally deleted or for some other reason. For this cases, there is a `Fallback to resource` setting.
+When you edit CSV files outside of the plugin, some problems may occur, such as some **dialogue keys and their translations being missing**, either because they were accidentally deleted or for some other reason. In these cases, there is a `Fallback to resource` setting.
 
-If `Fallback to resource` is enabled, when you open a dialogue file and a **key is not found in the CSV**, the dialogue will be **loaded from the dialogue file instead**. This is a editor-only feature to allows you to restore the dialogue missing in case that the CSV have some error, this not work on run.
+If `Fallback to resource` is enabled, when you open a dialogue file and a **key is not found in the CSV**, the dialogue will be **loaded from the dialogue file instead**. This is an editor-only feature that allows you to restore the missing dialogue in case the CSV has some errors; it does not work at runtime.
 
 _The dialogue file always have a copy of the dialogues, so you can recover the missing dialogues from there._
 

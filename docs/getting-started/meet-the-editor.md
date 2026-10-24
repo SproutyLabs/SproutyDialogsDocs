@@ -32,15 +32,15 @@ At the top of the plugin interface, there is a tab bar with each module of the p
 
 ### Dialogue Editor
 
-The dialogue editor is a graph view where you can **create your own dialogues** usign [event nodes](../event-nodes/event-nodes.md). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
+The dialogue editor is a graph view where you can **create your own dialogues** using [event nodes](../event-nodes/event-nodes.md). Each event node has a different function, and by connecting them, you can create dialogue trees that will define your dialogues.
 
 ![Dialogue Editor](@site/static/img/screenshots/getting-started/meet-the-editor/dialogue_editor.png)
 
 On the right of the graph editor is the text editor. When editing dialogue text, you can expand the text box and edit the dialogue in the text editor.
 
-This not only gives you a larger view, but also allows you to use a toolbar to easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to your dialogue! **Change the color, size, font, add text effects, and much more!**
+This not only gives you a larger view, but also allows you to use a toolbar to easily add [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags to your dialogue! **Change the color, size, font, add text effects, and much more!**
 
-The text editor have a text preview where you can see the [BBcode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags working for a faster editing. But, you can also preview your dialogues in a in-game view by clicking the play button on the **Start Node** of your dialogue.
+The text editor has a text preview where you can see the [BBCode](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html) tags working for a faster editing. But, you can also preview your dialogues in an in-game view by clicking the play button on the **Start Node** of your dialogue.
 
 ![Play Example](@site/static/img/screenshots/getting-started/meet-the-editor/play_example.png)
 

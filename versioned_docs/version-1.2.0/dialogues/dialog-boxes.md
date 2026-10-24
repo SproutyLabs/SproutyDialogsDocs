@@ -10,7 +10,7 @@ The dialogues are displayed on screen using dialog boxes. Sprouty Dialogs allows
 
 ---
 
-By default, there is a **default dialog box** that will be displayed for all dialogues. You can change this dialog box in the `Default dialog box` setting from [general settings](../settings#defaults), selecting a existing dialog box or creating a new one.
+By default, there is a **default dialog box** that will be displayed for all dialogues. You can change this dialog box in the `Default dialog box` setting from [general settings](../settings#defaults), selecting an existing dialog box or creating a new one.
 
 To create a new dialog box, clean the path in the field and **you will see a `+` button, click it, locate where you want to save the file**, give it a name and then click on `Create File`.
 
@@ -54,7 +54,7 @@ You will going to see that the dialog box node have some properties in the inspe
 
 ![Dialog Box Scene](@site/static/img/screenshots/dialog-boxes/dialog_box_scene.png)
 
-Also, there is a `Dialog Box Components` section, where some components are required. This components are:
+Also, there is a `Dialog Box Components` section, where some components are required. These components are:
 
 - `Dialogs Display`: [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) where the dialogue text will be displayed. _**This component is required to display the dialogue text in it.**_
 
@@ -62,7 +62,7 @@ Also, there is a `Dialog Box Components` section, where some components are requ
 
   :::info[Important]
 
-  The [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) components need to have enable the `BBCode enabled` property to display the text effects from the text editor.
+  The [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) components need to have the `BBCode Enabled` property enabled to display the text effects from the text editor.
 
   :::
 
@@ -76,7 +76,7 @@ Also, there is a `Dialog Box Components` section, where some components are requ
 
 ### Customize dialog options
 
-Lastly, there is a `Options Components` section with the follow properties:
+Lastly, there is a `Options Components` section with the following properties:
 
 - `Options Container`: [Container](https://docs.godotengine.org/en/stable/classes/class_container.html) where the options will be displayed in the dialog box. It is recommended to use a [VBoxContainer](https://docs.godotengine.org/en/stable/classes/class_vboxcontainer.html) or [GridContainer](https://docs.godotengine.org/en/stable/classes/class_gridcontainer.html) to display the options. _This component is required to display the dialog options in it._
 
@@ -84,7 +84,7 @@ Lastly, there is a `Options Components` section with the follow properties:
 
 :::info[Important]
 
-This components are **not required only if you don't want to display options** in the dialogue, what means that you are not going to use [options nodes](./event-nodes#options-node) in your dialogue trees.
+These components are **not required only if you don't want to display options** in the dialogue, what means that you are not going to use [options nodes](./event-nodes#options-node) in your dialogue trees.
 
 :::
 
@@ -92,7 +92,7 @@ The [DialogOption](../class-reference/nodes/dialog-option.md) node extends from 
 
 - `Text Display`: A [Label](https://docs.godotengine.org/en/stable/classes/class_label.html) node. Assign this component if you want to use a custom simple label without text effects in the options text.
 
-- `Rich Text Display`: A [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) node. Assign this component if you want to use a custom label that supports text effects in the options text. _(BBcode enabled must be true)_
+- `Rich Text Display`: A [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) node. Assign this component if you want to use a custom label that supports text effects in the options text. _(BBCode Enabled must be true)_
 
 If you don't assign any of these components, the option text is going to be displayed using the [button text](https://docs.godotengine.org/en/stable/classes/class_button.html#class-button-property-text), so you have less customization.
 

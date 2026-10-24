@@ -28,7 +28,7 @@ You should inherit from this class to create your own dialog nodes.
 | [Texture2D](https://docs.godotengine.org/en/stable/classes/class_texture2d.html)                         | [node_icon](#node-icon-var)             | null    |
 | [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                                     | [node_list_index](#node-list-index-var) | 0       |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)                               | [start_node_name](#start-node-name-var) | ""      |
-| [SproutyDialogsBaseNode](#)                                                                              | [start_node](#start-node-var)           | null    |
+| [SproutyDialogsBaseNode](./base-node)                                                                     | [start_node](#start-node-var)           | null    |
 | [Array](https://docs.godotengine.org/en/stable/classes/class_array.html)                                 | [to_node](#to-node-var)                 | []      |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)                               | [to_dialog](#to-dialog-var)             | ""      |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)                               | [node_type](#node-type-var)             | ""      |

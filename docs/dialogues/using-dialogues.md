@@ -48,7 +48,7 @@ In this case, we run the dialog in the [\_ready](https://docs.godotengine.org/en
 
 And that's it! So easy right? 🥳
 
-You can also, create a dialog player node from code and use it in the same way, but you must **first add it to the tree** and **configure the dialogue data file and start ID** before running it.
+You can also create a dialog player node from code and use it in the same way, but you must **first add it to the tree** and **configure the dialogue data file and start ID** before running it.
 
 ```gdscript title="main.gd" showLineNumbers
 extends Node2D
