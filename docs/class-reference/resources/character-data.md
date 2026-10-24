@@ -63,7 +63,7 @@ It includes the character's key name or identifier, translations of the name, de
   <span class="reference-type">var </span><code>dialog_box_path</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
 </h3>
-<p>Path to the dialog box scene to display the character's dialogue. This is for reference only, the dialog box is set from the character editor.</p>
+<p>Path to the dialog box scene to display the character's dialogue. This is stored as a fallback to load the dialog box when its stored UID is no longer valid. This is for reference only, the dialog box is set from the character editor.</p>
 <hr/>
 
 <h3 id="portrait-on-dialog-box-var">

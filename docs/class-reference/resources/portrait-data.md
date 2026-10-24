@@ -14,7 +14,6 @@ This resource stores data for character portraits. Each portrait includes the re
 
 | Type                                                                               | Name                                            | Default         |
 | ---------------------------------------------------------------------------------- | ----------------------------------------------- | --------------- |
-| [int](https://docs.godotengine.org/en/stable/classes/class_int.html)               | [portrait_scene_uid](#portrait-scene-uid-var)   | -1              |
 | [String](https://docs.godotengine.org/en/stable/classes/class_string.html)         | [portrait_scene_path](#portrait-scene-path-var) | ""              |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [export_overrides](#export-overrides-var)       | \{\}            |
 | [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [transform_settings](#transform-settings-var)   | See description |
@@ -22,18 +21,11 @@ This resource stores data for character portraits. Each portrait includes the re
 
 ## Property Descriptions
 
-<h3 id="portrait-scene-uid-var">
-  <span class="reference-type">var </span><code>portrait_scene_uid</code>
-  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> = -1</span>
-</h3>
-<p>Reference to the portrait scene used for this portrait. This is the UID of the scene that will be used as the character's portrait. The scene should contain a root node that extends <a target="_blank" href="../nodes/dialog-portrait">DialogPortrait</a> to be able to integrate with the dialog system.</p>
-<hr/>
-
 <h3 id="portrait-scene-path-var">
   <span class="reference-type">var </span><code>portrait_scene_path</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a> = ""</span>
 </h3>
-<p>Path to the portrait scene used for this portrait. This is for reference only, use [portrait_scene_uid](#portrait-scene-uid-var) to set the portrait scene.</p>
+<p>Path to the portrait scene used for this portrait. This is stored as a fallback to load the portrait scene when its stored UID is no longer valid. This is for reference only, the portrait scene is set on the <b>character editor</b>.</p>
 <hr/>
 
 <h3 id="export-overrides-var">

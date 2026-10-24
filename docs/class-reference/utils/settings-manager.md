@@ -18,14 +18,16 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
 
 ## Methods
 
-| Return Type                                                                  | Method                                                                                                                                                                                                            |
-| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_setting](#get-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                      |
-| void                                                                         | [set_setting](#set-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)) |
-| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)       | [has_setting](#has-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                      |
-| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html) | [get_default_setting](#get-default-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                      |
-| void                                                                         | [reset_setting](#reset-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                  |
-| void                                                                         | [initialize_default_settings](#initialize-default-settings-method)()                                                                                                                                              |
+| Return Type                                                                        | Method                                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)       | [get_setting](#get-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                                       |
+| void                                                                               | [set_setting](#set-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), value: [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html))                  |
+| [Dictionary](https://docs.godotengine.org/en/stable/classes/class_dictionary.html) | [get_reference_setting](#get-reference-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                   |
+| void                                                                               | [set_reference_setting](#set-reference-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html), path: [String](https://docs.godotengine.org/en/stable/classes/class_string.html)) |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)             | [has_setting](#has-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                                       |
+| [Variant](https://docs.godotengine.org/en/stable/classes/class_variant.html)       | [get_default_setting](#get-default-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                       |
+| void                                                                               | [reset_setting](#reset-setting-method)(setting_name: [String](https://docs.godotengine.org/en/stable/classes/class_string.html))                                                                                                   |
+| void                                                                               | [initialize_default_settings](#initialize-default-settings-method)()                                                                                                                                                               |
 
 ## Constants
 
@@ -53,6 +55,18 @@ This class manages the settings for the Sprouty Dialogs plugin. It provides meth
   <span class="reference-type">static func </span><code>set_setting</code><span class="parameters">(setting_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, value: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a>)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Sets a setting value in the plugin settings. If the setting is not found, it prints an error message.</p>
+<hr/>
+
+<h3 id="get-reference-setting-method">
+  <span class="reference-type">static func </span><code>get_reference_setting</code><span class="parameters">(setting_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a></span>
+</h3>
+<p>Returns a setting that stores a resource reference from the plugin settings. Resource reference settings are stored as a dictionary with the resource UID and its file path, so the resource can still be loaded by its path when the UID is no longer valid. Old settings storing only the resource UID as an int are normalized to the current dictionary format.</p>
+<hr/>
+
+<h3 id="set-reference-setting-method">
+  <span class="reference-type">static func </span><code>set_reference_setting</code><span class="parameters">(setting_name: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, path: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>)</span><span class="return-type"> -> void</span>
+</h3>
+<p>Sets a setting that stores a resource reference from the resource file path, storing both the UID and the path to load it as a fallback.</p>
 <hr/>
 
 <h3 id="has-setting-method">
