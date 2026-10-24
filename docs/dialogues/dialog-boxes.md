@@ -84,7 +84,7 @@ Lastly, there is a `Options Components` section with the follow properties:
 
 :::info[Important]
 
-This components are **not required only if you don't want to display options** in the dialogue, what means that you are not going to use [options nodes](./event-nodes#options-node) in your dialogue trees.
+This components are **not required only if you don't want to display options** in the dialogue, what means that you are not going to use [options nodes](../event-nodes/event-nodes.md#options-node) in your dialogue trees.
 
 :::
 

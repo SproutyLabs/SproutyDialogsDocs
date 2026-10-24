@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Event Nodes
@@ -30,7 +30,7 @@ This node is where you set the dialogues to display. This node allows you to wri
 
 ![Dialogue Node](img/event-nodes/dialogue-node.png)
 
-To write your dialogues, you can expand the text box **clicking on the right button** that will open the **text editor** on the right side. Here you can easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to the text in a user-friendly interface, so you don't have to remember all the tags and its properties. For more details about the text editor, see the [text editor section](./text-editor.md).
+To write your dialogues, you can expand the text box **clicking on the right button** that will open the **text editor** on the right side. Here you can easily add [BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html) tags to the text in a user-friendly interface, so you don't have to remember all the tags and its properties. For more details about the text editor, see the [text editor section](../dialogues/text-editor.md).
 
 :::info[Using Translations]
 
@@ -111,7 +111,7 @@ This will **emit a signal with two arguments**: the identifier string and the ex
 
 :::info[Using Signals]
 
-To **catch the signal**, you need to connect the [signal_event](../class-reference/nodes/dialog-player#signal-event-signal) signal from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node where you run the dialogue. As shown in the [using dialogues section](./using-dialogues#using-dialogplayer-signals).
+To **catch the signal**, you need to connect the [signal_event](../class-reference/nodes/dialog-player#signal-event-signal) signal from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node where you run the dialogue. As shown in the [using dialogues section](../dialogues/using-dialogues#using-dialogplayer-signals).
 
 :::
 

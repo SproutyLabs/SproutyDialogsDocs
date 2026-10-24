@@ -1,0 +1,8 @@
+{
+  "label": "Event Nodes",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "⚡ Everything about the event nodes of the dialogue system in Sprouty Dialogs."
+  }
+}

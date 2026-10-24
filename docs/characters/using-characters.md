@@ -73,7 +73,7 @@ Finally, you can see the list of portraits assigned to the character. You can ad
 
 ![Character Portrait List](@site/static/img/screenshots/characters/character_portrait_list.png)
 
-You can create different portraits for different expressions, poses, outfits, etc. You can then use these portraits in the dialogues by **selecting the portrait** in a [Dialogue Node](../dialogues/event-nodes#dialogue-node), after selecting the character.
+You can create different portraits for different expressions, poses, outfits, etc. You can then use these portraits in the dialogues by **selecting the portrait** in a [Dialogue Node](../event-nodes/event-nodes.md#dialogue-node), after selecting the character.
 
 ![Character in Dialogue](@site/static/img/screenshots/getting-started/create-a-character/character_in_dialogue.png)
 
