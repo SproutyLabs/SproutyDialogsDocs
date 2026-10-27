@@ -30,7 +30,7 @@ Also, there are some improvements that we'll add to have a better experience wor
 
 ---
 
-- [@Mimique-jpg](https://github.com/Mimique-jpg) made their first contribution in [#2](https://github.com/SproutyLabs/SproutyDialogs/pull/2)
+- [**@Mimique-jpg**](https://github.com/Mimique-jpg) made their first contribution in [#2](https://github.com/SproutyLabs/SproutyDialogs/pull/2)
 
 ---
 

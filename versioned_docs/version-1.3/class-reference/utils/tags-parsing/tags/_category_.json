@@ -1,0 +1,8 @@
+{
+	"label": "Tags",
+	"position": 0,
+	"link": {
+		"type": "generated-index",
+		"description": "Tag processor classes for handling custom tags in dialogues."
+	}
+}

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Auto-Advance
 
-The auto-advance feature allows the dialogues to **progress automatically to the next dialog or event after a configured delay**, without requiring the player to press the continue input. This is useful, for example, to create **cinematic scenes**, **kiosk-style demos**, or dialogues that advance on their own while the player just reads them.
+The auto-advance feature allows the dialogues to **progress automatically to the next dialog or event after a configured delay**, without requiring the player to trigger the continue input. This is useful, for example, to create **cinematic scenes**, **kiosk-style demos**, or dialogues that advance on their own while the player just reads them.
 
 ## How auto-advance works?
 

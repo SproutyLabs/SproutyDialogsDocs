@@ -1,0 +1,8 @@
+{
+  "label": "Graph Editor",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Graph editor module for visual dialogue tree editing."
+  }
+}

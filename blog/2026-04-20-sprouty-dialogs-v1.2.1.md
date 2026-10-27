@@ -18,7 +18,7 @@ This patch has some needed bug fixes 🐞
 ---
 
 - Fix plugin version check in [#54](https://github.com/SproutyLabs/SproutyDialogs/pull/54)
-- Fix variables recursion error in [#56](https://github.com/SproutyLabs/SproutyDialogs/pull/56), reported by @ghoulmoon in [#55](https://github.com/SproutyLabs/SproutyDialogs/pull/55)
+- Fix variables recursion error in [#56](https://github.com/SproutyLabs/SproutyDialogs/pull/56), reported by **@ghoulmoon** in [#55](https://github.com/SproutyLabs/SproutyDialogs/pull/55)
 
 See the all the release changes in the [Full Changelog](https://github.com/SproutyLabs/SproutyDialogs/pull/57)
 

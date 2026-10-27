@@ -1,0 +1,8 @@
+{
+  "label": "Text Editor",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Text editor module for editing dialog text with BBCode formatting."
+  }
+}

@@ -87,7 +87,8 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
           versions: {
-            '1.2': {label: 'v1.2 (Latest)'},
+            '1.3': {label: 'v1.3 (Latest)'},
+            '1.2': {label: 'v1.2'},
             '1.1': {label: 'v1.1'},
             '1.0': {label: 'v1.0'},
           },

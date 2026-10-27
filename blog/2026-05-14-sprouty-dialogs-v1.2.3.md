@@ -21,7 +21,7 @@ Sorry for the inconvenience! 😢
 
 ---
 
-- Fix character references issue and character recovering check added in [#66](https://github.com/SproutyLabs/SproutyDialogs/pull/66), reported by @mullfuchs in [#64](https://github.com/SproutyLabs/SproutyDialogs/issues/64)
+- Fix character references issue and character recovering check added in [#66](https://github.com/SproutyLabs/SproutyDialogs/pull/66), reported by **@mullfuchs** in [#64](https://github.com/SproutyLabs/SproutyDialogs/issues/64)
 
 See the all the release changes in the [Full Changelog](https://github.com/SproutyLabs/SproutyDialogs/pull/68)
 

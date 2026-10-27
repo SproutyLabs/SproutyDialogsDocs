@@ -19,7 +19,7 @@ Sorry for the inconvenience! (again) 😮‍💨
 
 ---
 
-- Fix dialogue processing when is no character in [#88](https://github.com/SproutyLabs/SproutyDialogs/pull/88), reported by @Moumekie in [#87](https://github.com/SproutyLabs/SproutyDialogs/issues/87)
+- Fix dialogue processing when is no character in [#88](https://github.com/SproutyLabs/SproutyDialogs/pull/88), reported by **@Moumekie** in [#87](https://github.com/SproutyLabs/SproutyDialogs/issues/87)
 
 See the all the release changes in the [Full Changelog](https://github.com/SproutyLabs/SproutyDialogs/pull/89)
 

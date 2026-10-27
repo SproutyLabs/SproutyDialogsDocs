@@ -19,7 +19,7 @@ This release adds some new QoL features to the Graph Editor, and also a new cool
 ---
 
 - A toolbar in the Graph Editor to improve the accessibility.
-- A quick search to load resources in a more convenient way, suggested by [@Mimique-jpg](https://github.com/Mimique-jpg) in [#4](https://github.com/SproutyLabs/SproutyDialogs/issues/4).
+- A quick search to load resources in a more convenient way, suggested by [**@Mimique-jpg**](https://github.com/Mimique-jpg) in [#4](https://github.com/SproutyLabs/SproutyDialogs/issues/4).
 - New Call Method Node to call methods from autoload with parameters during the dialogue tree.
 
 ## What's Changed

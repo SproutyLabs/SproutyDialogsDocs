@@ -29,13 +29,13 @@ But also, we’re excited to release a new feature from our roadmap: **Custom te
 
 ---
 
-- New extensible text effect tags framework and new special tags by @YudongLi11 in [#39](https://github.com/SproutyLabs/SproutyDialogs/pull/39)
-- Fix portrait scale issue in [#42](https://github.com/SproutyLabs/SproutyDialogs/pull/42), reported by @Sajyd in [#41](https://github.com/SproutyLabs/SproutyDialogs/issues/41)
-- Add conditionals to Options Node by @Snowpire in [#40](https://github.com/SproutyLabs/SproutyDialogs/pull/40)
-- Now expandable text boxes are automatically resized, thanks to @Snowpire in [#40](https://github.com/SproutyLabs/SproutyDialogs/pull/40)
-- Fix node action menu items by @Snowpire in [#47](https://github.com/SproutyLabs/SproutyDialogs/pull/47)
-- Add Jump To Node by @Snowpire in [#48](https://github.com/SproutyLabs/SproutyDialogs/pull/48), suggested by @ChunckT in [#37](https://github.com/SproutyLabs/SproutyDialogs/issues/37)
-- Fix Wait Node skipping issue in [#49](https://github.com/SproutyLabs/SproutyDialogs/pull/49), reported by @Sajyd in [#43](https://github.com/SproutyLabs/SproutyDialogs/issues/43)
+- New extensible text effect tags framework and new special tags by **@YudongLi11** in [#39](https://github.com/SproutyLabs/SproutyDialogs/pull/39)
+- Fix portrait scale issue in [#42](https://github.com/SproutyLabs/SproutyDialogs/pull/42), reported by **@Sajyd** in [#41](https://github.com/SproutyLabs/SproutyDialogs/issues/41)
+- Add conditionals to Options Node by **@Snowpire** in [#40](https://github.com/SproutyLabs/SproutyDialogs/pull/40)
+- Now expandable text boxes are automatically resized, thanks to **@Snowpire** in [#40](https://github.com/SproutyLabs/SproutyDialogs/pull/40)
+- Fix node action menu items by **@Snowpire** in [#47](https://github.com/SproutyLabs/SproutyDialogs/pull/47)
+- Add Jump To Node by **@Snowpire** in [#48](https://github.com/SproutyLabs/SproutyDialogs/pull/48), suggested by **@ChunckT** in [#37](https://github.com/SproutyLabs/SproutyDialogs/issues/37)
+- Fix Wait Node skipping issue in [#49](https://github.com/SproutyLabs/SproutyDialogs/pull/49), reported by **@Sajyd** in [#43](https://github.com/SproutyLabs/SproutyDialogs/issues/43)
 - Add a checkbox to the Wait Node to choose if the dialog box will close while you wait in [#49](https://github.com/SproutyLabs/SproutyDialogs/pull/49)
 - Fix resources validation, plugin initialization and dialogs replay issues in [#50](https://github.com/SproutyLabs/SproutyDialogs/pull/50)
 

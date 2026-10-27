@@ -1,0 +1,8 @@
+{
+	"label": "Tags Parsing",
+	"position": 0,
+	"link": {
+		"type": "generated-index",
+		"description": "Classes related to custom tags parsing"
+	}
+}
