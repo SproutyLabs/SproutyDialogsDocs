@@ -9,6 +9,12 @@ When you need more control over how the [DialogPlayer](../class-reference/nodes/
 - **Display Overrides**: Set the parent nodes where the **dialog boxes and portraits are displayed**.
 - **Dialog Box Overrides**: Set the custom **dialog box node** used to display the dialogues.
 
+:::info[DialogController]
+
+Display and dialog box overrides are exclusive to [DialogPlayer](../class-reference/nodes/dialog-player.md). A [DialogController](./dialog-controller.md) does not create or position dialog boxes or portraits, so your custom UI decides where and how to display them.
+
+:::
+
 ## Display Overrides
 
 ---

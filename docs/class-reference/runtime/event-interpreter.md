@@ -10,11 +10,11 @@ sidebar_position: 1
 
 Node that process the event nodes of a dialog tree from the Sprouty Dialogs plugin.
 
-This node is used by the [DialogPlayer](../nodes/dialog-player) to process the nodes of a dialog tree.
+This node is used by the [SproutyDialogsRunner](./sprouty-dialogs-runner.md) to process the nodes of a dialog tree. The runner is used internally by [DialogPlayer](../nodes/dialog-player.md) and [DialogController](../nodes/dialog-controller.md), so both nodes use this interpreter indirectly.
 
 :::info[Important]
 
-The processors can be access by the [node_processors](#node-processors-var) dictionary, that is used by the [DialogPlayer](../nodes/dialog-player) to process the nodes by their type. **You should not use this node directly.**
+The processors can be access by the [node_processors](#node-processors-var) dictionary, that is used by the [SproutyDialogsRunner](./sprouty-dialogs-runner.md) to process the nodes by their type. **You should not use this node directly.** If you want to create custom event nodes, see the [custom event nodes guide](../../event-nodes/custom-event-nodes.md).
 
 :::
 

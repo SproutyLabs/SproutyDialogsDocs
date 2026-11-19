@@ -67,6 +67,7 @@ Build games for international audiences with built-in translation features:
 Use dialogues in your game with minimal code:
 
 - **DialogPlayer node** to handle your dialogues easily in your scenes
+- **DialogController node** to run dialogues with your own UI or headless, with the [dialog controller guide](./dialogues/dialog-controller.md)
 - **SproutyDialogs autoload** to access dialogue functions globally
 - **Signal system** for responding to dialogue events in your game
 - **Custom event node support** to extend the dialogue system with game-specific actions

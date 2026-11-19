@@ -136,13 +136,19 @@ And in this way you can also see the dialogue when you run the scene.
 
 ![Play from Autoload](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_autoload.png)
 
-:::info[Important]
+:::warning[Important]
 
 This method loads all the resources needed for the dialogue at once when the method is called, so may cause a **slowdown if you have large resources to load**, such as complex portraits scenes, dialog boxes, etc.
 
 So, if you have large resources in your dialogue, **it is not recommended use the autoload to play the dialogue**, instead use the [DialogPlayer](../class-reference/nodes/dialog-player.md) nodes that load the resources on ready.
 
 For more details see [about dialogue resources](../dialogues/using-dialogues#about-dialogue-resources).
+
+:::
+
+:::info[Important]
+
+If you want to display dialogues with **your own UI**, or run them **without any UI** (for example, in headless builds or automated tests), use a [DialogController](../class-reference/nodes/dialog-controller.md). See the [Dialog Controller (Headless)](../dialogues/dialog-controller.md) guide for details.
 
 :::
 

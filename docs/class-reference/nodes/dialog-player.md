@@ -12,6 +12,12 @@ Node that plays dialog trees from Sprouty Dialogs plugin. It reads a dialog file
 
 The dialog tree is composed of nodes that represent dialogues and actions. The player processes the nodes and plays the dialogues in [DialogBox](./dialog-box) nodes.
 
+:::info[Important]
+
+Internally, the player uses a [SproutyDialogsRunner](../runtime/sprouty-dialogs-runner.md) to execute the dialogue tree and only handles the presentation and input. If you want to display dialogues with your own UI or run them without any UI, use a [DialogController](./dialog-controller.md) instead.
+
+:::
+
 ## Properties
 
 | Type                                                                   | Name                                                | Default |
@@ -277,5 +283,5 @@ Use the `free_on_end` property instead.
 <h3 id="set-dialog-method">
   <span class="reference-type">func </span><code>set_dialog</code><span class="parameters">(data: <a target="_blank" href="../resources/dialogue-data">SproutyDialogsDialogueData</a>, start_id: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_string.html">String</a>, portrait_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\}, dialog_box_parents: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_dictionary.html">Dictionary</a> = \{\})</span><span class="return-type"> -> void</span>
 </h3>
-<p>Set the dialogue data and start ID to play a dialog tree. This method loads the dialog resources and prepares the player to process the dialog tree before calling the <a target="_blank" href="#start-method">start</a>() method.</p>
+<p>Set the dialogue data and start ID to play a dialog tree. This method loads the dialog resources and prepares the player to process the dialog tree before calling the <a target="_blank" href="#play-method">play</a>() method.</p>
 <hr/>

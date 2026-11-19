@@ -6,6 +6,12 @@ sidebar_position: 2
 
 The dialogues are displayed on screen using dialog boxes. Sprouty Dialogs allows you to customize the appearance and behavior of these dialog boxes to fit your game's style. _You can do whatever you want!_
 
+:::info[Using a dialog box with a Dialog Controller]
+
+A [DialogBox](../class-reference/nodes/dialog-box.md) can also be used only for presentation with a [DialogController](./dialog-controller.md). Set its `handle_input` property to `false` so the box does not process input or select options by itself. See [Using DialogBox as a view only](./dialog-controller.md#using-dialogbox-as-a-view-only).
+
+:::
+
 ## Using dialog boxes
 
 ---

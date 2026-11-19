@@ -58,6 +58,12 @@ func _ready() -> void:
 	set_auto_advance(true, 1.5)
 ```
 
+:::info[Using a DialogController]
+
+A [DialogController](./dialog-controller.md) does not manage a dialog box, so it does **not** apply the `[auto]` tag automatically. When using a controller, read `dialogue_data["auto"]` in your `dialogue_requested` handler and apply it to your own view (for example with [set_auto_advance](../class-reference/nodes/dialog-box#set-auto-advance-method)()). See [Auto-advance and no-skip tags](./dialog-controller.md#auto-advance-and-no-skip-tags).
+
+:::
+
 ## Using the auto tag
 
 ---

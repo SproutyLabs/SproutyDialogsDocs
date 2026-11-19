@@ -1,0 +1,8 @@
+{
+	"label": "Runtime",
+	"position": 5,
+	"link": {
+		"type": "generated-index",
+		"description": "Runtime classes that execute dialogues and manage their resources."
+	}
+}

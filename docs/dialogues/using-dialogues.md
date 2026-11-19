@@ -10,7 +10,7 @@ Once you have created a dialogue, you can use it in different ways, as we have a
 
 ---
 
-To use the dialogues from Sprouty Dialogs in your game, as we have already seen in the [create a dialogue](../getting-started/create-a-dialogue#using-dialogues-in-your-game) section, we have the two following options.
+To use the dialogues from Sprouty Dialogs in your game, as we have already seen in the [create a dialogue](../getting-started/create-a-dialogue#using-dialogues-in-your-game) section, we have the following options.
 
 ### Using dialog players (Recommended)
 
@@ -82,9 +82,36 @@ And in this way you can also see the dialogue when you run the scene.
 
 ![Play from Autoload](@site/static/img/screenshots/getting-started/create-a-dialogue/play_from_autoload.png)
 
+### Using a dialog controller (Custom UI or headless)
+
+If you want to **display dialogues with your own UI**, or run dialogues **without any UI** (for example, in headless builds, servers, or automated tests), use a [DialogController](../class-reference/nodes/dialog-controller.md) node instead.
+
+The controller processes the dialogue tree and emits signals such as [dialogue_requested](../class-reference/nodes/dialog-controller#dialogue-requested-signal) and [options_requested](../class-reference/nodes/dialog-controller#options-requested-signal), but it does **not** create dialog boxes or portraits and does **not** handle input. You decide how to present the dialogue and when to continue or select an option.
+
+```gdscript title="main.gd" showLineNumbers
+extends Node
+
+var dialog_data := load("res://dialogues/my_dialogue.tres")
+
+func _ready() -> void:
+	var controller := DialogController.new()
+	add_child(controller)
+
+	controller.dialogue_requested.connect(
+			func(_character_name: String, translated_name: String,
+			_portrait: String, dialogue_data: Dictionary) -> void:
+				print(translated_name, ": ", dialogue_data.get("text", "")))
+	controller.dialog_ended.connect(controller.queue_free)
+
+	controller.set_dialog(dialog_data, "FIRST")
+	controller.play()
+```
+
+See the [Dialog Controller (Headless)](./dialog-controller.md) page for a complete guide, examples, and the differences with the [DialogPlayer](../class-reference/nodes/dialog-player.md).
+
 :::info[Important]
 
-Both options run the dialogues by loading all the resources needed **at once** when the dialogue is set: with the [set_dialog](../class-reference/nodes/dialog-player#set-dialog-method)() method when creating a dialog player from code, or with the [play](../class-reference/core/sprouty-dialogs-manager#play-method)() method of the Sprouty Dialogs autoload. This can cause **slowdowns if large resources need to be loaded**.
+The code-based options run the dialogues by loading all the resources needed **at once** when the dialogue is set: with the [set_dialog](../class-reference/nodes/dialog-player#set-dialog-method)() method when creating a dialog player from code, with the [play](../class-reference/core/sprouty-dialogs-manager#play-method)() method of the Sprouty Dialogs autoload, or with the [set_dialog](../class-reference/nodes/dialog-controller#set-dialog-method)() method of a dialog controller. This can cause **slowdowns if large resources need to be loaded**.
 
 For more details see the [about dialogue resources](#about-dialogue-resources) section.
 
@@ -94,9 +121,9 @@ For more details see the [about dialogue resources](#about-dialogue-resources) s
 
 ---
 
-When you set a [DialogPlayer](../class-reference/nodes/dialog-player.md) node in a scene to run a dialogue, this node will load all the resources needed (dialog boxes, characters, portraits, etc) on ready, using the [Resource Manager](../class-reference/utils/resource-manager.md) singleton.
+When you set a [DialogPlayer](../class-reference/nodes/dialog-player.md) node in a scene to run a dialogue, this node will load all the resources needed (dialog boxes, characters, portraits, etc) on ready, using the [Resource Manager](../class-reference/runtime/resource-manager.md) singleton.
 
-The [Resource Manager](../class-reference/utils/resource-manager.md) is going to keep track of the resources required for all the dialogues that will run in the current scene, which means, the resources needed by **all the dialog players in the scene**. The resource manager **ensures that each resource is only loaded once**, even if more than one dialog player uses it.
+The [Resource Manager](../class-reference/runtime/resource-manager.md) is going to keep track of the resources required for all the dialogues that will run in the current scene, which means, the resources needed by **all the dialog players in the scene**. The resource manager **ensures that each resource is only loaded once**, even if more than one dialog player uses it.
 
 ```mermaid
 graph TD;
@@ -120,7 +147,7 @@ graph TD;
 
 This way, resources are **loaded only once at the start of the scene** and then **instantiated when needed in a dialog**. Furthermore, they are **destroyed when they are no longer needed**.
 
-For this reason, care must be taken when loading **large resources, such as complex portrait scenes**. If you set the **dialog players from the code or use the Sprouty Dialogs autoload**, the resources will be loaded when you call the [set_dialog](../class-reference/nodes/dialog-player#set-dialog-method)() or [start_dialog](../class-reference/core/sprouty-dialogs-manager#start-dialog-method)() methods.
+For this reason, care must be taken when loading **large resources, such as complex portrait scenes**. If you set the **dialog players from the code, use the Sprouty Dialogs autoload, or set a [DialogController](./dialog-controller.md)**, the resources will be loaded **when you call** the [DialogPlayer.set_dialog](../class-reference/nodes/dialog-player#set-dialog-method)() method, the [SproutyDialogs.play](../class-reference/core/sprouty-dialogs-manager#play-method)() method, or the [DialogController.set_dialog](../class-reference/nodes/dialog-controller#set-dialog-method)() method.
 
 _If you call these methods during runtime, there will be a **slowdown due to resource loading**. However, if you have set the **DialogPlayer node directly in the scene**, you will **ensure that resources are loaded when the scene starts**._
 
@@ -150,6 +177,8 @@ func _on_player_left_shop_area() -> void:
 ```
 
 You can also check if a dialogue is currently running using the [is_running](../class-reference/nodes/dialog-player#is-running-method)() method.
+
+A [DialogController](./dialog-controller.md) provides the same [pause](../class-reference/nodes/dialog-controller#pause-method)(), [resume](../class-reference/nodes/dialog-controller#resume-method)(), [stop](../class-reference/nodes/dialog-controller#stop-method)(), and [is_running](../class-reference/nodes/dialog-controller#is-running-method)() methods, but **it does not pause or resume any dialog box or portrait for you**. If you use a controller, pause your own animations and typing effects too.
 
 :::info[Important]
 
@@ -181,6 +210,12 @@ signal dialog_player_stop()
 ```
 
 The `dialog_paused` and `dialog_resumed` signals are emitted when you call the [pause](../class-reference/nodes/dialog-player#pause-method)() and [resume](../class-reference/nodes/dialog-player#resume-method)() methods, and the `dialog_ended` and `dialog_player_stop` signals when the dialogue ends or is stopped. Check the [pausing, resuming and stopping dialogues](#pausing-resuming-and-stopping-dialogues) section for more details.
+
+:::info[About Dialog Controller Signals]
+
+A [DialogController](./dialog-controller.md) also emits `dialog_started`, `dialog_paused`, `dialog_resumed`, `dialog_ended`, `option_selected`, and `signal_event`, but it adds its own execution signals such as `dialogue_requested`, `options_requested`, `wait_started`, and `wait_ended`. See the [controller guide](./dialog-controller.md#signals) for the complete list.
+
+:::
 
 Also, there are two special signals:
 
@@ -216,5 +251,10 @@ func _ready() -> void:
 func _on_dialog_ended() -> void:
 	SproutyDialogs.dialog_ended.disconnect(_on_dialog_ended)
 	print("The dialogue has ended!")
-
 ```
+
+:::info[About Dialog Controller Signals]
+
+Dialog controllers use separate autoload signals named `controller_*`, such as `controller_started` or `controller_ended`, with the controller as the first argument. They are also tracked in `SproutyDialogs.dialog_controllers_running`. See the [controller autoload integration](./dialog-controller.md#autoload-integration) section for more details.
+
+:::

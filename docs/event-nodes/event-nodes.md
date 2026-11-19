@@ -113,6 +113,8 @@ This will **emit a signal with two arguments**: the identifier string and the ex
 
 To **catch the signal**, you need to connect the [signal_event](../class-reference/nodes/dialog-player.md#signal-event-signal) signal from the [DialogPlayer](../class-reference/nodes/dialog-player.md) node where you run the dialogue. As shown in the [using dialogues section](../dialogues/using-dialogues.md#using-dialogplayer-signals).
 
+If you run the dialogue with a [DialogController](../class-reference/nodes/dialog-controller.md), connect its [signal_event](../class-reference/nodes/dialog-controller.md#signal-event-signal) signal instead. The controller also re-emits it globally as `SproutyDialogs.controller_signal_event`, with the controller as the first argument.
+
 :::
 
 ## Wait Node

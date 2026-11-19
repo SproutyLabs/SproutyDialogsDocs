@@ -14,16 +14,16 @@ Let's explore how to create custom event nodes and use them in your dialogues.
 
 ---
 
-Each event node corresponds to a **specific action or behavior** that can be triggered during a dialogue. To process an event node, we have the [SproutyDialogsEventInterpreter](../class-reference/utils/event-interpreter.md) class, which is responsible for **executing the actions** associated with event nodes.
+Each event node corresponds to a **specific action or behavior** that can be triggered during a dialogue. To process an event node, we have the [SproutyDialogsEventInterpreter](../class-reference/runtime/event-interpreter.md) class, which is responsible for **executing the actions** associated with event nodes.
 
-The event interpreter has a **process method** for each event node type, which contains the logic to handle that specific event. To do this, the [DialogPlayer](../class-reference/nodes/dialog-player.md) creates and uses the **event interpreter as its child** to process event nodes as they are reached during the dialogue flow.
+The event interpreter has a **process method** for each event node type, which contains the logic to handle that specific event. To do this, the [SproutyDialogsRunner](../class-reference/runtime/sprouty-dialogs-runner.md) (used internally by both [DialogPlayer](../class-reference/nodes/dialog-player.md) and [DialogController](../class-reference/nodes/dialog-controller.md)) creates and uses the **event interpreter as its child** to process event nodes as they are reached during the dialogue flow.
 
-So when the dialog player encounters an event node, it calls to the event interpreter to execute the associated action.
+So when the runner encounters an event node, it calls to the event interpreter to execute the associated action.
 
 ```mermaid
 graph LR
 	S((**Start**)) --> A
-	A["**Dialog Player**<br/>Encounter<br/>Event Node"] e1@--> |"Call to Process <br/>Method"| B["**Event Interpreter**<br/>Execute Action"]
+	A["**SproutyDialogsRunner**<br/>Encounter<br/>Event Node"] e1@--> |"Call to Process <br/>Method"| B["**Event Interpreter**<br/>Execute Action"]
 	B e2@--> |"Continue to<br/>Next Node"| C{"Is Dialogue<br/>Finished?"}
 	C e3@--> |"No"| A
 	C --> |"Yes"| D(("**End**"))
@@ -156,7 +156,7 @@ To understand more about how to make your own nodes, you can check the built-in 
 
 ### Handling the event node processing
 
-To process your new event nodes, you need to create a custom event interpreter that extends from the [SproutyDialogsEventInterpreter](../class-reference/utils/event-interpreter.md) class. This new interpreter will be responsible for **processing your custom event nodes** during the dialogue flow.
+To process your new event nodes, you need to create a custom event interpreter that extends from the [SproutyDialogsEventInterpreter](../class-reference/runtime/event-interpreter.md) class. This new interpreter will be responsible for **processing your custom event nodes** during the dialogue flow.
 
 The event interpreter have a dictionary called `node_processors`, which maps the **node names to their corresponding process methods**. To handle your custom event node, you need to **add an entry** to this dictionary that maps the node name to a method that will process the node data.
 
@@ -188,7 +188,7 @@ Finally, it calls the `continue_to_node` signal to move to the next node in the 
 
 :::info
 
-You can access to the dialogue resources from the [DialogPlayer](../class-reference/nodes/dialog-player.md) using `get_parent()`, if you need to access any data from the dialogue (such as the character data) while processing your custom event nodes.
+You can access the dialogue resources from the [SproutyDialogsRunner](../class-reference/runtime/sprouty-dialogs-runner.md) using `get_parent()`, since the event interpreter is added as its child. For example, use `get_parent().get_dialog_data()` or `get_parent().get_character_data()` if you need to access any data from the dialogue while processing your custom event nodes. This works the same whether the dialogue is played by a [DialogPlayer](../class-reference/nodes/dialog-player.md) or a [DialogController](../class-reference/nodes/dialog-controller.md).
 
 :::
 
@@ -220,7 +220,7 @@ And you can use it like any other event node in the graph editor.
 
 ![Custom Node in Dialogue](@site/static/img/screenshots/custom-event-nodes/custom_node_example.png)
 
-When the dialogue is played, the dialog player will use your custom event interpreter to process the event nodes, including your custom event nodes.
+When the dialogue is played, the runner will use your custom event interpreter to process the event nodes, including your custom event nodes. This works the same whether the dialogue is played by a [DialogPlayer](../class-reference/nodes/dialog-player.md) or a [DialogController](../class-reference/nodes/dialog-controller.md).
 
 Here's an example of the output when the dialogue with the custom event node is played:
 

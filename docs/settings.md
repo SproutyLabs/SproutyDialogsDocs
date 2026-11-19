@@ -56,7 +56,7 @@ Let's take a look at each category and its settings.
 
 - `Custom event nodes folder`: Path to the directory where you have your custom event nodes (`.tscn` files).
 
-- `Custom event interpreter`: Path to the custom event interpreter script file (`.gd`) that extends from the [SproutyDialogsEventInterpreter](./class-reference/utils/event-interpreter.md) class. Where you define the process methods to run your custom event nodes.
+- `Custom event interpreter`: Path to the custom event interpreter script file (`.gd`) that extends from the [SproutyDialogsEventInterpreter](./class-reference/runtime/event-interpreter.md) class. Where you define the process methods to run your custom event nodes.
 
 ## Text Settings
 
@@ -90,7 +90,7 @@ Let's take a look at each category and its settings.
 
 - `Enabled at the start`: Enable auto-advance at the game start, so dialogues will **automatically progress without waiting for user input**.
 
-  > _This corresponds to the [auto_advance](./class-reference/nodes/dialog-player.md#auto-advance-var) property of the [DialogPlayer](./class-reference/nodes/dialog-player.md)._
+  > _This corresponds to the [auto_advance](./class-reference/nodes/dialog-player.md#auto-advance-var) property of the [DialogPlayer](./class-reference/nodes/dialog-player.md). A [DialogController](./class-reference/nodes/dialog-controller.md) does not apply it automatically; see the [controller guide](./dialogues/dialog-controller.md#auto-advance-and-no-skip-tags)._
 
 - `Default advance delay`: Time in seconds to wait before advancing to the next dialog/event.
 

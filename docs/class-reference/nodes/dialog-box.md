@@ -16,6 +16,8 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 
 **You should not use this node directly to play a dialogue.** You should use a [DialogPlayer](./dialog-player) node to play dialogues, which will process it and use a [DialogBox](./dialog-box) to display it.
 
+A `DialogBox` can also be used only for presentation with a [DialogController](./dialog-controller.md). In that case, set [handle_input](#handle-input-var) to `false` so the box does not process input or select options by itself. See [Using DialogBox as a view only](../../dialogues/dialog-controller.md#using-dialogbox-as-a-view-only).
+
 :::
 
 ## Properties
@@ -25,6 +27,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 | [float](https://docs.godotengine.org/en/stable/classes/class_float.html)                 | [typing_speed](#typing-speed-var)                       | `default_typing_speed` from settings |
 | [int](https://docs.godotengine.org/en/stable/classes/class_int.html)                     | [max_characters](#max-characters-var)                   | `max_characters` from settings       |
 | [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)                   | [block_input_propagation](#block-input-propagation-var) | `true`                               |
+| [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html)                   | [handle_input](#handle-input-var)                       | `true`                               |
 | [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [dialog_display](#dialog-display-var)                   | null                                 |
 | [RichTextLabel](https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html) | [name_display](#name-display-var)                       | null                                 |
 | [Control](https://docs.godotengine.org/en/stable/classes/class_control.html)             | [continue_indicator](#continue-indicator-var)           | null                                 |
@@ -45,6 +48,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 | void                                                                   | [pause_dialog](#pause-dialog-method)()                                                                                                                                                                                                     |
 | void                                                                   | [resume_dialog](#resume-dialog-method)()                                                                                                                                                                                                   |
 | void                                                                   | [stop_dialog](#stop-dialog-method)(close_dialog: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) = false)                                                                                                           |
+| void                                                                   | [advance_dialog](#advance-dialog-method)()                                                                                                                                                                                                 |
 | void                                                                   | [set_auto_advance](#set-auto-advance-method)(enabled: [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html), delay: [float](https://docs.godotengine.org/en/stable/classes/class_float.html) = 0.1)                       |
 | [bool](https://docs.godotengine.org/en/stable/classes/class_bool.html) | [is_displaying_portrait](#is-displaying-portrait-method)()                                                                                                                                                                                 |
 | void                                                                   | [display_portrait](#display-portrait-method)(character_parent: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html), portrait_node: [Node](https://docs.godotengine.org/en/stable/classes/class_node.html))              |
@@ -80,7 +84,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <h3 id="continue-dialog-signal">
   <span class="reference-type">signal </span><code>continue_dialog</code>
 </h3>
-<p>Emitted when the player press the continue button to continue the dialog tree.</p>
+<p>Emitted when the dialog should continue, either from the continue input, auto-advance, or <a href="#advance-dialog-method">advance_dialog</a>() when <a href="#handle-input-var">handle_input</a> is disabled.</p>
 <hr/>
 
 <h3 id="meta-clicked-signal">
@@ -94,7 +98,7 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">signal </span><code>option_selected</code>
   <span class="parameters">(option_index: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</span>
 </h3>
-<p>Emitted when the player selects an option.</p>
+<p>Emitted when the player selects an option. It is only emitted when <a href="#handle-input-var">handle_input</a> is enabled.</p>
 <hr/>
 
 ## Property Descriptions
@@ -117,7 +121,15 @@ You can customize your own dialog boxes nodes and extend their functionality by 
   <span class="reference-type">var </span><code>block_input_propagation</code>
   <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
 </h3>
-<p>If true, the dialog box will block input propagation to other nodes in the scene tree. This is useful to prevent the player from interacting with other nodes while the dialog is active.</p>
+<p>If true, the dialog box will block input propagation to other nodes in the scene tree. This is useful to prevent the player from interacting with other nodes while the dialog is active. It only takes effect while <a href="#handle-input-var">handle_input</a> is enabled.</p>
+<hr/>
+
+<h3 id="handle-input-var">
+  <span class="reference-type">var </span><code>handle_input</code>
+  <span class="default-value"> : <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> = true</span>
+</h3>
+<p>If true, the dialog box handles the input to continue the dialog and allows the player to select options. Disable it when you want to use the dialog box only for presentation and handle the input manually, for example with a <a target="_blank" href="./dialog-controller">DialogController</a>.</p>
+<p>With <code>handle_input</code> disabled, the box does not emit <a href="#option-selected-signal">option_selected</a> by itself. Auto-advance and <a href="#advance-dialog-method">advance_dialog</a>() still work, so the box can emit <a href="#continue-dialog-signal">continue_dialog</a> when the dialogue should advance.</p>
 <hr/>
 
 <h3 id="dialog-display-var">
@@ -224,10 +236,17 @@ You can customize your own dialog boxes nodes and extend their functionality by 
 <p>Stop the dialog. If `close_dialog` is true, the dialog box will be closed.</p>
 <hr/>
 
+<h3 id="advance-dialog-method">
+  <span class="reference-type">func </span><code>advance_dialog</code><span class="parameters">()</span><span class="return-type"> -> void</span>
+</h3>
+<p>Manually advances the current dialogue when <a href="#handle-input-var">handle_input</a> is disabled. If the text is still being typed, it completes the text. If it is fully displayed, it shows the next dialogue segment or emits <a href="#continue-dialog-signal">continue_dialog</a> when there are no segments left. It has no effect while the dialog is not running or while options are being displayed.</p>
+<hr/>
+
 <h3 id="set-auto-advance-method">
   <span class="reference-type">func </span><code>set_auto_advance</code><span class="parameters">(enabled: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a>, delay: <a target="_blank" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a> = 0.1)</span><span class="return-type"> -> void</span>
 </h3>
 <p>Enable or disable the auto-advance of the dialog. If enabled, the dialog will automatically progress to the next sentence or node after the configured delay. If no delay is provided, the delay configured in the `auto_advance_delay` setting is used.</p>
+<p>Auto-advance also works when <a href="#handle-input-var">handle_input</a> is disabled, allowing a <a target="_blank" href="./dialog-controller">DialogController</a> to advance the dialogue from the <a href="#continue-dialog-signal">continue_dialog</a> signal emitted by the dialog box.</p>
 <hr/>
 
 <h3 id="is-displaying-portrait-method">
